@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-01-10T01:00:39.073Z</updated>
+  <updated>2020-01-09T06:27:57.458Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,30 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>my blog</title>
-    <link href="http://yoursite.com/2020/01/10/my-blog/"/>
-    <id>http://yoursite.com/2020/01/10/my-blog/</id>
-    <published>2020-01-10T00:32:01.000Z</published>
-    <updated>2020-01-10T01:00:39.073Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;这是一个分享一些自己心得，爱好以及知识的博客，本人只是一名普通的大学生，不是啥大神。不用抱有太高的期待或是要求，如果能帮助到部分人或是给部分人带来些许快乐，实乃我无上的荣耀…..（此处运用了夸张的手法并省略两千字）&lt;/p&gt;
-&lt;p&gt;邮箱：1097629344@qq..com&lt;
-        
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
   
   <entry>
     <title>My New Post</title>
