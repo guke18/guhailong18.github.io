@@ -36,38 +36,6 @@
       </tags>
   </entry>
   <entry>
-    <title>我的第一篇博客——自我介绍</title>
-    <url>/2020/01/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E2%80%94%E2%80%94%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>这是一个分享一些自己心得，爱好以及知识的博客，本人只是一名普通的大学生，不是啥大神。不用抱有太高的期待或是要求，如果能帮助到部分人或是给部分人带来些许快乐，实乃我无上的荣耀…..（此处运用了夸张的手法并省略两千字）</p>
-<p>邮箱：<a href="mailto:1097629344@qq.com">1097629344@qq.com</a></p>
-<p>欢迎大家与我交流！!!<img src="/2020/01/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E2%80%94%E2%80%94%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D/08.jpg"></p>
-
-<div id="aplayer-RmnUJSnU" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"></div>
-
-
-
-<div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div>
-<script>
-  (function() {
-    var player = new DPlayer({
-      "container": document.getElementById("dplayer0"),
-      "loop": true,
-      "screenshot": true,
-      "video": {
-        "url": "https://dl.sm9.top/Video/2018/%E6%8E%98%E5%9C%B0%E6%B1%82%E5%8D%87_x264.mp4"
-      },
-      "danmaku": {
-        "id": "46190A32F63DFF2CF0A3BB0F3293636C",
-        "api": "https://api.prprpr.me/dplayer/",
-        "addition": ["https://api.prprpr.me/dplayer/v3/bilibili?aid=17150441"]
-      }
-    });
-    window.dplayers || (window.dplayers = []);
-    window.dplayers.push(player);
-  })()
-</script>]]></content>
-  </entry>
-  <entry>
     <title>My New Post</title>
     <url>/2020/01/09/My-New-Post/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>]]></content>
