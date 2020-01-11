@@ -46,7 +46,7 @@
     <link href="https://guhailong18.github.io/2020/01/10/%E8%A1%A8%E6%83%85%E5%8C%85%E5%88%86%E4%BA%AB%EF%BC%881%EF%BC%89/"/>
     <id>https://guhailong18.github.io/2020/01/10/%E8%A1%A8%E6%83%85%E5%8C%85%E5%88%86%E4%BA%AB%EF%BC%881%EF%BC%89/</id>
     <published>2020-01-10T08:25:10.000Z</published>
-    <updated>2020-01-10T14:46:48.683Z</updated>
+    <updated>2020-01-11T12:29:49.679Z</updated>
     
     <summary type="html">
     
@@ -70,17 +70,42 @@
     <link href="https://guhailong18.github.io/2020/01/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E2%80%94%E2%80%94%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D/"/>
     <id>https://guhailong18.github.io/2020/01/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E2%80%94%E2%80%94%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D/</id>
     <published>2020-01-10T00:56:37.318Z</published>
-    <updated>2020-01-11T12:01:49.774Z</updated>
+    <updated>2020-01-11T12:32:18.586Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
+      &lt;p&gt;这是一个分享一些自己心得，爱好以及知识的博客，本人只是一名普通的大学生，不是啥大神。不用抱有太高的期待或是要求，如果能帮助到部分人或是给部分人带来些许快乐，实乃我无上的荣耀…..（此处运用了夸张的手法并省略两千字）&lt;/p&gt;
+&lt;p&gt;邮箱：&lt;a href=&quot;mailto:1097629344@qq.com&quot;&gt;1097629344@qq.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;欢迎大家与我交流！!!&lt;img src=&quot;/2020/01/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E2%80%94%E2%80%94%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D/08.jpg&quot;&gt;&lt;/p&gt;
+
+&lt;div id=&quot;aplayer-HkmkDtGR&quot; class=&quot;aplayer aplayer-tag-marker meting-tag-marker&quot; data-id=&quot;60198&quot; data-server=&quot;netease&quot; data-type=&quot;playlist&quot; data-mode=&quot;circulation&quot; data-autoplay=&quot;true&quot; data-mutex=&quot;false&quot; data-listmaxheight=&quot;340px&quot; data-preload=&quot;none&quot; data-theme=&quot;#ad7a86&quot;&gt;&lt;/div&gt;
+
+
+
+&lt;div id=&quot;dplayer0&quot; class=&quot;dplayer hexo-tag-dplayer-mark&quot; style=&quot;margin-bottom: 20px;&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+  (function() {
+    var player = new DPlayer({
+      &quot;container&quot;: document.getElementById(&quot;dplayer0&quot;),
+      &quot;theme&quot;: &quot;#FADFA3&quot;,
+      &quot;loop&quot;: true,
+      &quot;video&quot;: {
+        &quot;url&quot;: &quot;https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.mp4&quot;,
+        &quot;pic&quot;: &quot;https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg&quot;
+      },
+      &quot;danmaku&quot;: {
+        &quot;id&quot;: &quot;9E2E3368B56CDBB4&quot;,
+        &quot;api&quot;: &quot;https://api.prprpr.me/dplayer/&quot;,
+        &quot;token&quot;: &quot;tokendemo&quot;,
+        &quot;addition&quot;: [&quot;https://dplayer.daoapp.io/bilibili?aid=4157142&quot;]
+      }
+    });
+    window.dplayers || (window.dplayers = []);
+    window.dplayers.push(player);
+  })()
+&lt;/script&gt;
+
+&lt;hr&gt;
     
     </summary>
     
