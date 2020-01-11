@@ -29,7 +29,7 @@
       
         
         
-          &lt;h1 id&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot;
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
         
       
     
@@ -66,30 +66,6 @@
   </entry>
   
   <entry>
-    <title>我的第一篇博客——自我介绍</title>
-    <link href="https://guhailong18.github.io/2020/01/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E2%80%94%E2%80%94%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D/"/>
-    <id>https://guhailong18.github.io/2020/01/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E2%80%94%E2%80%94%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D/</id>
-    <published>2020-01-10T00:56:37.000Z</published>
-    <updated>2020-01-10T13:37:19.386Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;这是一个分享一些自己心得，爱好以及知识的博客，本人只是一名普通的大学生，不是啥大神。不用抱有太高的期待或是要求，如果能帮助到部分人或是给部分人带来些许快乐，实乃我无上的荣耀…..（此处运用了夸张的手法并省略两千字）&lt;/p&gt;
-&lt;p&gt;邮箱：&lt;a
-        
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>My New Post</title>
     <link href="https://guhailong18.github.io/2020/01/09/My-New-Post/"/>
     <id>https://guhailong18.github.io/2020/01/09/My-New-Post/</id>
@@ -97,6 +73,14 @@
     <updated>2020-01-10T12:17:16.387Z</updated>
     
     <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
     
     </summary>
     
@@ -117,7 +101,7 @@
       
         
         
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
         
       
     
