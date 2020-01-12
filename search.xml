@@ -2,14 +2,6 @@
 <search>
   <entry>
     <title>表情包分享（1）</title>
-    <url>/2020/01/10/Memes%20sharing%20(1)/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id><a href="#" class="headerlink" title></a></h1>]]></content>
-      <tags>
-        <tag>表情包</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>表情包分享（1）</title>
     <url>/2020/01/10/%E8%A1%A8%E6%83%85%E5%8C%85%E5%88%86%E4%BA%AB%EF%BC%881%EF%BC%89/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="第一期分享给大家的是《80年代宣传画系列》"><a href="#第一期分享给大家的是《80年代宣传画系列》" class="headerlink" title="第一期分享给大家的是《80年代宣传画系列》"></a>第一期分享给大家的是《80年代宣传画系列》</h1>
 <p><img src="/2020/01/10/%E8%A1%A8%E6%83%85%E5%8C%85%E5%88%86%E4%BA%AB%EF%BC%881%EF%BC%89/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(1).jpg" alt="80年代宣传画 (1)"></p>
@@ -30,11 +22,11 @@
 <p><img src="/2020/01/10/%E8%A1%A8%E6%83%85%E5%8C%85%E5%88%86%E4%BA%AB%EF%BC%881%EF%BC%89/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(39).jpg" alt="80年代宣传画 (39)"></p>
 <p><img src="/2020/01/10/%E8%A1%A8%E6%83%85%E5%8C%85%E5%88%86%E4%BA%AB%EF%BC%881%EF%BC%89/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(40).jpg" alt="80年代宣传画 (40)"></p>
 <p><img src="/2020/01/10/%E8%A1%A8%E6%83%85%E5%8C%85%E5%88%86%E4%BA%AB%EF%BC%881%EF%BC%89/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(41).jpg" alt="80年代宣传画 (41)"></p>
-<div id="dplayer4" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div>
+<div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div>
 <script>
   (function() {
     var player = new DPlayer({
-      "container": document.getElementById("dplayer4"),
+      "container": document.getElementById("dplayer1"),
       "theme": "#FADFA3",
       "loop": true,
       "video": {
@@ -47,7 +39,9 @@
   })()
 </script>
 
-<h6 id="需要的自取即可，欢迎在评论区给我留言哦！！"><a href="#需要的自取即可，欢迎在评论区给我留言哦！！" class="headerlink" title="需要的自取即可，欢迎在评论区给我留言哦！！"></a>需要的自取即可，欢迎在评论区给我留言哦！！</h6>]]></content>
+<h6 id="需要的自取即可，欢迎在评论区给我留言哦！！"><a href="#需要的自取即可，欢迎在评论区给我留言哦！！" class="headerlink" title="需要的自取即可，欢迎在评论区给我留言哦！！"></a>需要的自取即可，欢迎在评论区给我留言哦！！</h6>
+<hr>
+<iframe height="498" width="510" src="http://player.youku.com/embed/XNDMzMjc4MDEyMA==" frameborder="0" 'allowfullscreen'></iframe>]]></content>
       <tags>
         <tag>表情包</tag>
       </tags>
@@ -59,80 +53,20 @@
 <p>邮箱：<a href="mailto:1097629344@qq.com">1097629344@qq.com</a></p>
 <p>欢迎大家与我交流！!!<img src="/2020/01/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E2%80%94%E2%80%94%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D/08.jpg"></p>
 
-<div id="aplayer-vIfejxrh" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"></div>
-
-
-
-<div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div>
-<script>
-  (function() {
-    var player = new DPlayer({
-      "container": document.getElementById("dplayer0"),
-      "theme": "#FADFA3",
-      "loop": true,
-      "video": {
-        "url": "https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.mp4",
-        "pic": "https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg"
-      },
-      "danmaku": {
-        "id": "9E2E3368B56CDBB4",
-        "api": "https://api.prprpr.me/dplayer/",
-        "token": "tokendemo",
-        "addition": ["https://dplayer.daoapp.io/bilibili?aid=4157142"]
-      }
-    });
-    window.dplayers || (window.dplayers = []);
-    window.dplayers.push(player);
-  })()
-</script>
-
-<hr>
-<a id="more"></a>
+<div id="aplayer-eyKHzYze" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"></div>
 
 bad asset path...
 
 <hr>
-<div id="dplayer2" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div>
-<script>
-  (function() {
-    var player = new DPlayer({
-      "container": document.getElementById("dplayer2"),
-      "video": {
-        "url": "https://dl.sm9.top/Video/2018/KeyCastOW.mp4"
-      }
-    });
-    window.dplayers || (window.dplayers = []);
-    window.dplayers.push(player);
-  })()
-</script>
-
-<hr>
-<div id="dplayer3" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div>
-<script>
-  (function() {
-    var player = new DPlayer({
-      "container": document.getElementById("dplayer3"),
-      "theme": "#FADFA3",
-      "loop": true,
-      "video": {
-        "url": "https://link.zhihu.com/?target=http%3A//home.ustc.edu.cn/~mmmwhy/GEM.mp4” pic=https://link.zhihu.com/?target=http%3A//home.ustc.edu.cn/~mmmwhy/GEM.jpg”"
-      }
-    });
-    window.dplayers || (window.dplayers = []);
-    window.dplayers.push(player);
-  })()
-</script>]]></content>
-  </entry>
-  <entry>
-    <title>My New Post</title>
-    <url>/2020/01/09/My-New-Post/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>]]></content>
+<iframe src="//player.bilibili.com/player.html?aid=82968958&cid=141941752&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>]]></content>
   </entry>
   <entry>
     <title>Hello World</title>
     <url>/2020/01/09/hello-world/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2>
+<a id="more"></a>
+
 <h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3>
 <figure class="highlight bash">
   <table>
