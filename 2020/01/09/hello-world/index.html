@@ -22,7 +22,7 @@
 
 
   <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-</head>
+<link rel="stylesheet" type="text/css" href="/assets/css/DPlayer.min.css"><script src="/assets/js/DPlayer.min.js"></script></head>
 
 </html>
 
@@ -53,7 +53,7 @@
                   <span class="post-meta-item-icon">
                     <i class="ri-quill-pen-line"></i>
                     <span class="post-meta-item-text"> 字数统计:</span>
-                    <span class="post-count">78字</span>
+                    <span class="post-count">120字</span>
                   </span>
                 </span>
 
@@ -145,6 +145,24 @@
               </figure>
 
               <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+              <hr>
+              <div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div>
+              <script>
+                (function() {
+                  var player = new DPlayer({
+                    "container": document.getElementById("dplayer0"),
+                    "autoplay": true,
+                    "hotkey": true,
+                    "preload": "metadata",
+                    "video": {
+                      "url": "http://www.nenu.edu.cn/_upload/article/videos/03/5f/7c999eed42e3aadc413d7f851f0e/0f50b3eb-9285-41d2-ac4d-6cc363651aad_B.mp4"
+                    }
+                  });
+                  window.dplayers || (window.dplayers = []);
+                  window.dplayers.push(player);
+                })()
+              </script>
+              <hr>
 
               <!-- 打赏 -->
 
@@ -154,7 +172,7 @@
 
             </div>
             <footer class="article-footer">
-              <a data-url="https://guhailong18.github.io/2020/01/09/hello-world/" data-id="ck5abhdx00001z4ug711ggetk" class="article-share-link">分享</a>
+              <a data-url="https://guhailong18.github.io/2020/01/09/hello-world/" data-id="ck5adm8vt0000k4ug731e6slv" class="article-share-link">分享</a>
 
             </footer>
 
@@ -413,3 +431,7 @@
 </body>
 
 </html>
+
+<!-- 页面点击小红心 -->
+
+<script type="text/javascript" src="/js/src/love.js"></script>
