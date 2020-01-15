@@ -2,12 +2,17 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>古客</title>
   
-  
+  <subtitle>人生匆匆，来者是客</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://guhailong18.github.io/"/>
-  <updated>2020-01-12T01:04:24.309Z</updated>
+  <updated>2020-01-15T14:25:12.758Z</updated>
   <id>https://guhailong18.github.io/</id>
+  
+  <author>
+    <name>Mr.gu</name>
+    
+  </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
@@ -16,7 +21,7 @@
     <link href="https://guhailong18.github.io/2020/01/10/%E8%A1%A8%E6%83%85%E5%8C%85%E5%88%86%E4%BA%AB%EF%BC%881%EF%BC%89/"/>
     <id>https://guhailong18.github.io/2020/01/10/%E8%A1%A8%E6%83%85%E5%8C%85%E5%88%86%E4%BA%AB%EF%BC%881%EF%BC%89/</id>
     <published>2020-01-10T08:25:10.000Z</published>
-    <updated>2020-01-12T01:04:24.309Z</updated>
+    <updated>2020-01-15T14:25:12.758Z</updated>
     
     <summary type="html">
     
@@ -31,7 +36,7 @@
     
     
     
-      <category term="表情包" scheme="https://guhailong18.github.io/tags/%E8%A1%A8%E6%83%85%E5%8C%85/"/>
+      <category term="-娱乐" scheme="https://guhailong18.github.io/tags/%E5%A8%B1%E4%B9%90/"/>
     
   </entry>
   
@@ -61,7 +66,7 @@
     <link href="https://guhailong18.github.io/2020/01/09/hello-world/"/>
     <id>https://guhailong18.github.io/2020/01/09/hello-world/</id>
     <published>2020-01-09T05:34:06.430Z</published>
-    <updated>2020-01-12T02:41:29.019Z</updated>
+    <updated>2020-01-15T14:27:12.040Z</updated>
     
     <summary type="html">
     
@@ -71,6 +76,8 @@
     </summary>
     
     
+    
+      <category term="编程" scheme="https://guhailong18.github.io/tags/%E7%BC%96%E7%A8%8B/"/>
     
   </entry>
   
