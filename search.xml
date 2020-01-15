@@ -22,11 +22,11 @@
 <p><img src="/2020/01/10/%E8%A1%A8%E6%83%85%E5%8C%85%E5%88%86%E4%BA%AB%EF%BC%881%EF%BC%89/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(39).jpg" alt="80年代宣传画 (39)"></p>
 <p><img src="/2020/01/10/%E8%A1%A8%E6%83%85%E5%8C%85%E5%88%86%E4%BA%AB%EF%BC%881%EF%BC%89/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(40).jpg" alt="80年代宣传画 (40)"></p>
 <p><img src="/2020/01/10/%E8%A1%A8%E6%83%85%E5%8C%85%E5%88%86%E4%BA%AB%EF%BC%881%EF%BC%89/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(41).jpg" alt="80年代宣传画 (41)"></p>
-<div id="dplayer3" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div>
+<div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div>
 <script>
   (function() {
     var player = new DPlayer({
-      "container": document.getElementById("dplayer3"),
+      "container": document.getElementById("dplayer0"),
       "theme": "#FADFA3",
       "loop": true,
       "video": {
@@ -44,11 +44,11 @@
 <iframe height="498" width="510" src="http://player.youku.com/embed/XNDMzMjc4MDEyMA==" frameborder="0" 'allowfullscreen'></iframe>
 ------
 
-<div id="dplayer4" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div>
+<div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div>
 <script>
   (function() {
     var player = new DPlayer({
-      "container": document.getElementById("dplayer4"),
+      "container": document.getElementById("dplayer1"),
       "theme": "#FADFA3",
       "loop": true,
       "video": {
@@ -61,7 +61,7 @@
   })()
 </script>]]></content>
       <tags>
-        <tag>-娱乐</tag>
+        <tag>娱乐</tag>
       </tags>
   </entry>
   <entry>
