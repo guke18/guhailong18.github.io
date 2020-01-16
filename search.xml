@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>娱乐</title>
-    <url>/2020/01/15/%E5%A8%B1%E4%B9%90/index/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>]]></content>
-  </entry>
-  <entry>
     <title>表情包分享（1）</title>
     <url>/2020/01/10/%E8%A1%A8%E6%83%85%E5%8C%85%E5%88%86%E4%BA%AB%EF%BC%881%EF%BC%89/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="第一期分享给大家的是《80年代宣传画系列》"><a href="#第一期分享给大家的是《80年代宣传画系列》" class="headerlink" title="第一期分享给大家的是《80年代宣传画系列》"></a>第一期分享给大家的是《80年代宣传画系列》</h1>
@@ -153,26 +148,6 @@
     window.dplayers.push(player);
   })()
 </script>
-<hr>
-<div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div>
-<script>
-  (function() {
-    var player = new DPlayer({
-      "container": document.getElementById("dplayer1"),
-      "autoplay": true,
-      "hotkey": true,
-      "preload": "metadata",
-      "video": {
-        "url": "https://upos-hz-mirrorks3u.acgvideo.com/upgcxcode/03/43/29684303/29684303-1-64.flv?e=ig8euxZM2rNcNbN37WdVhoMgnwUVhwdEto8g5X10ugNcXBlqNxHxNEVE5XREto8KqJZHUa6m5J0SqE85tZvEuENvNo8g2ENvNo8i8o859r1qXg8xNEVE5XREto8GuFGv2U7SuxI72X6fTr859r1qXg8gNEVE5XREto8z5JZC2X2gkX5L5F1eTX1jkXlsTXHeux_f2o859IB_&uipk=5&nbs=1&deadline=1578802851&gen=playurl&os=ks3u&oi=3396639608&trid=2190a83a3b6f470786cda47e81eb047cu&platform=pc&upsig=b3509f36eb9c7e6930bc9b67c58fafc3&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,platform&mid=19130333"
-      }
-    });
-    window.dplayers || (window.dplayers = []);
-    window.dplayers.push(player);
-  })()
-</script>
-
-<hr>
-<div id="dplayer2" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div>
-<p>no url specified, no dplayer _(:3」∠)_</p>]]></content>
+<hr>]]></content>
   </entry>
 </search>
