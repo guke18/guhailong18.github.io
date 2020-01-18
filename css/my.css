@@ -72,11 +72,6 @@
   }
 }
 
-@media only screen and (max-width: 601px) {
-  .bg-cover .title {
-    font-size: 2.0rem;
-  }
-}
 
 @media only screen and (max-width: 601px) {
   header .brand-logo .logo-span {
