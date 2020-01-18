@@ -438,8 +438,8 @@
 
 
       <script>
-        // 每天切换 banner 图.  Switch banner image every day.
-        $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
+        // 每分钟切换 banner 图.  Switch banner image every day.
+        $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getMinutes() + '.jpg)');
       </script>
     </div>
   </div>
@@ -753,7 +753,7 @@
             verify: 'false' === 'true',
             visitor: 'true' === 'true',
             avatar: 'mm',
-            pageSize: '10',
+            pageSize: '12',
             lang: 'zh-cn',
             placeholder: 'just go go'
           });
@@ -966,7 +966,7 @@
 
 
 
-  <script type="text/javascript" size="150" alpha='0.5' zIndex="-1" src="/libs/background/ribbon.min.js" async="async"></script>
+  <script type="text/javascript" size="120" alpha='0.5' zIndex="-1" src="/libs/background/ribbon.min.js" async="async"></script>
 
 
 
