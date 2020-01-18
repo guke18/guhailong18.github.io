@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>寒假学习记录（数学建模篇）</title>
-    <url>/2020/01/17/%E5%AF%92%E5%81%87%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AF%87%EF%BC%89/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h1><script>
+    <title>2020寒假学习记录（爬虫篇）</title>
+    <url>/2020/01/18/2020%E5%AF%92%E5%81%87%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88%E7%88%AC%E8%99%AB%E7%AF%87%EF%BC%89/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -23,13 +23,16 @@
           });
       </script>]]></content>
       <tags>
-        <tag>数模</tag>
+        <tag>爬虫</tag>
       </tags>
   </entry>
   <entry>
-    <title>寒假学习记录（MAD篇）</title>
-    <url>/2020/01/17/%E5%AF%92%E5%81%87%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88MAD%E7%AF%87%EF%BC%89/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="1-人物定格描边"><a href="#1-人物定格描边" class="headerlink" title="1.人物定格描边"></a>1.人物定格描边</h2><script>
+    <title>2020寒假学习记录（数学建模篇）</title>
+    <url>/2020/01/17/2020%E5%AF%92%E5%81%87%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AF%87%EF%BC%89/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>数据处理</h1>
+<hr>
+<h1 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h1>
+<p>1.</p><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -50,6 +53,33 @@
       </script>]]></content>
       <tags>
         <tag>2020寒假学习</tag>
+        <tag>数模</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2020寒假学习记录（MAD篇）</title>
+    <url>/2020/01/17/2020%E5%AF%92%E5%81%87%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88MAD%E7%AF%87%EF%BC%89/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="1-人物定格描边"><a href="#1-人物定格描边" class="headerlink" title="1.人物定格描边"></a>1.人物定格描边</h2><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>]]></content>
+      <tags>
+        <tag>-2020寒假学习 -MAD</tag>
       </tags>
   </entry>
   <entry>
