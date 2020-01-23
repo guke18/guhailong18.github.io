@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://guhailong18.github.io/"/>
-  <updated>2020-01-21T15:38:51.868Z</updated>
+  <updated>2020-01-23T13:22:42.316Z</updated>
   <id>https://guhailong18.github.io/</id>
   
   <author>
@@ -17,11 +17,90 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>博客功能测试专用</title>
+    <link href="https://guhailong18.github.io/2020/01/23/%E5%8D%9A%E5%AE%A2%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95%E4%B8%93%E7%94%A8/"/>
+    <id>https://guhailong18.github.io/2020/01/23/%E5%8D%9A%E5%AE%A2%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95%E4%B8%93%E7%94%A8/</id>
+    <published>2020-01-23T13:18:06.000Z</published>
+    <updated>2020-01-23T13:22:42.316Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="测试" scheme="https://guhailong18.github.io/categories/%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="测试" scheme="https://guhailong18.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ONEdriver应用程序注册流程</title>
+    <link href="https://guhailong18.github.io/2020/01/23/ONEdriver%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E6%B3%A8%E5%86%8C%E6%B5%81%E7%A8%8B/"/>
+    <id>https://guhailong18.github.io/2020/01/23/ONEdriver%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E6%B3%A8%E5%86%8C%E6%B5%81%E7%A8%8B/</id>
+    <published>2020-01-23T06:19:21.000Z</published>
+    <updated>2020-01-23T06:20:51.264Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="分享网盘，ONEdrive" scheme="https://guhailong18.github.io/tags/%E5%88%86%E4%BA%AB%E7%BD%91%E7%9B%98%EF%BC%8CONEdrive/"/>
+    
+      <category term="pyone" scheme="https://guhailong18.github.io/tags/pyone/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>宝塔面板常用指令</title>
+    <link href="https://guhailong18.github.io/2020/01/23/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/"/>
+    <id>https://guhailong18.github.io/2020/01/23/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</id>
+    <published>2020-01-23T01:20:36.000Z</published>
+    <updated>2020-01-23T06:14:16.247Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="命令，宝塔" scheme="https://guhailong18.github.io/tags/%E5%91%BD%E4%BB%A4%EF%BC%8C%E5%AE%9D%E5%A1%94/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2020寒假建站记录</title>
     <link href="https://guhailong18.github.io/2020/01/21/2020%E5%AF%92%E5%81%87%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95/"/>
     <id>https://guhailong18.github.io/2020/01/21/2020%E5%AF%92%E5%81%87%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95/</id>
     <published>2020-01-21T14:51:19.000Z</published>
-    <updated>2020-01-21T15:38:51.868Z</updated>
+    <updated>2020-01-23T13:22:52.951Z</updated>
     
     <summary type="html">
     
