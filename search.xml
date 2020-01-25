@@ -1,6 +1,189 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>MongoDB常用命令</title>
+    <url>/2020/01/24/MongoDB%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>（1） 使用 Crtl+C 关闭</p>
+<p>（2） 使用 db.shutdownServer()命令 关闭</p>
+<p>备注：命令 db.shutdownServer()关闭命令只能在admin在使用。不然会出错</p>
+<p>（3） 使用 kill命令 关闭</p>
+<p>首先使用$ ps -ef | grep mongo查看MongoDB的相关进程</p>
+<p>然后使用 kill mongo命令</p>
+<p>备注：可以使用操作系统的 kill 命令，给 mongod 进程发送 SIGINT 或 SIGTERM 信号，即 “kill -2 PID,” 或者 “kill -15 PID“。</p>
+<p>建议不要使用 ”kill -9 pid“，因为如果 MongoDB 运行在没开启日志（–journal）的情况下，可能会造成数据损失。</p><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>]]></content>
+  </entry>
+  <entry>
+    <title>hexo主题魔改进阶篇（一）</title>
+    <url>/2020/01/24/hexo%E4%B8%BB%E9%A2%98%E9%AD%94%E6%94%B9%E8%BF%9B%E9%98%B6%E7%AF%87%EF%BC%88%E4%B8%80%EF%BC%89/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>]]></content>
+  </entry>
+  <entry>
+    <title>Windows路径含有带空格的目录/文件名的处理方法</title>
+    <url>/2020/01/24/Windows%E8%B7%AF%E5%BE%84%E5%90%AB%E6%9C%89%E5%B8%A6%E7%A9%BA%E6%A0%BC%E7%9A%84%E7%9B%AE%E5%BD%95-%E6%96%87%E4%BB%B6%E5%90%8D%E7%9A%84%E5%A4%84%E7%90%86%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="方法一-使用双引号"><a href="#方法一-使用双引号" class="headerlink" title="方法一 使用双引号"></a>方法一 使用双引号</h2>
+<h2 id="方法二-使用缩写"><a href="#方法二-使用缩写" class="headerlink" title="方法二 使用缩写"></a>方法二 使用缩写</h2>
+<p>采用八个字符，由目录名前六个字符（不计空格），加上波浪线<code>~</code>和数字（1<del>4）组成。如果多于四个文件使用相同的前六个字符，则由目录名的前两个字符结合四个字符的散列码，加上波浪线`</del><code>和数字1组成。
+    可以使用</code>dir /x`查看目录名缩写。</p>
+<p>例：</p><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>]]></content>
+      <tags>
+        <tag>window</tag>
+        <tag>命令行</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>pycharm插件推荐</title>
+    <url>/2020/01/24/pycharm%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>]]></content>
+  </entry>
+  <entry>
+    <title>markdown进阶用法</title>
+    <url>/2020/01/23/markdown%E8%BF%9B%E9%98%B6%E7%94%A8%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>]]></content>
+  </entry>
+  <entry>
+    <title>markdown基础用法</title>
+    <url>/2020/01/23/markdown%E5%9F%BA%E7%A1%80%E7%94%A8%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>]]></content>
+  </entry>
+  <entry>
+    <title>linux常用命令</title>
+    <url>/2020/01/23/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h6 id="1-查看linux服务器的系统信息-内核"><a href="#1-查看linux服务器的系统信息-内核" class="headerlink" title="1.查看linux服务器的系统信息(\内核**)"></a>1.查看<strong><em>linux</em></strong>服务器的系统信息(<strong><em>\</em>内核**</strong>)</h6>
+<p>在linux命令行下输入shell指令：uname -a</p>
+<h6 id="2-查看操作系统的版本-以redhat为例，其他的同理"><a href="#2-查看操作系统的版本-以redhat为例，其他的同理" class="headerlink" title="2.查看操作系统的版本(以redhat为例，其他的同理)"></a><strong><em>2.查看操作系统的版本</em></strong>(以redhat为例，其他的同理)</h6>
+<p>cat /etc/redhat-release</p><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>]]></content>
+      <tags>
+        <tag>命令</tag>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>博客功能测试专用</title>
     <url>/2020/01/23/%E5%8D%9A%E5%AE%A2%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95%E4%B8%93%E7%94%A8/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>视频播放测试：</p><script>
