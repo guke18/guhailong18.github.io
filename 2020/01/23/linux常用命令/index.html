@@ -4,11 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="keywords" content="linux常用命令, 动漫，编程，数学，读书">
-  <meta name="description" content="1.查看linux服务器的系统信息(\内核**)
+  <meta name="description" content="1.查看linux服务器的系统信息(内核)
 在linux命令行下输入shell指令：uname -a
 2.查看操作系统的版本(以redhat为例，其他的同理)
 cat /etc/redhat-release
-        docum">
+netstat、lsof查看端口">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -557,21 +557,21 @@ cat /etc/redhat-release
 
                 <div class="post-date info-break-policy">
                   <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                  2020-01-23
+                  2020-01-26
                 </div>
 
 
 
                 <div class="info-break-policy">
                   <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                  101
+                  594
                 </div>
 
 
 
                 <div class="info-break-policy">
                   <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                  1 分
+                  2 分
                 </div>
 
 
@@ -590,10 +590,52 @@ cat /etc/redhat-release
                 
                 
                 
-                <h6 id="1-查看linux服务器的系统信息-内核"><a href="#1-查看linux服务器的系统信息-内核" class="headerlink" title="1.查看linux服务器的系统信息(\内核**)"></a>1.查看<strong><em>linux</em></strong>服务器的系统信息(<strong><em>\</em>内核**</strong>)</h6>
+                <h6 id="1-查看linux服务器的系统信息-内核"><a href="#1-查看linux服务器的系统信息-内核" class="headerlink" title="1.查看linux服务器的系统信息(内核)"></a>1.查看<strong><em>linux</em></strong>服务器的系统信息(<strong><em>内核</em></strong>)</h6>
                 <p>在linux命令行下输入shell指令：uname -a</p>
                 <h6 id="2-查看操作系统的版本-以redhat为例，其他的同理"><a href="#2-查看操作系统的版本-以redhat为例，其他的同理" class="headerlink" title="2.查看操作系统的版本(以redhat为例，其他的同理)"></a><strong><em>2.查看操作系统的版本</em></strong>(以redhat为例，其他的同理)</h6>
                 <p>cat /etc/redhat-release</p>
+                <h2 id="netstat、lsof查看端口"><a href="#netstat、lsof查看端口" class="headerlink" title="netstat、lsof查看端口"></a>netstat、lsof查看端口</h2>
+                <h3 id="netstat"><a href="#netstat" class="headerlink" title="netstat"></a>netstat</h3>
+                <p>netstat用来查看系统当前系统网络状态信息，包括端口，连接情况等，常用方式如下：</p>
+                <ul>
+                  <li>-t : 指明显示TCP端口</li>
+                  <li>-u : 指明显示UDP端口</li>
+                  <li>-l : 仅显示监听套接字(LISTEN状态的套接字)</li>
+                  <li>-p : 显示进程标识符和程序名称，每一个套接字/端口都属于一个程序</li>
+                  <li>-n : 不进行DNS解析</li>
+                  <li>-a 显示所有连接的端口</li>
+                </ul>
+                <p>直接查看端口命令。netstat -an | grep 22<br> note：22就是改为要查询的端口</p>
+                <h3 id="lsof"><a href="#lsof" class="headerlink" title="lsof"></a>lsof</h3>
+                <p><a href="http://www.cnblogs.com/peida/archive/2013/02/26/2932972.html" target="_blank" rel="noopener">参考链接</a><br> lsof的作用是列出当前系统打开文件(list open files)，不过通过-i参数也能查看端口的连接情况，-i后跟冒号端口可以查看指定端口信息，直接-i是系统当前所有打开的端口</p>
+                <ul>
+                  <li>-a 列出打开文件存在的进程</li>
+                  <li>-c&lt;进程名&gt; 列出指定进程所打开的文件</li>
+                  <li>-g 列出GID号进程详情</li>
+                  <li>-d&lt;文件号&gt; 列出占用该文件号的进程</li>
+                  <li>+d&lt;目录&gt; 列出目录下被打开的文件</li>
+                  <li>+D&lt;目录&gt; 递归列出目录下被打开的文件</li>
+                  <li>-n&lt;目录&gt; 列出使用NFS的文件</li>
+                  <li>-i&lt;条件&gt; 列出符合条件的进程。（4、6、协议、:端口、 @ip ）</li>
+                  <li>-p&lt;进程号&gt; 列出指定进程号所打开的文件</li>
+                  <li>-u 列出UID号进程详情</li>
+                  <li>-h 显示帮助信息</li>
+                  <li>-v 显示版本信息</li>
+                </ul>
+                <p>lsof -i:22 #查看22端口连接情况，默认为sshd端口</p>
+                <h3 id=""><a href="#" class="headerlink" title=""></a></h3>
+                <ol>
+                  <li>使用lsof命令查看那条线程占用了25555端口</li>
+                  <li>执行kill命令杀掉那条线程 如： kill 15889</li>
+                </ol>
+                <p>（注：如果是centos系统的话，数字填的是PID下面的，其他系统类似）</p>
+                <h6 id="添加环境变量"><a href="#添加环境变量" class="headerlink" title="添加环境变量"></a>添加环境变量</h6>
+                <pre><code>export PATH=$PATH:/要添加的路径</code></pre>
+                <p>或者 </p>
+                <pre><code>export PATH=/要添加的路径$PATH</code></pre>
+                <p>注意PATH后没有空格</p>
+                <p>例：</p>
+                <pre><code>export PATH="/home/ubuntu/anaconda3/bin:$PATH"</code></pre>
                 <script>
                   document.querySelectorAll('.github-emoji')
                     .forEach(el => {
@@ -1388,7 +1430,7 @@ cat /etc/redhat-release
         |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
         <br>
 
-        &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">3.9k</span>&nbsp;字
+        &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">4.8k</span>&nbsp;字
 
 
 
