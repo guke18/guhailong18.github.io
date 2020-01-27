@@ -564,14 +564,14 @@ netstat、lsof查看端口">
 
                 <div class="info-break-policy">
                   <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                  594
+                  886
                 </div>
 
 
 
                 <div class="info-break-policy">
                   <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                  2 分
+                  3 分
                 </div>
 
 
@@ -629,13 +629,39 @@ netstat、lsof查看端口">
                   <li>执行kill命令杀掉那条线程 如： kill 15889</li>
                 </ol>
                 <p>（注：如果是centos系统的话，数字填的是PID下面的，其他系统类似）</p>
-                <h6 id="添加环境变量"><a href="#添加环境变量" class="headerlink" title="添加环境变量"></a>添加环境变量</h6>
+                <h3 id="添加环境变量"><a href="#添加环境变量" class="headerlink" title="添加环境变量"></a>添加环境变量</h3>
+                <h6 id="直接修改-PATH值："><a href="#直接修改-PATH值：" class="headerlink" title="直接修改$PATH值："></a>直接修改$PATH值：</h6>
                 <pre><code>export PATH=$PATH:/要添加的路径</code></pre>
                 <p>或者 </p>
                 <pre><code>export PATH=/要添加的路径$PATH</code></pre>
                 <p>注意PATH后没有空格</p>
                 <p>例：</p>
                 <pre><code>export PATH="/home/ubuntu/anaconda3/bin:$PATH"</code></pre>
+                <p>生效方法：立即生效</p>
+                <p>有效期限：临时改变，只能在当前的终端窗口中有效，当前窗口关闭后就会恢复原有的path配置</p>
+                <p>用户局限：仅对当前用户</p>
+                <h6 id="通过修改-bashrc文件：-bashrc文件在根目录下"><a href="#通过修改-bashrc文件：-bashrc文件在根目录下" class="headerlink" title="通过修改.bashrc文件：(.bashrc文件在根目录下)"></a>通过修改.bashrc文件：(.bashrc文件在根目录下)</h6>
+                <p>vi .bashrc //编辑.bashrc文件</p>
+                <p>//在最后一行添上：</p>
+                <p>export PATH=$PATH:/xxx/xxx ///xxx/xxx位需要加入的环境变量地址 等号两边没空格</p>
+                <p>生效方法：（有以下两种）</p>
+                <p>..关闭当前终端窗口，重新打开一个新终端窗口就能生效</p>
+                <p>..输入“source .bashrc”命令，立即生效</p>
+                <p>有效期限：永久有效</p>
+                <p>用户局限：仅对当前用户</p>
+                <h6 id="通过修改profile文件：（profile文件在-etc目录下）"><a href="#通过修改profile文件：（profile文件在-etc目录下）" class="headerlink" title="通过修改profile文件：（profile文件在/etc目录下）"></a>通过修改profile文件：（profile文件在/etc目录下）</h6>
+                <p>vi /etc/profile //编辑profile文件</p>
+                <p>//在最后一行添上：</p>
+                <p>export PATH=$PATH:/xxx/xxx</p>
+                <p>生效方法：系统重启</p>
+                <p>有效期限：永久有效</p>
+                <p>用户局限：对所有用户</p>
+                <h6 id="通过修改environment文件：（environment文件在-etc目录下）"><a href="#通过修改environment文件：（environment文件在-etc目录下）" class="headerlink" title="通过修改environment文件：（environment文件在/etc目录下）"></a>通过修改environment文件：（environment文件在/etc目录下）</h6>
+                <p>vi /etc/profile //编辑profile文件</p>
+                <p>在PATH=/·········中加入“:/xxx/xxx”</p>
+                <p>生效方法：系统重启</p>
+                <p>有效期限：永久有效</p>
+                <p>用户局限：对所有用户</p>
                 <script>
                   document.querySelectorAll('.github-emoji')
                     .forEach(el => {
@@ -1430,7 +1456,7 @@ netstat、lsof查看端口">
         |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
         <br>
 
-        &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">4.8k</span>&nbsp;字
+        &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">5.5k</span>&nbsp;字
 
 
 

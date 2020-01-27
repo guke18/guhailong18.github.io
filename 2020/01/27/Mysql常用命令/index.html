@@ -3,8 +3,13 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="keywords" content="娱乐, 动漫，编程，数学，读书">
-  <meta name="description" content="娱乐 | 古客">
+  <meta name="keywords" content="Mysql常用命令, 动漫，编程，数学，读书">
+  <meta name="description" content="查看mysql 默认端口号和修改端口号
+先登录mysql
+mysql -u root -p
+再使用命令查看端口号
+show global variables like &#39;port&#39;;
+若要修改端口，编辑/etc/my.cnf文件（windo">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -12,7 +17,7 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <title>娱乐 | 古客</title>
+  <title>Mysql常用命令 | 古客</title>
   <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/favicon.png">
 
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/libs/awesome/css/all.css">
@@ -405,12 +410,12 @@
     </nav>
 
   </header>
-  <div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/medias/featureimages/7.jpg')">
+  <div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/medias/featureimages/21.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
       <div class="row">
         <div class="col s12 m12 l12">
           <div class="brand">
-            <h1 class="description center-align post-title">娱乐</h1>
+            <h1 class="description center-align post-title">Mysql常用命令</h1>
           </div>
         </div>
       </div>
@@ -525,7 +530,19 @@
                 <div class="col s7">
 
                   <div class="article-tag">
-                    <span class="chip bg-color">无标签</span>
+
+                    <a href="/tags/%E5%91%BD%E4%BB%A4/">
+                      <span class="chip bg-color">命令</span>
+                    </a>
+
+                    <a href="/tags/MySQL/">
+                      <span class="chip bg-color">MySQL</span>
+                    </a>
+
+                    <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">
+                      <span class="chip bg-color">数据库</span>
+                    </a>
+
                   </div>
 
                 </div>
@@ -538,21 +555,21 @@
 
                 <div class="post-date info-break-policy">
                   <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                  2020-01-15
+                  2020-01-27
                 </div>
 
 
 
                 <div class="post-date info-break-policy">
                   <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                  2020-01-15
+                  2020-01-27
                 </div>
 
 
 
                 <div class="info-break-policy">
                   <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                  52
+                  270
                 </div>
 
 
@@ -578,6 +595,32 @@
                 
                 
                 
+                <h2 id="查看mysql-默认端口号和修改端口号"><a href="#查看mysql-默认端口号和修改端口号" class="headerlink" title="查看mysql 默认端口号和修改端口号"></a>查看mysql 默认端口号和修改端口号</h2>
+                <p>先登录mysql</p>
+                <pre><code>mysql -u root -p</code></pre>
+                <p>再使用命令查看端口号</p>
+                <pre><code>show global variables like 'port';</code></pre>
+                <p>若要修改端口，编辑/etc/my.cnf文件（window可直接编辑）</p>
+                <pre><code>vi my.cnf</code></pre>
+                <p>重新启动mysql</p>
+                <pre><code>/etc/init.d/mysqld restart  
+或 service mysql restart</code></pre>
+                <h2 id="显示所有的数据库"><a href="#显示所有的数据库" class="headerlink" title="显示所有的数据库"></a><strong>显示所有的数据库</strong></h2>
+                <p>登录MySQL，输入：</p>
+                <pre><code>show databases;</code></pre>
+                <h4 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a><strong>创建数据库</strong></h4>
+                <p>创建数据库的命令为：</p>
+                <pre><code>create database &lt;数据库名&gt;</code></pre>
+                <h4 id="删除数据库"><a href="#删除数据库" class="headerlink" title="删除数据库"></a><strong>删除数据库</strong></h4>
+                <pre><code>drop database &lt;数据库名&gt;；</code></pre>
+                <p>例：</p>
+                <pre><code>drop database mydatabase;</code></pre>
+                <h4 id="打开数据库"><a href="#打开数据库" class="headerlink" title="打开数据库"></a><strong>打开数据库</strong></h4>
+                <pre><code>use mydatabase;</code></pre>
+                <p>mydatabase为你的数据库名</p>
+                <h4 id="创建数据库表"><a href="#创建数据库表" class="headerlink" title="创建数据库表"></a><strong>创建数据库表</strong></h4>
+                <p>打开数据库后，可以使用创建数据表命令，在已打开的数据库中创建一个新表。创建一个新表的命令为：</p>
+                <pre><code>create table &lt;表名&gt; ( &lt;字段名1&gt; &lt;类型1&gt; [,..&lt;字段名n&gt; &lt;类型n&gt;]);</code></pre>
                 <script>
                   document.querySelectorAll('.github-emoji')
                     .forEach(el => {
@@ -621,7 +664,7 @@
                     </i>
                   </span>
                   <span class="reprint-info">
-                    <a href="https://guhailong18.github.io/%E5%A8%B1%E4%B9%90/index.html">https://guhailong18.github.io/%E5%A8%B1%E4%B9%90/index.html</a>
+                    <a href="https://guhailong18.github.io/2020/01/27/Mysql%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">https://guhailong18.github.io/2020/01/27/Mysql%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</a>
                   </span>
                 </div>
                 <div class="reprint__notice">
@@ -660,7 +703,19 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
 
                   <div class="article-tag">
-                    <span class="chip bg-color">无标签</span>
+
+                    <a href="/tags/%E5%91%BD%E4%BB%A4/">
+                      <span class="chip bg-color">命令</span>
+                    </a>
+
+                    <a href="/tags/MySQL/">
+                      <span class="chip bg-color">MySQL</span>
+                    </a>
+
+                    <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">
+                      <span class="chip bg-color">数据库</span>
+                    </a>
+
                   </div>
 
                 </div>
@@ -1096,18 +1151,17 @@
           <article id="prenext-posts" class="prev-next articles">
             <div class="row article-row">
 
-              <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+              <div class="article col s12 m6" data-aos="fade-up">
                 <div class="article-badge left-badge text-color">
-                  <i class="far fa-dot-circle"></i>&nbsp;本篇
-                </div>
+                  <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
                 <div class="card">
-                  <a href="/%E5%A8%B1%E4%B9%90/index.html">
+                  <a href="/2020/01/27/python%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%80%E8%AE%B0/">
                     <div class="card-image">
 
 
-                      <img src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/medias/featureimages/7.jpg" class="responsive-img" alt="娱乐">
+                      <img src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/medias/featureimages/1.jpg" class="responsive-img" alt="python连接数据库简记">
 
-                      <span class="card-title">娱乐</span>
+                      <span class="card-title">python连接数据库简记</span>
                     </div>
                   </a>
                   <div class="card-content article-content">
@@ -1121,7 +1175,7 @@
                     </div>
                     <div class="publish-info">
                       <span class="publish-date">
-                        <i class="far fa-clock fa-fw icon-date"></i>2020-01-15
+                        <i class="far fa-clock fa-fw icon-date"></i>2020-01-27
                       </span>
                       <span class="publish-author">
 
@@ -1131,7 +1185,6 @@
                       </span>
                     </div>
                   </div>
-
 
                 </div>
               </div>
@@ -1139,16 +1192,16 @@
 
               <div class="article col s12 m6" data-aos="fade-up">
                 <div class="article-badge right-badge text-color">
-                  本篇&nbsp;<i class="far fa-dot-circle"></i>
+                  下一篇&nbsp;<i class="fas fa-chevron-right"></i>
                 </div>
                 <div class="card">
-                  <a href="/%E5%A8%B1%E4%B9%90/index.html">
+                  <a href="/2020/01/26/JavaScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
                     <div class="card-image">
 
 
-                      <img src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/medias/featureimages/7.jpg" class="responsive-img" alt="娱乐">
+                      <img src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/medias/featureimages/20.jpg" class="responsive-img" alt="JavaScript学习笔记">
 
-                      <span class="card-title">娱乐</span>
+                      <span class="card-title">JavaScript学习笔记</span>
                     </div>
                   </a>
                   <div class="card-content article-content">
@@ -1162,7 +1215,7 @@
                     </div>
                     <div class="publish-info">
                       <span class="publish-date">
-                        <i class="far fa-clock fa-fw icon-date"></i>2020-01-15
+                        <i class="far fa-clock fa-fw icon-date"></i>2020-01-26
                       </span>
                       <span class="publish-author">
 
@@ -1172,7 +1225,6 @@
                       </span>
                     </div>
                   </div>
-
 
                 </div>
               </div>

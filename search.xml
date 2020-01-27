@@ -1,6 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>python连接数据库简记</title>
+    <url>/2020/01/27/python%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%80%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>]]></content>
+  </entry>
+  <entry>
+    <title>Mysql常用命令</title>
+    <url>/2020/01/27/Mysql%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="查看mysql-默认端口号和修改端口号"><a href="#查看mysql-默认端口号和修改端口号" class="headerlink" title="查看mysql 默认端口号和修改端口号"></a>查看mysql 默认端口号和修改端口号</h2>
+<p>先登录mysql</p>
+<pre><code>mysql -u root -p</code></pre>
+<p>再使用命令查看端口号</p>
+<pre><code>show global variables like 'port';</code></pre>
+<p>若要修改端口，编辑/etc/my.cnf文件（window可直接编辑）</p>
+<pre><code>vi my.cnf</code></pre>
+<p>重新启动mysql</p>
+<pre><code>/etc/init.d/mysqld restart  
+或 service mysql restart</code></pre>
+<h2 id="显示所有的数据库"><a href="#显示所有的数据库" class="headerlink" title="显示所有的数据库"></a><strong>显示所有的数据库</strong></h2>
+<p>登录MySQL，输入：</p>
+<pre><code>show databases;</code></pre>
+<h4 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a><strong>创建数据库</strong></h4>
+<p>创建数据库的命令为：</p>
+<pre><code>create database &lt;数据库名&gt;</code></pre>
+<h4 id="删除数据库"><a href="#删除数据库" class="headerlink" title="删除数据库"></a><strong>删除数据库</strong></h4>
+<pre><code>drop database &lt;数据库名&gt;；</code></pre>
+<p>例：</p>
+<pre><code>drop database mydatabase;</code></pre>
+<h4 id="打开数据库"><a href="#打开数据库" class="headerlink" title="打开数据库"></a><strong>打开数据库</strong></h4>
+<pre><code>use mydatabase;</code></pre>
+<p>mydatabase为你的数据库名</p>
+<h4 id="创建数据库表"><a href="#创建数据库表" class="headerlink" title="创建数据库表"></a><strong>创建数据库表</strong></h4>
+<p>打开数据库后，可以使用创建数据表命令，在已打开的数据库中创建一个新表。创建一个新表的命令为：</p>
+<pre><code>create table &lt;表名&gt; ( &lt;字段名1&gt; &lt;类型1&gt; [,..&lt;字段名n&gt; &lt;类型n&gt;]);</code></pre><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>]]></content>
+      <tags>
+        <tag>命令</tag>
+        <tag>MySQL</tag>
+        <tag>数据库</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JavaScript学习笔记</title>
+    <url>/2020/01/26/JavaScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>]]></content>
+  </entry>
+  <entry>
     <title>Anaconda的常用命令及使用技巧</title>
     <url>/2020/01/26/Anaconda%E7%9A%84%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%8F%8A%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="Anaconda的常用命令"><a href="#Anaconda的常用命令" class="headerlink" title="Anaconda的常用命令"></a>Anaconda的常用命令</h2>
@@ -418,13 +517,39 @@
   <li>执行kill命令杀掉那条线程 如： kill 15889</li>
 </ol>
 <p>（注：如果是centos系统的话，数字填的是PID下面的，其他系统类似）</p>
-<h6 id="添加环境变量"><a href="#添加环境变量" class="headerlink" title="添加环境变量"></a>添加环境变量</h6>
+<h3 id="添加环境变量"><a href="#添加环境变量" class="headerlink" title="添加环境变量"></a>添加环境变量</h3>
+<h6 id="直接修改-PATH值："><a href="#直接修改-PATH值：" class="headerlink" title="直接修改$PATH值："></a>直接修改$PATH值：</h6>
 <pre><code>export PATH=$PATH:/要添加的路径</code></pre>
 <p>或者 </p>
 <pre><code>export PATH=/要添加的路径$PATH</code></pre>
 <p>注意PATH后没有空格</p>
 <p>例：</p>
-<pre><code>export PATH="/home/ubuntu/anaconda3/bin:$PATH"</code></pre><script>
+<pre><code>export PATH="/home/ubuntu/anaconda3/bin:$PATH"</code></pre>
+<p>生效方法：立即生效</p>
+<p>有效期限：临时改变，只能在当前的终端窗口中有效，当前窗口关闭后就会恢复原有的path配置</p>
+<p>用户局限：仅对当前用户</p>
+<h6 id="通过修改-bashrc文件：-bashrc文件在根目录下"><a href="#通过修改-bashrc文件：-bashrc文件在根目录下" class="headerlink" title="通过修改.bashrc文件：(.bashrc文件在根目录下)"></a>通过修改.bashrc文件：(.bashrc文件在根目录下)</h6>
+<p>vi .bashrc //编辑.bashrc文件</p>
+<p>//在最后一行添上：</p>
+<p>export PATH=$PATH:/xxx/xxx ///xxx/xxx位需要加入的环境变量地址 等号两边没空格</p>
+<p>生效方法：（有以下两种）</p>
+<p>..关闭当前终端窗口，重新打开一个新终端窗口就能生效</p>
+<p>..输入“source .bashrc”命令，立即生效</p>
+<p>有效期限：永久有效</p>
+<p>用户局限：仅对当前用户</p>
+<h6 id="通过修改profile文件：（profile文件在-etc目录下）"><a href="#通过修改profile文件：（profile文件在-etc目录下）" class="headerlink" title="通过修改profile文件：（profile文件在/etc目录下）"></a>通过修改profile文件：（profile文件在/etc目录下）</h6>
+<p>vi /etc/profile //编辑profile文件</p>
+<p>//在最后一行添上：</p>
+<p>export PATH=$PATH:/xxx/xxx</p>
+<p>生效方法：系统重启</p>
+<p>有效期限：永久有效</p>
+<p>用户局限：对所有用户</p>
+<h6 id="通过修改environment文件：（environment文件在-etc目录下）"><a href="#通过修改environment文件：（environment文件在-etc目录下）" class="headerlink" title="通过修改environment文件：（environment文件在/etc目录下）"></a>通过修改environment文件：（environment文件在/etc目录下）</h6>
+<p>vi /etc/profile //编辑profile文件</p>
+<p>在PATH=/·········中加入“:/xxx/xxx”</p>
+<p>生效方法：系统重启</p>
+<p>有效期限：永久有效</p>
+<p>用户局限：对所有用户</p><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
