@@ -2,8 +2,8 @@
 <search>
   <entry>
     <title>多博客及双线程部署</title>
-    <url>/posts/undefined/</url>
-    <content><![CDATA[<script>
+    <url>/posts/a6bb7c19/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -25,7 +25,7 @@
   </entry>
   <entry>
     <title>python连接数据库简记</title>
-    <url>/posts/undefined/</url>
+    <url>/posts/82e025b7/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -48,7 +48,7 @@
   </entry>
   <entry>
     <title>Mysql常用命令</title>
-    <url>/posts/undefined/</url>
+    <url>/posts/64129a24/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="查看mysql-默认端口号和修改端口号"><a href="#查看mysql-默认端口号和修改端口号" class="headerlink" title="查看mysql 默认端口号和修改端口号"></a>查看mysql 默认端口号和修改端口号</h2>
 <p>先登录mysql</p>
 <pre><code>mysql -u root -p</code></pre>
@@ -101,7 +101,7 @@
   </entry>
   <entry>
     <title>JavaScript学习笔记</title>
-    <url>/posts/undefined/</url>
+    <url>/posts/2b866d21/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -124,7 +124,7 @@
   </entry>
   <entry>
     <title>Anaconda的常用命令及使用技巧</title>
-    <url>/posts/undefined/</url>
+    <url>/posts/a4a2b1a3/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="Anaconda的常用命令"><a href="#Anaconda的常用命令" class="headerlink" title="Anaconda的常用命令"></a>Anaconda的常用命令</h2>
 <ol>
   <li>
@@ -286,14 +286,14 @@
           });
       </script>]]></content>
       <tags>
-        <tag>命令</tag>
         <tag>anaconda</tag>
         <tag>ubuntu</tag>
+        <tag>命令</tag>
       </tags>
   </entry>
   <entry>
     <title>python2与python3共存的部分注意事项</title>
-    <url>/posts/undefined/</url>
+    <url>/posts/a51989a4/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h6 id="若Python2-和-Python3-同时有-pip，则使用方法如下："><a href="#若Python2-和-Python3-同时有-pip，则使用方法如下：" class="headerlink" title="若Python2 和 Python3 同时有 pip，则使用方法如下："></a>若Python2 和 Python3 同时有 pip，则使用方法如下：</h6>
 <p>Python2：</p>
 <pre><code>python2 -m pip install XXX</code></pre>
@@ -324,7 +324,7 @@
   </entry>
   <entry>
     <title>Docker常用命令</title>
-    <url>/posts/undefined/</url>
+    <url>/posts/29dc6fe8/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><strong>docker images :</strong> 列出本地镜像。</p><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -347,7 +347,7 @@
   </entry>
   <entry>
     <title>MongoDB常用命令</title>
-    <url>/posts/undefined/</url>
+    <url>/posts/c08448a5/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>（1） 使用 Crtl+C 关闭</p>
 <p>（2） 使用 db.shutdownServer()命令 关闭</p>
 <p>备注：命令 db.shutdownServer()关闭命令只能在admin在使用。不然会出错</p>
@@ -377,7 +377,7 @@
   </entry>
   <entry>
     <title>hexo主题魔改进阶篇（一）</title>
-    <url>/posts/undefined/</url>
+    <url>/posts/28a773c7/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -400,7 +400,7 @@
   </entry>
   <entry>
     <title>Windows路径含有带空格的目录/文件名的处理方法</title>
-    <url>/posts/undefined/</url>
+    <url>/posts/eba167b2/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="方法一-使用双引号"><a href="#方法一-使用双引号" class="headerlink" title="方法一 使用双引号"></a>方法一 使用双引号</h2>
 <h2 id="方法二-使用缩写"><a href="#方法二-使用缩写" class="headerlink" title="方法二 使用缩写"></a>方法二 使用缩写</h2>
 <p>采用八个字符，由目录名前六个字符（不计空格），加上波浪线<code>~</code>和数字（1<del>4）组成。如果多于四个文件使用相同的前六个字符，则由目录名的前两个字符结合四个字符的散列码，加上波浪线`</del><code>和数字1组成。
@@ -431,7 +431,7 @@
   </entry>
   <entry>
     <title>pycharm插件推荐</title>
-    <url>/posts/undefined/</url>
+    <url>/posts/f650c5a8/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -454,7 +454,7 @@
   </entry>
   <entry>
     <title>markdown进阶用法</title>
-    <url>/posts/undefined/</url>
+    <url>/posts/77428012/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -477,7 +477,7 @@
   </entry>
   <entry>
     <title>markdown基础用法</title>
-    <url>/posts/undefined/</url>
+    <url>/posts/561d6569/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -500,7 +500,7 @@
   </entry>
   <entry>
     <title>linux常用命令</title>
-    <url>/posts/undefined/</url>
+    <url>/posts/fe4ef317/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h6 id="1-查看linux服务器的系统信息-内核"><a href="#1-查看linux服务器的系统信息-内核" class="headerlink" title="1.查看linux服务器的系统信息(内核)"></a>1.查看<strong><em>linux</em></strong>服务器的系统信息(<strong><em>内核</em></strong>)</h6>
 <p>在linux命令行下输入shell指令：uname -a</p>
 <h6 id="2-查看操作系统的版本-以redhat为例，其他的同理"><a href="#2-查看操作系统的版本-以redhat为例，其他的同理" class="headerlink" title="2.查看操作系统的版本(以redhat为例，其他的同理)"></a><strong><em>2.查看操作系统的版本</em></strong>(以redhat为例，其他的同理)</h6>
@@ -598,7 +598,7 @@
   </entry>
   <entry>
     <title>博客功能测试专用</title>
-    <url>/posts/undefined/</url>
+    <url>/posts/35189442/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>视频播放测试：</p><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -627,7 +627,7 @@
   </entry>
   <entry>
     <title>ONEdriver应用程序注册流程</title>
-    <url>/posts/undefined/</url>
+    <url>/posts/dcefea28/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h4 id="二、如何获取应用机密-client-secret-和应用-ID-client-id-？"><a href="#二、如何获取应用机密-client-secret-和应用-ID-client-id-？" class="headerlink" title="二、如何获取应用机密(client secret)和应用 ID(client_id)？"></a>二、如何获取应用机密(client secret)和应用 ID(client_id)？</h4>
 <ol>
   <li>
@@ -681,7 +681,7 @@
   </entry>
   <entry>
     <title>宝塔面板常用指令</title>
-    <url>/posts/undefined/</url>
+    <url>/posts/2db0a1e1/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="SSH终端输入："><a href="#SSH终端输入：" class="headerlink" title="SSH终端输入："></a>SSH终端输入：</h3>
 <p>1.查看面板入口：</p>
 <pre><code>/etc/init.d/bt default</code></pre>
@@ -768,7 +768,7 @@ firewall-cmd --reload</code></pre>
   </entry>
   <entry>
     <title>2020寒假建站记录</title>
-    <url>/posts/undefined/</url>
+    <url>/posts/f0e4e3b5/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>搭建以下网站的前提条件：</p>
 <p>1, 一个服务器</p>
 <p>2，一个域名（便宜的有1元一年，像我买的就是)</p>
@@ -794,7 +794,7 @@ firewall-cmd --reload</code></pre>
 <p>一个重量级的博客</p>
 <p>优点：功能齐全，调节方便，可在线编辑</p>
 <p>缺点：过于臃肿，时常崩溃，哭了（应该是我的服务器的问题，一核1G的承受不住啊），服务器好的大佬建议使用这个，部分插件及主题要钱</p>
-<p><img src="/2020/01/21/2020%E5%AF%92%E5%81%87%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95/10A4F57B.jpg" alt="10A4F57B"></p>
+<p><img src="/posts/f0e4e3b5/10A4F57B.jpg" alt="10A4F57B"></p>
 <p>基于宝塔，AWS服务器，WordPress框架</p>
 <h6 id="第五个搭建的网站是："><a href="#第五个搭建的网站是：" class="headerlink" title="第五个搭建的网站是："></a>第五个搭建的网站是：</h6>
 <p><a href="http://d.dream18.xyz" target="_blank" rel="noopener">http://d.dream18.xyz</a></p>
@@ -818,9 +818,9 @@ firewall-cmd --reload</code></pre>
 <hr>
 <p>如果有小伙伴对以上那个网站搭建感兴趣的请在下方留言，如果我有时间的话，可以出一个搭建过程或是指导建议！</p>
 <p>最后祝大家鼠年大吉！！！</p>
-<p><img src="/2020/01/21/2020%E5%AF%92%E5%81%87%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95/10B7F0DB.gif" alt="10B7F0DB"></p>
+<p><img src="/posts/f0e4e3b5/10B7F0DB.gif" alt="10B7F0DB"></p>
 <p>再来一张！！！</p>
-<p><img src="/2020/01/21/2020%E5%AF%92%E5%81%87%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95/10B7B122.gif" alt="10B7B122"></p><script>
+<p><img src="/posts/f0e4e3b5/10B7B122.gif" alt="10B7B122"></p><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -846,16 +846,16 @@ firewall-cmd --reload</code></pre>
   </entry>
   <entry>
     <title>Chrome浏览器一个有意思的彩蛋</title>
-    <url>/posts/undefined/</url>
+    <url>/posts/a5735571/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>某一天再看公众号文章的时候突然发现，chrome浏览器竟然给用户设置了一个彩蛋（也可能还有很多我还没看到或被发现），一起看看吧！</p>
 <p>打开谷歌浏览器，假如网线出现问题、无法正常访问网页时，就会出现以下提示：<strong>未连接到互联网，请重试…</strong></p>
-<p><img src="/2020/01/20/Chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%80%E4%B8%AA%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E5%BD%A9%E8%9B%8B/Snipaste_2020-01-20_19-25-59.png" alt="Snipaste_2020-01-20_19-25-59"></p>
+<p><img src="/posts/a5735571/Snipaste_2020-01-20_19-25-59.png" alt="Snipaste_2020-01-20_19-25-59"></p>
 <p>相信使用过chrome浏览器的用户大部分都看到过过这种图片，一般出现于断网的情况，但想必大部分人都不会想到这小小的恐龙竟然是一个小游戏！</p>
 <p>处于这种状态下，我们按键盘的“<strong>↑</strong>”键，恐龙就会直接动起来，现在你就进入了“恐龙越障碍”的小游戏…</p>
 <p>当然，联网状态下也能直接玩，通过谷歌浏览器访问以下网站即可。</p>
 <p><strong>→</strong> chrome://dino/</p>
 <p>（复制网址，通过浏览器打开）</p>
-<p><img src="/2020/01/20/Chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%80%E4%B8%AA%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E5%BD%A9%E8%9B%8B/1.gif" alt="1"></p>
+<p><img src="/posts/a5735571/1.gif" alt="1"></p>
 <p>是不是挺有意思的呢，没网的时候玩这个游戏说不定可以给你带来一丝慰藉！</p>
 <p>(σﾟ∀ﾟ)σ..:*☆哎哟不错哦</p><script>
         document.querySelectorAll('.github-emoji')
@@ -883,7 +883,7 @@ firewall-cmd --reload</code></pre>
   </entry>
   <entry>
     <title>我们生活的世界到底是几维的？</title>
-    <url>/posts/undefined/</url>
+    <url>/posts/8902adc/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>身为科普类作品，为了使受众面更广，所以远方客（我）会从最基本的概念开始，以确保大家都可以听懂，学到知识，不要嫌弃我话痨哦，那么我们就开始啦！</p>
 <p>在<a href="https://baike.baidu.com/item/物理学/313183" target="_blank" rel="noopener">物理学</a>和<a href="https://baike.baidu.com/item/哲学/140608" target="_blank" rel="noopener">哲学</a>的领域内，指独立的时空坐标的数目</p>
 <p>如果用较为传统的观念想，我们所处的空间是三维的，而如果加上时间的话，便是四维的。可能有人会提出一个疑问，为什么要加上时间这个维度呢？</p>
@@ -915,7 +915,7 @@ firewall-cmd --reload</code></pre>
   </entry>
   <entry>
     <title>2020寒假学习记录（爬虫篇）</title>
-    <url>/posts/undefined/</url>
+    <url>/posts/ff1e4930/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -941,7 +941,7 @@ firewall-cmd --reload</code></pre>
   </entry>
   <entry>
     <title>2020寒假学习记录（数学建模篇）</title>
-    <url>/posts/undefined/</url>
+    <url>/posts/7cee0e0f/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>
   <center>数据处理</center>
 </h1>
@@ -979,7 +979,7 @@ firewall-cmd --reload</code></pre>
   </entry>
   <entry>
     <title>2020寒假学习记录（MAD篇）</title>
-    <url>/posts/undefined/</url>
+    <url>/posts/8c706961/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="1-人物定格描边"><a href="#1-人物定格描边" class="headerlink" title="1.人物定格描边"></a>1.人物定格描边</h2><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -1006,7 +1006,7 @@ firewall-cmd --reload</code></pre>
   </entry>
   <entry>
     <title>读《人间失格》-手札有感</title>
-    <url>/posts/undefined/</url>
+    <url>/posts/a6a55fc/</url>
     <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="非常抱歉, 这个密码看着不太对, 请您再试试吧." data-whm="很抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容."><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="您好, 这里需要密码才能查看哦." /><label>您好, 这里需要密码才能查看哦.</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="05e414f9dda1980413520871c6083fca9bad9022c89a1130d45e5bc8d3576c47">f2f5a9452dd8b166e2e261132d2a34e56a25d55b5cb940efef431ed7a9ffccf25d8505a1838ce3e1bd7aa1e1345de9ec0c4d3116c35d213fc1acfac45d0320a52d0639762ee038e02f2aaaebb772a1987091c6a6195c207e31041f63f85fa3133fb4ac96aa819336c1c28464e78f2e788e5e33217c360ed96d318a96ae5e4e9b3ae98793ce542861e8c01230b034f60ada3864cdb3890f36bb04501c4c9c962dac7711f4fb1c56e1136d263c462f016f5ba09ab66310875a2db723a65e02e509fd23cc0f5bc090d0af516dc0ab6226c46b99403bf2cc45c37efa6af8397d70bd8340ccfd4680c129935e87e1bc2dd832385744ce3cccf2a344725b00f77f9291024a102a8da882e2015bc24fa8894229fd960d2e831fed37fb5fb023672352735bc633255b65396eef4f83dc4200e76f87c08256195e548c3ae64140f1359694714e785ae299f4d7a693a144adc9077f3a817647063779437eb9dbaa31859fcf72011a612ff012f8b9be02a496d0e78700356b6544b6ce4740163c8d7d765863fca27f12916736b34f75c65d7add98f8bb708d5835c8587f02f7ca69f964bd7efbf785b16778778b4af808163cbe76eb8598ac05b6c01bfce8fb06a53e3d25d5f9e253b382c46c90fc0975b23323470b45a9ca80a037f199491a6d9640c92b6884e23a14014cd239c430bfd04c8a9c0b907f9a76b648038801e0ae6bc425d2bf6c412fc8ec60ed3f6e015c342ca668213754ce41a0270105ba7699bde680cc0c527f380ef4a4986e46fae807621368958d47eb676d054341686e702af2c34a99f772480267e24109cba8de63dca8570b639a9935859a14e2940ea52207764edaaa092d39471b8662d771786c5975608a25eb2d3c489258b4f9cbdc8307b2ef5a5804eb4916b527bde4d6e8a8167f563a6a58bf28f6cbf67ae90278bbe749e568ace03867a94d10d985a6c5a31912ffe8cf168a40f44d94d0bbc6256c56e0a98869a981abe043cd5ca445b5d0fea272195e0e8b86c419c69f590a4468fbf9e8df44d03bfbf0388cf58139f33f44d4e9b6b7c74f032870a74b3f19f4864c60173d111dcac90313eb86e8e4938f96e9bd662171aa7ddbd146ff7d6ae544b32a86f1bcd04252a3e8435c780bd1da5ce6320a3613f7b1d6d0ae1e2408fe1c275a41bb361f676c3f48a0e7eb096a5a7e520fc6e2ab34d6132b7f280376e5b3b6a6b7b831d31d93e7905d1e10675b4ebb9d795dbe2f9d84c72e00493f4195cfff63d6dd138a095c29079df3d4c9065728be0f7a2d400007484020b00a66c118c57b8be98302791837f46ddab83396e08bd9b62c7f1011efecd1ff8b5fd68215aa8b52993b73b07f43f4ec30a3d9d26166477c5f7de13eedf5fcd81e9b690975a0d4d6368c5087e6473297f4054fc9e81e74d9a81159d2d8bc96cb533867afb59c2f2125602e1d89c3c664ca0c5d41254a826ff76db6ee1902c18c1aed9a7e81ebb397bdfcf19ce72889499c703927571d18afc28ab0ede27a908225a08a309187bc2c1b6499770491a24cc24d542d8638edc23329b12d3833466242adc5834c3b69ce0a7aff5fa3ab61561282acc0118db3b8150ddc2bf117c1c394758dd6653da11de7351a7edc042fe76341603ea9b18da66fb13945a2cf34a21e59c8286a1b8963cc03653c2be91f97df1d599e990156fe6fec3f858acbd16a4a9bf56fe4179b77c766f17128de3f02a655cb8ac0fbc10bd7fcc7ea7f284fc220979a51b063e459c1a346e142cbb6fd2ba7c6b52c73f4389d3435b8158089aadb45fe96b0cbaedc37ffc919c6410c04dad827243b3aaa8d61844c33e392b7d98c2ef855610ca6a616dd737746c1a8d086b4221f1cab34c274c1a0ac0f95f0e34cc33de57f8489f59b25625bf1429f4f79441b153403355bd0f476da0faca7e811363a3b2dfd359e2e1cdc3a5557d8a62ddfc49331add2da09bd496351152e9cd9783c300e84a929da66cb8a74af4c7fce721a0024990eff20438c91e2665c756bbe066612a456cf6021559faf85c792f61b0109e5cb74fecee0db50568c104c63bb58039c7389eeb53d506456b632f6e04a153f7f26749b78e342f30e55e4b3f78cbf5fcce13db64be5b08ebe09323e9fd31579f52e075655f08fb59ef08f9177a16371de4a207c4b58e102c953517786e68282550520a23fff384b5a7d14dcefdb61a7b7e45b52b88eba2cc86d19c9df8ee244a48195524d137e2ce51c0809135a265fcac66a0a5076b30f4d07b57cb68d5807d2adaf9da46e690e278952d17aaf300d6dedea9c0890ca7e1539275205fd2caafdef6eb4e7ab7bce393b2ee0c833e5396b03a9ea0f03272314eef7594f8ebb18fc5c8124c1cd97c2dcf84738d3c242f860bf2ac1272d95770fb1ab1e5e7a864fd0f076fc00df3bd17f93c237c4c16143d9723e51e3ac8c69a2f99fde51572a764e5b1569fb30b8ebb10dd84ee7546553cb377cf25e36d9b2a17c97101052f2510d82b404e5dcd52c6bcbd593361994bd18f3b7059d0eb7910c750afd1b4c9e592791ccd66bd956c4434f3c8032f048a2287bbb2fed53f8e8afc2eaf7b79cc00612baebf0de61ec581d348e17ae5e498fe68de4846e860fc03aaf55b3daca58107474fe327f6d09c0296df85d408863706a931594222fc960cbc09deffefbe62d72c1983f8de60ef775cb7db024f7b47fe9bed7e0ebfea2e806499476be27351bb7e42a24242cd253bcd1ae36a7f3519b27fe930ea5d6570f1fb18b0ba27e376fa9f45856a313dc6b6664498f1a75992ee1593797888fa34487b27e9c398761a809ca57a92e19352bc8e076aa0d245bf835471ad81362003518913d0cd1af6e86763e1652ad2a15d5be2a1d704a184651f4bc0f46fee8ad8c40316d7e137b3292d913dc6282c1b5a803b4aeeb2851df9480bcaac1a958236d4ec7a164894ba3795b3683df021edf11864314a3574e56bb94ff21353cf57ead58c3e27e10daeddccd4f057328e308b81e99191a90c7c56cb074f1b7594f42561868d86a78c6c26c7ef447932f</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
       <tags>
         <tag>读书感悟</tag>
@@ -1014,28 +1014,28 @@ firewall-cmd --reload</code></pre>
   </entry>
   <entry>
     <title>表情包分享（1）</title>
-    <url>/posts/undefined/</url>
+    <url>/posts/ceee3096/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="第一期分享给大家的是《80年代宣传画系列》"><a href="#第一期分享给大家的是《80年代宣传画系列》" class="headerlink" title="第一期分享给大家的是《80年代宣传画系列》"></a>第一期分享给大家的是《80年代宣传画系列》</h1>
-<p><img src="/2020/01/10/%E8%A1%A8%E6%83%85%E5%8C%85%E5%88%86%E4%BA%AB%EF%BC%881%EF%BC%89/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(1).jpg" alt="80年代宣传画 (1)"></p>
-<p><img src="/2020/01/10/%E8%A1%A8%E6%83%85%E5%8C%85%E5%88%86%E4%BA%AB%EF%BC%881%EF%BC%89/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(2).jpg" alt="80年代宣传画 (2)"></p>
+<p><img src="/posts/ceee3096/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(1).jpg" alt="80年代宣传画 (1)"></p>
+<p><img src="/posts/ceee3096/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(2).jpg" alt="80年代宣传画 (2)"></p>
 <a id="more"></a>
 
-<p><img src="/2020/01/10/%E8%A1%A8%E6%83%85%E5%8C%85%E5%88%86%E4%BA%AB%EF%BC%881%EF%BC%89/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(3).jpg" alt="80年代宣传画 (3)"></p>
-<p><img src="/2020/01/10/%E8%A1%A8%E6%83%85%E5%8C%85%E5%88%86%E4%BA%AB%EF%BC%881%EF%BC%89/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(4).jpg" alt="80年代宣传画 (4)"></p>
-<p><img src="/2020/01/10/%E8%A1%A8%E6%83%85%E5%8C%85%E5%88%86%E4%BA%AB%EF%BC%881%EF%BC%89/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(5).jpg" alt="80年代宣传画 (5)"></p>
-<p><img src="/2020/01/10/%E8%A1%A8%E6%83%85%E5%8C%85%E5%88%86%E4%BA%AB%EF%BC%881%EF%BC%89/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(31).jpg" alt="80年代宣传画 (31)"></p>
-<p><img src="/2020/01/10/%E8%A1%A8%E6%83%85%E5%8C%85%E5%88%86%E4%BA%AB%EF%BC%881%EF%BC%89/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(32).jpg" alt="80年代宣传画 (32)"></p>
-<p><img src="/2020/01/10/%E8%A1%A8%E6%83%85%E5%8C%85%E5%88%86%E4%BA%AB%EF%BC%881%EF%BC%89/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(33).jpg" alt="80年代宣传画 (33)"></p>
-<p><img src="/2020/01/10/%E8%A1%A8%E6%83%85%E5%8C%85%E5%88%86%E4%BA%AB%EF%BC%881%EF%BC%89/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(34).jpg" alt="80年代宣传画 (34)"></p>
-<p><img src="/2020/01/10/%E8%A1%A8%E6%83%85%E5%8C%85%E5%88%86%E4%BA%AB%EF%BC%881%EF%BC%89/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(35).jpg" alt="80年代宣传画 (35)"></p>
-<p><img src="/2020/01/10/%E8%A1%A8%E6%83%85%E5%8C%85%E5%88%86%E4%BA%AB%EF%BC%881%EF%BC%89/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(36).jpg" alt="80年代宣传画 (36)"></p>
-<p><img src="/2020/01/10/%E8%A1%A8%E6%83%85%E5%8C%85%E5%88%86%E4%BA%AB%EF%BC%881%EF%BC%89/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(37).jpg" alt="80年代宣传画 (37)"></p>
-<p><img src="/2020/01/10/%E8%A1%A8%E6%83%85%E5%8C%85%E5%88%86%E4%BA%AB%EF%BC%881%EF%BC%89/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(38).jpg" alt="80年代宣传画 (38)"></p>
-<p><img src="/2020/01/10/%E8%A1%A8%E6%83%85%E5%8C%85%E5%88%86%E4%BA%AB%EF%BC%881%EF%BC%89/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(39).jpg" alt="80年代宣传画 (39)"></p>
-<p><img src="/2020/01/10/%E8%A1%A8%E6%83%85%E5%8C%85%E5%88%86%E4%BA%AB%EF%BC%881%EF%BC%89/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(40).jpg" alt="80年代宣传画 (40)"></p>
-<p><img src="/2020/01/10/%E8%A1%A8%E6%83%85%E5%8C%85%E5%88%86%E4%BA%AB%EF%BC%881%EF%BC%89/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(41).jpg" alt="80年代宣传画 (41)"></p>
+<p><img src="/posts/ceee3096/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(3).jpg" alt="80年代宣传画 (3)"></p>
+<p><img src="/posts/ceee3096/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(4).jpg" alt="80年代宣传画 (4)"></p>
+<p><img src="/posts/ceee3096/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(5).jpg" alt="80年代宣传画 (5)"></p>
+<p><img src="/posts/ceee3096/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(31).jpg" alt="80年代宣传画 (31)"></p>
+<p><img src="/posts/ceee3096/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(32).jpg" alt="80年代宣传画 (32)"></p>
+<p><img src="/posts/ceee3096/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(33).jpg" alt="80年代宣传画 (33)"></p>
+<p><img src="/posts/ceee3096/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(34).jpg" alt="80年代宣传画 (34)"></p>
+<p><img src="/posts/ceee3096/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(35).jpg" alt="80年代宣传画 (35)"></p>
+<p><img src="/posts/ceee3096/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(36).jpg" alt="80年代宣传画 (36)"></p>
+<p><img src="/posts/ceee3096/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(37).jpg" alt="80年代宣传画 (37)"></p>
+<p><img src="/posts/ceee3096/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(38).jpg" alt="80年代宣传画 (38)"></p>
+<p><img src="/posts/ceee3096/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(39).jpg" alt="80年代宣传画 (39)"></p>
+<p><img src="/posts/ceee3096/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(40).jpg" alt="80年代宣传画 (40)"></p>
+<p><img src="/posts/ceee3096/80%E5%B9%B4%E4%BB%A3%E5%AE%A3%E4%BC%A0%E7%94%BB%20(41).jpg" alt="80年代宣传画 (41)"></p>
 <p>封面测试：</p>
-<div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div>
+<div id="dplayer2" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div>
 <p>no url specified, no dplayer _(:3」∠)_</p>
 
 
@@ -1066,12 +1066,12 @@ firewall-cmd --reload</code></pre>
   </entry>
   <entry>
     <title>我的第一篇博客——自我介绍</title>
-    <url>/posts/undefined/</url>
+    <url>/posts/6007b04d/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>这是一个分享一些自己心得，爱好以及知识的博客，本人只是一名普通的大学生，不是啥大神。不用抱有太高的期待或是要求，如果能帮助到部分人或是给部分人带来些许快乐，实乃我无上的荣耀…..（此处运用了夸张的手法并省略两千字）</p>
 <p>邮箱：<a href="mailto:1097629344@qq.com">1097629344@qq.com</a></p>
-<p>欢迎大家与我交流！!!<img src="/2020/01/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E2%80%94%E2%80%94%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D/08.jpg"></p>
+<p>欢迎大家与我交流！!!<img src="/posts/6007b04d/08.jpg"></p>
 
-<div id="aplayer-AmbQAKwu" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"></div>
+<div id="aplayer-fZigdGfJ" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"></div>
 
 
 
@@ -1080,11 +1080,11 @@ firewall-cmd --reload</code></pre>
 
 
 <hr>
-<div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div>
+<div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div>
 <script>
   (function() {
     var player = new DPlayer({
-      "container": document.getElementById("dplayer0"),
+      "container": document.getElementById("dplayer1"),
       "video": {
         "url": "https://dl.sm9.top/Video/2018/KeyCastOW.mp4"
       }
@@ -1125,7 +1125,7 @@ firewall-cmd --reload</code></pre>
   </entry>
   <entry>
     <title>Hello World</title>
-    <url>/posts/undefined/</url>
+    <url>/posts/4a17b156/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2>
 <a id="more"></a>

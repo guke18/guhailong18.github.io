@@ -18,8 +18,8 @@
   
   <entry>
     <title>多博客及双线程部署</title>
-    <link href="https://guhailong18.github.io/posts/undefined/"/>
-    <id>https://guhailong18.github.io/posts/undefined/</id>
+    <link href="https://guhailong18.github.io/posts/a6bb7c19/"/>
+    <id>https://guhailong18.github.io/posts/a6bb7c19/</id>
     <published>2020-01-28T01:53:41.000Z</published>
     <updated>2020-01-28T01:53:41.296Z</updated>
     
@@ -29,11 +29,7 @@
       
         
         
-          &lt;script&gt;
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.dataset.src) { return; }
-       
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
         
       
     
@@ -45,8 +41,8 @@
   
   <entry>
     <title>python连接数据库简记</title>
-    <link href="https://guhailong18.github.io/posts/undefined/"/>
-    <id>https://guhailong18.github.io/posts/undefined/</id>
+    <link href="https://guhailong18.github.io/posts/82e025b7/"/>
+    <id>https://guhailong18.github.io/posts/82e025b7/</id>
     <published>2020-01-27T09:10:40.000Z</published>
     <updated>2020-01-27T09:10:40.577Z</updated>
     
@@ -68,8 +64,8 @@
   
   <entry>
     <title>Mysql常用命令</title>
-    <link href="https://guhailong18.github.io/posts/undefined/"/>
-    <id>https://guhailong18.github.io/posts/undefined/</id>
+    <link href="https://guhailong18.github.io/posts/64129a24/"/>
+    <id>https://guhailong18.github.io/posts/64129a24/</id>
     <published>2020-01-27T08:04:22.000Z</published>
     <updated>2020-01-27T09:08:00.387Z</updated>
     
@@ -97,8 +93,8 @@
   
   <entry>
     <title>JavaScript学习笔记</title>
-    <link href="https://guhailong18.github.io/posts/undefined/"/>
-    <id>https://guhailong18.github.io/posts/undefined/</id>
+    <link href="https://guhailong18.github.io/posts/2b866d21/"/>
+    <id>https://guhailong18.github.io/posts/2b866d21/</id>
     <published>2020-01-26T12:10:23.000Z</published>
     <updated>2020-01-26T12:10:23.412Z</updated>
     
@@ -120,8 +116,8 @@
   
   <entry>
     <title>Anaconda的常用命令及使用技巧</title>
-    <link href="https://guhailong18.github.io/posts/undefined/"/>
-    <id>https://guhailong18.github.io/posts/undefined/</id>
+    <link href="https://guhailong18.github.io/posts/a4a2b1a3/"/>
+    <id>https://guhailong18.github.io/posts/a4a2b1a3/</id>
     <published>2020-01-26T04:44:47.000Z</published>
     <updated>2020-01-26T05:17:47.530Z</updated>
     
@@ -139,20 +135,20 @@
     
     
     
-      <category term="命令" scheme="https://guhailong18.github.io/tags/%E5%91%BD%E4%BB%A4/"/>
-    
       <category term="anaconda" scheme="https://guhailong18.github.io/tags/anaconda/"/>
     
       <category term="ubuntu" scheme="https://guhailong18.github.io/tags/ubuntu/"/>
+    
+      <category term="命令" scheme="https://guhailong18.github.io/tags/%E5%91%BD%E4%BB%A4/"/>
     
   </entry>
   
   <entry>
     <title>python2与python3共存的部分注意事项</title>
-    <link href="https://guhailong18.github.io/posts/undefined/"/>
-    <id>https://guhailong18.github.io/posts/undefined/</id>
+    <link href="https://guhailong18.github.io/posts/a51989a4/"/>
+    <id>https://guhailong18.github.io/posts/a51989a4/</id>
     <published>2020-01-26T02:38:26.000Z</published>
-    <updated>2020-01-26T02:42:06.190Z</updated>
+    <updated>2020-01-26T13:10:56.457Z</updated>
     
     <summary type="html">
     
@@ -176,8 +172,8 @@
   
   <entry>
     <title>Docker常用命令</title>
-    <link href="https://guhailong18.github.io/posts/undefined/"/>
-    <id>https://guhailong18.github.io/posts/undefined/</id>
+    <link href="https://guhailong18.github.io/posts/29dc6fe8/"/>
+    <id>https://guhailong18.github.io/posts/29dc6fe8/</id>
     <published>2020-01-25T08:08:33.000Z</published>
     <updated>2020-01-25T08:12:16.323Z</updated>
     
@@ -199,8 +195,8 @@
   
   <entry>
     <title>MongoDB常用命令</title>
-    <link href="https://guhailong18.github.io/posts/undefined/"/>
-    <id>https://guhailong18.github.io/posts/undefined/</id>
+    <link href="https://guhailong18.github.io/posts/c08448a5/"/>
+    <id>https://guhailong18.github.io/posts/c08448a5/</id>
     <published>2020-01-24T06:03:02.000Z</published>
     <updated>2020-01-24T06:12:23.465Z</updated>
     
@@ -222,8 +218,8 @@
   
   <entry>
     <title>hexo主题魔改进阶篇（一）</title>
-    <link href="https://guhailong18.github.io/posts/undefined/"/>
-    <id>https://guhailong18.github.io/posts/undefined/</id>
+    <link href="https://guhailong18.github.io/posts/28a773c7/"/>
+    <id>https://guhailong18.github.io/posts/28a773c7/</id>
     <published>2020-01-24T02:50:50.000Z</published>
     <updated>2020-01-24T02:50:50.798Z</updated>
     
@@ -245,8 +241,8 @@
   
   <entry>
     <title>Windows路径含有带空格的目录/文件名的处理方法</title>
-    <link href="https://guhailong18.github.io/posts/undefined/"/>
-    <id>https://guhailong18.github.io/posts/undefined/</id>
+    <link href="https://guhailong18.github.io/posts/eba167b2/"/>
+    <id>https://guhailong18.github.io/posts/eba167b2/</id>
     <published>2020-01-24T02:09:54.000Z</published>
     <updated>2020-01-24T03:10:53.077Z</updated>
     
@@ -272,8 +268,8 @@
   
   <entry>
     <title>pycharm插件推荐</title>
-    <link href="https://guhailong18.github.io/posts/undefined/"/>
-    <id>https://guhailong18.github.io/posts/undefined/</id>
+    <link href="https://guhailong18.github.io/posts/f650c5a8/"/>
+    <id>https://guhailong18.github.io/posts/f650c5a8/</id>
     <published>2020-01-24T01:48:54.000Z</published>
     <updated>2020-01-24T01:48:54.060Z</updated>
     
@@ -295,8 +291,8 @@
   
   <entry>
     <title>markdown进阶用法</title>
-    <link href="https://guhailong18.github.io/posts/undefined/"/>
-    <id>https://guhailong18.github.io/posts/undefined/</id>
+    <link href="https://guhailong18.github.io/posts/77428012/"/>
+    <id>https://guhailong18.github.io/posts/77428012/</id>
     <published>2020-01-23T15:04:41.000Z</published>
     <updated>2020-01-23T15:04:41.253Z</updated>
     
@@ -318,8 +314,8 @@
   
   <entry>
     <title>markdown基础用法</title>
-    <link href="https://guhailong18.github.io/posts/undefined/"/>
-    <id>https://guhailong18.github.io/posts/undefined/</id>
+    <link href="https://guhailong18.github.io/posts/561d6569/"/>
+    <id>https://guhailong18.github.io/posts/561d6569/</id>
     <published>2020-01-23T15:03:25.000Z</published>
     <updated>2020-01-23T15:03:25.712Z</updated>
     
@@ -341,8 +337,8 @@
   
   <entry>
     <title>linux常用命令</title>
-    <link href="https://guhailong18.github.io/posts/undefined/"/>
-    <id>https://guhailong18.github.io/posts/undefined/</id>
+    <link href="https://guhailong18.github.io/posts/fe4ef317/"/>
+    <id>https://guhailong18.github.io/posts/fe4ef317/</id>
     <published>2020-01-23T14:16:02.000Z</published>
     <updated>2020-01-26T09:56:21.674Z</updated>
     
@@ -368,8 +364,8 @@
   
   <entry>
     <title>博客功能测试专用</title>
-    <link href="https://guhailong18.github.io/posts/undefined/"/>
-    <id>https://guhailong18.github.io/posts/undefined/</id>
+    <link href="https://guhailong18.github.io/posts/35189442/"/>
+    <id>https://guhailong18.github.io/posts/35189442/</id>
     <published>2020-01-23T13:18:06.000Z</published>
     <updated>2020-01-23T13:22:42.316Z</updated>
     
@@ -395,8 +391,8 @@
   
   <entry>
     <title>ONEdriver应用程序注册流程</title>
-    <link href="https://guhailong18.github.io/posts/undefined/"/>
-    <id>https://guhailong18.github.io/posts/undefined/</id>
+    <link href="https://guhailong18.github.io/posts/dcefea28/"/>
+    <id>https://guhailong18.github.io/posts/dcefea28/</id>
     <published>2020-01-23T06:19:21.000Z</published>
     <updated>2020-01-23T06:20:51.264Z</updated>
     
@@ -422,8 +418,8 @@
   
   <entry>
     <title>宝塔面板常用指令</title>
-    <link href="https://guhailong18.github.io/posts/undefined/"/>
-    <id>https://guhailong18.github.io/posts/undefined/</id>
+    <link href="https://guhailong18.github.io/posts/2db0a1e1/"/>
+    <id>https://guhailong18.github.io/posts/2db0a1e1/</id>
     <published>2020-01-23T01:20:36.000Z</published>
     <updated>2020-01-26T00:50:57.171Z</updated>
     
@@ -447,8 +443,8 @@
   
   <entry>
     <title>2020寒假建站记录</title>
-    <link href="https://guhailong18.github.io/posts/undefined/"/>
-    <id>https://guhailong18.github.io/posts/undefined/</id>
+    <link href="https://guhailong18.github.io/posts/f0e4e3b5/"/>
+    <id>https://guhailong18.github.io/posts/f0e4e3b5/</id>
     <published>2020-01-21T14:51:19.000Z</published>
     <updated>2020-01-23T13:22:52.951Z</updated>
     
@@ -474,8 +470,8 @@
   
   <entry>
     <title>Chrome浏览器一个有意思的彩蛋</title>
-    <link href="https://guhailong18.github.io/posts/undefined/"/>
-    <id>https://guhailong18.github.io/posts/undefined/</id>
+    <link href="https://guhailong18.github.io/posts/a5735571/"/>
+    <id>https://guhailong18.github.io/posts/a5735571/</id>
     <published>2020-01-20T11:18:16.000Z</published>
     <updated>2020-01-20T12:38:07.169Z</updated>
     
@@ -501,8 +497,8 @@
   
   <entry>
     <title>我们生活的世界到底是几维的？</title>
-    <link href="https://guhailong18.github.io/posts/undefined/"/>
-    <id>https://guhailong18.github.io/posts/undefined/</id>
+    <link href="https://guhailong18.github.io/posts/8902adc/"/>
+    <id>https://guhailong18.github.io/posts/8902adc/</id>
     <published>2020-01-20T03:37:10.000Z</published>
     <updated>2020-01-20T12:38:58.647Z</updated>
     
