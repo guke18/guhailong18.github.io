@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://guhailong18.github.io/"/>
-  <updated>2020-01-27T09:10:40.577Z</updated>
+  <updated>2020-01-28T01:53:41.296Z</updated>
   <id>https://guhailong18.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>多博客及双线程部署</title>
+    <link href="https://guhailong18.github.io/2020/01/28/%E5%A4%9A%E5%8D%9A%E5%AE%A2%E5%8F%8A%E5%8F%8C%E7%BA%BF%E7%A8%8B%E9%83%A8%E7%BD%B2/"/>
+    <id>https://guhailong18.github.io/2020/01/28/%E5%A4%9A%E5%8D%9A%E5%AE%A2%E5%8F%8A%E5%8F%8C%E7%BA%BF%E7%A8%8B%E9%83%A8%E7%BD%B2/</id>
+    <published>2020-01-28T01:53:41.000Z</published>
+    <updated>2020-01-28T01:53:41.296Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+          .forEach(el =&gt; {
+            if (!el.dataset.src) { return; }
+       
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>python连接数据库简记</title>
@@ -498,31 +525,6 @@
       <category term="物理" scheme="https://guhailong18.github.io/tags/%E7%89%A9%E7%90%86/"/>
     
       <category term="文案" scheme="https://guhailong18.github.io/tags/%E6%96%87%E6%A1%88/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2020寒假学习记录（爬虫篇）</title>
-    <link href="https://guhailong18.github.io/2020/01/18/2020%E5%AF%92%E5%81%87%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88%E7%88%AC%E8%99%AB%E7%AF%87%EF%BC%89/"/>
-    <id>https://guhailong18.github.io/2020/01/18/2020%E5%AF%92%E5%81%87%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%EF%BC%88%E7%88%AC%E8%99%AB%E7%AF%87%EF%BC%89/</id>
-    <published>2020-01-18T11:07:33.000Z</published>
-    <updated>2020-01-18T11:09:00.719Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="爬虫" scheme="https://guhailong18.github.io/tags/%E7%88%AC%E8%99%AB/"/>
     
   </entry>
   
