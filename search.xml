@@ -1,6 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>HTML之文章排版</title>
+    <url>/posts/80134476/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>本文的目的是为了所有与我想法相同（不想学习太多的代码，却想修改主题的人），所以我会以尽量少的代码知识来让大家看懂源码并且学会修改，由于本人没系统的学过前端，内容难免有疏漏或是理解不到位的地方，欢迎所有人的指正与补充。</p>
+<p>&lt;%- partial(‘_partial/bg-cover’) %&gt;</p>
+<main class="content">
+  <div id="contact" class="container chip-container">
+    <div class="card">
+      <div class="card-content">
+        <div class="tag-title center-align">
+          <i class="fas fa-comments"></i>&nbsp;&nbsp;&lt;%= __('contact') %&gt;
+        <!--%=--></div>
+        &lt;%- page.content %&gt;
+      <!--%---></div>
+    </div>
+    <div class="card">
+      &lt;% if (theme.valine &amp;&amp; theme.valine.enable) { %&gt;
+      &lt;%- partial('_partial valine') %&gt;
+      &lt;% } %&gt;<!--%--><!--%---><!--%--></div></div></main><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>]]></content>
+      <tags>
+        <tag>HLML</tag>
+        <tag>排版</tag>
+        <tag>魔改</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>多博客及双线程部署</title>
     <url>/posts/a6bb7c19/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><script>
