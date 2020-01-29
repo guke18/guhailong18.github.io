@@ -11,14 +11,14 @@
       <div class="card-content">
         <div class="tag-title center-align">
           <i class="fas fa-comments"></i>&nbsp;&nbsp;&lt;%= __('contact') %&gt;
-        <!--%=--></div>
+        </div>
         &lt;%- page.content %&gt;
-      <!--%---></div>
+      </div>
     </div>
     <div class="card">
       &lt;% if (theme.valine &amp;&amp; theme.valine.enable) { %&gt;
-      &lt;%- partial('_partial valine') %&gt;
-      &lt;% } %&gt;<!--%--><!--%---><!--%--></div></div></main><script>
+      &lt;%- partial('_partial/valine') %&gt;
+      &lt;% } %&gt;</div></div></main><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }

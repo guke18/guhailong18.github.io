@@ -561,7 +561,7 @@
 
                 <div class="post-date info-break-policy">
                   <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                  2020-01-28
+                  2020-01-29
                 </div>
 
 
@@ -602,20 +602,14 @@
                       <div class="card-content">
                         <div class="tag-title center-align">
                           <i class="fas fa-comments"></i>&nbsp;&nbsp;&lt;%= __('contact') %&gt;
-                          <!--%=-->
                         </div>
                         &lt;%- page.content %&gt;
-                        <!--%--->
                       </div>
                     </div>
                     <div class="card">
                       &lt;% if (theme.valine &amp;&amp; theme.valine.enable) { %&gt;
-                      &lt;%- partial('_partial valine') %&gt;
-                      &lt;% } %&gt;
-                      <!--%-->
-                      <!--%--->
-                      <!--%-->
-                    </div>
+                      &lt;%- partial('_partial/valine') %&gt;
+                      &lt;% } %&gt;</div>
                   </div>
                 </main>
                 <script>
