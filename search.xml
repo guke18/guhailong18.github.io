@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>CSS笔记之图标</title>
+    <url>/posts/c2d28339/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>]]></content>
+  </entry>
+  <entry>
     <title>hexo有趣小功能之雪花飞舞</title>
     <url>/posts/221edd67/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><script>
@@ -1221,7 +1244,7 @@ firewall-cmd --reload</code></pre>
 <p>邮箱：<a href="mailto:1097629344@qq.com">1097629344@qq.com</a></p>
 <p>欢迎大家与我交流！!!<img src="/posts/6007b04d/08.jpg"></p>
 
-<div id="aplayer-bzngGvxh" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"></div>
+<div id="aplayer-ULUPCXCO" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"></div>
 
 
 
@@ -1245,7 +1268,7 @@ firewall-cmd --reload</code></pre>
 </script>
 
 <hr>
-<iframe src="//player.bilibili.com/player.html?aid=82968958&amp;cid=141941752&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" width"100%"="" height="550" allowfullscreen="true"> </iframe>
+<iframe src="//player.bilibili.com/player.html?aid=82968958&amp;cid=141941752&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" width"100%"="" height="100%" allowfullscreen="true"> </iframe>
 
 <hr>
 <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="100px" height="20px" src="https://ghbtns.com/github-btn.html?user=fandongtongxue&amp;repo=fandongtongxue.github.io&amp;type=star&amp;count=true"> </iframe>
@@ -1256,12 +1279,10 @@ firewall-cmd --reload</code></pre>
 
 
 
-
-
-<iframe src="//player.bilibili.com/player.html?aid=84628317&amp;cid=144732024&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" width="100%" allowfullscreen="true" height="550px"> </iframe>
+<iframe src="//player.bilibili.com/player.html?aid=84628317&amp;cid=144732024&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" width="100%" allowfullscreen="true"> </iframe>
 
 <hr>
-<iframe src="//player.bilibili.com/player.html?aid=85179902&amp;cid=145623591&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="550px"> </iframe><script>
+<iframe src="//player.bilibili.com/player.html?aid=85179902&amp;cid=145623591&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="80%"> </iframe><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
