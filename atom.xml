@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://guhailong18.github.io/"/>
-  <updated>2020-01-29T12:54:35.517Z</updated>
+  <updated>2020-01-29T14:09:13.096Z</updated>
   <id>https://guhailong18.github.io/</id>
   
   <author>
@@ -17,11 +17,61 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>markdown使用流程图</title>
+    <link href="https://guhailong18.github.io/posts/4bcf2a6b/"/>
+    <id>https://guhailong18.github.io/posts/4bcf2a6b/</id>
+    <published>2020-01-29T14:04:47.000Z</published>
+    <updated>2020-01-29T14:09:13.096Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>matery主题美化</title>
+    <link href="https://guhailong18.github.io/posts/39e2c676/"/>
+    <id>https://guhailong18.github.io/posts/39e2c676/</id>
+    <published>2020-01-29T13:38:59.000Z</published>
+    <updated>2020-01-29T14:10:47.532Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="主题" scheme="https://guhailong18.github.io/tags/%E4%B8%BB%E9%A2%98/"/>
+    
+      <category term="hexo" scheme="https://guhailong18.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>text</title>
     <link href="https://guhailong18.github.io/posts/3b8ba7c7/"/>
     <id>https://guhailong18.github.io/posts/3b8ba7c7/</id>
     <published>2020-01-29T12:54:35.516Z</published>
-    <updated>2020-01-29T12:54:35.517Z</updated>
+    <updated>2020-01-29T13:11:45.214Z</updated>
     
     <summary type="html">
     
@@ -44,7 +94,7 @@
     <link href="https://guhailong18.github.io/posts/c2d28339/"/>
     <id>https://guhailong18.github.io/posts/c2d28339/</id>
     <published>2020-01-29T11:37:21.000Z</published>
-    <updated>2020-01-29T11:50:19.812Z</updated>
+    <updated>2020-01-29T13:34:59.307Z</updated>
     
     <summary type="html">
     
@@ -59,6 +109,14 @@
     </summary>
     
     
+    
+      <category term="CSS" scheme="https://guhailong18.github.io/tags/CSS/"/>
+    
+      <category term="图标" scheme="https://guhailong18.github.io/tags/%E5%9B%BE%E6%A0%87/"/>
+    
+      <category term="主题" scheme="https://guhailong18.github.io/tags/%E4%B8%BB%E9%A2%98/"/>
+    
+      <category term="Hexo" scheme="https://guhailong18.github.io/tags/Hexo/"/>
     
   </entry>
   
@@ -358,11 +416,11 @@
     
     
     
+      <category term="主题" scheme="https://guhailong18.github.io/tags/%E4%B8%BB%E9%A2%98/"/>
+    
       <category term="魔改" scheme="https://guhailong18.github.io/tags/%E9%AD%94%E6%94%B9/"/>
     
       <category term="hexo" scheme="https://guhailong18.github.io/tags/hexo/"/>
-    
-      <category term="主题" scheme="https://guhailong18.github.io/tags/%E4%B8%BB%E9%A2%98/"/>
     
   </entry>
   
@@ -459,60 +517,6 @@
     </summary>
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>linux常用命令</title>
-    <link href="https://guhailong18.github.io/posts/fe4ef317/"/>
-    <id>https://guhailong18.github.io/posts/fe4ef317/</id>
-    <published>2020-01-23T14:16:02.000Z</published>
-    <updated>2020-01-28T05:22:32.518Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="命令" scheme="https://guhailong18.github.io/tags/%E5%91%BD%E4%BB%A4/"/>
-    
-      <category term="linux" scheme="https://guhailong18.github.io/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>博客功能测试专用</title>
-    <link href="https://guhailong18.github.io/posts/35189442/"/>
-    <id>https://guhailong18.github.io/posts/35189442/</id>
-    <published>2020-01-23T13:18:06.000Z</published>
-    <updated>2020-01-28T05:22:32.529Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="测试" scheme="https://guhailong18.github.io/categories/%E6%B5%8B%E8%AF%95/"/>
-    
-    
-      <category term="测试" scheme="https://guhailong18.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   

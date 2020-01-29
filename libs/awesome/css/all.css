@@ -4397,7 +4397,7 @@ readers do not read off random characters that represent icons */
 }
 
 fa-anime:before {
-  content: "\f192";
+  content: "\f003";
 }
 
 .fa-shekel-sign:before {
