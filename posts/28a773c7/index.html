@@ -4,10 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="keywords" content="hexo主题魔改进阶篇（一）, 动漫，编程，数学，读书">
-  <meta name="description" content="
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.dataset.src) { return">
+  <meta name="description" content="相信有很多小伙伴在选择了自己的主题，并且在官方文档的指导下配置了自己的主题后，仍然对其中的有些方面不太满意，但是又不想换主题的时候，那么config的配置已经不能满足你了，让我们从源文件下手，对其进行大刀阔斧的改革吧！
+想要修改源文件，那么">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -531,7 +529,19 @@
                 <div class="col s7">
 
                   <div class="article-tag">
-                    <span class="chip bg-color">无标签</span>
+
+                    <a href="/tags/%E9%AD%94%E6%94%B9/">
+                      <span class="chip bg-color">魔改</span>
+                    </a>
+
+                    <a href="/tags/hexo/">
+                      <span class="chip bg-color">hexo</span>
+                    </a>
+
+                    <a href="/tags/%E4%B8%BB%E9%A2%98/">
+                      <span class="chip bg-color">主题</span>
+                    </a>
+
                   </div>
 
                 </div>
@@ -551,14 +561,14 @@
 
                 <div class="post-date info-break-policy">
                   <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                  2020-01-28
+                  2020-01-29
                 </div>
 
 
 
                 <div class="info-break-policy">
                   <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                  52
+                  422
                 </div>
 
 
@@ -584,6 +594,63 @@
                 
                 
                 
+                <p>相信有很多小伙伴在选择了自己的主题，并且在官方文档的指导下配置了自己的主题后，仍然对其中的有些方面不太满意，但是又不想换主题的时候，那么config的配置已经不能满足你了，让我们从源文件下手，对其进行大刀阔斧的改革吧！</p>
+                <p>想要修改源文件，那么需要先了解你所选的主体架构，以下均已<a href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md" target="_blank" rel="noopener">hexo-theme-matery</a>为例，请根据你的主题进行对应，并且尽量选择使用人数多且文档完善的主题，否则修改会十分困难，如果你是高手的话就当我这句话没说。</p>
+                <pre><code>├── languages  语言文件，用于国际化（不是很重要，除非你想向全球推广）
+├── layout     页面模板文件，决定了网站内容的呈现方式
+├── scripts    Hexo 脚本（这是matery没有的，但是部分主题有）
+└── source     主题资源文件，包括页面样式，脚本，字体等
+</code></pre>
+                <h2 id="1-layout"><a href="#1-layout" class="headerlink" title="1.layout"></a>1.layout</h2>
+                <ul>
+                  <li><img src="/posts/28a773c7/Snipaste_2020-01-29_13-11-30.png" alt="Snipaste_2020-01-29_13-11-30"></li>
+                </ul>
+                <p>每一个ejs对应的同名page的布局，例：contact是文章的布局，也有主题使用的article在_partial里的，一般如下：</p>
+                <table>
+                  <thead>
+                    <tr>
+                      <th align="center">模板</th>
+                      <th align="center">用途</th>
+                      <th align="center">回调</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td align="center">index</td>
+                      <td align="center">首页</td>
+                      <td align="center"></td>
+                    </tr>
+                    <tr>
+                      <td align="center">post</td>
+                      <td align="center">文章</td>
+                      <td align="center">index</td>
+                    </tr>
+                    <tr>
+                      <td align="center">page</td>
+                      <td align="center">分页</td>
+                      <td align="center">index</td>
+                    </tr>
+                    <tr>
+                      <td align="center">archive</td>
+                      <td align="center">归档</td>
+                      <td align="center">index</td>
+                    </tr>
+                    <tr>
+                      <td align="center">category</td>
+                      <td align="center">分类归档</td>
+                      <td align="center">archive</td>
+                    </tr>
+                    <tr>
+                      <td align="center">tag</td>
+                      <td align="center">标签归档</td>
+                      <td align="center">archive</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p>注：文件或文件夹开头名称为 _（下划线线）或隐藏的文件会被忽略</p>
+                <h2 id="2-scripts"><a href="#2-scripts" class="headerlink" title="2.scripts"></a>2.scripts</h2>
+                <p>注：部分主题在source\js</p>
+                <h2 id="3-source"><a href="#3-source" class="headerlink" title="3.source"></a>3.source</h2>
                 <script>
                   document.querySelectorAll('.github-emoji')
                     .forEach(el => {
@@ -666,7 +733,19 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
 
                   <div class="article-tag">
-                    <span class="chip bg-color">无标签</span>
+
+                    <a href="/tags/%E9%AD%94%E6%94%B9/">
+                      <span class="chip bg-color">魔改</span>
+                    </a>
+
+                    <a href="/tags/hexo/">
+                      <span class="chip bg-color">hexo</span>
+                    </a>
+
+                    <a href="/tags/%E4%B8%BB%E9%A2%98/">
+                      <span class="chip bg-color">主题</span>
+                    </a>
+
                   </div>
 
                 </div>
@@ -1371,7 +1450,7 @@
         |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
         <br>
 
-        &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">5.7k</span>&nbsp;字
+        &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">6.2k</span>&nbsp;字
 
 
 

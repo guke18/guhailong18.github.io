@@ -1,6 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>hexo有趣小功能之雪花飞舞</title>
+    <url>/posts/221edd67/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>]]></content>
+  </entry>
+  <entry>
+    <title>hexo有趣的小功能之樱花飘落</title>
+    <url>/posts/fd68ee7e/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>]]></content>
+  </entry>
+  <entry>
     <title>HTML之文章排版</title>
     <url>/posts/80134476/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>本文的目的是为了所有与我想法相同（不想学习太多的代码，却想修改主题的人），所以我会以尽量少的代码知识来让大家看懂源码并且学会修改，由于本人没系统的学过前端，内容难免有疏漏或是理解不到位的地方，欢迎所有人的指正与补充。</p>
@@ -421,7 +467,63 @@
   <entry>
     <title>hexo主题魔改进阶篇（一）</title>
     <url>/posts/28a773c7/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><script>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>相信有很多小伙伴在选择了自己的主题，并且在官方文档的指导下配置了自己的主题后，仍然对其中的有些方面不太满意，但是又不想换主题的时候，那么config的配置已经不能满足你了，让我们从源文件下手，对其进行大刀阔斧的改革吧！</p>
+<p>想要修改源文件，那么需要先了解你所选的主体架构，以下均已<a href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md" target="_blank" rel="noopener">hexo-theme-matery</a>为例，请根据你的主题进行对应，并且尽量选择使用人数多且文档完善的主题，否则修改会十分困难，如果你是高手的话就当我这句话没说。</p>
+<pre><code>├── languages  语言文件，用于国际化（不是很重要，除非你想向全球推广）
+├── layout     页面模板文件，决定了网站内容的呈现方式
+├── scripts    Hexo 脚本（这是matery没有的，但是部分主题有）
+└── source     主题资源文件，包括页面样式，脚本，字体等
+</code></pre>
+<h2 id="1-layout"><a href="#1-layout" class="headerlink" title="1.layout"></a>1.layout</h2>
+<ul>
+  <li><img src="/posts/28a773c7/Snipaste_2020-01-29_13-11-30.png" alt="Snipaste_2020-01-29_13-11-30"></li>
+</ul>
+<p>每一个ejs对应的同名page的布局，例：contact是文章的布局，也有主题使用的article在_partial里的，一般如下：</p>
+<table>
+  <thead>
+    <tr>
+      <th align="center">模板</th>
+      <th align="center">用途</th>
+      <th align="center">回调</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">index</td>
+      <td align="center">首页</td>
+      <td align="center"></td>
+    </tr>
+    <tr>
+      <td align="center">post</td>
+      <td align="center">文章</td>
+      <td align="center">index</td>
+    </tr>
+    <tr>
+      <td align="center">page</td>
+      <td align="center">分页</td>
+      <td align="center">index</td>
+    </tr>
+    <tr>
+      <td align="center">archive</td>
+      <td align="center">归档</td>
+      <td align="center">index</td>
+    </tr>
+    <tr>
+      <td align="center">category</td>
+      <td align="center">分类归档</td>
+      <td align="center">archive</td>
+    </tr>
+    <tr>
+      <td align="center">tag</td>
+      <td align="center">标签归档</td>
+      <td align="center">archive</td>
+    </tr>
+  </tbody>
+</table>
+<p>注：文件或文件夹开头名称为 _（下划线线）或隐藏的文件会被忽略</p>
+<h2 id="2-scripts"><a href="#2-scripts" class="headerlink" title="2.scripts"></a>2.scripts</h2>
+<p>注：部分主题在source\js</p>
+<h2 id="3-source"><a href="#3-source" class="headerlink" title="3.source"></a>3.source</h2><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -440,6 +542,11 @@
             document.body.appendChild(img);
           });
       </script>]]></content>
+      <tags>
+        <tag>魔改</tag>
+        <tag>hexo</tag>
+        <tag>主题</tag>
+      </tags>
   </entry>
   <entry>
     <title>Windows路径含有带空格的目录/文件名的处理方法</title>
@@ -1114,7 +1221,7 @@ firewall-cmd --reload</code></pre>
 <p>邮箱：<a href="mailto:1097629344@qq.com">1097629344@qq.com</a></p>
 <p>欢迎大家与我交流！!!<img src="/posts/6007b04d/08.jpg"></p>
 
-<div id="aplayer-WSiEbhUe" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"></div>
+<div id="aplayer-pRKUMnnO" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"></div>
 
 
 
@@ -1123,11 +1230,11 @@ firewall-cmd --reload</code></pre>
 
 
 <hr>
-<div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div>
+<div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div>
 <script>
   (function() {
     var player = new DPlayer({
-      "container": document.getElementById("dplayer1"),
+      "container": document.getElementById("dplayer0"),
       "video": {
         "url": "https://dl.sm9.top/Video/2018/KeyCastOW.mp4"
       }
@@ -1138,12 +1245,20 @@ firewall-cmd --reload</code></pre>
 </script>
 
 <hr>
-<iframe src="//player.bilibili.com/player.html?aid=82968958&amp;cid=141941752&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" style="width:700px;height:550px;" allowfullscreen="true"> </iframe>
+<iframe src="//player.bilibili.com/player.html?aid=82968958&amp;cid=141941752&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" width"100%"="" style="width:700px;height:550px;" allowfullscreen="true"> </iframe>
 ------
 
+<video src="https://e.dream18.xyz/down/5/%E9%87%8D%E8%A6%81%E6%96%87%E4%BB%B6/DylanMarron_%5B%E5%92%8C%E7%BB%99%E6%88%91%E8%B4%9F%E9%9D%A2%E8%AF%84%E8%AE%BA%E7%9A%84%E4%BA%BA%E5%AF%B9%E8%AF%9D%5D.mp4/DylanMarron_%5B%E5%92%8C%E7%BB%99%E6%88%91%E8%B4%9F%E9%9D%A2%E8%AF%84%E8%AE%BA%E7%9A%84%E4%BA%BA%E5%AF%B9%E8%AF%9D%5D.mp4" controls="controls">
+  your browser does not support the video tag
+</video>
 
 
-<iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="100px" height="20px" src="https://ghbtns.com/github-btn.html?user=fandongtongxue&amp;repo=fandongtongxue.github.io&amp;type=star&amp;count=true"> </iframe><script>
+
+
+
+<iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="100px" height="20px" src="https://ghbtns.com/github-btn.html?user=fandongtongxue&amp;repo=fandongtongxue.github.io&amp;type=star&amp;count=true"> </iframe>
+
+<iframe src="//player.bilibili.com/player.html?aid=84628317&amp;cid=144732024&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" width="100%" allowfullscreen="true" style="height=55opx"> </iframe><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
