@@ -1244,7 +1244,7 @@ firewall-cmd --reload</code></pre>
 <p>邮箱：<a href="mailto:1097629344@qq.com">1097629344@qq.com</a></p>
 <p>欢迎大家与我交流！!!<img src="/posts/6007b04d/08.jpg"></p>
 
-<div id="aplayer-ULUPCXCO" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"></div>
+<div id="aplayer-JLPYvLpE" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"></div>
 
 
 
@@ -1269,8 +1269,14 @@ firewall-cmd --reload</code></pre>
 
 <hr>
 <iframe src="//player.bilibili.com/player.html?aid=82968958&amp;cid=141941752&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" width"100%"="" height="100%" allowfullscreen="true"> </iframe>
+------
 
-<hr>
+
+
+
+
+
+
 <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="100px" height="20px" src="https://ghbtns.com/github-btn.html?user=fandongtongxue&amp;repo=fandongtongxue.github.io&amp;type=star&amp;count=true"> </iframe>
 
 
@@ -1278,11 +1284,20 @@ firewall-cmd --reload</code></pre>
 
 
 
-
 <iframe src="//player.bilibili.com/player.html?aid=84628317&amp;cid=144732024&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" width="100%" allowfullscreen="true"> </iframe>
+------
+
+<iframe src="//player.bilibili.com/player.html?aid=85179902&amp;cid=145623591&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%%" height="100%"> </iframe>
 
 <hr>
-<iframe src="//player.bilibili.com/player.html?aid=85179902&amp;cid=145623591&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="80%"> </iframe><script>
+<pre><code>&lt;iframe id="spkj" src="https://player.bilibili.com/player.html?aid=44020824&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width=100%&gt; &lt;/iframe&gt;
+&lt;script type="text/javascript"&gt;
+document.getElementById("spkj").style.height=document.getElementById("spkj").scrollWidth\*0.76+"px";
+&lt;/script&gt;</code></pre>
+<pre><code>&lt;iframe id="spkj" src="https://player.bilibili.com/player.html?aid=85546317&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width=100%&gt; &lt;/iframe&gt;
+&lt;script type="text/javascript"&gt;
+document.getElementById("spkj").style.height=document.getElementById("spkj").scrollWidth\*0.76+"px";
+&lt;/script&gt;</code></pre><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
