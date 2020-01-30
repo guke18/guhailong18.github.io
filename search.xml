@@ -80,6 +80,34 @@ Bob--&gt;Alice: I am good thanks!
     &lt;i class="fa fa-pencil"&gt;&lt;/i&gt; 作者: &lt;%- config.author %&gt;
     &lt;% } %&gt;
 &lt;/div&gt;</code></pre>
+<h2 id="添加一言"><a href="#添加一言" class="headerlink" title="添加一言"></a>添加一言</h2>
+<p>如果需要出处的话可以使用以下代码，不过应该有更简便的写法，不过id的参数我调了好几次都没成功。</p>
+<pre><code>--------------------------- layout/_widget/dream.ejs ---------------------------
+
+&lt;div class="row"&gt;
+   &lt;div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text"&gt;
+    &lt;div id="hitokoto"&gt;:D 获取中...&lt;/div&gt;
+    &lt;i id="hitofrom"&gt;:D 获取中...&lt;/i&gt;
+    &lt;script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"&gt;&lt;/script&gt;
+    &lt;script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"&gt;&lt;/script&gt;
+    &lt;script&gt;
+    fetch('https://v1.hitokoto.cn')
+        .then(function (res){
+        return res.json();
+        })
+        .then(function (data) {
+        var hitokoto = document.getElementById('hitokoto');
+        hitokoto.innerText = '\xa0\xa0\xa0\xa0\xa0\xa0\xa0' + data.hitokoto;
+        var hitofrom = document.getElementById('hitofrom');
+        hitofrom.innerText = "——" + "《" + data.from + "》" + '\xa0'; 
+        })
+        .catch(function (err) {
+        console.error(err);
+        })
+    &lt;/script&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;
+</code></pre>
 <p>算了，大家直接从以下两个链接参考就行：</p>
 <p><a href="https://chen-shang.github.io/2019/08/15/ji-zhu-zong-jie/hexo/hexo-theme-matery-zhu-ti-you-hua/#toc-heading-8" target="_blank" rel="noopener">推荐，全都可以使用</a></p>
 <p><a href="https://www.jianshu.com/p/2e6ae2123d57" target="_blank" rel="noopener">部分过时，仅供参考</a></p>
