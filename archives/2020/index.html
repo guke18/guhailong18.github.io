@@ -31,6 +31,7 @@
 </head>
 <!-- 雪花特效 -->
 <script type="text/javascript" src="\js\snow.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/yremp/yremp-js@1.5/sakura.js"></script>
 <meta name="google-site-verification" content="02_7KMvaA5QhtHqwZspLnRdeSfrDbpKwMfS9ILtMms8" />
 
 <body>
@@ -176,7 +177,7 @@
               <li>
                 <a href="/anime">
 
-                  <i class="fas fa-anime" style="margin-top: -20px; zoom: 0.6;"></i>
+                  <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
 
                   <span>动漫</span>
                 </a>
@@ -343,7 +344,7 @@
 
                   <a href="/anime " style="margin-left:50px" ;>
 
-                    <i class="fa fas fa-anime" style="position: absolute;left:28px"></i>
+                    <i class="fa fas fa-film" style="position: absolute;left:28px"></i>
 
                     <span>动漫</span>
                   </a>
@@ -1184,10 +1185,11 @@
               <div class="card-content article-content">
                 <div class="summary block-with-text">
 
+                  在themes\hexo-theme-matery\source\js目录下新建一个 snow.js 文件，粘贴以下代码：
+                  /*样式一*/
+                  (function($){
+                  $.fn.snow = function(options){
 
-                  document.querySelectorAll('.github-emoji')
-                  .forEach(el => {
-                  if (!el.dataset.src) { return
 
                 </div>
                 <div class="publish-info">
@@ -1203,6 +1205,16 @@
                 </div>
               </div>
 
+
+              <div class="card-action article-tags">
+
+                <a href="/tags/%E4%B8%BB%E9%A2%98/"><span class="chip bg-color">主题</span></a>
+
+                <a href="/tags/hexo/"><span class="chip bg-color">hexo</span></a>
+
+                <a href="/tags/%E5%B0%8F%E5%8A%9F%E8%83%BD/"><span class="chip bg-color">小功能</span></a>
+
+              </div>
 
             </div>
           </div>
@@ -1236,10 +1248,20 @@
               <div class="card-content article-content">
                 <div class="summary block-with-text">
 
+                  地址1地址2
+                  在
 
-                  document.querySelectorAll('.github-emoji')
-                  .forEach(el => {
-                  if (!el.dataset.src) { return
+
+
+
+
+
+
+
+
+
+
+                  L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/z16.model.json"},"display":{"position":"r
 
                 </div>
                 <div class="publish-info">
@@ -1650,7 +1672,7 @@
         |&nbsp;Theme&nbsp;<a href="https://github.com/guhailong18/guhailong18.github.io" target="_blank">Matery</a>
         <br>
 
-        &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">9.4k</span>&nbsp;字
+        &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">10.4k</span>&nbsp;字
 
 
 

@@ -125,7 +125,7 @@
     <link href="https://guhailong18.github.io/posts/221edd67/"/>
     <id>https://guhailong18.github.io/posts/221edd67/</id>
     <published>2020-01-29T09:27:48.000Z</published>
-    <updated>2020-01-29T11:10:43.681Z</updated>
+    <updated>2020-01-30T13:17:12.240Z</updated>
     
     <summary type="html">
     
@@ -141,6 +141,12 @@
     
     
     
+      <category term="主题" scheme="https://guhailong18.github.io/tags/%E4%B8%BB%E9%A2%98/"/>
+    
+      <category term="hexo" scheme="https://guhailong18.github.io/tags/hexo/"/>
+    
+      <category term="小功能" scheme="https://guhailong18.github.io/tags/%E5%B0%8F%E5%8A%9F%E8%83%BD/"/>
+    
   </entry>
   
   <entry>
@@ -148,7 +154,7 @@
     <link href="https://guhailong18.github.io/posts/fd68ee7e/"/>
     <id>https://guhailong18.github.io/posts/fd68ee7e/</id>
     <published>2020-01-29T09:25:26.000Z</published>
-    <updated>2020-01-29T11:10:43.684Z</updated>
+    <updated>2020-01-30T13:24:23.577Z</updated>
     
     <summary type="html">
     
@@ -420,9 +426,9 @@
     
       <category term="主题" scheme="https://guhailong18.github.io/tags/%E4%B8%BB%E9%A2%98/"/>
     
-      <category term="魔改" scheme="https://guhailong18.github.io/tags/%E9%AD%94%E6%94%B9/"/>
-    
       <category term="hexo" scheme="https://guhailong18.github.io/tags/hexo/"/>
+    
+      <category term="魔改" scheme="https://guhailong18.github.io/tags/%E9%AD%94%E6%94%B9/"/>
     
   </entry>
   

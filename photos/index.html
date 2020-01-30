@@ -3,12 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="keywords" content="hexo有趣小功能之雪花飞舞, 动漫，编程，数学，读书">
-  <meta name="description" content=" 在themes\hexo-theme-matery\source\js目录下新建一个 snow.js 文件，粘贴以下代码：
-/*样式一*/
-(function($){
-    $.fn.snow = function(options){
-">
+  <meta name="keywords" content="photos, 动漫，编程，数学，读书">
+  <meta name="description" content="photos | 古客">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +12,7 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <title>hexo有趣小功能之雪花飞舞 | 古客</title>
+  <title>photos | 古客</title>
   <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/favicon.png">
 
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/libs/awesome/css/all.css">
@@ -432,12 +428,12 @@
     </nav>
 
   </header>
-  <div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/medias/featureimages/19.jpg')">
+  <div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/medias/featureimages/17.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
       <div class="row">
         <div class="col s12 m12 l12">
           <div class="brand">
-            <h1 class="description center-align post-title">hexo有趣小功能之雪花飞舞</h1>
+            <h1 class="description center-align post-title">photos</h1>
           </div>
         </div>
       </div>
@@ -552,19 +548,7 @@
                 <div class="col s7">
 
                   <div class="article-tag">
-
-                    <a href="/tags/%E4%B8%BB%E9%A2%98/">
-                      <span class="chip bg-color">主题</span>
-                    </a>
-
-                    <a href="/tags/hexo/">
-                      <span class="chip bg-color">hexo</span>
-                    </a>
-
-                    <a href="/tags/%E5%B0%8F%E5%8A%9F%E8%83%BD/">
-                      <span class="chip bg-color">小功能</span>
-                    </a>
-
+                    <span class="chip bg-color">无标签</span>
                   </div>
 
                 </div>
@@ -577,7 +561,7 @@
 
                 <div class="post-date info-break-policy">
                   <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                  2020-01-29
+                  2020-01-30
                 </div>
 
 
@@ -591,14 +575,14 @@
 
                 <div class="info-break-policy">
                   <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                  1k
+                  52
                 </div>
 
 
 
                 <div class="info-break-policy">
                   <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                  5 分
+                  1 分
                 </div>
 
 
@@ -617,198 +601,6 @@
                 
                 
                 
-                <p> 在themes\hexo-theme-matery\source\js目录下新建一个 snow.js 文件，粘贴以下代码：</p>
-                <pre><code>/*样式一*/
-(function($){
-    $.fn.snow = function(options){
-    var $flake = $('&lt;div id="snowbox" /&gt;').css({'position': 'absolute','z-index':'9999', 'top': '-50px'}).html('&amp;#10052;'),
-    documentHeight     = $(document).height(),
-    documentWidth    = $(document).width(),
-    defaults = {
-        minSize        : 10,
-        maxSize        : 20,
-        newOn        : 1000,
-        flakeColor    : "#AFDAEF" /* 此处可以定义雪花颜色，若要白色可以改为#FFFFFF */
-    },
-    options    = $.extend({}, defaults, options);
-    var interval= setInterval( function(){
-    var startPositionLeft = Math.random() * documentWidth - 100,
-    startOpacity = 0.5 + Math.random(),
-    sizeFlake = options.minSize + Math.random() * options.maxSize,
-    endPositionTop = documentHeight - 200,
-    endPositionLeft = startPositionLeft - 500 + Math.random() * 500,
-    durationFall = documentHeight * 10 + Math.random() * 5000;
-    $flake.clone().appendTo('body').css({
-        left: startPositionLeft,
-        opacity: startOpacity,
-        'font-size': sizeFlake,
-        color: options.flakeColor
-    }).animate({
-        top: endPositionTop,
-        left: endPositionLeft,
-        opacity: 0.2
-    },durationFall,'linear',function(){
-        $(this).remove()
-    });
-    }, options.newOn);
-    };
-})(jQuery);
-$(function(){
-    $.fn.snow({ 
-        minSize: 5, /* 定义雪花最小尺寸 */
-        maxSize: 50,/* 定义雪花最大尺寸 */
-        newOn: 300  /* 定义密集程度，数字越小越密集 */
-    });
-});</code></pre>
-                <pre><code>/*样式二*/
-/* 控制下雪 */
-function snowFall(snow) {
-    /* 可配置属性 */
-    snow = snow || {};
-    this.maxFlake = snow.maxFlake || 200;   /* 最多片数 */
-    this.flakeSize = snow.flakeSize || 10;  /* 雪花形状 */
-    this.fallSpeed = snow.fallSpeed || 1;   /* 坠落速度 */
-}
-/* 兼容写法 */
-requestAnimationFrame = window.requestAnimationFrame ||
-    window.mozRequestAnimationFrame ||
-    window.webkitRequestAnimationFrame ||
-    window.msRequestAnimationFrame ||
-    window.oRequestAnimationFrame ||
-    function(callback) { setTimeout(callback, 1000 / 60); };
-
-cancelAnimationFrame = window.cancelAnimationFrame ||
-    window.mozCancelAnimationFrame ||
-    window.webkitCancelAnimationFrame ||
-    window.msCancelAnimationFrame ||
-    window.oCancelAnimationFrame;
-/* 开始下雪 */
-snowFall.prototype.start = function(){
-    /* 创建画布 */
-    snowCanvas.apply(this);
-    /* 创建雪花形状 */
-    createFlakes.apply(this);
-    /* 画雪 */
-    drawSnow.apply(this)
-}
-/* 创建画布 */
-function snowCanvas() {
-    /* 添加Dom结点 */
-    var snowcanvas = document.createElement("canvas");
-    snowcanvas.id = "snowfall";
-    snowcanvas.width = window.innerWidth;
-    snowcanvas.height = document.body.clientHeight;
-    snowcanvas.setAttribute("style", "position:absolute; top: 0; left: 0; z-index: 1; pointer-events: none;");
-    document.getElementsByTagName("body")[0].appendChild(snowcanvas);
-    this.canvas = snowcanvas;
-    this.ctx = snowcanvas.getContext("2d");
-    /* 窗口大小改变的处理 */
-    window.onresize = function() {
-        snowcanvas.width = window.innerWidth;
-        /* snowcanvas.height = window.innerHeight */
-    }
-}
-/* 雪运动对象 */
-function flakeMove(canvasWidth, canvasHeight, flakeSize, fallSpeed) {
-    this.x = Math.floor(Math.random() * canvasWidth);   /* x坐标 */
-    this.y = Math.floor(Math.random() * canvasHeight);  /* y坐标 */
-    this.size = Math.random() * flakeSize + 2;          /* 形状 */
-    this.maxSize = flakeSize;                           /* 最大形状 */
-    this.speed = Math.random() * 1 + fallSpeed;         /* 坠落速度 */
-    this.fallSpeed = fallSpeed;                         /* 坠落速度 */
-    this.velY = this.speed;                             /* Y方向速度 */
-    this.velX = 0;                                      /* X方向速度 */
-    this.stepSize = Math.random() / 30;                 /* 步长 */
-    this.step = 0                                       /* 步数 */
-}
-flakeMove.prototype.update = function() {
-    var x = this.x,
-        y = this.y;
-    /* 左右摆动(余弦) */
-    this.velX *= 0.98;
-    if (this.velY &lt;= this.speed) {
-        this.velY = this.speed
-    }
-    this.velX += Math.cos(this.step += .05) * this.stepSize;
-
-    this.y += this.velY;
-    this.x += this.velX;
-    /* 飞出边界的处理 */
-    if (this.x &gt;= canvas.width || this.x &lt;= 0 || this.y &gt;= canvas.height || this.y &lt;= 0) {
-        this.reset(canvas.width, canvas.height)
-    }
-};
-/* 飞出边界-放置最顶端继续坠落 */
-flakeMove.prototype.reset = function(width, height) {
-    this.x = Math.floor(Math.random() * width);
-    this.y = 0;
-    this.size = Math.random() * this.maxSize + 2;
-    this.speed = Math.random() * 1 + this.fallSpeed;
-    this.velY = this.speed;
-    this.velX = 0;
-};
-// 渲染雪花-随机形状（此处可修改雪花颜色！！！）
-flakeMove.prototype.render = function(ctx) {
-    var snowFlake = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, this.size);
-    snowFlake.addColorStop(0, "rgba(255, 255, 255, 0.9)");  /* 此处是雪花颜色，默认是白色 */
-    snowFlake.addColorStop(.5, "rgba(255, 255, 255, 0.5)"); /* 若要改为其他颜色，请自行查 */
-    snowFlake.addColorStop(1, "rgba(255, 255, 255, 0)");    /* 找16进制的RGB 颜色代码。 */
-    ctx.save();
-    ctx.fillStyle = snowFlake;
-    ctx.beginPath();
-    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-    ctx.fill();
-    ctx.restore();
-};
-/* 创建雪花-定义形状 */
-function createFlakes() {
-    var maxFlake = this.maxFlake,
-        flakes = this.flakes = [],
-        canvas = this.canvas;
-    for (var i = 0; i &lt; maxFlake; i++) {
-        flakes.push(new flakeMove(canvas.width, canvas.height, this.flakeSize, this.fallSpeed))
-    }
-}
-/* 画雪 */
-function drawSnow() {
-    var maxFlake = this.maxFlake,
-        flakes = this.flakes;
-    ctx = this.ctx, canvas = this.canvas, that = this;
-    /* 清空雪花 */
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    for (var e = 0; e &lt; maxFlake; e++) {
-        flakes[e].update();
-        flakes[e].render(ctx);
-    }
-    /*  一帧一帧的画 */
-    this.loop = requestAnimationFrame(function() {
-        drawSnow.apply(that);
-    });
-}
-/* 调用及控制方法 */
-var snow = new snowFall({maxFlake:60});
-snow.start();</code></pre>
-                <p>在hexo-theme-matery\layout\layout.ejs 文件里引用即可：在body前面</p>
-                <pre><code>&lt;!-- 雪花特效 --&gt;
-&lt;script type="text/javascript" src="\js\snow.js"&gt;&lt;/script&gt;</code></pre>
-                <p>例：</p>
-
-
-                &lt;%- partial('_partial head') %&gt;
-                <!-- 雪花特效 -->
-
-                <script type="text/javascript" src="\js\snow.js"></script>
-                <meta name="google-site-verification" content="02_7KMvaA5QhtHqwZspLnRdeSfrDbpKwMfS9ILtMms8">
-
-
-
-                <hr>
-                <p>if (<em>condition</em>)<br>{<br> <em>当条件为 true 时执行的代码</em><br>}</p>
-                <p>添加以上代码可以在config控制是否下雪。</p>
-                <p>如果没效果，请确认网页是否已载入JQurey，如果没有请在下雪代码之前引入JQ即可：</p>
-                <pre><code>&lt;script type="text/javascript" src="http://libs.baidu.com/jquery/1.8.3/jquery.js"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"&gt;&lt;/script&gt;</code></pre>
-                <p>这个不清楚，可以试一下。</p>
                 <script>
                   document.querySelectorAll('.github-emoji')
                     .forEach(el => {
@@ -852,7 +644,7 @@ snow.start();</code></pre>
                     </i>
                   </span>
                   <span class="reprint-info">
-                    <a href="https://guhailong18.github.io/posts/221edd67/">https://guhailong18.github.io/posts/221edd67/</a>
+                    <a href="https://guhailong18.github.io/photos/index.html">https://guhailong18.github.io/photos/index.html</a>
                   </span>
                 </div>
                 <div class="reprint__notice">
@@ -891,19 +683,7 @@ snow.start();</code></pre>
                 <div class="post-meta__tag-list" style="display: inline-block;">
 
                   <div class="article-tag">
-
-                    <a href="/tags/%E4%B8%BB%E9%A2%98/">
-                      <span class="chip bg-color">主题</span>
-                    </a>
-
-                    <a href="/tags/hexo/">
-                      <span class="chip bg-color">hexo</span>
-                    </a>
-
-                    <a href="/tags/%E5%B0%8F%E5%8A%9F%E8%83%BD/">
-                      <span class="chip bg-color">小功能</span>
-                    </a>
-
+                    <span class="chip bg-color">无标签</span>
                   </div>
 
                 </div>
@@ -1339,28 +1119,32 @@ snow.start();</code></pre>
           <article id="prenext-posts" class="prev-next articles">
             <div class="row article-row">
 
-              <div class="article col s12 m6" data-aos="fade-up">
+              <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
                 <div class="article-badge left-badge text-color">
-                  <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                  <i class="far fa-dot-circle"></i>&nbsp;本篇
+                </div>
                 <div class="card">
-                  <a href="/posts/c2d28339/">
+                  <a href="/photos/index.html">
                     <div class="card-image">
 
 
-                      <img src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/medias/featureimages/14.jpg" class="responsive-img" alt="CSS笔记之图标">
+                      <img src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/medias/featureimages/17.jpg" class="responsive-img" alt="photos">
 
-                      <span class="card-title">CSS笔记之图标</span>
+                      <span class="card-title">photos</span>
                     </div>
                   </a>
                   <div class="card-content article-content">
                     <div class="summary block-with-text">
 
-                      最近心血来潮想要修改一下网站的一些图标，原本以为它们实在source里面使用图片的方式保存的，但是在source找了一圈也没有，再看看主题配置文件，在进行百度，最后发现 icon都是用CSS实现的，真实神奇，果然在hexo-theme-ma
+
+                      document.querySelectorAll('.github-emoji')
+                      .forEach(el => {
+                      if (!el.dataset.src) { return
 
                     </div>
                     <div class="publish-info">
                       <span class="publish-date">
-                        <i class="far fa-clock fa-fw icon-date"></i>2020-01-29
+                        <i class="far fa-clock fa-fw icon-date"></i>2020-01-30
                       </span>
                       <span class="publish-author">
 
@@ -1371,25 +1155,6 @@ snow.start();</code></pre>
                     </div>
                   </div>
 
-                  <div class="card-action article-tags">
-
-                    <a href="/tags/CSS/">
-                      <span class="chip bg-color">CSS</span>
-                    </a>
-
-                    <a href="/tags/%E5%9B%BE%E6%A0%87/">
-                      <span class="chip bg-color">图标</span>
-                    </a>
-
-                    <a href="/tags/%E4%B8%BB%E9%A2%98/">
-                      <span class="chip bg-color">主题</span>
-                    </a>
-
-                    <a href="/tags/Hexo/">
-                      <span class="chip bg-color">Hexo</span>
-                    </a>
-
-                  </div>
 
                 </div>
               </div>
@@ -1397,40 +1162,30 @@ snow.start();</code></pre>
 
               <div class="article col s12 m6" data-aos="fade-up">
                 <div class="article-badge right-badge text-color">
-                  下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+                  本篇&nbsp;<i class="far fa-dot-circle"></i>
                 </div>
                 <div class="card">
-                  <a href="/posts/fd68ee7e/">
+                  <a href="/photos/index.html">
                     <div class="card-image">
 
 
-                      <img src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/medias/featureimages/15.jpg" class="responsive-img" alt="hexo有趣的小功能之樱花飘落">
+                      <img src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/medias/featureimages/17.jpg" class="responsive-img" alt="photos">
 
-                      <span class="card-title">hexo有趣的小功能之樱花飘落</span>
+                      <span class="card-title">photos</span>
                     </div>
                   </a>
                   <div class="card-content article-content">
                     <div class="summary block-with-text">
 
-                      地址1地址2
-                      在
 
-
-
-
-
-
-
-
-
-
-
-                      L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/z16.model.json"},"display":{"position":"r
+                      document.querySelectorAll('.github-emoji')
+                      .forEach(el => {
+                      if (!el.dataset.src) { return
 
                     </div>
                     <div class="publish-info">
                       <span class="publish-date">
-                        <i class="far fa-clock fa-fw icon-date"></i>2020-01-29
+                        <i class="far fa-clock fa-fw icon-date"></i>2020-01-30
                       </span>
                       <span class="publish-author">
 
@@ -1440,6 +1195,7 @@ snow.start();</code></pre>
                       </span>
                     </div>
                   </div>
+
 
                 </div>
               </div>
