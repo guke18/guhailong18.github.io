@@ -2007,6 +2007,9 @@ Bob--&gt;Alice: I am good thanks!
             document.body.appendChild(img);
           });
       </script>]]></content>
+      <categories>
+        <category>数据库</category>
+      </categories>
       <tags>
         <tag>命令</tag>
         <tag>MySQL</tag>
@@ -2579,11 +2582,8 @@ Bob--&gt;Alice: I am good thanks!
 
 
 
-
-
 <hr>
 <iframe src="//player.bilibili.com/player.html?aid=82617379&amp;cid=141348997&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" width="100%" height="550px"> </iframe>
-
 
 
 
@@ -2639,6 +2639,7 @@ Bob--&gt;Alice: I am good thanks!
       </categories>
       <tags>
         <tag>测试</tag>
+        <tag>功能</tag>
       </tags>
   </entry>
   <entry>
