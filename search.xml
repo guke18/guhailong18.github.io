@@ -229,20 +229,7 @@ trainer <span class="token operator">=</span> ListTrainer<span class="token punc
 ​&lt;div id="flowchart-0" class="flow-chart"&gt;&lt;/div&gt;</code></pre>
 <hr>
 <p>```<br>该插件基于js-sequence-diagrams，因此您可以将图表定义如下：</p>
-<p>​</p><div id="sequence-0"></div><br>```<script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.27/webfontloader.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js"></script><textarea id="sequence-0-code" style="display: none">Alice-&gt;Bob: Hello Bob, how are you?
-Note right of Bob: Bob thinks
-Bob--&gt;Alice: I am good thanks!
-​</textarea><textarea id="sequence-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12,"theme":"simple"}</textarea>
-  <script>
-    var code = document.getElementById("sequence-0-code").value;
-    var options = JSON.parse(decodeURIComponent(document.getElementById("sequence-0-options").value));
-    var diagram = Diagram.parse(code);
-    diagram.drawSVG("sequence-0", options);
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script>
+<p>​</p><div id="sequence-0"></div><br>```<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">st=&gt;start: Start|past:&gt;http://www.google.com[blank]
 e=&gt;end: End:&gt;http://www.google.com
 op1=&gt;operation: My Operation|past
@@ -258,12 +245,25 @@ cond(yes, right)-&gt;c2
 cond(no)-&gt;sub1(left)-&gt;op1
 c2(yes)-&gt;io-&gt;e
 c2(no)-&gt;op2-&gt;e
-​</textarea><textarea id="flowchart-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12,"theme":"simple"}</textarea>
+​</textarea><textarea id="flowchart-0-options" style="display: none">{"theme":"simple","scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea>
   <script>
     var code = document.getElementById("flowchart-0-code").value;
     var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));
     var diagram = flowchart.parse(code);
     diagram.drawSVG("flowchart-0", options);
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.27/webfontloader.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js"></script><textarea id="sequence-0-code" style="display: none">Alice-&gt;Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob--&gt;Alice: I am good thanks!
+​</textarea><textarea id="sequence-0-options" style="display: none">{"theme":"simple","scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea>
+  <script>
+    var code = document.getElementById("sequence-0-code").value;
+    var options = JSON.parse(decodeURIComponent(document.getElementById("sequence-0-options").value));
+    var diagram = Diagram.parse(code);
+    diagram.drawSVG("sequence-0", options);
   </script>
 <p></p><script>
         document.querySelectorAll('.github-emoji')
@@ -2305,8 +2305,8 @@ snow.start();</code></pre>
   <meta charset="utf-8">
   <title></title>
   <meta name="generator" content="Hexo 4.2.0">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"><link rel="alternate" href="/atom.xml" title="古客" type="application/atom+xml">
-
+<link rel="alternate" href="/atom.xml" title="古客" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
 
 
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/z16.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script>
@@ -3631,7 +3631,7 @@ firewall-cmd --reload</code></pre>
 <p>邮箱：<a href="mailto:1097629344@qq.com">1097629344@qq.com</a></p>
 <p>欢迎大家与我交流！!!<img src="/posts/6007b04d/08.jpg"></p>
 
-<div id="aplayer-HcCGrxck" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"></div>
+<div id="aplayer-hNfLxITH" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"></div>
 
 
 
