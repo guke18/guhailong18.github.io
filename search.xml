@@ -1,6 +1,167 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>爬虫实战之豆瓣电影</title>
+    <url>/posts/ddfb847b/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>所需包：bs4，openpyxl</p>
+<p>上代码：</p>
+<pre><code>def getData(baseurl):
+    findLink=re.compile(r'&lt;a href="(.*?)"&gt;')#找到影片详情链接
+    findImgSrc=re.compile(r'&lt;img.*src="(.*?)"',re.S)#找到影片图片
+    findTitle=re.compile(r'&lt;span class="title"&gt;(.*)&lt;/span&gt;')#找到片名
+    #找到评分
+    findRating=re.compile(r'&lt;span class="rating_num" property="v:average"&gt;(.*)&lt;/span&gt;')
+    #找到评价人数
+    findJudge=re.compile(r'&lt;span&gt;(\d*)人评价&lt;/span&gt;')
+    #找到概况
+    findInq=re.compile(r'&lt;span class="inq"&gt;(.*)&lt;/span&gt;')
+    #找到影片相关内容：导演，主演，年份，地区，类别
+    findBd=re.compile(r'&lt;p class=""&gt;(.*?)&lt;/p&gt;',re.S)
+    #去掉无关内容
+    remove=re.compile(r'                            |\n|&lt;/br&gt;|\.*')
+    datalist=[]</code></pre>
+<pre><code>for i in range(0,10):
+    url=baseurl+str(i*25)
+    html=askURL(url)
+    soup = BeautifulSoup(html, "html.parser")
+    for item in soup.find_all('div',class_='item'):#找到每一个影片项
+        data=[]
+        item=str(item)#转换成字符串
+        # 影片详情链接
+        link=re.findall(findLink,item)[0]
+        data.append(link)#添加详情链接  
+        imgSrc=re.findall(findImgSrc,item)[0]
+        data.append(imgSrc)#添加图片链接
+        titles=re.findall(findTitle,item)
+        #片名可能只有一个中文名，没有外国名
+        if(len(titles)==2):
+            ctitle=titles[0]
+            data.append(ctitle)#添加中文片名
+            otitle=titles[1].replace("/","")#去掉无关符号
+            data.append(otitle)#添加外国片名
+        else:
+            data.append(titles[0])#添加中文片名
+            data.append(' ')#留空
+
+        rating=re.findall(findRating,item)[0]
+        data.append(rating)#添加评分
+        judgeNum=re.findall(findJudge,item)[0]
+        data.append(judgeNum)#添加评论人数
+        inq=re.findall(findInq,item)
+
+        #可能没有概况
+        if len(inq)!=0:
+            inq=inq[0].replace("。","")#去掉句号
+            data.append(inq)#添加概况
+        else:
+            data.append(' ')#留空
+        bd=re.findall(findBd,item)[0]
+        bd=re.sub(remove,"",bd)
+        bd=re.sub('&lt;br(\s+)?\/?&gt;(\s+)?'," ",bd) #去掉&lt;br &gt;
+        bd=re.sub('/', " ",bd)#替换/
+        data.append(bd.strip())
+        datalist.append(data)
+
+time.sleep(5)
+return datalist</code></pre>
+<p>def saveData(datalist,savepath):<br> book=openpyxl.Workbook()<br> sheet = book.create_sheet(“豆瓣电影Top250”)<br> #sheet=book.add_sheet(‘豆瓣电影Top250’,cell_overwrite_ok=True)<br> col=(‘电影详情链接’,’图片链接’,’影片中文名’,’影片外国名’, ‘评分’,’评价数’,’概况’,’相关信息’)</p>
+<pre><code>sheet.append(col)  #添加列头</code></pre>
+<p>​<br> for i in range(0,250):<br> data=datalist[i]<br> for j in range(0,8):<br> sheet.cell(row = (i+2),column = (j+1),value = data[j]) </p>
+<p>#openpyxl中的单元格计数从1开始, 加上第一行是列头, 要多跳一个<br>#openpyxl中的计数和Excel内的计数方式一致, 但和常规编程从0开始的方式相左</p>
+<pre><code>book.save(savepath) #保存</code></pre><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>]]></content>
+  </entry>
+  <entry>
+    <title>微信聊天机器人使用介绍</title>
+    <url>/posts/ebc8e568/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>这是我github第一个认真做的一个项目，想想还有些小激动！废话不多说，介绍一下<a href="https://github.com/guhailong18/chatter" target="_blank" rel="noopener">我的第一次</a>吧！</p>
+<p>微信聊天机器人：</p>
+<p>依赖包：</p>
+<pre class=" language-javascript"><code class="language-javascript">pip3 install chatterbot
+pip3 install chatterbot<span class="token operator">-</span>corpus</code></pre><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>]]></content>
+      <categories>
+        <category>github</category>
+      </categories>
+      <tags>
+        <tag>github</tag>
+        <tag>聊天机器人</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深度学习笔记一</title>
+    <url>/posts/a6627840/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h6 id="做出一个模型的五个步骤："><a href="#做出一个模型的五个步骤：" class="headerlink" title="做出一个模型的五个步骤："></a>做出一个模型的五个步骤：</h6>
+<ul>
+  <li>数据处理：从本地文件或网络地址读取数据，并做预处理操作，如校验数据的正确性等。</li>
+  <li>模型设计：完成网络结构的设计（模型要素1），相当于模型的假设空间，即模型能够表达的关系集合。</li>
+  <li>训练配置：设定模型采用的寻解算法（模型要素2），即优化器，并指定计算资源。</li>
+  <li>训练过程：循环调用训练过程，每轮均包括前向计算 、损失函数（优化目标，模型要素3）和后向传播这三个步骤。</li>
+  <li>保存模型：将训练好的模型保存，以备预测时调用。</li>
+</ul><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>]]></content>
+      <categories>
+        <category>深度学习</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>深度学习</tag>
+        <tag>百度飞桨</tag>
+        <tag>2020</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>服务器使用笔记</title>
     <url>/posts/1f7ef16d/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>首先最好先装一个<a href="https://www.bt.cn/bbs/thread-19376-1-1.html" target="_blank" rel="noopener">宝塔面板</a>，如果已有已有WEB环境的话只能退而求其次装云助手了，如果两个都不行的话那你就太惨了，可以去国外看看有没有，对于我这种英语不好的人非常不友好，推荐的有：</p><script>
@@ -207,8 +368,8 @@ trainer <span class="token operator">=</span> ListTrainer<span class="token punc
       <tags>
         <tag>python</tag>
         <tag>聊天机器人</tag>
-        <tag>chatterbot</tag>
         <tag>机器学习</tag>
+        <tag>chatterbot</tag>
       </tags>
   </entry>
   <entry>
@@ -2473,8 +2634,8 @@ snow.start();</code></pre>
       </categories>
       <tags>
         <tag>命令</tag>
-        <tag>数据库</tag>
         <tag>MySQL</tag>
+        <tag>数据库</tag>
       </tags>
   </entry>
   <entry>
@@ -2791,22 +2952,39 @@ username/ubuntu</code></pre><script>
       </script>]]></content>
       <tags>
         <tag>命令</tag>
-        <tag>Docker</tag>
         <tag>数据库</tag>
+        <tag>Docker</tag>
         <tag>云端</tag>
       </tags>
   </entry>
   <entry>
     <title>MongoDB常用命令</title>
     <url>/posts/c08448a5/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>（1） 使用 Crtl+C 关闭</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="关闭服务"><a href="#关闭服务" class="headerlink" title="关闭服务"></a>关闭服务</h3>
+<p>（1） 使用 Crtl+C 关闭</p>
 <p>（2） 使用 db.shutdownServer()命令 关闭</p>
 <p>备注：命令 db.shutdownServer()关闭命令只能在admin在使用。不然会出错</p>
 <p>（3） 使用 kill命令 关闭</p>
 <p>首先使用$ ps -ef | grep mongo查看MongoDB的相关进程</p>
 <p>然后使用 kill mongo命令</p>
 <p>备注：可以使用操作系统的 kill 命令，给 mongod 进程发送 SIGINT 或 SIGTERM 信号，即 “kill -2 PID,” 或者 “kill -15 PID“。</p>
-<p>建议不要使用 ”kill -9 pid“，因为如果 MongoDB 运行在没开启日志（–journal）的情况下，可能会造成数据损失。</p><script>
+<p>建议不要使用 ”kill -9 pid“，因为如果 MongoDB 运行在没开启日志（–journal）的情况下，可能会造成数据损失。</p>
+<h3 id="数据库使用"><a href="#数据库使用" class="headerlink" title="数据库使用"></a>数据库使用</h3>
+<p>查看所有数据库：show dbs （没有数据的不显示） </p>
+<p>插入数据：db.runoob.insert({“name”:”菜鸟教程”})</p>
+<p>创建了数据库： use DATABASE_NAME（名字）</p>
+<p>删除数据库：db.dropDatabase() 删除集合：db.collection.drop()</p>
+<p>例：</p>
+<pre><code>&gt; use runoob
+switched to db runoob
+&gt; db.createCollection("runoob")     # 先创建集合，类似数据库中的表
+&gt; show tables             # show collections 命令会更加准确点
+runoob
+&gt; db.runoob.drop()
+true
+&gt; show tables</code></pre>
+<h3 id="连接pymongo"><a href="#连接pymongo" class="headerlink" title="连接pymongo"></a>连接pymongo</h3>
+<h3 id="连接chatterbot"><a href="#连接chatterbot" class="headerlink" title="连接chatterbot"></a>连接chatterbot</h3><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -3631,7 +3809,7 @@ firewall-cmd --reload</code></pre>
 <p>邮箱：<a href="mailto:1097629344@qq.com">1097629344@qq.com</a></p>
 <p>欢迎大家与我交流！!!<img src="/posts/6007b04d/08.jpg"></p>
 
-<div id="aplayer-hNfLxITH" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"></div>
+<div id="aplayer-zfeTEWRO" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"></div>
 
 
 

@@ -4,11 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="keywords" content="MongoDB常用命令, 动漫，编程，数学，读书">
-  <meta name="description" content="（1） 使用 Crtl+C 关闭
+  <meta name="description" content="关闭服务
+（1） 使用 Crtl+C 关闭
 （2） 使用 db.shutdownServer()命令 关闭
 备注：命令 db.shutdownServer()关闭命令只能在admin在使用。不然会出错
 （3） 使用 kill命令 关闭
-首先使用$ p">
+首先">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -572,14 +573,14 @@
 
                 <div class="post-date info-break-policy">
                   <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                  2020-01-28
+                  2020-02-02
                 </div>
 
 
 
                 <div class="info-break-policy">
                   <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                  191
+                  306
                 </div>
 
 
@@ -605,6 +606,7 @@
                 
                 
                 
+                <h3 id="关闭服务"><a href="#关闭服务" class="headerlink" title="关闭服务"></a>关闭服务</h3>
                 <p>（1） 使用 Crtl+C 关闭</p>
                 <p>（2） 使用 db.shutdownServer()命令 关闭</p>
                 <p>备注：命令 db.shutdownServer()关闭命令只能在admin在使用。不然会出错</p>
@@ -613,6 +615,22 @@
                 <p>然后使用 kill mongo命令</p>
                 <p>备注：可以使用操作系统的 kill 命令，给 mongod 进程发送 SIGINT 或 SIGTERM 信号，即 “kill -2 PID,” 或者 “kill -15 PID“。</p>
                 <p>建议不要使用 ”kill -9 pid“，因为如果 MongoDB 运行在没开启日志（–journal）的情况下，可能会造成数据损失。</p>
+                <h3 id="数据库使用"><a href="#数据库使用" class="headerlink" title="数据库使用"></a>数据库使用</h3>
+                <p>查看所有数据库：show dbs （没有数据的不显示） </p>
+                <p>插入数据：db.runoob.insert({“name”:”菜鸟教程”})</p>
+                <p>创建了数据库： use DATABASE_NAME（名字）</p>
+                <p>删除数据库：db.dropDatabase() 删除集合：db.collection.drop()</p>
+                <p>例：</p>
+                <pre><code>&gt; use runoob
+switched to db runoob
+&gt; db.createCollection("runoob")     # 先创建集合，类似数据库中的表
+&gt; show tables             # show collections 命令会更加准确点
+runoob
+&gt; db.runoob.drop()
+true
+&gt; show tables</code></pre>
+                <h3 id="连接pymongo"><a href="#连接pymongo" class="headerlink" title="连接pymongo"></a>连接pymongo</h3>
+                <h3 id="连接chatterbot"><a href="#连接chatterbot" class="headerlink" title="连接chatterbot"></a>连接chatterbot</h3>
                 <script>
                   document.querySelectorAll('.github-emoji')
                     .forEach(el => {
@@ -1175,12 +1193,12 @@
                       <span class="chip bg-color">命令</span>
                     </a>
 
-                    <a href="/tags/Docker/">
-                      <span class="chip bg-color">Docker</span>
-                    </a>
-
                     <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">
                       <span class="chip bg-color">数据库</span>
+                    </a>
+
+                    <a href="/tags/Docker/">
+                      <span class="chip bg-color">Docker</span>
                     </a>
 
                     <a href="/tags/%E4%BA%91%E7%AB%AF/">
@@ -1424,7 +1442,7 @@
         |&nbsp;Theme&nbsp;<a href="https://github.com/guhailong18/guhailong18.github.io" target="_blank">Matery</a>
         <br>
 
-        &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">12.7k</span>&nbsp;字
+        &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">13.8k</span>&nbsp;字
 
 
 
