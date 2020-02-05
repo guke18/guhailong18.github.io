@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://guhailong18.github.io/"/>
-  <updated>2020-02-03T15:27:46.566Z</updated>
+  <updated>2020-02-05T02:11:18.218Z</updated>
   <id>https://guhailong18.github.io/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>深度学习之初步入门</title>
+    <link href="https://guhailong18.github.io/posts/93f01828/"/>
+    <id>https://guhailong18.github.io/posts/93f01828/</id>
+    <published>2020-02-04T14:08:27.000Z</published>
+    <updated>2020-02-05T02:11:18.218Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>爬虫实战之豆瓣电影</title>
     <link href="https://guhailong18.github.io/posts/ddfb847b/"/>
     <id>https://guhailong18.github.io/posts/ddfb847b/</id>
     <published>2020-02-03T15:11:47.000Z</published>
-    <updated>2020-02-03T15:27:46.566Z</updated>
+    <updated>2020-02-04T08:56:32.876Z</updated>
     
     <summary type="html">
     
@@ -44,7 +67,7 @@
     <link href="https://guhailong18.github.io/posts/ebc8e568/"/>
     <id>https://guhailong18.github.io/posts/ebc8e568/</id>
     <published>2020-02-03T09:56:00.000Z</published>
-    <updated>2020-02-03T10:07:08.534Z</updated>
+    <updated>2020-02-04T08:56:32.874Z</updated>
     
     <summary type="html">
     
@@ -73,7 +96,7 @@
     <link href="https://guhailong18.github.io/posts/a6627840/"/>
     <id>https://guhailong18.github.io/posts/a6627840/</id>
     <published>2020-02-03T09:31:16.000Z</published>
-    <updated>2020-02-03T09:57:43.912Z</updated>
+    <updated>2020-02-04T08:56:32.879Z</updated>
     
     <summary type="html">
     
@@ -224,9 +247,9 @@
     
       <category term="聊天机器人" scheme="https://guhailong18.github.io/tags/%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
     
-      <category term="机器学习" scheme="https://guhailong18.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
       <category term="chatterbot" scheme="https://guhailong18.github.io/tags/chatterbot/"/>
+    
+      <category term="机器学习" scheme="https://guhailong18.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
@@ -239,7 +262,13 @@
     
     <summary type="html">
     
-      有东西被加密了, 请输入密码查看.
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
     
     </summary>
     
@@ -509,32 +538,9 @@
     
       <category term="命令" scheme="https://guhailong18.github.io/tags/%E5%91%BD%E4%BB%A4/"/>
     
-      <category term="MySQL" scheme="https://guhailong18.github.io/tags/MySQL/"/>
-    
       <category term="数据库" scheme="https://guhailong18.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
-  </entry>
-  
-  <entry>
-    <title>JavaScript学习笔记</title>
-    <link href="https://guhailong18.github.io/posts/2b866d21/"/>
-    <id>https://guhailong18.github.io/posts/2b866d21/</id>
-    <published>2020-01-26T12:10:23.000Z</published>
-    <updated>2020-01-28T05:22:32.494Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
+      <category term="MySQL" scheme="https://guhailong18.github.io/tags/MySQL/"/>
     
   </entry>
   
