@@ -6,13 +6,9 @@
     <meta charset="utf-8">
     <meta name="keywords" content="Docker常用命令, 动漫，编程，数学，读书">
     <meta name="description" content="docker images : 列出本地镜像。
-获取镜像
-例，载入 ubuntu 镜像
-docker pull ubuntu
-
-启动容器
-ubuntu 镜像启动一个容器，参数为以命令行模式进入该容器：
-docker run -it ubun">
+获取镜像例，载入 ubuntu 镜像
+docker pull ubuntu启动容器ubuntu 镜像启动一个容器，参数为以命令行模式进入该容器：
+docker run -it ubuntu /">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -55,170 +51,151 @@ docker run -it ubun">
             
 
 <a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
-<!-- 支持二级菜单特性 洪卫 shw2018 modify 2019.09.17  -->
-<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fa fa-navicon"></i></a>
 <ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
     
-      <li class="hide-on-med-and-down nav-item" >
-
-        
-            <a href="/" class="waves-effect waves-light">
-              
-                <i class="fa fas fa-home"></i>
-              
-              <span>主页</span>
-            </a>
-
-            
-      </li>
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>主页</span>
+    </a>
     
-      <li class="hide-on-med-and-down nav-item" >
-
-        
-            <a href="/tags" class="waves-effect waves-light">
-              
-                <i class="fa fas fa-tags"></i>
-              
-              <span>tags</span>
-            </a>
-
-            
-      </li>
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
     
-      <li class="hide-on-med-and-down nav-item" >
-
-        
-            <a href="/categories" class="waves-effect waves-light">
-              
-                <i class="fa fas fa-bookmark"></i>
-              
-              <span>分类</span>
-            </a>
-
-            
-      </li>
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>tags</span>
+    </a>
     
-      <li class="hide-on-med-and-down nav-item" >
-
-        
-            <a href="/archives" class="waves-effect waves-light">
-              
-                <i class="fa fas fa-archive"></i>
-              
-              <span>目录</span>
-            </a>
-
-            
-      </li>
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
     
-      <li class="hide-on-med-and-down nav-item" >
-
-        
-            <a href="/about" class="waves-effect waves-light">
-              
-                <i class="fa fas fa-user-circle"></i>
-              
-              <span>关于</span>
-            </a>
-
-            
-      </li>
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
     
-      <li class="hide-on-med-and-down nav-item" >
-
-        
-            <a href="/contact" class="waves-effect waves-light">
-              
-                <i class="fa fas fa-comments"></i>
-              
-              <span>留言板</span>
-            </a>
-
-            
-      </li>
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
     
-      <li class="hide-on-med-and-down nav-item" >
-
-        
-            <a href="/friends/" class="waves-effect waves-light">
-              
-                <i class="fa fas fa-address-book"></i>
-              
-              <span>友链</span>
-            </a>
-
-            
-      </li>
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>目录</span>
+    </a>
     
-      <li class="hide-on-med-and-down nav-item" >
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends/" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友链</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="" class="waves-effect waves-light">
 
-        
-              <a href="" class="waves-effect waves-light">
-                
-                  <i class="fa fas fa-list"></i>
-                
-                <span>Medias</span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-              </a>
-
-            <ul class="sub-nav menus_item_child ">
-              
-                <li>
-                  <a href="/music" >
-                    
-                      <i class="fa fas fa-music" style="margin-top: -20px;"></i>
-                    
-                    <span>音乐</span>
-                  </a>
-                </li>
-              
-                <li>
-                  <a href="/AV" >
-                    
-                      <i class="fa fas fa-film" style="margin-top: -20px;"></i>
-                    
-                    <span>电影</span>
-                  </a>
-                </li>
-              
-                <li>
-                  <a href="/books" >
-                    
-                      <i class="fa fas fa-book" style="margin-top: -20px;"></i>
-                    
-                    <span>书籍</span>
-                  </a>
-                </li>
-              
-                <li>
-                  <a href="/galleries" >
-                    
-                      <i class="fa fas fa-image" style="margin-top: -20px;"></i>
-                    
-                    <span>壁纸</span>
-                  </a>
-                </li>
-              
-                <li>
-                  <a href="/anime" >
-                    
-                      <i class="fa fas fa-film" style="margin-top: -20px;"></i>
-                    
-                    <span>动漫</span>
-                  </a>
-                </li>
-              
-            </ul>
+      
+      <i class="fas fa-list" style="zoom: 0.6;"></i>
+      
+      <span>Medias</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
+    </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/music">
           
-      </li>
-    
-
-    <li>
-        <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-            <i id="searchIcon" class="fa fa-search" title="搜索"></i>
+          <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>音乐</span>
         </a>
-    </li>
-
+      </li>
+      
+      <li>
+        <a href="/AV">
+          
+          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>电影</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/books">
+          
+          <i class="fas fa-book" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>书籍</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/galleries">
+          
+          <i class="fas fa-image" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>壁纸</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/anime">
+          
+          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>动漫</span>
+        </a>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
 </ul>
 
 <div id="mobile-nav" class="side-nav sidenav">
@@ -239,243 +216,158 @@ docker run -it ubun">
 
     <ul class="menu-list mobile-menu-list">
         
-        <li>
-            <a href="/" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fas fa-home"></i>
-                
-                主页
-            </a>
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			主页
+		</a>
+          
         </li>
         
-        <li>
-            <a href="/tags" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fas fa-tags"></i>
-                
-                tags
-            </a>
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			tags
+		</a>
+          
         </li>
         
-        <li>
-            <a href="/categories" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fas fa-bookmark"></i>
-                
-                分类
-            </a>
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
         </li>
         
-        <li>
-            <a href="/archives" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fas fa-archive"></i>
-                
-                目录
-            </a>
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			目录
+		</a>
+          
         </li>
         
-        <li>
-            <a href="/about" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fas fa-user-circle"></i>
-                
-                关于我
-            </a>
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
         </li>
         
-        <li>
-            <a href="/contact" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fas fa-comments"></i>
-                
-                留言板
-            </a>
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
         </li>
         
-        <li>
-            <a href="/friends/" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fas fa-address-book"></i>
-                
-                友链
-            </a>
+        <li class="m-nav-item">
+	  
+		<a href="/friends/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友链
+		</a>
+          
         </li>
         
-        <li>
-            <a href="" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fas fa-list"></i>
-                
-                Medias
-            </a>
+        <li class="m-nav-item">
+	  
+		<a href="javascript:;">
+			
+				<i class="fa-fw fas fa-list"></i>
+			
+			Medias
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+		</a>
+            <ul  style="background:  ;" >
+              
+                <li>   
+				
+                  <a href="/music " style="margin-left:50px";>
+				  
+				   <i class="fa fas fa-music" style="position: absolute;left:28px" ></i>
+			      
+		          <span>音乐</span>
+                  </a>
+                </li>
+              
+                <li>   
+				
+                  <a href="/AV " style="margin-left:50px";>
+				  
+				   <i class="fa fas fa-film" style="position: absolute;left:28px" ></i>
+			      
+		          <span>电影</span>
+                  </a>
+                </li>
+              
+                <li>   
+				
+                  <a href="/books " style="margin-left:50px";>
+				  
+				   <i class="fa fas fa-book" style="position: absolute;left:28px" ></i>
+			      
+		          <span>书籍</span>
+                  </a>
+                </li>
+              
+                <li>   
+				
+                  <a href="/galleries " style="margin-left:50px";>
+				  
+				   <i class="fa fas fa-image" style="position: absolute;left:28px" ></i>
+			      
+		          <span>壁纸</span>
+                  </a>
+                </li>
+              
+                <li>   
+				
+                  <a href="/anime " style="margin-left:50px";>
+				  
+				   <i class="fa fas fa-film" style="position: absolute;left:28px" ></i>
+			      
+		          <span>动漫</span>
+                  </a>
+                </li>
+               
+            </ul>
+          
         </li>
         
         
         <li><div class="divider"></div></li>
         <li>
             <a href="https://github.com/guhailong18/guhailong18.github.io" class="waves-effect waves-light" target="_blank">
-                <i class="fa fa-github-square fa-fw"></i>Fork Me
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
             </a>
         </li>
         
     </ul>
-
-
-
-<!-- 支持二级菜单特性 洪卫 shw2018 modify 2019.09.17  -->
-<!-- <ul class="menu-list mobile-menu-list">
-    
-        <li class="m-nav-item">
-                
-                    <a href="/" class="waves-effect waves-light">
-                        
-                        <i class="fa fa-fw fas fa-home"></i>
-                        
-                        主页
-                    </a>
-              
-            </li>
-        
-        <li class="m-nav-item">
-                
-                    <a href="/tags" class="waves-effect waves-light">
-                        
-                        <i class="fa fa-fw fas fa-tags"></i>
-                        
-                        tags
-                    </a>
-              
-            </li>
-        
-        <li class="m-nav-item">
-                
-                    <a href="/categories" class="waves-effect waves-light">
-                        
-                        <i class="fa fa-fw fas fa-bookmark"></i>
-                        
-                        分类
-                    </a>
-              
-            </li>
-        
-        <li class="m-nav-item">
-                
-                    <a href="/archives" class="waves-effect waves-light">
-                        
-                        <i class="fa fa-fw fas fa-archive"></i>
-                        
-                        目录
-                    </a>
-              
-            </li>
-        
-        <li class="m-nav-item">
-                
-                    <a href="/about" class="waves-effect waves-light">
-                        
-                        <i class="fa fa-fw fas fa-user-circle"></i>
-                        
-                        关于我
-                    </a>
-              
-            </li>
-        
-        <li class="m-nav-item">
-                
-                    <a href="/contact" class="waves-effect waves-light">
-                        
-                        <i class="fa fa-fw fas fa-comments"></i>
-                        
-                        留言板
-                    </a>
-              
-            </li>
-        
-        <li class="m-nav-item">
-                
-                    <a href="/friends/" class="waves-effect waves-light">
-                        
-                        <i class="fa fa-fw fas fa-address-book"></i>
-                        
-                        友链
-                    </a>
-              
-            </li>
-        
-        <li class="m-nav-item">
-                
-                    <a href="javascript:;">
-                            
-                            <i class="fa fa-fw fas fa-list"></i>
-                            
-                            Medias
-                            <span class="m-icon"><i class="fa fa-chevron-right"></i></span>
-                    </a>
-                <ul>
-                  
-                    <li>
-                      <a href="/music" >
-                           
-                            <i class="fa fas fa-music" style="left: 18px; position: absolute;"></i>
-                       
-                       <span>音乐</span>
-                      </a>
-                    </li>
-                  
-                    <li>
-                      <a href="/AV" >
-                           
-                            <i class="fa fas fa-film" style="left: 18px; position: absolute;"></i>
-                       
-                       <span>电影</span>
-                      </a>
-                    </li>
-                  
-                    <li>
-                      <a href="/books" >
-                           
-                            <i class="fa fas fa-book" style="left: 18px; position: absolute;"></i>
-                       
-                       <span>书籍</span>
-                      </a>
-                    </li>
-                  
-                    <li>
-                      <a href="/galleries" >
-                           
-                            <i class="fa fas fa-image" style="left: 18px; position: absolute;"></i>
-                       
-                       <span>壁纸</span>
-                      </a>
-                    </li>
-                  
-                    <li>
-                      <a href="/anime" >
-                           
-                            <i class="fa fas fa-film" style="left: 18px; position: absolute;"></i>
-                       
-                       <span>动漫</span>
-                      </a>
-                    </li>
-                  
-                </ul>
-              
-            </li>
-        
-
-        
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="https://github.com/guhailong18/guhailong18.github.io" class="waves-effect waves-light" target="_blank">
-                <i class="fa fa-github-square fa-fw"></i>Fork Me
-            </a>
-        </li>
-        
-    </ul> -->
-
 </div>
-
 
         </div>
 
@@ -667,6 +559,10 @@ docker run -it ubun">
                     
                     <div class="article-tag">
                         
+                            <a href="/tags/%E5%91%BD%E4%BB%A4/">
+                                <span class="chip bg-color">命令</span>
+                            </a>
+                        
                             <a href="/tags/Docker/">
                                 <span class="chip bg-color">Docker</span>
                             </a>
@@ -677,10 +573,6 @@ docker run -it ubun">
                         
                             <a href="/tags/%E4%BA%91%E7%AB%AF/">
                                 <span class="chip bg-color">云端</span>
-                            </a>
-                        
-                            <a href="/tags/%E5%91%BD%E4%BB%A4/">
-                                <span class="chip bg-color">命令</span>
                             </a>
                         
                     </div>
@@ -709,7 +601,7 @@ docker run -it ubun">
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    721
+                    719
                 </div>
                 
 
@@ -733,15 +625,9 @@ docker run -it ubun">
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p><strong>docker images :</strong> 列出本地镜像。</p>
-<h3 id="获取镜像">获取镜像</h3>
-<p>例，载入 ubuntu 镜像</p>
-<pre><code>docker pull ubuntu
-</code></pre>
-<h3 id="启动容器">启动容器</h3>
-<p>ubuntu 镜像启动一个容器，参数为以命令行模式进入该容器：</p>
-<pre><code>docker run -it ubuntu /bin/bash
-</code></pre>
-<p>参数说明：</p>
+<h3 id="获取镜像"><a href="#获取镜像" class="headerlink" title="获取镜像"></a>获取镜像</h3><p>例，载入 ubuntu 镜像</p>
+<pre><code>docker pull ubuntu</code></pre><h3 id="启动容器"><a href="#启动容器" class="headerlink" title="启动容器"></a>启动容器</h3><p>ubuntu 镜像启动一个容器，参数为以命令行模式进入该容器：</p>
+<pre><code>docker run -it ubuntu /bin/bash</code></pre><p>参数说明：</p>
 <ul>
 <li><strong>-i</strong>: 交互式操作。</li>
 <li><strong>-t</strong>: 终端。</li>
@@ -751,52 +637,28 @@ docker run -it ubun">
 <p>要退出终端，直接输入 <strong>exit</strong>:</p>
 <p>查看所有的容器：docker ps -a</p>
 <p>docker start 启动一个已停止的容器：docker start b750bbbcfd88 （此参数为ID）</p>
-<h3 id="后台运行">后台运行</h3>
-<p><strong>-d</strong> 指定容器的运行模式</p>
-<pre><code> docker run -itd --name ubuntu-test ubuntu /bin/bash
-</code></pre>
-<p>**注：**加了 <strong>-d</strong> 参数默认不会进入容器，想要进入容器需要使用指令 <strong>docker exec</strong></p>
-<h3 id="停止一个容器">停止一个容器</h3>
-<pre><code>docker stop &lt;容器 ID&gt;
-</code></pre>
-<h3 id="进入容器">进入容器</h3>
-<p><strong>docker exec</strong>：推荐大家使用 docker exec 命令，因为此退出容器终端，不会导致容器的停止。</p>
-<pre><code>docker exec -it 243c32535da7 /bin/bash
-</code></pre>
-<h3 id="导出和导入容器">导出和导入容器</h3>
-<p>使用 <strong>docker export</strong> 命令。</p>
-<pre><code>docker export 1e560fca3906 &gt; ubuntu.tar
-</code></pre>
-<h3 id="删除容器">删除容器</h3>
-<p><strong>docker rm</strong> 命令：</p>
-<pre><code>docker rm -f 1e560fca3906
-</code></pre>
-<p>下面的命令可以清理掉所有处于终止状态的容器。</p>
+<h3 id="后台运行"><a href="#后台运行" class="headerlink" title="后台运行"></a>后台运行</h3><p><strong>-d</strong> 指定容器的运行模式</p>
+<pre><code> docker run -itd --name ubuntu-test ubuntu /bin/bash</code></pre><p><strong>注：</strong>加了 <strong>-d</strong> 参数默认不会进入容器，想要进入容器需要使用指令 <strong>docker exec</strong></p>
+<h3 id="停止一个容器"><a href="#停止一个容器" class="headerlink" title="停止一个容器"></a>停止一个容器</h3><pre><code>docker stop &lt;容器 ID&gt;</code></pre><h3 id="进入容器"><a href="#进入容器" class="headerlink" title="进入容器"></a>进入容器</h3><p><strong>docker exec</strong>：推荐大家使用 docker exec 命令，因为此退出容器终端，不会导致容器的停止。</p>
+<pre><code>docker exec -it 243c32535da7 /bin/bash</code></pre><h3 id="导出和导入容器"><a href="#导出和导入容器" class="headerlink" title="导出和导入容器"></a>导出和导入容器</h3><p>使用 <strong>docker export</strong> 命令。</p>
+<pre><code>docker export 1e560fca3906 &gt; ubuntu.tar</code></pre><h3 id="删除容器"><a href="#删除容器" class="headerlink" title="删除容器"></a>删除容器</h3><p><strong>docker rm</strong> 命令：</p>
+<pre><code>docker rm -f 1e560fca3906</code></pre><p>下面的命令可以清理掉所有处于终止状态的容器。</p>
 <p>$ docker container prune</p>
-<h2 id="运行一个-web-应用">运行一个 web 应用</h2>
-<pre><code>runoob@runoob:~# docker pull training/webapp  # 载入镜像
-runoob@runoob:~# docker run -d -P training/webapp python app.py
-</code></pre>
-<p>参数说明:</p>
+<h2 id="运行一个-web-应用"><a href="#运行一个-web-应用" class="headerlink" title="运行一个 web 应用"></a>运行一个 web 应用</h2><pre><code>runoob@runoob:~# docker pull training/webapp  # 载入镜像
+runoob@runoob:~# docker run -d -P training/webapp python app.py</code></pre><p>参数说明:</p>
 <ul>
-<li>**-d:**让容器在后台运行。</li>
-<li>**-P:**将容器内部使用的网络端口映射到我们使用的主机上。</li>
+<li><strong>-d:</strong>让容器在后台运行。</li>
+<li><strong>-P:</strong>将容器内部使用的网络端口映射到我们使用的主机上。</li>
 </ul>
-<h2 id="查看-WEB-应用容器">查看 WEB 应用容器</h2>
-<p>docker ps</p>
+<h2 id="查看-WEB-应用容器"><a href="#查看-WEB-应用容器" class="headerlink" title="查看 WEB 应用容器"></a>查看 WEB 应用容器</h2><p>docker ps</p>
 <p>Docker 开放了 5000 端口（默认 Python Flask 端口）映射到主机端口 32769 上。</p>
 <p>这时我们可以通过浏览器访问WEB应用</p>
 <p>可以通过 -p 参数来设置不一样的端口：</p>
-<pre><code>runoob@runoob:~$ docker run -d -p 5000:5000 training/webapp python app.py
-</code></pre>
-<h2 id="查看-WEB-应用程序日志">查看 WEB 应用程序日志</h2>
-<p>docker logs [ID或者名字] 可以查看容器内部的标准输出。</p>
+<pre><code>runoob@runoob:~$ docker run -d -p 5000:5000 training/webapp python app.py</code></pre><h2 id="查看-WEB-应用程序日志"><a href="#查看-WEB-应用程序日志" class="headerlink" title="查看 WEB 应用程序日志"></a>查看 WEB 应用程序日志</h2><p>docker logs [ID或者名字] 可以查看容器内部的标准输出。</p>
 <p><strong>-f:</strong> 让 <strong>docker logs</strong> 像使用 <strong>tail -f</strong> 一样来输出容器内部的标准输出。</p>
 <p>从上面，我们可以看到应用程序使用的是 5000 端口并且能够查看到应用程序的访问日志。</p>
-<h2 id="检查-WEB-应用程序">检查 WEB 应用程序</h2>
-<p>使用 <strong>docker inspect</strong> 来查看 Docker 的底层信息。它会返回一个 JSON 文件记录着 Docker 容器的配置和状态信息。</p>
-<h3 id="推送镜像">推送镜像</h3>
-<p>用户登录后，可以通过 docker push 命令将自己的镜像推送到 Docker Hub。</p>
+<h2 id="检查-WEB-应用程序"><a href="#检查-WEB-应用程序" class="headerlink" title="检查 WEB 应用程序"></a>检查 WEB 应用程序</h2><p>使用 <strong>docker inspect</strong> 来查看 Docker 的底层信息。它会返回一个 JSON 文件记录着 Docker 容器的配置和状态信息。</p>
+<h3 id="推送镜像"><a href="#推送镜像" class="headerlink" title="推送镜像"></a>推送镜像</h3><p>用户登录后，可以通过 docker push 命令将自己的镜像推送到 Docker Hub。</p>
 <p>以下命令中的 username 请替换为你的 Docker 账号用户名</p>
 <pre><code>$ docker tag ubuntu:18.04 username/ubuntu:18.04
 $ docker image ls
@@ -808,9 +670,7 @@ $ docker push username/ubuntu:18.04
 $ docker search username/ubuntu
 
 NAME             DESCRIPTION       STARS         OFFICIAL    AUTOMATED
-username/ubuntu
-</code></pre>
-<script>
+username/ubuntu</code></pre><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -891,6 +751,10 @@ username/ubuntu
                     
                         <div class="article-tag">
                             
+                                <a href="/tags/%E5%91%BD%E4%BB%A4/">
+                                    <span class="chip bg-color">命令</span>
+                                </a>
+                            
                                 <a href="/tags/Docker/">
                                     <span class="chip bg-color">Docker</span>
                                 </a>
@@ -901,10 +765,6 @@ username/ubuntu
                             
                                 <a href="/tags/%E4%BA%91%E7%AB%AF/">
                                     <span class="chip bg-color">云端</span>
-                                </a>
-                            
-                                <a href="/tags/%E5%91%BD%E4%BB%A4/">
-                                    <span class="chip bg-color">命令</span>
                                 </a>
                             
                         </div>
@@ -1352,15 +1212,10 @@ username/ubuntu
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            若Python2 和 Python3 同时有 pip，则使用方法如下：
-Python2：
-python2 -m pip install XXX
-
-Python3:
+                            若Python2 和 Python3 同时有 pip，则使用方法如下：Python2：
+python2 -m pip install XXXPython3:
 python3 -m pip install XXX
-
-
-        d
+        docume
                         
                     </div>
                     <div class="publish-info">
@@ -1409,12 +1264,11 @@ python3 -m pip install XXX
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            关闭服务
-（1） 使用 Crtl+C 关闭
+                            关闭服务（1） 使用 Crtl+C 关闭
 （2） 使用 db.shutdownServer()命令 关闭
 备注：命令 db.shutdownServer()关闭命令只能在admin在使用。不然会出错
 （3） 使用 kill命令 关闭
-首先
+首先使
                         
                     </div>
                     <div class="publish-info">
@@ -1613,7 +1467,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">16.6k</span>&nbsp;字
+                class="white-color">13.8k</span>&nbsp;字
             
             
             

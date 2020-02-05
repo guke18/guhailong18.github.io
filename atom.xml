@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://guhailong18.github.io/"/>
-  <updated>2020-02-05T12:27:14.048Z</updated>
+  <updated>2020-02-05T02:11:18.218Z</updated>
   <id>https://guhailong18.github.io/</id>
   
   <author>
@@ -15,29 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>1234</title>
-    <link href="https://guhailong18.github.io/posts/2DY7R53/"/>
-    <id>https://guhailong18.github.io/posts/2DY7R53/</id>
-    <published>2020-02-05T12:24:50.000Z</published>
-    <updated>2020-02-05T12:27:14.048Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
   
   <entry>
     <title>深度学习之初步入门</title>
@@ -108,9 +85,9 @@
       <category term="github" scheme="https://guhailong18.github.io/categories/github/"/>
     
     
-      <category term="聊天机器人" scheme="https://guhailong18.github.io/tags/%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
-    
       <category term="github" scheme="https://guhailong18.github.io/tags/github/"/>
+    
+      <category term="聊天机器人" scheme="https://guhailong18.github.io/tags/%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
     
   </entry>
   
@@ -285,13 +262,7 @@
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
+      有东西被加密了, 请输入密码查看.
     
     </summary>
     
@@ -349,9 +320,9 @@
     
     
     
-      <category term="hexo" scheme="https://guhailong18.github.io/tags/hexo/"/>
-    
       <category term="主题" scheme="https://guhailong18.github.io/tags/%E4%B8%BB%E9%A2%98/"/>
+    
+      <category term="hexo" scheme="https://guhailong18.github.io/tags/hexo/"/>
     
   </entry>
   
@@ -399,11 +370,11 @@
     
     
     
-      <category term="主题" scheme="https://guhailong18.github.io/tags/%E4%B8%BB%E9%A2%98/"/>
-    
       <category term="CSS" scheme="https://guhailong18.github.io/tags/CSS/"/>
     
       <category term="图标" scheme="https://guhailong18.github.io/tags/%E5%9B%BE%E6%A0%87/"/>
+    
+      <category term="主题" scheme="https://guhailong18.github.io/tags/%E4%B8%BB%E9%A2%98/"/>
     
       <category term="Hexo" scheme="https://guhailong18.github.io/tags/Hexo/"/>
     
@@ -430,9 +401,9 @@
     
     
     
-      <category term="hexo" scheme="https://guhailong18.github.io/tags/hexo/"/>
-    
       <category term="主题" scheme="https://guhailong18.github.io/tags/%E4%B8%BB%E9%A2%98/"/>
+    
+      <category term="hexo" scheme="https://guhailong18.github.io/tags/hexo/"/>
     
       <category term="小功能" scheme="https://guhailong18.github.io/tags/%E5%B0%8F%E5%8A%9F%E8%83%BD/"/>
     
@@ -482,11 +453,11 @@
     
     
     
-      <category term="魔改" scheme="https://guhailong18.github.io/tags/%E9%AD%94%E6%94%B9/"/>
-    
       <category term="HLML" scheme="https://guhailong18.github.io/tags/HLML/"/>
     
       <category term="排版" scheme="https://guhailong18.github.io/tags/%E6%8E%92%E7%89%88/"/>
+    
+      <category term="魔改" scheme="https://guhailong18.github.io/tags/%E9%AD%94%E6%94%B9/"/>
     
   </entry>
   
@@ -533,6 +504,37 @@
     </summary>
     
     
+    
+  </entry>
+  
+  <entry>
+    <title>Mysql常用命令</title>
+    <link href="https://guhailong18.github.io/posts/64129a24/"/>
+    <id>https://guhailong18.github.io/posts/64129a24/</id>
+    <published>2020-01-27T08:04:22.000Z</published>
+    <updated>2020-01-30T03:20:34.563Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="数据库" scheme="https://guhailong18.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="命令" scheme="https://guhailong18.github.io/tags/%E5%91%BD%E4%BB%A4/"/>
+    
+      <category term="数据库" scheme="https://guhailong18.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+      <category term="MySQL" scheme="https://guhailong18.github.io/tags/MySQL/"/>
     
   </entry>
   

@@ -5,15 +5,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="聊天机器人学习笔记(一), 动漫，编程，数学，读书">
-    <meta name="description" content="NLTK
-text*都是一个一个的书籍节点，直接输入text1会输出书籍标题
-搜索文本
-text1.concordance(“former”)
+    <meta name="description" content="NLTKtext*都是一个一个的书籍节点，直接输入text1会输出书籍标题
+搜索文本text1.concordance(“former”)
 搜索相关词
-text1.similar(&#34;ship&#34;)
-
-这个倒是挺特别的
-查看某个词在文章里出">
+text1.similar(&#34;ship&#34;)这个倒是挺特别的
+查看某个词在文章里出现的位置">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -56,170 +52,151 @@ text1.similar(&#34;ship&#34;)
             
 
 <a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
-<!-- 支持二级菜单特性 洪卫 shw2018 modify 2019.09.17  -->
-<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fa fa-navicon"></i></a>
 <ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
     
-      <li class="hide-on-med-and-down nav-item" >
-
-        
-            <a href="/" class="waves-effect waves-light">
-              
-                <i class="fa fas fa-home"></i>
-              
-              <span>主页</span>
-            </a>
-
-            
-      </li>
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>主页</span>
+    </a>
     
-      <li class="hide-on-med-and-down nav-item" >
-
-        
-            <a href="/tags" class="waves-effect waves-light">
-              
-                <i class="fa fas fa-tags"></i>
-              
-              <span>tags</span>
-            </a>
-
-            
-      </li>
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
     
-      <li class="hide-on-med-and-down nav-item" >
-
-        
-            <a href="/categories" class="waves-effect waves-light">
-              
-                <i class="fa fas fa-bookmark"></i>
-              
-              <span>分类</span>
-            </a>
-
-            
-      </li>
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>tags</span>
+    </a>
     
-      <li class="hide-on-med-and-down nav-item" >
-
-        
-            <a href="/archives" class="waves-effect waves-light">
-              
-                <i class="fa fas fa-archive"></i>
-              
-              <span>目录</span>
-            </a>
-
-            
-      </li>
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
     
-      <li class="hide-on-med-and-down nav-item" >
-
-        
-            <a href="/about" class="waves-effect waves-light">
-              
-                <i class="fa fas fa-user-circle"></i>
-              
-              <span>关于</span>
-            </a>
-
-            
-      </li>
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
     
-      <li class="hide-on-med-and-down nav-item" >
-
-        
-            <a href="/contact" class="waves-effect waves-light">
-              
-                <i class="fa fas fa-comments"></i>
-              
-              <span>留言板</span>
-            </a>
-
-            
-      </li>
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
     
-      <li class="hide-on-med-and-down nav-item" >
-
-        
-            <a href="/friends/" class="waves-effect waves-light">
-              
-                <i class="fa fas fa-address-book"></i>
-              
-              <span>友链</span>
-            </a>
-
-            
-      </li>
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>目录</span>
+    </a>
     
-      <li class="hide-on-med-and-down nav-item" >
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends/" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友链</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="" class="waves-effect waves-light">
 
-        
-              <a href="" class="waves-effect waves-light">
-                
-                  <i class="fa fas fa-list"></i>
-                
-                <span>Medias</span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-              </a>
-
-            <ul class="sub-nav menus_item_child ">
-              
-                <li>
-                  <a href="/music" >
-                    
-                      <i class="fa fas fa-music" style="margin-top: -20px;"></i>
-                    
-                    <span>音乐</span>
-                  </a>
-                </li>
-              
-                <li>
-                  <a href="/AV" >
-                    
-                      <i class="fa fas fa-film" style="margin-top: -20px;"></i>
-                    
-                    <span>电影</span>
-                  </a>
-                </li>
-              
-                <li>
-                  <a href="/books" >
-                    
-                      <i class="fa fas fa-book" style="margin-top: -20px;"></i>
-                    
-                    <span>书籍</span>
-                  </a>
-                </li>
-              
-                <li>
-                  <a href="/galleries" >
-                    
-                      <i class="fa fas fa-image" style="margin-top: -20px;"></i>
-                    
-                    <span>壁纸</span>
-                  </a>
-                </li>
-              
-                <li>
-                  <a href="/anime" >
-                    
-                      <i class="fa fas fa-film" style="margin-top: -20px;"></i>
-                    
-                    <span>动漫</span>
-                  </a>
-                </li>
-              
-            </ul>
+      
+      <i class="fas fa-list" style="zoom: 0.6;"></i>
+      
+      <span>Medias</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
+    </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/music">
           
-      </li>
-    
-
-    <li>
-        <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-            <i id="searchIcon" class="fa fa-search" title="搜索"></i>
+          <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>音乐</span>
         </a>
-    </li>
-
+      </li>
+      
+      <li>
+        <a href="/AV">
+          
+          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>电影</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/books">
+          
+          <i class="fas fa-book" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>书籍</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/galleries">
+          
+          <i class="fas fa-image" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>壁纸</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/anime">
+          
+          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>动漫</span>
+        </a>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
 </ul>
 
 <div id="mobile-nav" class="side-nav sidenav">
@@ -240,243 +217,158 @@ text1.similar(&#34;ship&#34;)
 
     <ul class="menu-list mobile-menu-list">
         
-        <li>
-            <a href="/" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fas fa-home"></i>
-                
-                主页
-            </a>
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			主页
+		</a>
+          
         </li>
         
-        <li>
-            <a href="/tags" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fas fa-tags"></i>
-                
-                tags
-            </a>
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			tags
+		</a>
+          
         </li>
         
-        <li>
-            <a href="/categories" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fas fa-bookmark"></i>
-                
-                分类
-            </a>
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
         </li>
         
-        <li>
-            <a href="/archives" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fas fa-archive"></i>
-                
-                目录
-            </a>
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			目录
+		</a>
+          
         </li>
         
-        <li>
-            <a href="/about" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fas fa-user-circle"></i>
-                
-                关于我
-            </a>
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
         </li>
         
-        <li>
-            <a href="/contact" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fas fa-comments"></i>
-                
-                留言板
-            </a>
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
         </li>
         
-        <li>
-            <a href="/friends/" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fas fa-address-book"></i>
-                
-                友链
-            </a>
+        <li class="m-nav-item">
+	  
+		<a href="/friends/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友链
+		</a>
+          
         </li>
         
-        <li>
-            <a href="" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fas fa-list"></i>
-                
-                Medias
-            </a>
+        <li class="m-nav-item">
+	  
+		<a href="javascript:;">
+			
+				<i class="fa-fw fas fa-list"></i>
+			
+			Medias
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+		</a>
+            <ul  style="background:  ;" >
+              
+                <li>   
+				
+                  <a href="/music " style="margin-left:50px";>
+				  
+				   <i class="fa fas fa-music" style="position: absolute;left:28px" ></i>
+			      
+		          <span>音乐</span>
+                  </a>
+                </li>
+              
+                <li>   
+				
+                  <a href="/AV " style="margin-left:50px";>
+				  
+				   <i class="fa fas fa-film" style="position: absolute;left:28px" ></i>
+			      
+		          <span>电影</span>
+                  </a>
+                </li>
+              
+                <li>   
+				
+                  <a href="/books " style="margin-left:50px";>
+				  
+				   <i class="fa fas fa-book" style="position: absolute;left:28px" ></i>
+			      
+		          <span>书籍</span>
+                  </a>
+                </li>
+              
+                <li>   
+				
+                  <a href="/galleries " style="margin-left:50px";>
+				  
+				   <i class="fa fas fa-image" style="position: absolute;left:28px" ></i>
+			      
+		          <span>壁纸</span>
+                  </a>
+                </li>
+              
+                <li>   
+				
+                  <a href="/anime " style="margin-left:50px";>
+				  
+				   <i class="fa fas fa-film" style="position: absolute;left:28px" ></i>
+			      
+		          <span>动漫</span>
+                  </a>
+                </li>
+               
+            </ul>
+          
         </li>
         
         
         <li><div class="divider"></div></li>
         <li>
             <a href="https://github.com/guhailong18/guhailong18.github.io" class="waves-effect waves-light" target="_blank">
-                <i class="fa fa-github-square fa-fw"></i>Fork Me
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
             </a>
         </li>
         
     </ul>
-
-
-
-<!-- 支持二级菜单特性 洪卫 shw2018 modify 2019.09.17  -->
-<!-- <ul class="menu-list mobile-menu-list">
-    
-        <li class="m-nav-item">
-                
-                    <a href="/" class="waves-effect waves-light">
-                        
-                        <i class="fa fa-fw fas fa-home"></i>
-                        
-                        主页
-                    </a>
-              
-            </li>
-        
-        <li class="m-nav-item">
-                
-                    <a href="/tags" class="waves-effect waves-light">
-                        
-                        <i class="fa fa-fw fas fa-tags"></i>
-                        
-                        tags
-                    </a>
-              
-            </li>
-        
-        <li class="m-nav-item">
-                
-                    <a href="/categories" class="waves-effect waves-light">
-                        
-                        <i class="fa fa-fw fas fa-bookmark"></i>
-                        
-                        分类
-                    </a>
-              
-            </li>
-        
-        <li class="m-nav-item">
-                
-                    <a href="/archives" class="waves-effect waves-light">
-                        
-                        <i class="fa fa-fw fas fa-archive"></i>
-                        
-                        目录
-                    </a>
-              
-            </li>
-        
-        <li class="m-nav-item">
-                
-                    <a href="/about" class="waves-effect waves-light">
-                        
-                        <i class="fa fa-fw fas fa-user-circle"></i>
-                        
-                        关于我
-                    </a>
-              
-            </li>
-        
-        <li class="m-nav-item">
-                
-                    <a href="/contact" class="waves-effect waves-light">
-                        
-                        <i class="fa fa-fw fas fa-comments"></i>
-                        
-                        留言板
-                    </a>
-              
-            </li>
-        
-        <li class="m-nav-item">
-                
-                    <a href="/friends/" class="waves-effect waves-light">
-                        
-                        <i class="fa fa-fw fas fa-address-book"></i>
-                        
-                        友链
-                    </a>
-              
-            </li>
-        
-        <li class="m-nav-item">
-                
-                    <a href="javascript:;">
-                            
-                            <i class="fa fa-fw fas fa-list"></i>
-                            
-                            Medias
-                            <span class="m-icon"><i class="fa fa-chevron-right"></i></span>
-                    </a>
-                <ul>
-                  
-                    <li>
-                      <a href="/music" >
-                           
-                            <i class="fa fas fa-music" style="left: 18px; position: absolute;"></i>
-                       
-                       <span>音乐</span>
-                      </a>
-                    </li>
-                  
-                    <li>
-                      <a href="/AV" >
-                           
-                            <i class="fa fas fa-film" style="left: 18px; position: absolute;"></i>
-                       
-                       <span>电影</span>
-                      </a>
-                    </li>
-                  
-                    <li>
-                      <a href="/books" >
-                           
-                            <i class="fa fas fa-book" style="left: 18px; position: absolute;"></i>
-                       
-                       <span>书籍</span>
-                      </a>
-                    </li>
-                  
-                    <li>
-                      <a href="/galleries" >
-                           
-                            <i class="fa fas fa-image" style="left: 18px; position: absolute;"></i>
-                       
-                       <span>壁纸</span>
-                      </a>
-                    </li>
-                  
-                    <li>
-                      <a href="/anime" >
-                           
-                            <i class="fa fas fa-film" style="left: 18px; position: absolute;"></i>
-                       
-                       <span>动漫</span>
-                      </a>
-                    </li>
-                  
-                </ul>
-              
-            </li>
-        
-
-        
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="https://github.com/guhailong18/guhailong18.github.io" class="waves-effect waves-light" target="_blank">
-                <i class="fa fa-github-square fa-fw"></i>Fork Me
-            </a>
-        </li>
-        
-    </ul> -->
-
 </div>
-
 
         </div>
 
@@ -706,7 +598,7 @@ text1.similar(&#34;ship&#34;)
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    541
+                    540
                 </div>
                 
 
@@ -729,45 +621,35 @@ text1.similar(&#34;ship&#34;)
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="NLTK">NLTK</h2>
-<p>text*都是一个一个的书籍节点，直接输入text1会输出书籍标题</p>
-<h2 id="搜索文本">搜索文本</h2>
-<p>text1.concordance(“former”)</p>
+                <h2 id="NLTK"><a href="#NLTK" class="headerlink" title="NLTK"></a>NLTK</h2><p>text*都是一个一个的书籍节点，直接输入text1会输出书籍标题</p>
+<h2 id="搜索文本"><a href="#搜索文本" class="headerlink" title="搜索文本"></a>搜索文本</h2><p>text1.concordance(“former”)</p>
 <p>搜索相关词</p>
-<pre><code>text1.similar("ship")
-</code></pre>
-<p>这个倒是挺特别的</p>
+<pre><code>text1.similar("ship")</code></pre><p>这个倒是挺特别的</p>
 <p>查看某个词在文章里出现的位置：</p>
 <p>text4.dispersion_plot([“citizens”, “democracy”, “freedom”, “duties”, “America”])</p>
-<h2 id="词统计">词统计</h2>
-<p>len(text1)：返回总字数</p>
+<h2 id="词统计"><a href="#词统计" class="headerlink" title="词统计"></a>词统计</h2><p>len(text1)：返回总字数</p>
 <p>set(text1)：返回文本的所有词集合</p>
 <p>len(set(text4))：返回文本总词数</p>
 <p>text4.count(“is”)：返回“is”这个词出现的总次数</p>
 <p>FreqDist(text1)：统计文章的词频并按从大到小排序存到一个列表里</p>
 <p>fdist1 = FreqDist(text1);fdist1.plot(50, cumulative=True)：统计词频，并输出累计图像</p>
-<h4 id="NLTK的语料库：">NLTK的语料库：</h4>
-<p>from nltk.corpus import webtext：网络文本语料库，网络和聊天文本</p>
+<h4 id="NLTK的语料库："><a href="#NLTK的语料库：" class="headerlink" title="NLTK的语料库："></a>NLTK的语料库：</h4><p>from nltk.corpus import webtext：网络文本语料库，网络和聊天文本</p>
 <p>from nltk.corpus import brown：布朗语料库，按照文本分类好的500个不同来源的文本</p>
 <p>from nltk.corpus import reuters：路透社语料库，1万多个新闻文档</p>
 <p>from nltk.corpus import inaugural：就职演说语料库，55个总统的演说</p>
 <p>组织结构：散养式（孤立的多篇文章）、分类式（按照类别组织，相互之间没有交集）、交叉式（一篇文章可能属于多个类）、渐变式（语法随着时间发生变化）</p>
-<h2 id="语料库的通用接口">语料库的通用接口</h2>
-<p>fileids()：返回语料库中的文件</p>
+<h2 id="语料库的通用接口"><a href="#语料库的通用接口" class="headerlink" title="语料库的通用接口"></a>语料库的通用接口</h2><p>fileids()：返回语料库中的文件</p>
 <p>categories()：返回语料库中的分类</p>
 <p>raw()：返回语料库的原始内容</p>
 <p>words()：返回语料库中的词汇</p>
 <p>sents()：返回语料库句子</p>
 <p>abspath()：指定文件在磁盘上的位置</p>
 <p>open()：打开语料库的文件流</p>
-<h2 id="加载自己的语料库">加载自己的语料库</h2>
-<p>收集自己的语料文件（文本文件）到某路径下（比如/tmp)，然后执行：</p>
+<h2 id="加载自己的语料库"><a href="#加载自己的语料库" class="headerlink" title="加载自己的语料库"></a>加载自己的语料库</h2><p>收集自己的语料文件（文本文件）到某路径下（比如/tmp)，然后执行：</p>
 <pre><code>&gt;&gt;&gt; from nltk.corpus import PlaintextCorpusReader
 &gt;&gt;&gt; corpus_root = '/tmp'
 &gt;&gt;&gt; wordlists = PlaintextCorpusReader(corpus_root, '.*')
-&gt;&gt;&gt; wordlists.fileids()
-</code></pre>
-<p>就可以列出自己语料库的各个文件了，也可以使用如wordlists.sents(‘a.txt’)和wordlists.words(‘a.txt’)等方法来获取句子和词信息</p>
+&gt;&gt;&gt; wordlists.fileids()</code></pre><p>就可以列出自己语料库的各个文件了，也可以使用如wordlists.sents(‘a.txt’)和wordlists.words(‘a.txt’)等方法来获取句子和词信息</p>
 <p><a href="http://www.shareditor.com/blogshow?blogId=64" target="_blank" rel="noopener">教程链接</a></p>
 <script>
         document.querySelectorAll('.github-emoji')
@@ -1348,13 +1230,12 @@ text1.similar(&#34;ship&#34;)
                     <div class="summary block-with-text">
                         
                             
-
 创建一个 Chat Bot
-
 
 from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
-chatbot = ChatBot("my chat"
+chatbot = ChatBot("my chat")
+
                         
                     </div>
                     <div class="publish-info">
@@ -1573,7 +1454,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">16.6k</span>&nbsp;字
+                class="white-color">13.8k</span>&nbsp;字
             
             
             
