@@ -32,6 +32,7 @@
 <!-- 雪花特效 -->
 <script type="text/javascript" src="\js\snow.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/yremp/yremp-js@1.5/sakura.js"></script>
+
 <body>
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
@@ -383,7 +384,7 @@
     }
 
     .github-corner svg {
-        color: #F062A7;
+        color: #0f9d58;
         fill: #fff;
         height: 64px;
         width: 64px;
@@ -423,7 +424,6 @@
               fill="currentColor" class="octo-body"></path>
     </svg>
 </a>
-
         
     </nav>
 
@@ -462,10 +462,9 @@
 
 
 <script>
-    // 每分钟切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/medias/banner/' + new Date().getMinutes() + '.jpg)');
+    // 每天切换 banner 图.  Switch banner image every day.
+    $('.bg-cover').css('background-image', 'url(https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/medias/banner/' + new Date().getDay() + '.jpg)');
 </script>
-
 
 
     </div>
@@ -599,8 +598,8 @@
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    这是一个分享一些自己心得，爱好以及知识的博客，本人只是一名普通的大学生，不是啥大神。不用抱有太高的期待或是要求，如果能帮助到部分人或是给部分人带来些许快乐，实乃我无上的荣耀…..（此处运用了夸张的手法并省略两千字）
-邮箱：109762934
+                                    这是一个分享一些自己心得，爱好以及知识的博客，本人只是一名普通的大学生，不是啥大神。不用抱有太高的期待或是要求，如果能帮助到部分人或是给部分人带来些许快乐，实乃我无上的荣耀……（此处运用了夸张的手法并省略两千字）
+邮箱：1097629344
                                 
                             </div>
                             <div class="publish-info">
@@ -715,7 +714,7 @@
             <span id="year">2020</span>
             <a href="https://guhailong18.github.io" target="_blank">远方客</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/guhailong18/guhailong18.github.io" target="_blank">Matery</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span

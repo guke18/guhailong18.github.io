@@ -172,7 +172,7 @@ code {
     z-index: 1;
     filter: invert(50%);
     cursor: pointer;
-}
+} 
 
 .code-expand {
     position: absolute;
@@ -248,7 +248,7 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #623AA2 0%,#F97794 100%);
+    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
 }
 
 .text-color {
@@ -2006,14 +2006,14 @@ footer .copy-right {
     background: white;
 }
 
+/*二级菜单*/
 
-/* 二级菜单样式定义 洪卫 shw2018 add 2019.09.17 */
-
-.nav-menu {}
+.nav-menu {
+}
 
 .nav-menu li .sub-nav {
     position: absolute;
-    top: 77px;
+    top: 66px;
     list-style: none;
     margin-left: -20px;
     display: none;
@@ -2080,17 +2080,15 @@ footer .copy-right {
 }
 
 .m-nav-item {
-    /* position: relative; */
-    left: 45px
+    position: relative;
 }
 
 .m-nav-item ul {
     display: none;
-    background: rgba(255, 255, 255, .1);
 }
 
 .m-nav-item ul li {
-    width: 245px;
+    width: 255px;
     height: 50px;
     line-height: 50px;
     text-align: center;
@@ -2109,26 +2107,21 @@ footer .copy-right {
     transition: all .3s;
 }
 
-.m-nav-show .m-nav-item>a:hover {
+.m-nav-show,
+.m-nav-item > a:hover {
     color: #FFF;
     background: rgba(255, 255, 255, .8);
 }
 
-.m-nav-show>a:before,
-.m-nav-item>a:hover:before {
+.m-nav-show > a:before,
+.m-nav-item > a:hover:before {
     opacity: 1;
 }
 
 .m-nav-item .m-icon {
     position: absolute;
-    right: 65px;
+    right: 15px;
     height: 50px;
     padding: 0px;
     margin: 0px;
 }
-
-.nav-item li:hover a {
-    color: #FFF;
-    background: rgba(0, 0, 0, .1);
-}
-

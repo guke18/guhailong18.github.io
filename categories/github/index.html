@@ -32,6 +32,7 @@
 <!-- 雪花特效 -->
 <script type="text/javascript" src="\js\snow.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/yremp/yremp-js@1.5/sakura.js"></script>
+
 <body>
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
@@ -383,7 +384,7 @@
     }
 
     .github-corner svg {
-        color: #F062A7;
+        color: #0f9d58;
         fill: #fff;
         height: 64px;
         width: 64px;
@@ -423,7 +424,6 @@
               fill="currentColor" class="octo-body"></path>
     </svg>
 </a>
-
         
     </nav>
 
@@ -462,10 +462,9 @@
 
 
 <script>
-    // 每分钟切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/medias/banner/' + new Date().getMinutes() + '.jpg)');
+    // 每天切换 banner 图.  Switch banner image every day.
+    $('.bg-cover').css('background-image', 'url(https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/medias/banner/' + new Date().getDay() + '.jpg)');
 </script>
-
 
 
     </div>
@@ -542,7 +541,8 @@
 pip3 install chatterbot
 pip3 install chatterbot-corpus
 
-  
+
+ 
                             
                         </div>
                         <div class="publish-info">
@@ -565,12 +565,12 @@ pip3 install chatterbot-corpus
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/github/">
-                            <span class="chip bg-color">github</span>
-                        </a>
-                        
                         <a href="/tags/%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA/">
                             <span class="chip bg-color">聊天机器人</span>
+                        </a>
+                        
+                        <a href="/tags/github/">
+                            <span class="chip bg-color">github</span>
                         </a>
                         
                     </div>
@@ -592,7 +592,7 @@ pip3 install chatterbot-corpus
             <span id="year">2020</span>
             <a href="https://guhailong18.github.io" target="_blank">远方客</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/guhailong18/guhailong18.github.io" target="_blank">Matery</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span

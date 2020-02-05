@@ -32,6 +32,7 @@
 <!-- 雪花特效 -->
 <script type="text/javascript" src="\js\snow.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/yremp/yremp-js@1.5/sakura.js"></script>
+
 <body>
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
@@ -383,7 +384,7 @@
     }
 
     .github-corner svg {
-        color: #F062A7;
+        color: #0f9d58;
         fill: #fff;
         height: 64px;
         width: 64px;
@@ -423,7 +424,6 @@
               fill="currentColor" class="octo-body"></path>
     </svg>
 </a>
-
         
     </nav>
 
@@ -462,10 +462,9 @@
 
 
 <script>
-    // 每分钟切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/medias/banner/' + new Date().getMinutes() + '.jpg)');
+    // 每天切换 banner 图.  Switch banner image every day.
+    $('.bg-cover').css('background-image', 'url(https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/medias/banner/' + new Date().getDay() + '.jpg)');
 </script>
-
 
 
     </div>
@@ -599,8 +598,11 @@
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    部分概念及专有名词成本函数:个衡量模型准确率的指标，衡量依据为此模型估计X与Y间关系的能力。（来衡量AI输出与实际输出(历史数据)之间的差异，0为最好的）降低方法：1.梯度下降
-一种求函数最小值的方法。通过每次数据集迭代之后优化模型的权重来
+                                    部分概念及专有名词
+成本函数:个衡量模型准确率的指标，衡量依据为此模型估计X与Y间关系的能力。（来衡量AI输出与实际输出(历史数据)之间的差异，0为最好的）
+降低方法：
+1.梯度下降
+一种求函数最小值的方法。通过每次数据集迭代之后优化模型的
                                 
                             </div>
                             <div class="publish-info">
@@ -708,7 +710,8 @@ def getData(baseurl):
 pip3 install chatterbot
 pip3 install chatterbot-corpus
 
-  
+
+ 
                                 
                             </div>
                             <div class="publish-info">
@@ -731,9 +734,9 @@ pip3 install chatterbot-corpus
                         
                         <div class="card-action article-tags">
                             
-                            <a href="/tags/github/"><span class="chip bg-color">github</span></a>
-                            
                             <a href="/tags/%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA/"><span class="chip bg-color">聊天机器人</span></a>
+                            
+                            <a href="/tags/github/"><span class="chip bg-color">github</span></a>
                             
                         </div>
                         
@@ -770,9 +773,10 @@ pip3 install chatterbot-corpus
                             <div class="summary block-with-text">
                                 
                                     做出一个模型的五个步骤：
+
 数据处理：从本地文件或网络地址读取数据，并做预处理操作，如校验数据的正确性等。
 模型设计：完成网络结构的设计（模型要素1），相当于模型的假设空间，即模型能够表达的关系集合。
-训练配置：设定模型采用的寻解算法（模型要
+训练配置：设定模型采用的寻解算法（模型
                                 
                             </div>
                             <div class="publish-info">
@@ -875,7 +879,7 @@ pip3 install chatterbot-corpus
             <span id="year">2020</span>
             <a href="https://guhailong18.github.io" target="_blank">远方客</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/guhailong18/guhailong18.github.io" target="_blank">Matery</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span

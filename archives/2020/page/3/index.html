@@ -32,6 +32,7 @@
 <!-- 雪花特效 -->
 <script type="text/javascript" src="\js\snow.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/yremp/yremp-js@1.5/sakura.js"></script>
+
 <body>
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
@@ -383,7 +384,7 @@
     }
 
     .github-corner svg {
-        color: #F062A7;
+        color: #0f9d58;
         fill: #fff;
         height: 64px;
         width: 64px;
@@ -423,7 +424,6 @@
               fill="currentColor" class="octo-body"></path>
     </svg>
 </a>
-
         
     </nav>
 
@@ -462,10 +462,9 @@
 
 
 <script>
-    // 每分钟切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/medias/banner/' + new Date().getMinutes() + '.jpg)');
+    // 每天切换 banner 图.  Switch banner image every day.
+    $('.bg-cover').css('background-image', 'url(https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/medias/banner/' + new Date().getDay() + '.jpg)');
 </script>
-
 
 
     </div>
@@ -599,11 +598,12 @@
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    关闭服务（1） 使用 Crtl+C 关闭
+                                    关闭服务
+（1） 使用 Crtl+C 关闭
 （2） 使用 db.shutdownServer()命令 关闭
 备注：命令 db.shutdownServer()关闭命令只能在admin在使用。不然会出错
 （3） 使用 kill命令 关闭
-首先使
+首先
                                 
                             </div>
                             <div class="publish-info">
@@ -672,9 +672,9 @@
                         
                         <div class="card-action article-tags">
                             
-                            <a href="/tags/%E9%AD%94%E6%94%B9/"><span class="chip bg-color">魔改</span></a>
-                            
                             <a href="/tags/%E4%B8%BB%E9%A2%98/"><span class="chip bg-color">主题</span></a>
+                            
+                            <a href="/tags/%E9%AD%94%E6%94%B9/"><span class="chip bg-color">魔改</span></a>
                             
                             <a href="/tags/hexo/"><span class="chip bg-color">hexo</span></a>
                             
@@ -712,8 +712,10 @@
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    方法一 使用双引号方法二 使用缩写采用八个字符，由目录名前六个字符（不计空格），加上波浪线~和数字（14）组成。如果多于四个文件使用相同的前六个字符，则由目录名的前两个字符结合四个字符的散列码，加上波浪线`和数字1组成。
-可以使用dir /
+                                    方法一 使用双引号
+方法二 使用缩写
+采用八个字符，由目录名前六个字符（不计空格），加上波浪线~和数字（1~4）组成。如果多于四个文件使用相同的前六个字符，则由目录名的前两个字符结合四个字符的散列码，加上波浪线~和数字1组成。
+可以使用di
                                 
                             </div>
                             <div class="publish-info">
@@ -926,8 +928,10 @@
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    1.查看linux服务器的系统信息(内核)在linux命令行下输入shell指令：uname -a
-2.查看操作系统的版本(以redhat为例，其他的同理)cat /etc/redhat-release  或  cat /etc/issue
+                                    1.查看linux服务器的系统信息(内核)
+在linux命令行下输入shell指令：uname -a
+2.查看操作系统的版本(以redhat为例，其他的同理)
+cat /etc/redhat-release  或  cat /etc/iss
                                 
                             </div>
                             <div class="publish-info">
@@ -985,7 +989,9 @@
                             <div class="summary block-with-text">
                                 
                                     二、如何获取应用机密(client secret)和应用 ID(client_id)？
-登录：https://portal.azure.com/?l=zh-hans.zh-cn#blade/Microsoft_AAD_RegisteredA
+
+
+登录：https://portal.azure.com/?l=zh-hans.zh-cn#blade/Microsoft_AAD_Registere
                                 
                             </div>
                             <div class="publish-info">
@@ -1042,11 +1048,16 @@
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    SSH终端输入：1.查看面板入口：
-/etc/init.d/bt default2.关闭安全入口：
-rm -f /www/server/panel/data/admin_path.pl停止
-/etc/init.d/bt stop启动
-/et
+                                    SSH终端输入：
+1.查看面板入口：
+/etc/init.d/bt default
+
+2.关闭安全入口：
+rm -f /www/server/panel/data/admin_path.pl
+
+停止
+/etc/init.d/bt stop
+
                                 
                             </div>
                             <div class="publish-info">
@@ -1295,7 +1306,7 @@ rm -f /www/server/panel/data/admin_path.pl停止
             <span id="year">2020</span>
             <a href="https://guhailong18.github.io" target="_blank">远方客</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/guhailong18/guhailong18.github.io" target="_blank">Matery</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
