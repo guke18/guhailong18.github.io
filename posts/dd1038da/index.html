@@ -628,7 +628,9 @@ ps：其它参数见gensim库，执行代码为：gensim.models.Word2Vec(sentenc
 <li>分词词典使用了130w+词典。分词代码：jieba.lcut(sentence)，默认使用了HMM识别新词；</li>
 <li>剔除了所有非中文字符；</li>
 <li>最终得到的词典大小为6115353；</li>
-<li>模型格式有两种bin和model，使用方式：<br> a. bin模式：model = gensim.models.KeyedVectors.load_word2vec_format(model_path, binary=True)<br> b. model模式：model = gensim.models.Word2Vec.load(model_path)</li>
+<li>模型格式有两种bin和model，使用方式：<br>
+a. bin模式：model = gensim.models.KeyedVectors.load_word2vec_format(model_path, binary=True)<br>
+b. model模式：model = gensim.models.Word2Vec.load(model_path)</li>
 </ol>
 <p><a href="https://www.jianshu.com/p/ae5b45e96dbf" target="_blank" rel="noopener">原文链接</a></p>
 <script>
