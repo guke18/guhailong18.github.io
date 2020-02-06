@@ -255,7 +255,7 @@
     }
 
     .github-corner svg {
-        color: #0f9d58;
+        color: #F062A7;
         fill: #fff;
         height: 64px;
         width: 64px;
@@ -295,6 +295,7 @@
               fill="currentColor" class="octo-body"></path>
     </svg>
 </a>
+
         
     </nav>
 
@@ -311,21 +312,23 @@
                 
             </div>
 
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: ['从来没有真正的绝境, 只有心灵的迷途','Never really desperate, only the lost of the soul'],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
+             <div class="description center-align">
+                 
+-                <span id="subtitle"></span>
+-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+-                <script>
+-                    var typed = new Typed("#subtitle", {
+-                        strings: ['从来没有真正的绝境, 只有心灵的迷途','Never really desperate, only the lost of the soul'],
+-                        startDelay: 300,
+-                        typeSpeed: 100,
+-                        loop: true,
+-                        backSpeed: 50,
+-                        showCursor: true
+-                    });
+-                </script>
++           <span id="jinrishici-sentence">动漫，编程，数学，读书，相信会有一个是你需要的</span>
++                  <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+                 
             </div>
         </div>
     </div>
@@ -334,7 +337,7 @@
 
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
+    $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getMinutes() + '.jpg)');
 </script>
 
 
@@ -417,10 +420,28 @@
                 </a>
                 
                 
+                <a href="/tags/%E5%BB%BA%E7%AB%99/" title="建站: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="建站" style="background-color: #D7BDE2;">建站
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E5%AF%92%E5%81%87/" title="寒假: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="寒假" style="background-color: #A3E4D7;">寒假
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
                 <a href="/tags/Docker/" title="Docker: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="Docker" style="background-color: #D7BDE2;">Docker
+                            data-tagname="Docker" style="background-color: #85C1E9;">Docker
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -429,7 +450,7 @@
                 <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="数据库: 2">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="数据库" style="background-color: #A3E4D7;">数据库
+                            data-tagname="数据库" style="background-color: #F8C471;">数据库
                         <span class="tag-length">2</span>
                     </span>
                 </a>
@@ -438,7 +459,7 @@
                 <a href="/tags/%E4%BA%91%E7%AB%AF/" title="云端: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="云端" style="background-color: #85C1E9;">云端
+                            data-tagname="云端" style="background-color: #F9E79F;">云端
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -447,7 +468,7 @@
                 <a href="/tags/CSS/" title="CSS: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="CSS" style="background-color: #F8C471;">CSS
+                            data-tagname="CSS" style="background-color: #D5F5E3;">CSS
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -456,7 +477,7 @@
                 <a href="/tags/%E5%9B%BE%E6%A0%87/" title="图标: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="图标" style="background-color: #F9E79F;">图标
+                            data-tagname="图标" style="background-color: #FFF;">图标
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -480,6 +501,24 @@
                 </a>
                 
                 
+                <a href="/tags/window/" title="window: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-active "
+                            data-tagname="window" style="background-color: #F9EBEA;">window
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/" title="命令行: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="命令行" style="background-color: #FFF;">命令行
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
                 <a href="/tags/%E5%BD%A9%E8%9B%8B/" title="彩蛋: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
@@ -493,24 +532,6 @@
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
                             data-tagname="浏览器" style="background-color: #D5F5E3;">浏览器
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E5%BB%BA%E7%AB%99/" title="建站: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="建站" style="background-color: #85C1E9;">建站
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E5%AF%92%E5%81%87/" title="寒假: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="寒假" style="background-color: #A3E4D7;">寒假
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -539,24 +560,6 @@
                              chip-default "
                             data-tagname="魔改" style="background-color: #D5F5E3;">魔改
                         <span class="tag-length">2</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/window/" title="window: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-active "
-                            data-tagname="window" style="background-color: #F9EBEA;">window
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/" title="命令行: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="命令行" style="background-color: #FFF;">命令行
-                        <span class="tag-length">1</span>
                     </span>
                 </a>
                 
@@ -606,15 +609,6 @@
                 </a>
                 
                 
-                <a href="/tags/linux/" title="linux: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="linux" style="background-color: #85C1E9;">linux
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
                 <a href="/tags/python/" title="python: 4">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
@@ -633,37 +627,19 @@
                 </a>
                 
                 
+                <a href="/tags/linux/" title="linux: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="linux" style="background-color: #85C1E9;">linux
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
                 <a href="/tags/%E5%91%BD%E4%BB%A4%EF%BC%8C%E5%AE%9D%E5%A1%94/" title="命令，宝塔: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
                             data-tagname="命令，宝塔" style="background-color: #F5EEF8;">命令，宝塔
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E8%B5%84%E6%BA%90/" title="资源: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="资源" style="background-color: #82E0AA;">资源
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E5%89%8D%E7%AB%AF/" title="前端: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="前端" style="background-color: #FEF9E7;">前端
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E8%87%AA%E5%AD%A6/" title="自学: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="自学" style="background-color: #F8F9F9;">自学
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -701,42 +677,6 @@
                              chip-default "
                             data-tagname="机器学习" style="background-color: #E8F8F5;">机器学习
                         <span class="tag-length">2</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E7%A7%91%E6%99%AE/" title="科普: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="科普" style="background-color: #FEF9E7;">科普
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E7%89%A9%E7%90%86/" title="物理: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="物理" style="background-color: #F8C471;">物理
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E6%96%87%E6%A1%88/" title="文案: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="文案" style="background-color: #F5EEF8;">文案
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E8%87%AA%E8%BF%B0/" title="自述: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="自述" style="background-color: #F9EBEA;">自述
-                        <span class="tag-length">1</span>
                     </span>
                 </a>
                 
@@ -781,6 +721,69 @@
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
                             data-tagname="读书感悟" style="background-color: #F9E79F;">读书感悟
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E8%87%AA%E8%BF%B0/" title="自述: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="自述" style="background-color: #F9EBEA;">自述
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E8%B5%84%E6%BA%90/" title="资源: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="资源" style="background-color: #82E0AA;">资源
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E5%89%8D%E7%AB%AF/" title="前端: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="前端" style="background-color: #FEF9E7;">前端
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E8%87%AA%E5%AD%A6/" title="自学: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="自学" style="background-color: #F8F9F9;">自学
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E7%A7%91%E6%99%AE/" title="科普: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="科普" style="background-color: #FEF9E7;">科普
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E7%89%A9%E7%90%86/" title="物理: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="物理" style="background-color: #F8C471;">物理
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E6%96%87%E6%A1%88/" title="文案: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="文案" style="background-color: #F5EEF8;">文案
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -837,7 +840,7 @@
             <span id="year">2019</span>
             <a href="https://guhailong18.github.io" target="_blank">远方客</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/guhailong18/guhailong18.github.io" target="_blank">github地址</a>
             <br>
             
             
