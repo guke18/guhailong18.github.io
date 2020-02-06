@@ -26,7 +26,7 @@
                     '<div class="ImageInCard" style="height:'+ 250 * imageY / imageX + 'px">' +
                     //href 和 src 的链接地址是相册照片外部链接，也可以放博客目录里
                       '<a data-fancybox="gallery" href="/photos/images/' + imgNameWithPattern + '?raw=true" data-caption="' + imgName + '">' +
-                        '<img srcset="/photos/' + imgNameWithPattern + '?raw=true" src="/photos/' + imgNameWithPattern + '?raw=true">' +
+                        '<img srcset="/photos/' + imgNameWithPattern + '?raw=true" src="/js/photo.j/' + imgNameWithPattern + '?raw=true">' +
                       '</a>' +
                     '</div>' +
                     // '<div class="TextInCard">' + imgName + '</div>' +  //图片下显示文件名作为说明的功能
