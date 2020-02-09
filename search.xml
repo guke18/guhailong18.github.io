@@ -4,6 +4,149 @@
   
     
     <entry>
+      <title>python爬虫入门一</title>
+      <link href="/posts/4b7ce70c/"/>
+      <url>/posts/4b7ce70c/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ol><li>基本库的使用</li></ol><p>一般爬虫第一个学的库是urllib</p><p><code>urllib</code> 是一个收集了多个用到 URL 的模块的包：</p><ul><li><a href="https://docs.python.org/zh-cn/3/library/urllib.request.html#module-urllib.request" target="_blank" rel="noopener"><code>urllib.request</code></a> 打开和读取 URL</li><li><a href="https://docs.python.org/zh-cn/3/library/urllib.error.html#module-urllib.error" target="_blank" rel="noopener"><code>urllib.error</code></a> 包含 <a href="https://docs.python.org/zh-cn/3/library/urllib.request.html#module-urllib.request" target="_blank" rel="noopener"><code>urllib.request</code></a> 抛出的异常</li><li><a href="https://docs.python.org/zh-cn/3/library/urllib.parse.html#module-urllib.parse" target="_blank" rel="noopener"><code>urllib.parse</code></a> 用于解析 URL</li><li><a href="https://docs.python.org/zh-cn/3/library/urllib.robotparser.html#module-urllib.robotparser" target="_blank" rel="noopener"><code>urllib.robotparser</code></a> 用于解析 <code>robots.txt</code> 文件</li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 爬虫 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 爬虫 </tag>
+            
+            <tag> python </tag>
+            
+            <tag> 笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>MATLAB求导方法笔记</title>
+      <link href="/posts/aefaa648/"/>
+      <url>/posts/aefaa648/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>matlab求导命令diff调用格式:</p><ul><li>diff(函数) ， 求的<a href="http://zhidao.baidu.com/search?word=一阶导数&amp;fr=qb_search_exp&amp;ie=utf8" target="_blank" rel="noopener">一阶导数</a>；</li><li>diff(函数， n) ，求的n阶<a href="http://zhidao.baidu.com/search?word=导数&amp;fr=qb_search_exp&amp;ie=utf8" target="_blank" rel="noopener">导数</a>(n是具体整数)；</li><li>diff(函数，变量名)，求对的<a href="http://zhidao.baidu.com/search?word=偏导数&amp;fr=qb_search_exp&amp;ie=utf8" target="_blank" rel="noopener">偏导数</a>；</li><li>diff(函数， 变量名，n)，求对的n阶<a href="http://zhidao.baidu.com/search?word=偏导数&amp;fr=qb_search_exp&amp;ie=utf8" target="_blank" rel="noopener">偏导数</a>；</li><li>matlab求<a href="http://zhidao.baidu.com/search?word=雅可比矩阵&amp;fr=qb_search_exp&amp;ie=utf8" target="_blank" rel="noopener">雅可比矩阵</a>命令jacobian，调用格式:</li><li>jacobian([函数；函数； 函数]，[])给出矩阵:</li></ul><p>　　（1）syms x代表着声明符号变量x，只有声明了符号变量才可以进行符号运算，包括求导。</p><p>　　（2）f（x）=sin（x）+x^2 ，就是我们输入的要求导的函数。</p><p>　　（3）diff（f（x）），代表着对单变量函数求一阶导数。</p><p>　　（4）pretty（ans），将当前变量显示为我们常用的书面形式。</p><p>　　从以上结果我们可以看出，f（x）=2x+cos（x）。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> MATLAB </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 笔记 </tag>
+            
+            <tag> MATLAB </tag>
+            
+            <tag> 求导 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>云服务器初识</title>
+      <link href="/posts/b38a6c7c/"/>
+      <url>/posts/b38a6c7c/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>文章目的：通过<a href="https://developer.aliyun.com/exam/intro/285?spm=a2c6h.13788107.J_6208459260.3.68e961a8Fb9IRJ" target="_blank" rel="noopener">学生成长计划领取资格考试 - 云计算及云服务器入门</a>的考试，获得12个月的云服务器。</p><p>云服务器（ECS）</p><h4 id="1-搭建个人网站"><a href="#1-搭建个人网站" class="headerlink" title="1.搭建个人网站"></a>1.搭建个人网站</h4><p>已经做了很多了，就不多讲了！用宝塔+wordress</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 云服务器 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 云服务器 </tag>
+            
+            <tag> 比较 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Python画图神器之--pyecharts</title>
+      <link href="/posts/394f01ac/"/>
+      <url>/posts/394f01ac/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>嗯，直接上代码再说明！|ू･ω･` )</p><pre><code># 导入相关包import pandas as pdfrom pyecharts.charts import *from pyecharts import options as optsfrom pyecharts.globals import *from pyecharts.faker import *</code></pre><pre><code># 读取数据data=pd.read_csv('D:/机器学习/air_quality.csv',sep=',')fun1=lambda x:x.split('-')[0]fun2=lambda x:x.split('-')[1]data['year']=data['record_date'].apply(fun1)data['month']=data['record_date'].apply(fun2)</code></pre><p><img src="https://img-blog.csdnimg.cn/20191228141537669.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM0MjE2Mjk=,size_16,color_FFFFFF,t_70" alt="https://img-blog.csdnimg.cn/20191228141537669.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM0MjE2Mjk=,size_16,color_FFFFFF,t_70"></p><pre><code># 成都空气质量的玫瑰花饼图df1=data.groupby(['city_name','quality_level'], as_index=False).count()df1=df1[df1['city_name']=='成都']x = list(df1['quality_level'])y = list(df1['so2_val'])pie = Pie(init_opts=opts.InitOpts(theme=ThemeType.LIGHT))pie.add("",[list(z) for z in zip(x, y)],radius=["50%", "75%"],center=["45%", "60%"],rosetype="radius",)# pie.set_colors(["blue", "green", "yellow", "red", "pink", "orange"])pie.set_series_opts(label_opts=opts.LabelOpts(is_show=True))pie.set_global_opts(title_opts=opts.TitleOpts(title="成都空气质量玫瑰花饼图",pos_left="32%"),                    legend_opts=opts.LegendOpts(orient="vertical", pos_top="15%", pos_left="5%"))pie.render_notebook()# pie.render(data_path+'成都空气质量饼图.html')</code></pre><p><img src="https://img-blog.csdnimg.cn/20191228141712934.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM0MjE2Mjk=,size_16,color_FFFFFF,t_70" alt="https://img-blog.csdnimg.cn/20191228141712934.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM0MjE2Mjk=,size_16,color_FFFFFF,t_70"></p><p><a href="https://pyecharts.org/#/zh-cn/rectangular_charts" target="_blank" rel="noopener">pyecharts官方文档</a></p><p>挺好看的吧！Fight!!(ｏ^-^)尸~’’☆ミ☆ミ</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+            <tag> pyecharts </tag>
+            
+            <tag> 画图 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>三大深度学习框架的简单了解</title>
+      <link href="/posts/509d8bd2/"/>
+      <url>/posts/509d8bd2/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>简要记录一下我感兴趣且也比较流行的三大深度学习框架，分别是：Pytroch，tensorflow，paddle（百度飞桨）。</p><h2 id="Pytorch"><a href="#Pytorch" class="headerlink" title="Pytorch"></a>Pytorch</h2><p>官方：PyTorch是是torch的python版本，是由Facebook开源的神经网络框架，专门针对 GPU 加速的深度神经网络（DNN）编程，是使用GPU和CPU优化的深度学习张量库。</p><p>（再介绍一下Torch：一个经典的对多维矩阵数据进行操作的张量（tensor ）库）</p><h5 id="那么什么是张量呢？"><a href="#那么什么是张量呢？" class="headerlink" title="那么什么是张量呢？"></a>那么什么是张量呢？</h5><p>张量由一组成形为任意数量的数组的原始值组成。张量的等级是其维数。</p><p>简单的理解就是：矩阵的升级版，而矩阵就是向量的升级版。那么是干什么用的呢？</p><p>举例：规模最小的张量是0阶张量，即标量，也就是一个数。</p><p>当我们把一些数有序的排列起来，就形成了1阶张量，也就是一个向量</p><p>如果我们继续把一组向量有序的排列起来，就形成了2阶张量，也就是一个矩阵</p><p>把矩阵摞起来，就是3阶张量，我们可以称为一个立方体，具有3个颜色通道的彩色图片就是一个这样的立方体</p><p>把立方体摞起来，好吧这次我们真的没有给它起别名了，就叫4阶张量了，不要去试图想像4阶张量是什么样子，它就是个数学上的概念。</p><h6 id="那张量是干什么用的呢？"><a href="#那张量是干什么用的呢？" class="headerlink" title="那张量是干什么用的呢？"></a>那张量是干什么用的呢？</h6><p>用来表示数据的，这是我学习深度学习时感觉比较刷新三观的事，所有的数据竟然都可以用数字来表示，不管是图片，文字，还是视频，不过他背后的原理我还不清楚。张量的一部分数字就可以被称作特征，这概念以后经常用得到！</p><h4 id="示例："><a href="#示例：" class="headerlink" title="示例："></a>示例：</h4><pre class=" language-swift"><code class="language-swift"><span class="token keyword">import</span> torch x <span class="token operator">=</span> torch<span class="token punctuation">.</span><span class="token function">ones</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">)</span> （两个三行四列的矩阵）<span class="token function">print</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> </code></pre><pre class=" language-css"><code class="language-css"><span class="token function">tensor</span><span class="token punctuation">(</span>[[[<span class="token number">1.</span>, <span class="token number">1.</span>, <span class="token number">1.</span>, <span class="token number">1.</span>],        [<span class="token number">1.</span>, <span class="token number">1.</span>, <span class="token number">1.</span>, <span class="token number">1.</span>],        [<span class="token number">1.</span>, <span class="token number">1.</span>, <span class="token number">1.</span>, <span class="token number">1.</span>]],       [[<span class="token number">1.</span>, <span class="token number">1.</span>, <span class="token number">1.</span>, <span class="token number">1.</span>],        [<span class="token number">1.</span>, <span class="token number">1.</span>, <span class="token number">1.</span>, <span class="token number">1.</span>],        [<span class="token number">1.</span>, <span class="token number">1.</span>, <span class="token number">1.</span>, <span class="token number">1.</span>]]]<span class="token punctuation">)</span></code></pre><h4 id="三大特征："><a href="#三大特征：" class="headerlink" title="三大特征："></a>三大特征：</h4><h5 id="1-简洁"><a href="#1-简洁" class="headerlink" title="1.简洁"></a>1.简洁</h5><p>PyTorch 的设计遵循tensor→variable(autograd)→nn.Module 三个由低到高的抽象层次，分别代表高维数组（张量）、自动求导（变量）和神经网络（层/模块）</p><h5 id="2-易用"><a href="#2-易用" class="headerlink" title="2.易用"></a>2.易用</h5><p>PyTorch的面向对象的接口设计来源于Torch，做调用API时比较方便！</p><h5 id="3-动态"><a href="#3-动态" class="headerlink" title="3.动态"></a>3.动态</h5><p>pytorch的计算图是动态的，可以根据计算需要实时改变计算图。（这是与Tensorflow最大的区别）</p><h4 id="看个简单的代码！"><a href="#看个简单的代码！" class="headerlink" title="看个简单的代码！"></a>看个简单的代码！</h4><pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># -*- coding: utf-8 -*-</span><span class="token comment" spellcheck="true">#demo.py</span><span class="token keyword">import</span> torch<span class="token keyword">import</span> torch<span class="token punctuation">.</span>nn<span class="token punctuation">.</span>functional <span class="token keyword">as</span> F  <span class="token comment" spellcheck="true"># 主要实现激活函数</span><span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt  <span class="token comment" spellcheck="true"># 绘图的工具</span><span class="token keyword">from</span> torch<span class="token punctuation">.</span>autograd <span class="token keyword">import</span> Variable <span class="token comment" spellcheck="true">#</span><span class="token comment" spellcheck="true"># 生成伪数据</span>x <span class="token operator">=</span> torch<span class="token punctuation">.</span>unsqueeze<span class="token punctuation">(</span>torch<span class="token punctuation">.</span>linspace<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">,</span> dim<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>y <span class="token operator">=</span> x<span class="token punctuation">.</span>pow<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">0.2</span><span class="token operator">*</span>torch<span class="token punctuation">.</span>rand<span class="token punctuation">(</span>x<span class="token punctuation">.</span>size<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>    <span class="token comment" spellcheck="true">#y=x³+b</span><span class="token comment" spellcheck="true"># 变为Variable</span>x<span class="token punctuation">,</span> y <span class="token operator">=</span> Variable<span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">,</span> Variable<span class="token punctuation">(</span>y<span class="token punctuation">)</span><span class="token comment" spellcheck="true"># 绘制数据图像</span>plt<span class="token punctuation">.</span>scatter<span class="token punctuation">(</span>x<span class="token punctuation">.</span>data<span class="token punctuation">.</span>numpy<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> y<span class="token punctuation">.</span>data<span class="token punctuation">.</span>numpy<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre><p>Variable：在torch中的Variable就是一个存放会变化的值的地理位置，里面的值会不断变化，就是在计算图中的坐标。（torch是用tensor计算的，tensor里面的参数都是variable的形式）</p><p>其中<code>torch.linspace</code>是为了生成连续间断的数据，第一个参数表示起点，第二个参数表示终点，第三个参数表示将这个区间分成平均几份，即生成几个数据。因为<code>torch</code>只能处理二维的数据，所以我们用<code>torch.unsqueeze</code>给伪数据添加一个维度，<code>dim</code>表示添加在第几维。<code>torch.rand</code>返回的是[0,1)之间的均匀分布。</p><p>生成：</p><p><img src="https://upload-images.jianshu.io/upload_images/6479023-7e835db421799c56.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/640/format/webp" alt="https://upload-images.jianshu.io/upload_images/6479023-7e835db421799c56.png?imageMogr2/auto-orient/strip|imageView2/2/w/640/format/webp"></p><h2 id="Tensorflow"><a href="#Tensorflow" class="headerlink" title="Tensorflow"></a>Tensorflow</h2><p>TensorFlow 是一个开源的、基于 Python 的机器学习框架，它由 Google 开发，并在图形分类、音频处理、推荐系统和自然语言处理等场景下有着丰富的应用，是目前最热门的机器学习框架。</p><p>（深度学习库能够自动求导、开源、支持多种 CPU/GPU、拥有预训练模型，并支持常用的NN架构，如递归神经网络（RNN）、卷积神经网络（CNN）和深度置信网络（DBN）。）<code>请记住缩写</code></p><h4 id="特点："><a href="#特点：" class="headerlink" title="特点："></a>特点：</h4><ul><li><p>支持所有流行语言，如 Python、<a href="http://c.biancheng.net/cplus/" target="_blank" rel="noopener">C++</a>、<a href="http://c.biancheng.net/java/" target="_blank" rel="noopener">Java</a>、R和Go。</p></li><li><p>可以在多种平台上工作，甚至是移动平台和分布式平台。</p></li><li><p>它受到所有云服务（AWS、Google和Azure）的支持。</p></li><li><p>Keras——高级神经网络 API，已经与 TensorFlow 整合。</p></li><li><p>与 Torch/Theano 比较，TensorFlow 拥有更好的计算图表可视化。</p></li><li><p>允许模型部署到工业生产中，并且容易使用。</p></li><li><p>有非常好的社区支持。</p></li><li><p>TensorFlow 不仅仅是一个软件库，它是一套包括 TensorFlow，TensorBoard 和 TensorServing 的软件。</p><h4 id="看个简单的代码！-1"><a href="#看个简单的代码！-1" class="headerlink" title="看个简单的代码！"></a>看个简单的代码！</h4><ol><li><p>导入tensorflow，这将导入 TensorFlow 库，并允许使用其精彩的功能：</p><pre><code>import tensorflow as if</code></pre></li><li><p>由于要打印的信息是一个常量字符串，因此使用 tf.constant：</p><pre><code>message = tf.constant('Welcome to the exciting world of Deep Neural Networks!')</code></pre></li><li><p>为了执行计算图，利用 with 语句定义 Session，并使用 run 来运行：</p><pre><code>with tf.Session() as sess:  print(sess.run(message).decode())</code></pre><p>4.最后是在会话中打印的信息：</p><pre><code>Welcome to the exciting world of Deep Neural Networks!</code></pre><p>其它输出的信息可以先不管。</p><h4 id="比较"><a href="#比较" class="headerlink" title="比较"></a>比较</h4><p>PyTorch相比TensorFlow，其最大的优点是建立的神经网络是动态的，相比静态的TensorFlow，它能更加有效地去处理一些问题，比如RNN变化时间长度的输出，TensorFlow相比PyTorch的有点在于分布式训练上。</p></li></ol></li></ul><h2 id="Paddle（百度飞桨）"><a href="#Paddle（百度飞桨）" class="headerlink" title="Paddle（百度飞桨）"></a>Paddle（百度飞桨）</h2><p>这个深度学习框架大体和上面两个差不多，但是这个是我目前正在认真学习的框架，原因无他，因为他的文档是中文的（可怜我是个英语渣渣），还有就是学习资源多且免费，非常适合学习。</p><p>详见请戳：</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 深度学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 深度学习 </tag>
+            
+            <tag> 笔记 </tag>
+            
+            <tag> 框架 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>深度学习之初步入门</title>
       <link href="/posts/93f01828/"/>
       <url>/posts/93f01828/</url>
@@ -46,9 +189,9 @@
       
         <tags>
             
-            <tag> github </tag>
-            
             <tag> 聊天机器人 </tag>
+            
+            <tag> github </tag>
             
         </tags>
       
@@ -371,9 +514,9 @@
       
         <tags>
             
-            <tag> 命令 </tag>
-            
             <tag> 数据库 </tag>
+            
+            <tag> 命令 </tag>
             
             <tag> MySQL </tag>
             
@@ -407,11 +550,11 @@
       
         <tags>
             
+            <tag> 命令 </tag>
+            
             <tag> anaconda </tag>
             
             <tag> ubuntu </tag>
-            
-            <tag> 命令 </tag>
             
         </tags>
       
@@ -451,13 +594,13 @@
       
         <tags>
             
-            <tag> 命令 </tag>
-            
             <tag> Docker </tag>
             
             <tag> 数据库 </tag>
             
             <tag> 云端 </tag>
+            
+            <tag> 命令 </tag>
             
         </tags>
       
@@ -725,9 +868,9 @@
       
         <tags>
             
-            <tag> 2020寒假学习 </tag>
-            
             <tag> 数模 </tag>
+            
+            <tag> 2020寒假学习 </tag>
             
         </tags>
       
@@ -799,7 +942,7 @@
       <link href="/posts/6007b04d/"/>
       <url>/posts/6007b04d/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>这是一个分享一些自己心得，爱好以及知识的博客，本人只是一名普通的大学生，不是啥大神。不用抱有太高的期待或是要求，如果能帮助到部分人或是给部分人带来些许快乐，实乃我无上的荣耀…..（此处运用了夸张的手法并省略两千字）</p><p>邮箱：<a href="mailto:1097629344@qq.com">1097629344@qq.com</a></p><p>欢迎大家与我交流！!!<img src="/posts/6007b04d/08.jpg"></p>    <div id="aplayer-cgvysvsl" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"></div><a id="more"></a><hr><div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"video":{"url":"https://dl.sm9.top/Video/2018/KeyCastOW.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script> <hr><iframe src="//player.bilibili.com/player.html?aid=82968958&amp;cid=141941752&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" width"100%"="" height="100%" allowfullscreen="true"> </iframe><script src="text.js"></script><hr><iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="100px" height="20px" src="https://ghbtns.com/github-btn.html?user=fandongtongxue&amp;repo=fandongtongxue.github.io&amp;type=star&amp;count=true"> </iframe><iframe src="//player.bilibili.com/player.html?aid=84628317&amp;cid=144732024&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" width="100%" allowfullscreen="true"> </iframe>------<iframe id="spkj" src="//player.bilibili.com/player.html?aid=85179902&amp;cid=145623591&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%%" height="100%"> </iframe><hr><pre><code>&lt;iframe id="spkj" src="https://player.bilibili.com/player.html?aid=44020824&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width=100%&gt; &lt;/iframe&gt;&lt;script type="text/javascript"&gt;document.getElementById("spkj").style.height=document.getElementById("spkj").scrollWidth\*0.76+"px";&lt;/script&gt;</code></pre><pre><code>&lt;iframe id="spkj" src="https://player.bilibili.com/player.html?aid=85546317&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width=100%&gt; &lt;/iframe&gt;&lt;script src="text.js"&gt;&lt;/script&gt;</code></pre><pre><code>{% for js in page.customjs %}<script src="{{ js }}"></script>{% endfor %}</code></pre><p>页面引用<br>CSS 部分</p><link rel="stylesheet" href="/static/admin/assets/css/editormd.css">1JS 部分<script src="/static/admin/assets/js/editormd.js"></script><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>这是一个分享一些自己心得，爱好以及知识的博客，本人只是一名普通的大学生，不是啥大神。不用抱有太高的期待或是要求，如果能帮助到部分人或是给部分人带来些许快乐，实乃我无上的荣耀…..（此处运用了夸张的手法并省略两千字）</p><p>邮箱：<a href="mailto:1097629344@qq.com">1097629344@qq.com</a></p><p>欢迎大家与我交流！!!<img src="/posts/6007b04d/08.jpg"></p>    <div id="aplayer-nSRqqGDg" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"></div><a id="more"></a><hr><div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"video":{"url":"https://dl.sm9.top/Video/2018/KeyCastOW.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script> <hr><iframe src="//player.bilibili.com/player.html?aid=82968958&amp;cid=141941752&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" width"100%"="" height="100%" allowfullscreen="true"> </iframe><script src="text.js"></script><hr><iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="100px" height="20px" src="https://ghbtns.com/github-btn.html?user=fandongtongxue&amp;repo=fandongtongxue.github.io&amp;type=star&amp;count=true"> </iframe><iframe src="//player.bilibili.com/player.html?aid=84628317&amp;cid=144732024&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" width="100%" allowfullscreen="true"> </iframe>------<iframe id="spkj" src="//player.bilibili.com/player.html?aid=85179902&amp;cid=145623591&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%%" height="100%"> </iframe><hr><pre><code>&lt;iframe id="spkj" src="https://player.bilibili.com/player.html?aid=44020824&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width=100%&gt; &lt;/iframe&gt;&lt;script type="text/javascript"&gt;document.getElementById("spkj").style.height=document.getElementById("spkj").scrollWidth\*0.76+"px";&lt;/script&gt;</code></pre><pre><code>&lt;iframe id="spkj" src="https://player.bilibili.com/player.html?aid=85546317&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width=100%&gt; &lt;/iframe&gt;&lt;script src="text.js"&gt;&lt;/script&gt;</code></pre><pre><code>{% for js in page.customjs %}<script src="{{ js }}"></script>{% endfor %}</code></pre><p>页面引用<br>CSS 部分</p><link rel="stylesheet" href="/static/admin/assets/css/editormd.css">1JS 部分<script src="/static/admin/assets/js/editormd.js"></script><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
       
       

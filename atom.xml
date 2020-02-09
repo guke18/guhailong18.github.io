@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://guhailong18.github.io/"/>
-  <updated>2020-02-05T02:11:18.218Z</updated>
+  <updated>2020-02-09T11:56:59.732Z</updated>
   <id>https://guhailong18.github.io/</id>
   
   <author>
@@ -15,6 +15,159 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python爬虫入门一</title>
+    <link href="https://guhailong18.github.io/posts/4b7ce70c/"/>
+    <id>https://guhailong18.github.io/posts/4b7ce70c/</id>
+    <published>2020-02-09T11:42:24.000Z</published>
+    <updated>2020-02-09T11:56:59.732Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="爬虫" scheme="https://guhailong18.github.io/categories/%E7%88%AC%E8%99%AB/"/>
+    
+    
+      <category term="爬虫" scheme="https://guhailong18.github.io/tags/%E7%88%AC%E8%99%AB/"/>
+    
+      <category term="python" scheme="https://guhailong18.github.io/tags/python/"/>
+    
+      <category term="笔记" scheme="https://guhailong18.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MATLAB求导方法笔记</title>
+    <link href="https://guhailong18.github.io/posts/aefaa648/"/>
+    <id>https://guhailong18.github.io/posts/aefaa648/</id>
+    <published>2020-02-09T02:29:17.000Z</published>
+    <updated>2020-02-09T11:44:45.866Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="MATLAB" scheme="https://guhailong18.github.io/categories/MATLAB/"/>
+    
+    
+      <category term="笔记" scheme="https://guhailong18.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="MATLAB" scheme="https://guhailong18.github.io/tags/MATLAB/"/>
+    
+      <category term="求导" scheme="https://guhailong18.github.io/tags/%E6%B1%82%E5%AF%BC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>云服务器初识</title>
+    <link href="https://guhailong18.github.io/posts/b38a6c7c/"/>
+    <id>https://guhailong18.github.io/posts/b38a6c7c/</id>
+    <published>2020-02-08T03:28:26.000Z</published>
+    <updated>2020-02-09T11:44:45.868Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="云服务器" scheme="https://guhailong18.github.io/categories/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+    
+      <category term="云服务器" scheme="https://guhailong18.github.io/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+      <category term="比较" scheme="https://guhailong18.github.io/tags/%E6%AF%94%E8%BE%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python画图神器之--pyecharts</title>
+    <link href="https://guhailong18.github.io/posts/394f01ac/"/>
+    <id>https://guhailong18.github.io/posts/394f01ac/</id>
+    <published>2020-02-06T13:51:10.000Z</published>
+    <updated>2020-02-09T11:44:45.863Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="https://guhailong18.github.io/categories/Python/"/>
+    
+    
+      <category term="python" scheme="https://guhailong18.github.io/tags/python/"/>
+    
+      <category term="pyecharts" scheme="https://guhailong18.github.io/tags/pyecharts/"/>
+    
+      <category term="画图" scheme="https://guhailong18.github.io/tags/%E7%94%BB%E5%9B%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>三大深度学习框架的简单了解</title>
+    <link href="https://guhailong18.github.io/posts/509d8bd2/"/>
+    <id>https://guhailong18.github.io/posts/509d8bd2/</id>
+    <published>2020-02-06T12:34:08.000Z</published>
+    <updated>2020-02-09T11:44:45.871Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="深度学习" scheme="https://guhailong18.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="深度学习" scheme="https://guhailong18.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="笔记" scheme="https://guhailong18.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="框架" scheme="https://guhailong18.github.io/tags/%E6%A1%86%E6%9E%B6/"/>
+    
+  </entry>
   
   <entry>
     <title>深度学习之初步入门</title>
@@ -85,9 +238,9 @@
       <category term="github" scheme="https://guhailong18.github.io/categories/github/"/>
     
     
-      <category term="github" scheme="https://guhailong18.github.io/tags/github/"/>
-    
       <category term="聊天机器人" scheme="https://guhailong18.github.io/tags/%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
+    
+      <category term="github" scheme="https://guhailong18.github.io/tags/github/"/>
     
   </entry>
   
@@ -406,135 +559,6 @@
       <category term="hexo" scheme="https://guhailong18.github.io/tags/hexo/"/>
     
       <category term="小功能" scheme="https://guhailong18.github.io/tags/%E5%B0%8F%E5%8A%9F%E8%83%BD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo有趣的小功能之樱花飘落</title>
-    <link href="https://guhailong18.github.io/posts/fd68ee7e/"/>
-    <id>https://guhailong18.github.io/posts/fd68ee7e/</id>
-    <published>2020-01-29T09:25:26.000Z</published>
-    <updated>2020-01-30T13:24:23.577Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>HTML之文章排版</title>
-    <link href="https://guhailong18.github.io/posts/80134476/"/>
-    <id>https://guhailong18.github.io/posts/80134476/</id>
-    <published>2020-01-28T15:20:08.000Z</published>
-    <updated>2020-01-29T03:55:06.301Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="HLML" scheme="https://guhailong18.github.io/tags/HLML/"/>
-    
-      <category term="排版" scheme="https://guhailong18.github.io/tags/%E6%8E%92%E7%89%88/"/>
-    
-      <category term="魔改" scheme="https://guhailong18.github.io/tags/%E9%AD%94%E6%94%B9/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>多博客及双线程部署</title>
-    <link href="https://guhailong18.github.io/posts/a6bb7c19/"/>
-    <id>https://guhailong18.github.io/posts/a6bb7c19/</id>
-    <published>2020-01-28T01:53:41.000Z</published>
-    <updated>2020-01-28T05:22:32.531Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>python连接数据库简记</title>
-    <link href="https://guhailong18.github.io/posts/82e025b7/"/>
-    <id>https://guhailong18.github.io/posts/82e025b7/</id>
-    <published>2020-01-27T09:10:40.000Z</published>
-    <updated>2020-01-28T05:22:32.526Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Mysql常用命令</title>
-    <link href="https://guhailong18.github.io/posts/64129a24/"/>
-    <id>https://guhailong18.github.io/posts/64129a24/</id>
-    <published>2020-01-27T08:04:22.000Z</published>
-    <updated>2020-01-30T03:20:34.563Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="数据库" scheme="https://guhailong18.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-    
-      <category term="命令" scheme="https://guhailong18.github.io/tags/%E5%91%BD%E4%BB%A4/"/>
-    
-      <category term="数据库" scheme="https://guhailong18.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-      <category term="MySQL" scheme="https://guhailong18.github.io/tags/MySQL/"/>
     
   </entry>
   
