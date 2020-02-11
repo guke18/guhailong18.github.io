@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://guhailong18.github.io/"/>
-  <updated>2020-02-09T11:56:59.732Z</updated>
+  <updated>2020-02-11T14:44:02.299Z</updated>
   <id>https://guhailong18.github.io/</id>
   
   <author>
@@ -17,11 +17,98 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Markdown数学公式的使用</title>
+    <link href="https://guhailong18.github.io/posts/9bb87d2f/"/>
+    <id>https://guhailong18.github.io/posts/9bb87d2f/</id>
+    <published>2020-02-11T14:00:59.000Z</published>
+    <updated>2020-02-11T14:44:02.299Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="markdown" scheme="https://guhailong18.github.io/categories/markdown/"/>
+    
+    
+      <category term="markdown" scheme="https://guhailong18.github.io/tags/markdown/"/>
+    
+      <category term="数学公式" scheme="https://guhailong18.github.io/tags/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020深度学习知识准备指南</title>
+    <link href="https://guhailong18.github.io/posts/f4691e0/"/>
+    <id>https://guhailong18.github.io/posts/f4691e0/</id>
+    <published>2020-02-09T12:45:40.000Z</published>
+    <updated>2020-02-09T13:01:56.715Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="指南" scheme="https://guhailong18.github.io/categories/%E6%8C%87%E5%8D%97/"/>
+    
+    
+      <category term="深度学习" scheme="https://guhailong18.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="2020" scheme="https://guhailong18.github.io/tags/2020/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020补番指南</title>
+    <link href="https://guhailong18.github.io/posts/7b78358a/"/>
+    <id>https://guhailong18.github.io/posts/7b78358a/</id>
+    <published>2020-02-09T12:44:35.000Z</published>
+    <updated>2020-02-09T12:59:58.477Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="指南" scheme="https://guhailong18.github.io/categories/%E6%8C%87%E5%8D%97/"/>
+    
+    
+      <category term="2020" scheme="https://guhailong18.github.io/tags/2020/"/>
+    
+      <category term="补番" scheme="https://guhailong18.github.io/tags/%E8%A1%A5%E7%95%AA/"/>
+    
+  </entry>
+  
+  <entry>
     <title>python爬虫入门一</title>
     <link href="https://guhailong18.github.io/posts/4b7ce70c/"/>
     <id>https://guhailong18.github.io/posts/4b7ce70c/</id>
     <published>2020-02-09T11:42:24.000Z</published>
-    <updated>2020-02-09T11:56:59.732Z</updated>
+    <updated>2020-02-09T12:10:53.174Z</updated>
     
     <summary type="html">
     
@@ -41,9 +128,9 @@
     
       <category term="爬虫" scheme="https://guhailong18.github.io/tags/%E7%88%AC%E8%99%AB/"/>
     
-      <category term="python" scheme="https://guhailong18.github.io/tags/python/"/>
-    
       <category term="笔记" scheme="https://guhailong18.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="python" scheme="https://guhailong18.github.io/tags/python/"/>
     
   </entry>
   
@@ -70,11 +157,11 @@
       <category term="MATLAB" scheme="https://guhailong18.github.io/categories/MATLAB/"/>
     
     
-      <category term="笔记" scheme="https://guhailong18.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
-    
       <category term="MATLAB" scheme="https://guhailong18.github.io/tags/MATLAB/"/>
     
       <category term="求导" scheme="https://guhailong18.github.io/tags/%E6%B1%82%E5%AF%BC/"/>
+    
+      <category term="笔记" scheme="https://guhailong18.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
@@ -161,9 +248,9 @@
       <category term="深度学习" scheme="https://guhailong18.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="深度学习" scheme="https://guhailong18.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
       <category term="笔记" scheme="https://guhailong18.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="深度学习" scheme="https://guhailong18.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
       <category term="框架" scheme="https://guhailong18.github.io/tags/%E6%A1%86%E6%9E%B6/"/>
     
@@ -238,9 +325,9 @@
       <category term="github" scheme="https://guhailong18.github.io/categories/github/"/>
     
     
-      <category term="聊天机器人" scheme="https://guhailong18.github.io/tags/%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
-    
       <category term="github" scheme="https://guhailong18.github.io/tags/github/"/>
+    
+      <category term="聊天机器人" scheme="https://guhailong18.github.io/tags/%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
     
   </entry>
   
@@ -476,89 +563,6 @@
       <category term="主题" scheme="https://guhailong18.github.io/tags/%E4%B8%BB%E9%A2%98/"/>
     
       <category term="hexo" scheme="https://guhailong18.github.io/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>text</title>
-    <link href="https://guhailong18.github.io/posts/3b8ba7c7/"/>
-    <id>https://guhailong18.github.io/posts/3b8ba7c7/</id>
-    <published>2020-01-29T12:54:35.516Z</published>
-    <updated>2020-01-29T13:11:45.214Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>CSS笔记之图标</title>
-    <link href="https://guhailong18.github.io/posts/c2d28339/"/>
-    <id>https://guhailong18.github.io/posts/c2d28339/</id>
-    <published>2020-01-29T11:37:21.000Z</published>
-    <updated>2020-01-29T13:34:59.307Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="CSS" scheme="https://guhailong18.github.io/tags/CSS/"/>
-    
-      <category term="图标" scheme="https://guhailong18.github.io/tags/%E5%9B%BE%E6%A0%87/"/>
-    
-      <category term="主题" scheme="https://guhailong18.github.io/tags/%E4%B8%BB%E9%A2%98/"/>
-    
-      <category term="Hexo" scheme="https://guhailong18.github.io/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo有趣小功能之雪花飞舞</title>
-    <link href="https://guhailong18.github.io/posts/221edd67/"/>
-    <id>https://guhailong18.github.io/posts/221edd67/</id>
-    <published>2020-01-29T09:27:48.000Z</published>
-    <updated>2020-01-30T13:17:12.240Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="主题" scheme="https://guhailong18.github.io/tags/%E4%B8%BB%E9%A2%98/"/>
-    
-      <category term="hexo" scheme="https://guhailong18.github.io/tags/hexo/"/>
-    
-      <category term="小功能" scheme="https://guhailong18.github.io/tags/%E5%B0%8F%E5%8A%9F%E8%83%BD/"/>
     
   </entry>
   
