@@ -5,8 +5,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="python笔记之GIF的制作, 动漫，编程，数学，读书">
-    <meta name="description" content="在这里就顺便记一下if name == ‘main‘的具体用法及说明（其实我之前真的不是很理解这行代码）
-当前程序被当作主程序运行时， __ name__被自动赋值为固定的字符串__main__;当它被当作模块被其他文件调用时，自动被赋值为">
+    <meta name="description" content="本文使用的包为：imageio
+基本用法及参数解释：
+介绍完了，上代码！
+import imageio
+def create_gif(image_list,gif_name,duration=0.5):
+    &#34;&#34;&#34;
+    :param">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -24,11 +29,11 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/libs/lightGallery/css/lightgallery.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/css/matery.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/css/my.css">
-    
+    <script data-ad-client="ca-pub-7903599946607415" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/libs/jquery/jquery.min.js"></script>
-    
-<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="古客" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+<meta name="generator" content="Hexo 4.2.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"><link rel="alternate" href="/atom.xml" title="古客" type="application/atom+xml">
+</head>
 
 <!-- 樱花特效 -->
 <script src="https://cdn.jsdelivr.net/gh/yremp/yremp-js@1.5/sakura.js"></script>
@@ -435,7 +440,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/source/images/xxx.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/source/images/DASHENG-900x700-3.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -450,10 +455,105 @@
 
 
 
-<main class="container content">
+<main class="post-container content">
 
     
-    <!-- 文章内容详情 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
@@ -509,14 +609,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    144
+                    857
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    4 分
                 </div>
                 
 
@@ -532,8 +632,153 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>在这里就顺便记一下if <strong>name</strong> == ‘<strong>main</strong>‘的具体用法及说明（其实我之前真的不是很理解这行代码）</p>
-<p><code>当前程序被当作主程序运行时， __ name__被自动赋值为固定的字符串__main__;当它被当作模块被其他文件调用时，自动被赋值为模块所在的文件名</code></p>
+                <p>本文使用的包为：imageio</p>
+<p>基本用法及参数解释：</p>
+<p>介绍完了，上代码！</p>
+<pre><code>import imageio
+def create_gif(image_list,gif_name,duration=0.5):
+    """
+    :param image_list: 原始图片，png
+    :param gif_name: gif的文件名
+    :param duration: 间隔时间
+    path：路径
+    :return:
+    """
+
+    frames = []
+    for image_name in image_list:
+        frames.append(imageio.imread(image_name))
+    #保存为GIF
+    imageio.mimsave(gif_name,frames,'GIF',duration = duration)
+    return
+
+#这个duration表示的是:
+def main():
+    image_list = ['1.png','2.png','3.png','4.png']
+    gif_name = 'first.gif'
+    duration = 1.5
+    create_gif(image_list,gif_name)
+
+#当前程序被当作主程序运行时， __ name__被自动赋值为固定的字符串__main__;当它被当作模块被其他文件调用时，自动被赋值为模块所在的文件名
+if __name__ == '__main__':
+    main()</code></pre><p>在这里就顺便记一下if <strong>name</strong> == ‘<strong>main</strong>‘的具体用法及说明（其实我之前真的不是很理解这行代码）</p>
+<p><code>__name__本身其实就是一个变量，当前程序被当作主程序运行时， __ name__被自动赋值为固定的字符串__main__;当它被当作模块被其他文件调用时，自动被赋值为模块所在的文件名</code></p>
+<h3 id="报错解决："><a href="#报错解决：" class="headerlink" title="报错解决："></a>报错解决：</h3><p>忽然发现是少打了一个字母，上面的代码是修改过的，请放心使用！(￣▽￣)~*</p>
+<pre><code>import imageio
+import matplotlib.pyplot as plt
+from pygifsicle import optimize
+
+n = 100
+gif_path = "test.gif"
+frames_path = "{i}.jpg"
+
+n = 100
+plt.figure(figsize=(4,4))
+for i, x in enumerate(range(n)):
+    plt.scatter(x/n, x/n)
+    plt.xlim(0, 1)
+    plt.ylim(0, 1)
+    plt.savefig("{i}.jpg".format(i=i))
+
+with imageio.get_writer(gif_path, mode='I') as writer:
+    for i in range(n):
+        writer.append_data(imageio.imread(frames_path.format(i=i)))
+
+optimize(gif_path)</code></pre><p>这是官方的GIF优化的方法！</p>
+<p><strong>其他有趣的操作！</strong></p>
+<h2 id="图片操作"><a href="#图片操作" class="headerlink" title="图片操作"></a>图片操作</h2><p><strong>将指定颜色变透明 只能保存 png jpg</strong></p>
+<pre><code>  /**
+     * 将指定颜色变透明 只能保存 png jpg
+     *
+     * @param imageSrc
+     * @param mask
+     * @return
+     */
+    public static BufferedImage createImageByMaskColorEx(
+            BufferedImage imageSrc, Color mask) {
+        int x, y;
+        x = imageSrc.getWidth(null);
+        y = imageSrc.getHeight(null);
+        BufferedImage imageDes = new BufferedImage(x, y,
+                BufferedImage.TYPE_4BYTE_ABGR);
+        WritableRaster rasterDes = imageDes.getRaster();
+        int[] des = new int[4];
+        while (--x &gt;= 0)
+            for (int j = 0; j &lt; y; ++j) {
+                int rgb = imageSrc.getRGB(x, j);
+                int sr, sg, sb;
+                sr = (rgb &amp; 0xFF0000) &gt;&gt; 16;
+                sg = (rgb &amp; 0xFF00) &gt;&gt; 8;
+                sb = rgb &amp; 0xFF;
+                if (sr == mask.getRed() &amp;&amp; sg == mask.getGreen()
+                        &amp;&amp; sb == mask.getBlue()) {
+                    des[3] = 0;
+                } else {
+                    des[0] = sr;
+                    des[1] = sg;
+                    des[2] = sb;
+                    des[3] = 255;
+                }
+                rasterDes.setPixel(x, j, des);
+            }
+        return imageDes;
+    }</code></pre><p><strong>按倍率缩小图片</strong></p>
+<pre><code>  /**
+     * 按倍率缩小图片
+     *
+     * @param imageSrc    读取图片路径
+     * @param imageDest   写入图片路径
+     * @param widthRatio  宽度缩小比例
+     * @param heightRatio 高度缩小比例
+     */
+    public static void reduceImageByRatio(String imageSrc, String imageDest, int widthRatio, int heightRatio) {
+        FileOutputStream outputStream = null;
+        try {
+            File file = new File(imageSrc);
+            BufferedImage read = ImageIO.read(file);
+            int width = read.getWidth();
+            int height = read.getHeight();
+            /**
+             * 根据缩放比较 构建新的BufferImage 对象
+             */
+            BufferedImage destBufferImage = new BufferedImage(width / widthRatio, height / heightRatio, BufferedImage.TYPE_INT_RGB);
+            /**
+             * 绘制 缩小  后的图片
+             */
+            destBufferImage.getGraphics().drawImage(read, 0, 0, width / widthRatio, height / heightRatio, null);
+            outputStream = new FileOutputStream(imageDest);
+            ImageIO.write(destBufferImage, "jpg", outputStream);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }</code></pre><p><strong>指定图形的长和宽</strong></p>
+<pre><code> /**
+  * 指定图形的长和宽
+  *
+  * @param iamgeSrc
+  * @param imageDest
+  * @param width
+  * @param height
+  * @throws IOException
+  */
+ public static void resizeImage(String iamgeSrc, String imageDest, int width, int height) {
+     FileOutputStream outputStream = null;
+     try {
+         //读入文件
+         File file = new File(iamgeSrc);
+         // 构造Image对象
+         BufferedImage src = javax.imageio.ImageIO.read(file);
+         // 放大边长
+         BufferedImage tag = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
+         //绘制放大后的图片
+         tag.getGraphics().drawImage(src, 0, 0, width, height, null);
+         outputStream = new FileOutputStream(imageDest);
+         outputStream = new FileOutputStream(imageDest);
+         ImageIO.write(tag, "jpg", outputStream);
+     } catch (Exception e) {
+         e.printStackTrace();
+     }
+ }</code></pre><p>更多操作请看：<a href="https://blog.csdn.net/baidu_28665563/article/details/82887485" target="_blank" rel="noopener">https://blog.csdn.net/baidu_28665563/article/details/82887485</a></p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -1056,58 +1301,38 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/posts/d7139446/">
+                <a href="/posts/15365e68/">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/source/images/xxx.jpg" class="responsive-img" alt="python笔记之GIF的制作">
+                        <img src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/source/images/DASHENG-900x700-1.png" class="responsive-img" alt="python之数据类型">
                         
-                        <span class="card-title">python笔记之GIF的制作</span>
+                        <span class="card-title">python之数据类型</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            在这里就顺便记一下if name == ‘main‘的具体用法及说明（其实我之前真的不是很理解这行代码）
-当前程序被当作主程序运行时， __ name__被自动赋值为固定的字符串__main__;当它被当作模块被其他文件调用时，自动被赋值为
+                            由于老是记不住python的list，字典，元组等表示的方法及区别，经常会搞混，所以特地写了这篇文章来加强记忆和复习。
+list(列表)符号[]
+tuple(元组)dictionary(字典)键值对应，符号{}      例：
+thing 
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-12
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-02-12
+                        </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/python/" class="post-category">
-                                    python
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            古客
                             
                         </span>
                     </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E7%AC%94%E8%AE%B0/">
-                        <span class="chip bg-color">笔记</span>
-                    </a>
-                    
-                    <a href="/tags/python/">
-                        <span class="chip bg-color">python</span>
-                    </a>
-                    
-                    <a href="/tags/GIF/">
-                        <span class="chip bg-color">GIF</span>
-                    </a>
-                    
                 </div>
                 
             </div>
@@ -1243,6 +1468,100 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 </style>
 
 
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
     
 
 </main>
@@ -1260,7 +1579,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">17.5k</span>&nbsp;字
+                class="white-color">18.8k</span>&nbsp;字
             
             
             
