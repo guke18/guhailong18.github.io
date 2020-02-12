@@ -617,19 +617,8 @@ def create_gif(image_list,gif_name,duration=0.5):
 
         let carouselIntervalId;
         
-        // Loop to call the next cover article picture.
-        let autoCarousel = function() {
-            carouselIntervalId = setInterval(function () {
-                coverSlider.carousel('next');
-            }, 500);
-        };
-        autoCarousel();
-        
 
         let restartPlay = function () {
-            
-            clearInterval(carouselIntervalId);
-            autoCarousel();
             
         };
 
