@@ -5,11 +5,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="hexo有趣小功能之雪花飞舞, 动漫，编程，数学，读书">
-    <meta name="description" content=" 在themes\hexo-theme-matery\source\js目录下新建一个 snow.js 文件，粘贴以下代码：
+    <meta name="description" content="在themes\hexo-theme-matery\source\js目录下新建一个 snow.js 文件，粘贴以下代码：
 /*样式一*/
 (function($){
-    $.fn.snow = function(options){
-">
+	$.fn.snow = function(options){
+	var">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,6 +17,8 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google-site-verification" content="cDtZWn0qG4XcSUw3eMMZ02d4avBhPZU6ZTl-kD3u2Gw" />
+    <meta name="baidu-site-verification" content="ZqnBdgf6NK" />
     <title>hexo有趣小功能之雪花飞舞 | 古客</title>
     <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/favicon.png">
 
@@ -621,49 +623,51 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p> 在themes\hexo-theme-matery\source\js目录下新建一个 snow.js 文件，粘贴以下代码：</p>
+                <p>在themes\hexo-theme-matery\source\js目录下新建一个 snow.js 文件，粘贴以下代码：</p>
 <pre><code>/*样式一*/
 (function($){
-    $.fn.snow = function(options){
-    var $flake = $('&lt;div id="snowbox" /&gt;').css({'position': 'absolute','z-index':'9999', 'top': '-50px'}).html('&amp;#10052;'),
-    documentHeight     = $(document).height(),
-    documentWidth    = $(document).width(),
-    defaults = {
-        minSize        : 10,
-        maxSize        : 20,
-        newOn        : 1000,
-        flakeColor    : "#AFDAEF" /* 此处可以定义雪花颜色，若要白色可以改为#FFFFFF */
-    },
-    options    = $.extend({}, defaults, options);
-    var interval= setInterval( function(){
-    var startPositionLeft = Math.random() * documentWidth - 100,
-    startOpacity = 0.5 + Math.random(),
-    sizeFlake = options.minSize + Math.random() * options.maxSize,
-    endPositionTop = documentHeight - 200,
-    endPositionLeft = startPositionLeft - 500 + Math.random() * 500,
-    durationFall = documentHeight * 10 + Math.random() * 5000;
-    $flake.clone().appendTo('body').css({
-        left: startPositionLeft,
-        opacity: startOpacity,
-        'font-size': sizeFlake,
-        color: options.flakeColor
-    }).animate({
-        top: endPositionTop,
-        left: endPositionLeft,
-        opacity: 0.2
-    },durationFall,'linear',function(){
-        $(this).remove()
-    });
-    }, options.newOn);
+	$.fn.snow = function(options){
+	var $flake = $('&lt;div id="snowbox" /&gt;').css({'position': 'absolute','z-index':'9999', 'top': '-50px'}).html('&amp;#10052;'),
+	documentHeight 	= $(document).height(),
+	documentWidth	= $(document).width(),
+	defaults = {
+		minSize		: 10,
+		maxSize		: 20,
+		newOn		: 1000,
+		flakeColor	: "#AFDAEF" /* 此处可以定义雪花颜色，若要白色可以改为#FFFFFF */
+	},
+	options	= $.extend({}, defaults, options);
+	var interval= setInterval( function(){
+	var startPositionLeft = Math.random() * documentWidth - 100,
+	startOpacity = 0.5 + Math.random(),
+	sizeFlake = options.minSize + Math.random() * options.maxSize,
+	endPositionTop = documentHeight - 200,
+	endPositionLeft = startPositionLeft - 500 + Math.random() * 500,
+	durationFall = documentHeight * 10 + Math.random() * 5000;
+	$flake.clone().appendTo('body').css({
+		left: startPositionLeft,
+		opacity: startOpacity,
+		'font-size': sizeFlake,
+		color: options.flakeColor
+	}).animate({
+		top: endPositionTop,
+		left: endPositionLeft,
+		opacity: 0.2
+	},durationFall,'linear',function(){
+		$(this).remove()
+	});
+	}, options.newOn);
     };
 })(jQuery);
 $(function(){
     $.fn.snow({ 
-        minSize: 5, /* 定义雪花最小尺寸 */
-        maxSize: 50,/* 定义雪花最大尺寸 */
-        newOn: 300  /* 定义密集程度，数字越小越密集 */
+	    minSize: 5, /* 定义雪花最小尺寸 */
+	    maxSize: 50,/* 定义雪花最大尺寸 */
+	    newOn: 300  /* 定义密集程度，数字越小越密集 */
     });
-});</code></pre><pre><code>/*样式二*/
+});
+</code></pre>
+<pre><code>/*样式二*/
 /* 控制下雪 */
 function snowFall(snow) {
     /* 可配置属性 */
@@ -684,7 +688,7 @@ cancelAnimationFrame = window.cancelAnimationFrame ||
     window.mozCancelAnimationFrame ||
     window.webkitCancelAnimationFrame ||
     window.msCancelAnimationFrame ||
-    window.oCancelAnimationFrame;
+	window.oCancelAnimationFrame;
 /* 开始下雪 */
 snowFall.prototype.start = function(){
     /* 创建画布 */
@@ -790,24 +794,31 @@ function drawSnow() {
 }
 /* 调用及控制方法 */
 var snow = new snowFall({maxFlake:60});
-snow.start();</code></pre><p>在hexo-theme-matery\layout\layout.ejs 文件里引用即可：在body前面</p>
+snow.start();
+</code></pre>
+<p>在hexo-theme-matery\layout\layout.ejs 文件里引用即可：在body前面</p>
 <pre><code>&lt;!-- 雪花特效 --&gt;
-&lt;script type="text/javascript" src="\js\snow.js"&gt;&lt;/script&gt;</code></pre><p>例：</p>
+&lt;script type="text/javascript" src="\js\snow.js"&gt;&lt;/script&gt;
+</code></pre>
+<p>例：</p>
 
 
 &lt;%- partial('_partial head') %&gt;
 <!-- 雪花特效 -->
-
 <script type="text/javascript" src="\js\snow.js"></script>
 <meta name="google-site-verification" content="02_7KMvaA5QhtHqwZspLnRdeSfrDbpKwMfS9ILtMms8">
 
-
 <hr>
-<p>if (<em>condition</em>)<br>{<br>  <em>当条件为 true 时执行的代码</em><br>}</p>
+<p>if (<em>condition</em>)<br>
+{<br>
+<em>当条件为 true 时执行的代码</em><br>
+}</p>
 <p>添加以上代码可以在config控制是否下雪。</p>
 <p>如果没效果，请确认网页是否已载入JQurey，如果没有请在下雪代码之前引入JQ即可：</p>
 <pre><code>&lt;script type="text/javascript" src="http://libs.baidu.com/jquery/1.8.3/jquery.js"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"&gt;&lt;/script&gt;</code></pre><p>这个不清楚，可以试一下。</p>
+&lt;script type="text/javascript" src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"&gt;&lt;/script&gt;
+</code></pre>
+<p>这个不清楚，可以试一下。</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -1403,17 +1414,18 @@ snow.start();</code></pre><p>在hexo-theme-matery\layout\layout.ejs 文件里引
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            地址1地址2
+                            地址1
+地址2
 在
 
 
-    
-        
-        
-    
+	
+		
+		
+	
 
-    
-    L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/z16.model.json"},"
+	
+	L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/z16.model.json"},"display":{"position":"r
                         
                     </div>
                     <div class="publish-info">
