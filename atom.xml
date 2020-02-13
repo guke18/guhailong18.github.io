@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://guhailong18.github.io/"/>
-  <updated>2020-02-13T08:20:59.691Z</updated>
+  <updated>2020-02-13T15:29:26.563Z</updated>
   <id>https://guhailong18.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>python之XPath详解</title>
-    <link href="https://guhailong18.github.io/posts/c7a2ca76/"/>
-    <id>https://guhailong18.github.io/posts/c7a2ca76/</id>
-    <published>2020-02-13T08:20:59.000Z</published>
-    <updated>2020-02-13T08:20:59.691Z</updated>
+    <title>MarkdownEmoji表情语法速查表</title>
+    <link href="https://guhailong18.github.io/posts/e34c7eb2/"/>
+    <id>https://guhailong18.github.io/posts/e34c7eb2/</id>
+    <published>2020-02-13T14:53:25.000Z</published>
+    <updated>2020-02-13T15:29:26.563Z</updated>
     
     <summary type="html">
     
@@ -36,6 +36,64 @@
     </summary>
     
     
+    
+  </entry>
+  
+  <entry>
+    <title>hexo简明的教程</title>
+    <link href="https://guhailong18.github.io/posts/35118032/"/>
+    <id>https://guhailong18.github.io/posts/35118032/</id>
+    <published>2020-02-13T12:44:37.000Z</published>
+    <updated>2020-02-13T12:49:07.673Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="https://guhailong18.github.io/categories/hexo/"/>
+    
+    
+      <category term="hexo" scheme="https://guhailong18.github.io/tags/hexo/"/>
+    
+      <category term="教程" scheme="https://guhailong18.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python之XPath详解</title>
+    <link href="https://guhailong18.github.io/posts/c7a2ca76/"/>
+    <id>https://guhailong18.github.io/posts/c7a2ca76/</id>
+    <published>2020-02-13T08:20:59.000Z</published>
+    <updated>2020-02-13T14:43:57.935Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://guhailong18.github.io/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://guhailong18.github.io/tags/python/"/>
+    
+      <category term="XPATH" scheme="https://guhailong18.github.io/tags/XPATH/"/>
     
   </entry>
   
@@ -402,9 +460,9 @@
       <category term="github" scheme="https://guhailong18.github.io/categories/github/"/>
     
     
-      <category term="github" scheme="https://guhailong18.github.io/tags/github/"/>
-    
       <category term="聊天机器人" scheme="https://guhailong18.github.io/tags/%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
+    
+      <category term="github" scheme="https://guhailong18.github.io/tags/github/"/>
     
   </entry>
   
@@ -507,66 +565,6 @@
     </summary>
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>聊天机器人学习笔记(一)</title>
-    <link href="https://guhailong18.github.io/posts/10c1d492/"/>
-    <id>https://guhailong18.github.io/posts/10c1d492/</id>
-    <published>2020-01-31T09:03:29.000Z</published>
-    <updated>2020-02-02T03:03:59.507Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="python" scheme="https://guhailong18.github.io/tags/python/"/>
-    
-      <category term="聊天机器人" scheme="https://guhailong18.github.io/tags/%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
-    
-      <category term="机器学习" scheme="https://guhailong18.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>微信机器人搭建笔记</title>
-    <link href="https://guhailong18.github.io/posts/9858143b/"/>
-    <id>https://guhailong18.github.io/posts/9858143b/</id>
-    <published>2020-01-31T03:37:57.000Z</published>
-    <updated>2020-02-02T03:03:59.500Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="python" scheme="https://guhailong18.github.io/tags/python/"/>
-    
-      <category term="聊天机器人" scheme="https://guhailong18.github.io/tags/%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
-    
-      <category term="chatterbot" scheme="https://guhailong18.github.io/tags/chatterbot/"/>
-    
-      <category term="机器学习" scheme="https://guhailong18.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
