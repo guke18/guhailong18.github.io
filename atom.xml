@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://guhailong18.github.io/"/>
-  <updated>2020-02-12T10:21:59.859Z</updated>
+  <updated>2020-02-13T08:20:59.691Z</updated>
   <id>https://guhailong18.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python之XPath详解</title>
+    <link href="https://guhailong18.github.io/posts/c7a2ca76/"/>
+    <id>https://guhailong18.github.io/posts/c7a2ca76/</id>
+    <published>2020-02-13T08:20:59.000Z</published>
+    <updated>2020-02-13T08:20:59.691Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>python之数据类型</title>
@@ -544,29 +567,6 @@
       <category term="chatterbot" scheme="https://guhailong18.github.io/tags/chatterbot/"/>
     
       <category term="机器学习" scheme="https://guhailong18.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>前端资源大全</title>
-    <link href="https://guhailong18.github.io/posts/aa04407b/"/>
-    <id>https://guhailong18.github.io/posts/aa04407b/</id>
-    <published>2020-01-30T15:03:10.000Z</published>
-    <updated>2020-02-02T03:03:59.504Z</updated>
-    
-    <summary type="html">
-    
-      有东西被加密了, 请输入密码查看.
-    
-    </summary>
-    
-    
-    
-      <category term="资源" scheme="https://guhailong18.github.io/tags/%E8%B5%84%E6%BA%90/"/>
-    
-      <category term="前端" scheme="https://guhailong18.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="自学" scheme="https://guhailong18.github.io/tags/%E8%87%AA%E5%AD%A6/"/>
     
   </entry>
   
