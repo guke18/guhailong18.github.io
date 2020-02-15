@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://guhailong18.github.io/"/>
-  <updated>2020-02-13T15:29:26.563Z</updated>
+  <updated>2020-02-14T08:59:27.264Z</updated>
   <id>https://guhailong18.github.io/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>windows十个实用的小技巧</title>
+    <link href="https://guhailong18.github.io/posts/98ea8151/"/>
+    <id>https://guhailong18.github.io/posts/98ea8151/</id>
+    <published>2020-02-14T08:59:27.000Z</published>
+    <updated>2020-02-14T08:59:27.264Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>window好用但不出名的快捷键</title>
+    <link href="https://guhailong18.github.io/posts/3ed280dd/"/>
+    <id>https://guhailong18.github.io/posts/3ed280dd/</id>
+    <published>2020-02-14T05:06:32.000Z</published>
+    <updated>2020-02-14T08:53:55.110Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="windows" scheme="https://guhailong18.github.io/categories/windows/"/>
+    
+    
+      <category term="windows" scheme="https://guhailong18.github.io/tags/windows/"/>
+    
+      <category term="快捷键" scheme="https://guhailong18.github.io/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    
+  </entry>
   
   <entry>
     <title>MarkdownEmoji表情语法速查表</title>
@@ -73,7 +125,7 @@
     <link href="https://guhailong18.github.io/posts/c7a2ca76/"/>
     <id>https://guhailong18.github.io/posts/c7a2ca76/</id>
     <published>2020-02-13T08:20:59.000Z</published>
-    <updated>2020-02-13T15:32:50.140Z</updated>
+    <updated>2020-02-14T03:59:31.078Z</updated>
     
     <summary type="html">
     
@@ -460,9 +512,9 @@
       <category term="github" scheme="https://guhailong18.github.io/categories/github/"/>
     
     
-      <category term="github" scheme="https://guhailong18.github.io/tags/github/"/>
-    
       <category term="聊天机器人" scheme="https://guhailong18.github.io/tags/%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
+    
+      <category term="github" scheme="https://guhailong18.github.io/tags/github/"/>
     
   </entry>
   
@@ -505,52 +557,6 @@
     <id>https://guhailong18.github.io/posts/1f7ef16d/</id>
     <published>2020-02-01T15:24:19.000Z</published>
     <updated>2020-02-02T03:03:59.513Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>word2vec模型</title>
-    <link href="https://guhailong18.github.io/posts/dd1038da/"/>
-    <id>https://guhailong18.github.io/posts/dd1038da/</id>
-    <published>2020-01-31T12:37:13.000Z</published>
-    <updated>2020-02-02T03:03:59.496Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>爬虫环境搭建踩过的坑</title>
-    <link href="https://guhailong18.github.io/posts/9c6ca83d/"/>
-    <id>https://guhailong18.github.io/posts/9c6ca83d/</id>
-    <published>2020-01-31T09:15:41.000Z</published>
-    <updated>2020-02-02T03:03:59.511Z</updated>
     
     <summary type="html">
     

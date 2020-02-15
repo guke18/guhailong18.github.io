@@ -6,8 +6,7 @@
     <meta charset="utf-8">
     <meta name="keywords" content="三大深度学习框架的简单了解, 动漫，编程，数学，读书">
     <meta name="description" content="简要记录一下我感兴趣且也比较流行的三大深度学习框架，分别是：Pytroch，tensorflow，paddle（百度飞桨）。
-Pytorch
-官方：PyTorch是是torch的python版本，是由Facebook开源的神经网络框架，专门">
+Pytorch官方：PyTorch是是torch的python版本，是由Facebook开源的神经网络框架，专门针">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,6 +18,7 @@ Pytorch
     <meta name="baidu-site-verification" content="ZqnBdgf6NK" />
     <meta name="msvalidate.01" content="C3E86648EAA78534AFF48DAB4EDFF0B9" />
     <meta name="sogou_site_verification" content="UJOkCUvoVx"/>
+    <meta name="chinaz-site-verification" content="583EA5C18810DE84">
     <meta name="360-site-verification" content="d09fbbfc212660f173e6b895986c3550" />
     <title>三大深度学习框架的简单了解 | 古客</title>
     <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/favicon.png">
@@ -634,118 +634,82 @@ Pytorch
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>简要记录一下我感兴趣且也比较流行的三大深度学习框架，分别是：Pytroch，tensorflow，paddle（百度飞桨）。</p>
-<h2 id="Pytorch">Pytorch</h2>
-<p>官方：PyTorch是是torch的python版本，是由Facebook开源的神经网络框架，专门针对 GPU 加速的深度神经网络（DNN）编程，是使用GPU和CPU优化的深度学习张量库。</p>
+<h2 id="Pytorch"><a href="#Pytorch" class="headerlink" title="Pytorch"></a>Pytorch</h2><p>官方：PyTorch是是torch的python版本，是由Facebook开源的神经网络框架，专门针对 GPU 加速的深度神经网络（DNN）编程，是使用GPU和CPU优化的深度学习张量库。</p>
 <p>（再介绍一下Torch：一个经典的对多维矩阵数据进行操作的张量（tensor ）库）</p>
-<h5 id="那么什么是张量呢？">那么什么是张量呢？</h5>
-<p>张量由一组成形为任意数量的数组的原始值组成。张量的等级是其维数。</p>
+<h5 id="那么什么是张量呢？"><a href="#那么什么是张量呢？" class="headerlink" title="那么什么是张量呢？"></a>那么什么是张量呢？</h5><p>张量由一组成形为任意数量的数组的原始值组成。张量的等级是其维数。</p>
 <p>简单的理解就是：矩阵的升级版，而矩阵就是向量的升级版。那么是干什么用的呢？</p>
 <p>举例：规模最小的张量是0阶张量，即标量，也就是一个数。</p>
 <p>当我们把一些数有序的排列起来，就形成了1阶张量，也就是一个向量</p>
 <p>如果我们继续把一组向量有序的排列起来，就形成了2阶张量，也就是一个矩阵</p>
 <p>把矩阵摞起来，就是3阶张量，我们可以称为一个立方体，具有3个颜色通道的彩色图片就是一个这样的立方体</p>
 <p>把立方体摞起来，好吧这次我们真的没有给它起别名了，就叫4阶张量了，不要去试图想像4阶张量是什么样子，它就是个数学上的概念。</p>
-<h6 id="那张量是干什么用的呢？">那张量是干什么用的呢？</h6>
-<p>用来表示数据的，这是我学习深度学习时感觉比较刷新三观的事，所有的数据竟然都可以用数字来表示，不管是图片，文字，还是视频，不过他背后的原理我还不清楚。张量的一部分数字就可以被称作特征，这概念以后经常用得到！</p>
-<h4 id="示例：">示例：</h4>
-<pre class=" language-language-swift"><code class="language-language-swift">import torch 
-x = torch.ones(2,3,4) （两个三行四列的矩阵）
-print(x) 
-</code></pre>
-<pre class=" language-language-css"><code class="language-language-css">tensor([[[1., 1., 1., 1.],
-        [1., 1., 1., 1.],
-        [1., 1., 1., 1.]],
+<h6 id="那张量是干什么用的呢？"><a href="#那张量是干什么用的呢？" class="headerlink" title="那张量是干什么用的呢？"></a>那张量是干什么用的呢？</h6><p>用来表示数据的，这是我学习深度学习时感觉比较刷新三观的事，所有的数据竟然都可以用数字来表示，不管是图片，文字，还是视频，不过他背后的原理我还不清楚。张量的一部分数字就可以被称作特征，这概念以后经常用得到！</p>
+<h4 id="示例："><a href="#示例：" class="headerlink" title="示例："></a>示例：</h4><pre class=" language-swift"><code class="language-swift"><span class="token keyword">import</span> torch 
+x <span class="token operator">=</span> torch<span class="token punctuation">.</span><span class="token function">ones</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">)</span> （两个三行四列的矩阵）
+<span class="token function">print</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> </code></pre>
+<pre class=" language-css"><code class="language-css"><span class="token function">tensor</span><span class="token punctuation">(</span>[[[<span class="token number">1.</span>, <span class="token number">1.</span>, <span class="token number">1.</span>, <span class="token number">1.</span>],
+        [<span class="token number">1.</span>, <span class="token number">1.</span>, <span class="token number">1.</span>, <span class="token number">1.</span>],
+        [<span class="token number">1.</span>, <span class="token number">1.</span>, <span class="token number">1.</span>, <span class="token number">1.</span>]],
 
-       [[1., 1., 1., 1.],
-        [1., 1., 1., 1.],
-        [1., 1., 1., 1.]]])
-</code></pre>
-<h4 id="三大特征：">三大特征：</h4>
-<h5 id="1-简洁">1.简洁</h5>
-<p>PyTorch 的设计遵循tensor→variable(autograd)→nn.Module 三个由低到高的抽象层次，分别代表高维数组（张量）、自动求导（变量）和神经网络（层/模块）</p>
-<h5 id="2-易用">2.易用</h5>
-<p>PyTorch的面向对象的接口设计来源于Torch，做调用API时比较方便！</p>
-<h5 id="3-动态">3.动态</h5>
-<p>pytorch的计算图是动态的，可以根据计算需要实时改变计算图。（这是与Tensorflow最大的区别）</p>
-<h4 id="看个简单的代码！">看个简单的代码！</h4>
-<pre class=" language-language-python"><code class="language-language-python"># -*- coding: utf-8 -*-
-#demo.py
-import torch
-import torch.nn.functional as F  # 主要实现激活函数
-import matplotlib.pyplot as plt  # 绘图的工具
-from torch.autograd import Variable #
-# 生成伪数据
-x = torch.unsqueeze(torch.linspace(-1, 1, 100), dim=1)
-y = x.pow(3) + 0.2*torch.rand(x.size())    #y=x³+b
+       [[<span class="token number">1.</span>, <span class="token number">1.</span>, <span class="token number">1.</span>, <span class="token number">1.</span>],
+        [<span class="token number">1.</span>, <span class="token number">1.</span>, <span class="token number">1.</span>, <span class="token number">1.</span>],
+        [<span class="token number">1.</span>, <span class="token number">1.</span>, <span class="token number">1.</span>, <span class="token number">1.</span>]]]<span class="token punctuation">)</span></code></pre>
+<h4 id="三大特征："><a href="#三大特征：" class="headerlink" title="三大特征："></a>三大特征：</h4><h5 id="1-简洁"><a href="#1-简洁" class="headerlink" title="1.简洁"></a>1.简洁</h5><p>PyTorch 的设计遵循tensor→variable(autograd)→nn.Module 三个由低到高的抽象层次，分别代表高维数组（张量）、自动求导（变量）和神经网络（层/模块）</p>
+<h5 id="2-易用"><a href="#2-易用" class="headerlink" title="2.易用"></a>2.易用</h5><p>PyTorch的面向对象的接口设计来源于Torch，做调用API时比较方便！</p>
+<h5 id="3-动态"><a href="#3-动态" class="headerlink" title="3.动态"></a>3.动态</h5><p>pytorch的计算图是动态的，可以根据计算需要实时改变计算图。（这是与Tensorflow最大的区别）</p>
+<h4 id="看个简单的代码！"><a href="#看个简单的代码！" class="headerlink" title="看个简单的代码！"></a>看个简单的代码！</h4><pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># -*- coding: utf-8 -*-</span>
+<span class="token comment" spellcheck="true">#demo.py</span>
+<span class="token keyword">import</span> torch
+<span class="token keyword">import</span> torch<span class="token punctuation">.</span>nn<span class="token punctuation">.</span>functional <span class="token keyword">as</span> F  <span class="token comment" spellcheck="true"># 主要实现激活函数</span>
+<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt  <span class="token comment" spellcheck="true"># 绘图的工具</span>
+<span class="token keyword">from</span> torch<span class="token punctuation">.</span>autograd <span class="token keyword">import</span> Variable <span class="token comment" spellcheck="true">#</span>
+<span class="token comment" spellcheck="true"># 生成伪数据</span>
+x <span class="token operator">=</span> torch<span class="token punctuation">.</span>unsqueeze<span class="token punctuation">(</span>torch<span class="token punctuation">.</span>linspace<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">,</span> dim<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+y <span class="token operator">=</span> x<span class="token punctuation">.</span>pow<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">0.2</span><span class="token operator">*</span>torch<span class="token punctuation">.</span>rand<span class="token punctuation">(</span>x<span class="token punctuation">.</span>size<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>    <span class="token comment" spellcheck="true">#y=x³+b</span>
 
-# 变为Variable
-x, y = Variable(x), Variable(y)
+<span class="token comment" spellcheck="true"># 变为Variable</span>
+x<span class="token punctuation">,</span> y <span class="token operator">=</span> Variable<span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">,</span> Variable<span class="token punctuation">(</span>y<span class="token punctuation">)</span>
 
-# 绘制数据图像
-plt.scatter(x.data.numpy(), y.data.numpy())
-plt.show()
-</code></pre>
+<span class="token comment" spellcheck="true"># 绘制数据图像</span>
+plt<span class="token punctuation">.</span>scatter<span class="token punctuation">(</span>x<span class="token punctuation">.</span>data<span class="token punctuation">.</span>numpy<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> y<span class="token punctuation">.</span>data<span class="token punctuation">.</span>numpy<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
 <p>Variable：在torch中的Variable就是一个存放会变化的值的地理位置，里面的值会不断变化，就是在计算图中的坐标。（torch是用tensor计算的，tensor里面的参数都是variable的形式）</p>
 <p>其中<code>torch.linspace</code>是为了生成连续间断的数据，第一个参数表示起点，第二个参数表示终点，第三个参数表示将这个区间分成平均几份，即生成几个数据。因为<code>torch</code>只能处理二维的数据，所以我们用<code>torch.unsqueeze</code>给伪数据添加一个维度，<code>dim</code>表示添加在第几维。<code>torch.rand</code>返回的是[0,1)之间的均匀分布。</p>
 <p>生成：</p>
 <p><img src="https://upload-images.jianshu.io/upload_images/6479023-7e835db421799c56.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/640/format/webp" alt="https://upload-images.jianshu.io/upload_images/6479023-7e835db421799c56.png?imageMogr2/auto-orient/strip|imageView2/2/w/640/format/webp"></p>
-<h2 id="Tensorflow">Tensorflow</h2>
-<p>TensorFlow 是一个开源的、基于 Python 的机器学习框架，它由 Google 开发，并在图形分类、音频处理、推荐系统和自然语言处理等场景下有着丰富的应用，是目前最热门的机器学习框架。</p>
+<h2 id="Tensorflow"><a href="#Tensorflow" class="headerlink" title="Tensorflow"></a>Tensorflow</h2><p>TensorFlow 是一个开源的、基于 Python 的机器学习框架，它由 Google 开发，并在图形分类、音频处理、推荐系统和自然语言处理等场景下有着丰富的应用，是目前最热门的机器学习框架。</p>
 <p>（深度学习库能够自动求导、开源、支持多种 CPU/GPU、拥有预训练模型，并支持常用的NN架构，如递归神经网络（RNN）、卷积神经网络（CNN）和深度置信网络（DBN）。）<code>请记住缩写</code></p>
-<h4 id="特点：">特点：</h4>
-<ul>
-<li>
-<p>支持所有流行语言，如 Python、<a href="http://c.biancheng.net/cplus/" target="_blank" rel="noopener">C++</a>、<a href="http://c.biancheng.net/java/" target="_blank" rel="noopener">Java</a>、R和Go。</p>
+<h4 id="特点："><a href="#特点：" class="headerlink" title="特点："></a>特点：</h4><ul>
+<li><p>支持所有流行语言，如 Python、<a href="http://c.biancheng.net/cplus/" target="_blank" rel="noopener">C++</a>、<a href="http://c.biancheng.net/java/" target="_blank" rel="noopener">Java</a>、R和Go。</p>
 </li>
-<li>
-<p>可以在多种平台上工作，甚至是移动平台和分布式平台。</p>
+<li><p>可以在多种平台上工作，甚至是移动平台和分布式平台。</p>
 </li>
-<li>
-<p>它受到所有云服务（AWS、Google和Azure）的支持。</p>
+<li><p>它受到所有云服务（AWS、Google和Azure）的支持。</p>
 </li>
-<li>
-<p>Keras——高级神经网络 API，已经与 TensorFlow 整合。</p>
+<li><p>Keras——高级神经网络 API，已经与 TensorFlow 整合。</p>
 </li>
-<li>
-<p>与 Torch/Theano 比较，TensorFlow 拥有更好的计算图表可视化。</p>
+<li><p>与 Torch/Theano 比较，TensorFlow 拥有更好的计算图表可视化。</p>
 </li>
-<li>
-<p>允许模型部署到工业生产中，并且容易使用。</p>
+<li><p>允许模型部署到工业生产中，并且容易使用。</p>
 </li>
-<li>
-<p>有非常好的社区支持。</p>
+<li><p>有非常好的社区支持。</p>
 </li>
-<li>
-<p>TensorFlow 不仅仅是一个软件库，它是一套包括 TensorFlow，TensorBoard 和 TensorServing 的软件。</p>
-<h4 id="看个简单的代码！-2">看个简单的代码！</h4>
-<ol>
-<li>
-<p>导入tensorflow，这将导入 TensorFlow 库，并允许使用其精彩的功能：</p>
-<pre><code>import tensorflow as if
-</code></pre>
-</li>
-<li>
-<p>由于要打印的信息是一个常量字符串，因此使用 tf.constant：</p>
-<pre><code>message = tf.constant('Welcome to the exciting world of Deep Neural Networks!')
-</code></pre>
-</li>
-<li>
-<p>为了执行计算图，利用 with 语句定义 Session，并使用 run 来运行：</p>
+<li><p>TensorFlow 不仅仅是一个软件库，它是一套包括 TensorFlow，TensorBoard 和 TensorServing 的软件。</p>
+<h4 id="看个简单的代码！-1"><a href="#看个简单的代码！-1" class="headerlink" title="看个简单的代码！"></a>看个简单的代码！</h4><ol>
+<li><p>导入tensorflow，这将导入 TensorFlow 库，并允许使用其精彩的功能：</p>
+<pre><code>import tensorflow as if</code></pre></li>
+<li><p>由于要打印的信息是一个常量字符串，因此使用 tf.constant：</p>
+<pre><code>message = tf.constant('Welcome to the exciting world of Deep Neural Networks!')</code></pre></li>
+<li><p>为了执行计算图，利用 with 语句定义 Session，并使用 run 来运行：</p>
 <pre><code>with tf.Session() as sess:
-  print(sess.run(message).decode())
-</code></pre>
-<p>4.最后是在会话中打印的信息：</p>
-<pre><code>Welcome to the exciting world of Deep Neural Networks!
-</code></pre>
-<p>其它输出的信息可以先不管。</p>
-<h4 id="比较">比较</h4>
-<p>PyTorch相比TensorFlow，其最大的优点是建立的神经网络是动态的，相比静态的TensorFlow，它能更加有效地去处理一些问题，比如RNN变化时间长度的输出，TensorFlow相比PyTorch的有点在于分布式训练上。</p>
+  print(sess.run(message).decode())</code></pre><p>4.最后是在会话中打印的信息：</p>
+<pre><code>Welcome to the exciting world of Deep Neural Networks!</code></pre><p>其它输出的信息可以先不管。</p>
+<h4 id="比较"><a href="#比较" class="headerlink" title="比较"></a>比较</h4><p>PyTorch相比TensorFlow，其最大的优点是建立的神经网络是动态的，相比静态的TensorFlow，它能更加有效地去处理一些问题，比如RNN变化时间长度的输出，TensorFlow相比PyTorch的有点在于分布式训练上。</p>
 </li>
 </ol>
 </li>
 </ul>
-<h2 id="Paddle（百度飞桨）">Paddle（百度飞桨）</h2>
-<p>这个深度学习框架大体和上面两个差不多，但是这个是我目前正在认真学习的框架，原因无他，因为他的文档是中文的（可怜我是个英语渣渣），还有就是学习资源多且免费，非常适合学习。</p>
+<h2 id="Paddle（百度飞桨）"><a href="#Paddle（百度飞桨）" class="headerlink" title="Paddle（百度飞桨）"></a>Paddle（百度飞桨）</h2><p>这个深度学习框架大体和上面两个差不多，但是这个是我目前正在认真学习的框架，原因无他，因为他的文档是中文的（可怜我是个英语渣渣），还有就是学习资源多且免费，非常适合学习。</p>
 <p>详见请戳：</p>
 <script>
         document.querySelectorAll('.github-emoji')
@@ -1347,11 +1311,8 @@ fro
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            部分概念及专有名词
-成本函数:个衡量模型准确率的指标，衡量依据为此模型估计X与Y间关系的能力。（来衡量AI输出与实际输出(历史数据)之间的差异，0为最好的）
-降低方法：
-1.梯度下降
-一种求函数最小值的方法。通过每次数据集迭代之后优化模型的
+                            部分概念及专有名词成本函数:个衡量模型准确率的指标，衡量依据为此模型估计X与Y间关系的能力。（来衡量AI输出与实际输出(历史数据)之间的差异，0为最好的）降低方法：1.梯度下降
+一种求函数最小值的方法。通过每次数据集迭代之后优化模型的权重来
                         
                     </div>
                     <div class="publish-info">
@@ -1550,7 +1511,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">20.3k</span>&nbsp;字
+                class="white-color">20.6k</span>&nbsp;字
             
             
             

@@ -5,11 +5,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="python之XPath详解, 动漫，编程，数学，读书">
-    <meta name="description" content="
+    <meta name="description" content="1.介绍XPath是一个路径选择语言，全称 XML Path Language，支持XML和HTML的选择，类似于正则表达式，但比正则表达式简单并且方便许多！
+下表为XPath的符号解释：
 
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.dataset.src) { retur">
+
+
+表　达　式
+描　　述
+
+
+
+nodename">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,6 +27,7 @@
     <meta name="baidu-site-verification" content="ZqnBdgf6NK" />
     <meta name="msvalidate.01" content="C3E86648EAA78534AFF48DAB4EDFF0B9" />
     <meta name="sogou_site_verification" content="UJOkCUvoVx"/>
+    <meta name="chinaz-site-verification" content="583EA5C18810DE84">
     <meta name="360-site-verification" content="d09fbbfc212660f173e6b895986c3550" />
     <title>python之XPath详解 | 古客</title>
     <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/favicon.png">
@@ -506,14 +513,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-02-13
+                    2020-02-14
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    52
+                    229
                 </div>
                 
 
@@ -536,7 +543,47 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><img src="https://i.loli.net/2020/02/13/5TnHg4jO7R9EpAJ.gif" alt=""></p>
+                <h2 id="1-介绍"><a href="#1-介绍" class="headerlink" title="1.介绍"></a>1.介绍</h2><p>XPath是一个路径选择语言，全称 XML Path Language，支持XML和HTML的选择，类似于正则表达式，但比正则表达式简单并且方便许多！</p>
+<p>下表为XPath的符号解释：</p>
+<table>
+<thead>
+<tr>
+<th>表　达　式</th>
+<th>描　　述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>nodename</td>
+<td>选取此节点的所有子节点</td>
+</tr>
+<tr>
+<td>/</td>
+<td>从当前节点选取直接子节点</td>
+</tr>
+<tr>
+<td>//</td>
+<td>从当前节点选取子孙节点</td>
+</tr>
+<tr>
+<td>.</td>
+<td>选取当前节点</td>
+</tr>
+<tr>
+<td>..</td>
+<td>选取当前节点的父节点</td>
+</tr>
+<tr>
+<td>@</td>
+<td>选取属性</td>
+</tr>
+</tbody></table>
+<p>常用匹配规则：</p>
+<p>//name[@Attr]</p>
+<p>解释：name为节点名</p>
+<p>Attr：在此节点名下的属性名</p>
+<p>//title[@lang=’eng’]</p>
+<p>这就是一个 XPath 规则，它代表选择所有名称为 title，同时属性 lang 的值为 eng 的节点。</p>
+<p><img src="https://i.loli.net/2020/02/13/5TnHg4jO7R9EpAJ.gif" alt=""></p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -1071,11 +1118,7 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            hexo new “name”       # 新建文章
-hexo new page “name” # 新建页面
-hexo g               # 生成页面
-hexo d               # 部署
-hexo g -d
+                            hexo new “name”       # 新建文章hexo new page “name” # 新建页面hexo g               # 生成页面hexo d               # 部署hexo g -d    
                         
                     </div>
                     <div class="publish-info">
@@ -1129,12 +1172,9 @@ hexo g -d
                     <div class="summary block-with-text">
                         
                             由于老是记不住python的list，字典，元组等表示的方法及区别，经常会搞混，所以特地写了这篇文章来加强记忆和复习。
-list(列表)
-符号[]
-tuple(元组)
-dictionary(字典)
-键值对应，符号{}      例：
-thi
+list(列表)符号[]
+tuple(元组)dictionary(字典)键值对应，符号{}      例：
+thing 
                         
                     </div>
                     <div class="publish-info">
@@ -1239,7 +1279,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">20.3k</span>&nbsp;字
+                class="white-color">20.6k</span>&nbsp;字
             
             
             
