@@ -607,10 +607,9 @@ def create_gif(image_list,gif_nam</p>
                             
                                 文章目的：通过学生成长计划领取资格考试 - 云计算及云服务器入门的考试，获得12个月的云服务器。
 云服务器（ECS）
-1.搭建个人网站
-已经做了很多了，就不多讲了！用宝塔+wordress
+1.搭建个人网站已经做了很多了，就不多讲了！用宝塔+wordress
 
-        document.querySe
+        document.querySel
                             
                         </div>
                         <div class="publish-info">
@@ -722,8 +721,7 @@ fro
                         <div class="summary block-with-text">
                             
                                 简要记录一下我感兴趣且也比较流行的三大深度学习框架，分别是：Pytroch，tensorflow，paddle（百度飞桨）。
-Pytorch
-官方：PyTorch是是torch的python版本，是由Facebook开源的神经网络框架，专门
+Pytorch官方：PyTorch是是torch的python版本，是由Facebook开源的神经网络框架，专门针
                             
                         </div>
                         <div class="publish-info">
@@ -778,11 +776,8 @@ Pytorch
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                部分概念及专有名词
-成本函数:个衡量模型准确率的指标，衡量依据为此模型估计X与Y间关系的能力。（来衡量AI输出与实际输出(历史数据)之间的差异，0为最好的）
-降低方法：
-1.梯度下降
-一种求函数最小值的方法。通过每次数据集迭代之后优化模型的
+                                部分概念及专有名词成本函数:个衡量模型准确率的指标，衡量依据为此模型估计X与Y间关系的能力。（来衡量AI输出与实际输出(历史数据)之间的差异，0为最好的）降低方法：1.梯度下降
+一种求函数最小值的方法。通过每次数据集迭代之后优化模型的权重来
                             
                         </div>
                         <div class="publish-info">
@@ -862,8 +857,7 @@ def getData(baseurl):
 pip3 install chatterbot
 pip3 install chatterbot-corpus
 
-
- 
+  
                             
                         </div>
                         <div class="publish-info">
@@ -915,10 +909,9 @@ pip3 install chatterbot-corpus
                         <div class="summary block-with-text">
                             
                                 做出一个模型的五个步骤：
-
 数据处理：从本地文件或网络地址读取数据，并做预处理操作，如校验数据的正确性等。
 模型设计：完成网络结构的设计（模型要素1），相当于模型的假设空间，即模型能够表达的关系集合。
-训练配置：设定模型采用的寻解算法（模型
+训练配置：设定模型采用的寻解算法（模型要
                             
                         </div>
                         <div class="publish-info">
@@ -1095,15 +1088,11 @@ ps：其它参数见gensim库，执行代码为：gensim.models.Word2Vec(sentenc
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                NLTK
-text*都是一个一个的书籍节点，直接输入text1会输出书籍标题
-搜索文本
-text1.concordance(“former”)
+                                NLTKtext*都是一个一个的书籍节点，直接输入text1会输出书籍标题
+搜索文本text1.concordance(“former”)
 搜索相关词
-text1.similar("ship")
-
-这个倒是挺特别的
-查看某个词在文章里出
+text1.similar("ship")这个倒是挺特别的
+查看某个词在文章里出现的位置
                             
                         </div>
                         <div class="publish-info">
@@ -1155,13 +1144,12 @@ text1.similar("ship")
                         <div class="summary block-with-text">
                             
                                 
-
 创建一个 Chat Bot
-
 
 from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
-chatbot = ChatBot("my chat"
+chatbot = ChatBot("my chat")
+
                             
                         </div>
                         <div class="publish-info">
@@ -1476,6 +1464,16 @@ $(function () {
         if (windowWidth > 768) {
             document.write('<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/yremp/yremp-js@1.5/sakura.js"><\/script>"></script>');
         }
+        </script>
+    
+
+    <!-- 背景雪花飘落特效 洪卫 shw2018 add 2019.09.10 -->
+    
+        <script type="text/javascript">
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/js/xuehuapiaoluo.js"><\/script>');
+            }
         </script>
     
 

@@ -1137,14 +1137,9 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            查看mysql 默认端口号和修改端口号
-先登录mysql
-mysql -u root -p
-
-再使用命令查看端口号
-show global variables like 'port';
-
-若要修改端口，编辑/etc/my.cnf文件（win
+                            查看mysql 默认端口号和修改端口号先登录mysql
+mysql -u root -p再使用命令查看端口号
+show global variables like 'port';若要修改端口，编辑/etc/my.cnf文件（window可直
                         
                     </div>
                     <div class="publish-info">
@@ -1202,22 +1197,17 @@ show global variables like 'port';
                     <div class="summary block-with-text">
                         
                             Anaconda的常用命令
-
 创建虚拟环境
 
 
-
-conda create -n your_env_name python=X.X
-
-（2.7、3.6等）
+conda create -n your_env_name python=X.X（2.7、3.6等）
 
 
 
 激活虚拟环境
 
 
-
-source activate your_env_name
+source activate your_env_name(虚拟环境
                         
                     </div>
                     <div class="publish-info">
@@ -1663,6 +1653,16 @@ $(function () {
         if (windowWidth > 768) {
             document.write('<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/yremp/yremp-js@1.5/sakura.js"><\/script>"></script>');
         }
+        </script>
+    
+
+    <!-- 背景雪花飘落特效 洪卫 shw2018 add 2019.09.10 -->
+    
+        <script type="text/javascript">
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/js/xuehuapiaoluo.js"><\/script>');
+            }
         </script>
     
 

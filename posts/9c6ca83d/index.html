@@ -1182,15 +1182,11 @@ ps：其它参数见gensim库，执行代码为：gensim.models.Word2Vec(sentenc
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            NLTK
-text*都是一个一个的书籍节点，直接输入text1会输出书籍标题
-搜索文本
-text1.concordance(“former”)
+                            NLTKtext*都是一个一个的书籍节点，直接输入text1会输出书籍标题
+搜索文本text1.concordance(“former”)
 搜索相关词
-text1.similar("ship")
-
-这个倒是挺特别的
-查看某个词在文章里出
+text1.similar("ship")这个倒是挺特别的
+查看某个词在文章里出现的位置
                         
                     </div>
                     <div class="publish-info">
@@ -1636,6 +1632,16 @@ $(function () {
         if (windowWidth > 768) {
             document.write('<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/yremp/yremp-js@1.5/sakura.js"><\/script>"></script>');
         }
+        </script>
+    
+
+    <!-- 背景雪花飘落特效 洪卫 shw2018 add 2019.09.10 -->
+    
+        <script type="text/javascript">
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/js/xuehuapiaoluo.js"><\/script>');
+            }
         </script>
     
 
