@@ -640,16 +640,12 @@ import pandas as pd
 from pyecharts.charts import *
 from pyecharts import options as opts
 from pyecharts.globals import *
-from pyecharts.faker import *
-</code></pre>
-<pre><code># 读取数据
+from pyecharts.faker import *</code></pre><pre><code># 读取数据
 data=pd.read_csv('D:/机器学习/air_quality.csv',sep=',')
 fun1=lambda x:x.split('-')[0]
 fun2=lambda x:x.split('-')[1]
 data['year']=data['record_date'].apply(fun1)
-data['month']=data['record_date'].apply(fun2)
-</code></pre>
-<p><img src="https://img-blog.csdnimg.cn/20191228141537669.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM0MjE2Mjk=,size_16,color_FFFFFF,t_70" alt="https://img-blog.csdnimg.cn/20191228141537669.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM0MjE2Mjk=,size_16,color_FFFFFF,t_70"></p>
+data['month']=data['record_date'].apply(fun2)</code></pre><p><img src="https://img-blog.csdnimg.cn/20191228141537669.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM0MjE2Mjk=,size_16,color_FFFFFF,t_70" alt="https://img-blog.csdnimg.cn/20191228141537669.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM0MjE2Mjk=,size_16,color_FFFFFF,t_70"></p>
 <pre><code># 成都空气质量的玫瑰花饼图
 df1=data.groupby(['city_name','quality_level'], as_index=False).count()
 df1=df1[df1['city_name']=='成都']
@@ -664,11 +660,9 @@ pie.set_global_opts(title_opts=opts.TitleOpts(title="成都空气质量玫瑰花
                     legend_opts=opts.LegendOpts(orient="vertical", pos_top="15%", pos_left="5%"))
 pie.render_notebook()
 # pie.render(data_path+'成都空气质量饼图.html')
-
-</code></pre>
-<p><img src="https://img-blog.csdnimg.cn/20191228141712934.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM0MjE2Mjk=,size_16,color_FFFFFF,t_70" alt="https://img-blog.csdnimg.cn/20191228141712934.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM0MjE2Mjk=,size_16,color_FFFFFF,t_70"></p>
+</code></pre><p><img src="https://img-blog.csdnimg.cn/20191228141712934.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM0MjE2Mjk=,size_16,color_FFFFFF,t_70" alt="https://img-blog.csdnimg.cn/20191228141712934.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM0MjE2Mjk=,size_16,color_FFFFFF,t_70"></p>
 <p><a href="https://pyecharts.org/#/zh-cn/rectangular_charts" target="_blank" rel="noopener">pyecharts官方文档</a></p>
-<p>挺好看的吧！Fight!!(ｏ<sup>-</sup>)尸~’'☆ミ☆ミ</p>
+<p>挺好看的吧！Fight!!(ｏ^-^)尸~’’☆ミ☆ミ</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -1209,10 +1203,9 @@ pie.render_notebook()
                         
                             文章目的：通过学生成长计划领取资格考试 - 云计算及云服务器入门的考试，获得12个月的云服务器。
 云服务器（ECS）
-1.搭建个人网站
-已经做了很多了，就不多讲了！用宝塔+wordress
+1.搭建个人网站已经做了很多了，就不多讲了！用宝塔+wordress
 
-        document.querySe
+        document.querySel
                         
                     </div>
                     <div class="publish-info">
@@ -1266,8 +1259,7 @@ pie.render_notebook()
                     <div class="summary block-with-text">
                         
                             简要记录一下我感兴趣且也比较流行的三大深度学习框架，分别是：Pytroch，tensorflow，paddle（百度飞桨）。
-Pytorch
-官方：PyTorch是是torch的python版本，是由Facebook开源的神经网络框架，专门
+Pytorch官方：PyTorch是是torch的python版本，是由Facebook开源的神经网络框架，专门针
                         
                     </div>
                     <div class="publish-info">
