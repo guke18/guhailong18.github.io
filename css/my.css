@@ -1214,3 +1214,15 @@
         transform: translate(0, 0) rotate(0)
     }
 }
+
+@media  only  screen  and（max-width：601 px）{.
+     bg -cover  .title {
+         font-size：2.8 rem ;
+    }
+}
+
+@media  only  screen  and（max-width：601 px）{
+     header  .brand-logo  .logo-span {
+         font-size：1.5 rem ;
+    }
+}
