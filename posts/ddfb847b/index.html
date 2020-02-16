@@ -589,7 +589,7 @@ def getData(baseurl):
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    616
+                    617
                 </div>
                 
 
@@ -628,7 +628,9 @@ def getData(baseurl):
     findBd=re.compile(r'&lt;p class=""&gt;(.*?)&lt;/p&gt;',re.S)
     #去掉无关内容
     remove=re.compile(r'                            |\n|&lt;/br&gt;|\.*')
-    datalist=[]</code></pre><pre><code>for i in range(0,10):
+    datalist=[]
+</code></pre>
+<pre><code>for i in range(0,10):
     url=baseurl+str(i*25)
     html=askURL(url)
     soup = BeautifulSoup(html, "html.parser")
@@ -656,7 +658,7 @@ def getData(baseurl):
         judgeNum=re.findall(findJudge,item)[0]
         data.append(judgeNum)#添加评论人数
         inq=re.findall(findInq,item)
-
+        
         #可能没有概况
         if len(inq)!=0:
             inq=inq[0].replace("。","")#去掉句号
@@ -669,12 +671,26 @@ def getData(baseurl):
         bd=re.sub('/', " ",bd)#替换/
         data.append(bd.strip())
         datalist.append(data)
-
+        
 time.sleep(5)
-return datalist</code></pre><p>def saveData(datalist,savepath):<br>    book=openpyxl.Workbook()<br>    sheet = book.create_sheet(“豆瓣电影Top250”)<br>    #sheet=book.add_sheet(‘豆瓣电影Top250’,cell_overwrite_ok=True)<br>    col=(‘电影详情链接’,’图片链接’,’影片中文名’,’影片外国名’, ‘评分’,’评价数’,’概况’,’相关信息’)</p>
-<pre><code>sheet.append(col)  #添加列头</code></pre><p>​<br>    for i in range(0,250):<br>        data=datalist[i]<br>        for j in range(0,8):<br>            sheet.cell(row = (i+2),column = (j+1),value = data[j]) </p>
-<p>#openpyxl中的单元格计数从1开始, 加上第一行是列头, 要多跳一个<br>#openpyxl中的计数和Excel内的计数方式一致, 但和常规编程从0开始的方式相左</p>
-<pre><code>book.save(savepath) #保存</code></pre><script>
+return datalist
+</code></pre>
+<p>def saveData(datalist,savepath):<br>
+book=openpyxl.Workbook()<br>
+sheet = book.create_sheet(“豆瓣电影Top250”)<br>
+#sheet=book.add_sheet(‘豆瓣电影Top250’,cell_overwrite_ok=True)<br>
+col=(‘电影详情链接’,‘图片链接’,‘影片中文名’,‘影片外国名’, ‘评分’,‘评价数’,‘概况’,‘相关信息’)</p>
+<pre><code>sheet.append(col)  #添加列头
+</code></pre>
+<p>​<br>
+for i in range(0,250):<br>
+data=datalist[i]<br>
+for j in range(0,8):<br>
+sheet.cell(row = (i+2),column = (j+1),value = data[j])</p>
+<p>#openpyxl中的单元格计数从1开始, 加上第一行是列头, 要多跳一个<br>
+#openpyxl中的计数和Excel内的计数方式一致, 但和常规编程从0开始的方式相左</p>
+<pre><code>book.save(savepath) #保存</code></pre>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -1200,8 +1216,11 @@ return datalist</code></pre><p>def saveData(datalist,savepath):<br>    book=open
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            部分概念及专有名词成本函数:个衡量模型准确率的指标，衡量依据为此模型估计X与Y间关系的能力。（来衡量AI输出与实际输出(历史数据)之间的差异，0为最好的）降低方法：1.梯度下降
-一种求函数最小值的方法。通过每次数据集迭代之后优化模型的权重来
+                            部分概念及专有名词
+成本函数:个衡量模型准确率的指标，衡量依据为此模型估计X与Y间关系的能力。（来衡量AI输出与实际输出(历史数据)之间的差异，0为最好的）
+降低方法：
+1.梯度下降
+一种求函数最小值的方法。通过每次数据集迭代之后优化模型的
                         
                     </div>
                     <div class="publish-info">
@@ -1244,7 +1263,8 @@ return datalist</code></pre><p>def saveData(datalist,savepath):<br>    book=open
 pip3 install chatterbot
 pip3 install chatterbot-corpus
 
-  
+
+ 
                         
                     </div>
                     <div class="publish-info">
@@ -1266,12 +1286,12 @@ pip3 install chatterbot-corpus
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA/">
-                        <span class="chip bg-color">聊天机器人</span>
-                    </a>
-                    
                     <a href="/tags/github/">
                         <span class="chip bg-color">github</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA/">
+                        <span class="chip bg-color">聊天机器人</span>
                     </a>
                     
                 </div>
