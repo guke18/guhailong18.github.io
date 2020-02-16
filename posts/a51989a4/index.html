@@ -5,10 +5,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="python2与python3共存的部分注意事项, 动漫，编程，数学，读书">
-    <meta name="description" content="若Python2 和 Python3 同时有 pip，则使用方法如下：Python2：
-python2 -m pip install XXXPython3:
+    <meta name="description" content="若Python2 和 Python3 同时有 pip，则使用方法如下：
+Python2：
+python2 -m pip install XXX
+
+Python3:
 python3 -m pip install XXX
-        docume">
+
+
+        d">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -37,9 +42,6 @@ python3 -m pip install XXX
 
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="古客" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
-
-<!-- 樱花特效 -->
-<script src="https://cdn.jsdelivr.net/gh/yremp/yremp-js@1.5/sakura.js"></script>
 
 
 <body>
@@ -599,7 +601,7 @@ python3 -m pip install XXX
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    78
+                    79
                 </div>
                 
 
@@ -622,9 +624,14 @@ python3 -m pip install XXX
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h6 id="若Python2-和-Python3-同时有-pip，则使用方法如下："><a href="#若Python2-和-Python3-同时有-pip，则使用方法如下：" class="headerlink" title="若Python2 和 Python3 同时有 pip，则使用方法如下："></a>若Python2 和 Python3 同时有 pip，则使用方法如下：</h6><p>Python2：</p>
-<pre><code>python2 -m pip install XXX</code></pre><p>Python3:</p>
-<pre><code>python3 -m pip install XXX</code></pre><script>
+                <h6 id="若Python2-和-Python3-同时有-pip，则使用方法如下：">若Python2 和 Python3 同时有 pip，则使用方法如下：</h6>
+<p>Python2：</p>
+<pre><code>python2 -m pip install XXX
+</code></pre>
+<p>Python3:</p>
+<pre><code>python3 -m pip install XXX
+</code></pre>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -844,10 +851,10 @@ python3 -m pip install XXX
                         <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
                     </ul>
                     <div id="alipay">
-                        <img src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.iohttps://jxjjxy-my.sharepoint.com/personal/3x67zz_t_odmail_cn/Documents/%E5%A3%81%E7%BA%B8/%E8%B5%9E%E8%B5%8F%E5%8F%8A%E5%AE%A3%E4%BC%A0/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                        <img src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.iohttps://i.loli.net/2020/02/16/nqGVy28sCJNA9lj.jpg" class="reward-img" alt="支付宝打赏二维码">
                     </div>
                     <div id="wechat">
-                        <img src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.iohttps://jxjjxy-my.sharepoint.com/personal/3x67zz_t_odmail_cn/Documents/%E5%A3%81%E7%BA%B8/%E8%B5%9E%E8%B5%8F%E5%8F%8A%E5%AE%A3%E4%BC%A0/wechat.jpg" class="reward-img" alt="微信打赏二维码">
+                        <img src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.iohttps://i.loli.net/2020/02/16/ayHWLtiSvjP9qCE.jpg" class="reward-img" alt="微信打赏二维码">
                     </div>
                 </div>
             </div>
@@ -1131,7 +1138,7 @@ python3 -m pip install XXX
         avatar: 'mm',
         pageSize: '12',
         lang: 'zh-cn',
-        placeholder: 'just go go'
+        placeholder: '快来写下你的观点一起交流吧ヾﾉ≧∀≦)o'
     });
 </script>
 
@@ -1159,17 +1166,22 @@ python3 -m pip install XXX
                     <div class="summary block-with-text">
                         
                             Anaconda的常用命令
+
 创建虚拟环境
 
 
-conda create -n your_env_name python=X.X（2.7、3.6等）
+
+conda create -n your_env_name python=X.X
+
+（2.7、3.6等）
 
 
 
 激活虚拟环境
 
 
-source activate your_env_name(虚拟环境
+
+source activate your_env_name
                         
                     </div>
                     <div class="publish-info">
@@ -1223,9 +1235,13 @@ source activate your_env_name(虚拟环境
                     <div class="summary block-with-text">
                         
                             docker images : 列出本地镜像。
-获取镜像例，载入 ubuntu 镜像
-docker pull ubuntu启动容器ubuntu 镜像启动一个容器，参数为以命令行模式进入该容器：
-docker run -it ubuntu /
+获取镜像
+例，载入 ubuntu 镜像
+docker pull ubuntu
+
+启动容器
+ubuntu 镜像启动一个容器，参数为以命令行模式进入该容器：
+docker run -it ubun
                         
                     </div>
                     <div class="publish-info">
@@ -1581,6 +1597,27 @@ $(function () {
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/libs/scrollprogress/scrollProgress.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/libs/lightGallery/js/lightgallery-all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/js/matery.js"></script>
+    <script>
+	(function(){
+	var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
+	document.write('<script src="' + src + '" id="sozz"><\/script>');
+	})();
+	</script>
+	<script>
+	(function(){
+		var bp = document.createElement('script');
+		var curProtocol = window.location.protocol.split(':')[0];
+		if (curProtocol === 'https') {
+			bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+		}
+		else {
+			bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+		}
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(bp, s);
+	})();
+	</script>
+
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 

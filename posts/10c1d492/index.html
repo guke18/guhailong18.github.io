@@ -5,11 +5,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="聊天机器人学习笔记(一), 动漫，编程，数学，读书">
-    <meta name="description" content="NLTKtext*都是一个一个的书籍节点，直接输入text1会输出书籍标题
-搜索文本text1.concordance(“former”)
+    <meta name="description" content="NLTK
+text*都是一个一个的书籍节点，直接输入text1会输出书籍标题
+搜索文本
+text1.concordance(“former”)
 搜索相关词
-text1.similar(&#34;ship&#34;)这个倒是挺特别的
-查看某个词在文章里出现的位置">
+text1.similar(&#34;ship&#34;)
+
+这个倒是挺特别的
+查看某个词在文章里出">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -38,9 +42,6 @@ text1.similar(&#34;ship&#34;)这个倒是挺特别的
 
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="古客" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
-
-<!-- 樱花特效 -->
-<script src="https://cdn.jsdelivr.net/gh/yremp/yremp-js@1.5/sakura.js"></script>
 
 
 <body>
@@ -604,7 +605,7 @@ text1.similar(&#34;ship&#34;)这个倒是挺特别的
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    540
+                    541
                 </div>
                 
 
@@ -627,35 +628,45 @@ text1.similar(&#34;ship&#34;)这个倒是挺特别的
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="NLTK"><a href="#NLTK" class="headerlink" title="NLTK"></a>NLTK</h2><p>text*都是一个一个的书籍节点，直接输入text1会输出书籍标题</p>
-<h2 id="搜索文本"><a href="#搜索文本" class="headerlink" title="搜索文本"></a>搜索文本</h2><p>text1.concordance(“former”)</p>
+                <h2 id="NLTK">NLTK</h2>
+<p>text*都是一个一个的书籍节点，直接输入text1会输出书籍标题</p>
+<h2 id="搜索文本">搜索文本</h2>
+<p>text1.concordance(“former”)</p>
 <p>搜索相关词</p>
-<pre><code>text1.similar("ship")</code></pre><p>这个倒是挺特别的</p>
+<pre><code>text1.similar("ship")
+</code></pre>
+<p>这个倒是挺特别的</p>
 <p>查看某个词在文章里出现的位置：</p>
 <p>text4.dispersion_plot([“citizens”, “democracy”, “freedom”, “duties”, “America”])</p>
-<h2 id="词统计"><a href="#词统计" class="headerlink" title="词统计"></a>词统计</h2><p>len(text1)：返回总字数</p>
+<h2 id="词统计">词统计</h2>
+<p>len(text1)：返回总字数</p>
 <p>set(text1)：返回文本的所有词集合</p>
 <p>len(set(text4))：返回文本总词数</p>
 <p>text4.count(“is”)：返回“is”这个词出现的总次数</p>
 <p>FreqDist(text1)：统计文章的词频并按从大到小排序存到一个列表里</p>
 <p>fdist1 = FreqDist(text1);fdist1.plot(50, cumulative=True)：统计词频，并输出累计图像</p>
-<h4 id="NLTK的语料库："><a href="#NLTK的语料库：" class="headerlink" title="NLTK的语料库："></a>NLTK的语料库：</h4><p>from nltk.corpus import webtext：网络文本语料库，网络和聊天文本</p>
+<h4 id="NLTK的语料库：">NLTK的语料库：</h4>
+<p>from nltk.corpus import webtext：网络文本语料库，网络和聊天文本</p>
 <p>from nltk.corpus import brown：布朗语料库，按照文本分类好的500个不同来源的文本</p>
 <p>from nltk.corpus import reuters：路透社语料库，1万多个新闻文档</p>
 <p>from nltk.corpus import inaugural：就职演说语料库，55个总统的演说</p>
 <p>组织结构：散养式（孤立的多篇文章）、分类式（按照类别组织，相互之间没有交集）、交叉式（一篇文章可能属于多个类）、渐变式（语法随着时间发生变化）</p>
-<h2 id="语料库的通用接口"><a href="#语料库的通用接口" class="headerlink" title="语料库的通用接口"></a>语料库的通用接口</h2><p>fileids()：返回语料库中的文件</p>
+<h2 id="语料库的通用接口">语料库的通用接口</h2>
+<p>fileids()：返回语料库中的文件</p>
 <p>categories()：返回语料库中的分类</p>
 <p>raw()：返回语料库的原始内容</p>
 <p>words()：返回语料库中的词汇</p>
 <p>sents()：返回语料库句子</p>
 <p>abspath()：指定文件在磁盘上的位置</p>
 <p>open()：打开语料库的文件流</p>
-<h2 id="加载自己的语料库"><a href="#加载自己的语料库" class="headerlink" title="加载自己的语料库"></a>加载自己的语料库</h2><p>收集自己的语料文件（文本文件）到某路径下（比如/tmp)，然后执行：</p>
+<h2 id="加载自己的语料库">加载自己的语料库</h2>
+<p>收集自己的语料文件（文本文件）到某路径下（比如/tmp)，然后执行：</p>
 <pre><code>&gt;&gt;&gt; from nltk.corpus import PlaintextCorpusReader
 &gt;&gt;&gt; corpus_root = '/tmp'
 &gt;&gt;&gt; wordlists = PlaintextCorpusReader(corpus_root, '.*')
-&gt;&gt;&gt; wordlists.fileids()</code></pre><p>就可以列出自己语料库的各个文件了，也可以使用如wordlists.sents(‘a.txt’)和wordlists.words(‘a.txt’)等方法来获取句子和词信息</p>
+&gt;&gt;&gt; wordlists.fileids()
+</code></pre>
+<p>就可以列出自己语料库的各个文件了，也可以使用如wordlists.sents(‘a.txt’)和wordlists.words(‘a.txt’)等方法来获取句子和词信息</p>
 <p><a href="http://www.shareditor.com/blogshow?blogId=64" target="_blank" rel="noopener">教程链接</a></p>
 <script>
         document.querySelectorAll('.github-emoji')
@@ -881,10 +892,10 @@ text1.similar(&#34;ship&#34;)这个倒是挺特别的
                         <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
                     </ul>
                     <div id="alipay">
-                        <img src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.iohttps://jxjjxy-my.sharepoint.com/personal/3x67zz_t_odmail_cn/Documents/%E5%A3%81%E7%BA%B8/%E8%B5%9E%E8%B5%8F%E5%8F%8A%E5%AE%A3%E4%BC%A0/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                        <img src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.iohttps://i.loli.net/2020/02/16/nqGVy28sCJNA9lj.jpg" class="reward-img" alt="支付宝打赏二维码">
                     </div>
                     <div id="wechat">
-                        <img src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.iohttps://jxjjxy-my.sharepoint.com/personal/3x67zz_t_odmail_cn/Documents/%E5%A3%81%E7%BA%B8/%E8%B5%9E%E8%B5%8F%E5%8F%8A%E5%AE%A3%E4%BC%A0/wechat.jpg" class="reward-img" alt="微信打赏二维码">
+                        <img src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.iohttps://i.loli.net/2020/02/16/ayHWLtiSvjP9qCE.jpg" class="reward-img" alt="微信打赏二维码">
                     </div>
                 </div>
             </div>
@@ -1168,7 +1179,7 @@ text1.similar(&#34;ship&#34;)这个倒是挺特别的
         avatar: 'mm',
         pageSize: '12',
         lang: 'zh-cn',
-        placeholder: 'just go go'
+        placeholder: '快来写下你的观点一起交流吧ヾﾉ≧∀≦)o'
     });
 </script>
 
@@ -1236,12 +1247,13 @@ text1.similar(&#34;ship&#34;)这个倒是挺特别的
                     <div class="summary block-with-text">
                         
                             
+
 创建一个 Chat Bot
+
 
 from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
-chatbot = ChatBot("my chat")
-
+chatbot = ChatBot("my chat"
                         
                     </div>
                     <div class="publish-info">
@@ -1597,6 +1609,27 @@ $(function () {
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/libs/scrollprogress/scrollProgress.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/libs/lightGallery/js/lightgallery-all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/js/matery.js"></script>
+    <script>
+	(function(){
+	var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
+	document.write('<script src="' + src + '" id="sozz"><\/script>');
+	})();
+	</script>
+	<script>
+	(function(){
+		var bp = document.createElement('script');
+		var curProtocol = window.location.protocol.split(':')[0];
+		if (curProtocol === 'https') {
+			bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+		}
+		else {
+			bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+		}
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(bp, s);
+	})();
+	</script>
+
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
