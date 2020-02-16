@@ -629,16 +629,16 @@
             <div class="card-content">
                 <div class="tag-title center-align">
                     <i class="fas fa-comments"></i>&nbsp;&nbsp;&lt;%= __('contact') %&gt;
-                </div>
+                <!--%=--></div>
                 &lt;%- page.content %&gt;
-            </div>
+            <!--%---></div>
         </div>
         <div class="card">
             &lt;% if (theme.valine &amp;&amp; theme.valine.enable) { %&gt;
-            &lt;%- partial('_partial/valine') %&gt;
+            &lt;%- partial('_partial valine') %&gt;
             &lt;% } %&gt;
 
-</div></div></main><script>
+<!--%--><!--%---><!--%--></div></div></main><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -1654,7 +1654,7 @@ $(function () {
         //只在桌面版网页启用特效
         var windowWidth = $(window).width();
         if (windowWidth > 768) {
-            document.write('<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/yremp/yremp-js@1.5/sakura.js"><\/script>"></script>');
+            document.write('<script src="https://cdn.jsdelivr.net/gh/yremp/yremp-js@1.5/sakura.js"><\/script>');
         }
         </script>
     
