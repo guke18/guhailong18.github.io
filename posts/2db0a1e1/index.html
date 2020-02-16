@@ -5,16 +5,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="宝塔面板常用指令, 动漫，编程，数学，读书">
-    <meta name="description" content="SSH终端输入：
-1.查看面板入口：
-/etc/init.d/bt default
-
-2.关闭安全入口：
-rm -f /www/server/panel/data/admin_path.pl
-
-停止
-/etc/init.d/bt stop
-">
+    <meta name="description" content="SSH终端输入：1.查看面板入口：
+/etc/init.d/bt default2.关闭安全入口：
+rm -f /www/server/panel/data/admin_path.pl停止
+/etc/init.d/bt stop启动
+/et">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -598,7 +593,7 @@ rm -f /www/server/panel/data/admin_path.pl
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    500
+                    496
                 </div>
                 
 
@@ -621,97 +616,40 @@ rm -f /www/server/panel/data/admin_path.pl
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="SSH终端输入：">SSH终端输入：</h3>
-<p>1.查看面板入口：</p>
-<pre><code>/etc/init.d/bt default
-</code></pre>
-<p>2.关闭安全入口：</p>
-<pre><code>rm -f /www/server/panel/data/admin_path.pl
-</code></pre>
-<p>停止</p>
-<pre><code>/etc/init.d/bt stop
-</code></pre>
-<p>启动</p>
-<pre><code>/etc/init.d/bt start
-</code></pre>
-<p>重启</p>
-<pre><code>/etc/init.d/bt restart
-</code></pre>
-<p>卸载</p>
-<pre><code>/etc/init.d/bt stop &amp;&amp; chkconfig --del bt &amp;&amp; rm -f /etc/init.d/bt &amp;&amp; rm -rf /www/server/panel
-</code></pre>
-<p>查看当前面板端口</p>
-<pre><code>cat /www/server/panel/data/port.pl
-</code></pre>
-<p>修改面板端口，如要改成8881（centos 6 系统）</p>
+                <h3 id="SSH终端输入："><a href="#SSH终端输入：" class="headerlink" title="SSH终端输入："></a>SSH终端输入：</h3><p>1.查看面板入口：</p>
+<pre><code>/etc/init.d/bt default</code></pre><p>2.关闭安全入口：</p>
+<pre><code>rm -f /www/server/panel/data/admin_path.pl</code></pre><p>停止</p>
+<pre><code>/etc/init.d/bt stop</code></pre><p>启动</p>
+<pre><code>/etc/init.d/bt start</code></pre><p>重启</p>
+<pre><code>/etc/init.d/bt restart</code></pre><p>卸载</p>
+<pre><code>/etc/init.d/bt stop &amp;&amp; chkconfig --del bt &amp;&amp; rm -f /etc/init.d/bt &amp;&amp; rm -rf /www/server/panel</code></pre><p>查看当前面板端口</p>
+<pre><code>cat /www/server/panel/data/port.pl</code></pre><p>修改面板端口，如要改成8881（centos 6 系统）</p>
 <pre><code>echo '8881' &gt; /www/server/panel/data/port.pl &amp;&amp; /etc/init.d/bt restart
 iptables -I INPUT -p tcp -m state --state NEW -m tcp --dport 8881 -j ACCEPT
 service iptables save
-service iptables restart
-</code></pre>
-<p>修改面板端口，如要改成8881（centos 7 系统）</p>
+service iptables restart</code></pre><p>修改面板端口，如要改成8881（centos 7 系统）</p>
 <pre><code>echo '8881' &gt; /www/server/panel/data/port.pl &amp;&amp; /etc/init.d/bt restart
 firewall-cmd --permanent --zone=public --add-port=8881/tcp
-firewall-cmd --reload
-</code></pre>
-<p>强制修改MySQL管理(root)密码，如要改成123456</p>
-<pre><code>cd /www/server/panel &amp;&amp; python tools.py root 123456
-</code></pre>
-<p>修改面板密码，如要改成123456</p>
-<pre><code>cd /www/server/panel &amp;&amp; python tools.py panel 123456
-</code></pre>
-<p>查看宝塔日志</p>
-<pre><code>cat /tmp/panelBoot.pl
-</code></pre>
-<p>查看软件安装日志</p>
-<pre><code>cat /tmp/panelExec.log
-</code></pre>
-<p>站点配置文件位置</p>
-<pre><code>/www/server/panel/vhost
-</code></pre>
-<p>删除域名绑定面板</p>
-<pre><code>rm -f /www/server/panel/data/domain.conf
-</code></pre>
-<p>清理登陆限制</p>
-<pre><code>rm -f /www/server/panel/data/*.login
-</code></pre>
-<p>查看面板授权IP</p>
-<pre><code>cat /www/server/panel/data/limitip.conf
-</code></pre>
-<p>关闭访问限制</p>
-<pre><code>rm -f /www/server/panel/data/limitip.conf
-</code></pre>
-<p>查看许可域名</p>
-<pre><code>cat /www/server/panel/data/domain.conf
-</code></pre>
-<p>关闭面板SSL</p>
-<pre><code>rm -f /www/server/panel/data/ssl.pl &amp;&amp; /etc/init.d/bt restart
-</code></pre>
-<p>查看面板错误日志</p>
-<pre><code>cat /tmp/panelBoot
-</code></pre>
-<p>查看数据库错误日志</p>
-<pre><code>cat /www/server/data/*.err
-</code></pre>
-<p>站点配置文件目录(nginx)</p>
-<pre><code>/www/server/panel/vhost/nginx
-</code></pre>
-<p>站点配置文件目录(apache)</p>
-<pre><code>/www/server/panel/vhost/apache
-</code></pre>
-<p>站点默认目录</p>
-<pre><code>/www/wwwroot
-</code></pre>
-<p>数据库备份目录</p>
-<pre><code>/www/backup/database
-</code></pre>
-<p>站点备份目录</p>
-<pre><code>/www/backup/site
-</code></pre>
-<p>站点日志</p>
-<pre><code>/www/wwwlogs
-</code></pre>
-<script>
+firewall-cmd --reload</code></pre><p>强制修改MySQL管理(root)密码，如要改成123456</p>
+<pre><code>cd /www/server/panel &amp;&amp; python tools.py root 123456</code></pre><p>修改面板密码，如要改成123456</p>
+<pre><code>cd /www/server/panel &amp;&amp; python tools.py panel 123456</code></pre><p>查看宝塔日志</p>
+<pre><code>cat /tmp/panelBoot.pl</code></pre><p>查看软件安装日志</p>
+<pre><code>cat /tmp/panelExec.log</code></pre><p>站点配置文件位置</p>
+<pre><code>/www/server/panel/vhost</code></pre><p>删除域名绑定面板</p>
+<pre><code>rm -f /www/server/panel/data/domain.conf</code></pre><p>清理登陆限制</p>
+<pre><code>rm -f /www/server/panel/data/*.login</code></pre><p>查看面板授权IP</p>
+<pre><code>cat /www/server/panel/data/limitip.conf</code></pre><p>关闭访问限制</p>
+<pre><code>rm -f /www/server/panel/data/limitip.conf</code></pre><p>查看许可域名</p>
+<pre><code>cat /www/server/panel/data/domain.conf</code></pre><p>关闭面板SSL</p>
+<pre><code>rm -f /www/server/panel/data/ssl.pl &amp;&amp; /etc/init.d/bt restart</code></pre><p>查看面板错误日志</p>
+<pre><code>cat /tmp/panelBoot</code></pre><p>查看数据库错误日志</p>
+<pre><code>cat /www/server/data/*.err</code></pre><p>站点配置文件目录(nginx)</p>
+<pre><code>/www/server/panel/vhost/nginx</code></pre><p>站点配置文件目录(apache)</p>
+<pre><code>/www/server/panel/vhost/apache</code></pre><p>站点默认目录</p>
+<pre><code>/www/wwwroot</code></pre><p>数据库备份目录</p>
+<pre><code>/www/backup/database</code></pre><p>站点备份目录</p>
+<pre><code>/www/backup/site</code></pre><p>站点日志</p>
+<pre><code>/www/wwwlogs</code></pre><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -1242,9 +1180,7 @@ firewall-cmd --reload
                     <div class="summary block-with-text">
                         
                             二、如何获取应用机密(client secret)和应用 ID(client_id)？
-
-
-登录：https://portal.azure.com/?l=zh-hans.zh-cn#blade/Microsoft_AAD_Registere
+登录：https://portal.azure.com/?l=zh-hans.zh-cn#blade/Microsoft_AAD_RegisteredA
                         
                     </div>
                     <div class="publish-info">
@@ -1508,7 +1444,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">20.6k</span>&nbsp;字
+                class="white-color">20.7k</span>&nbsp;字
             
             
             
@@ -1737,14 +1673,12 @@ $(function () {
         //只在桌面版网页启用特效
         var windowWidth = $(window).width();
         if (windowWidth > 768) {
-            document.write('<script src="https://cdn.jsdelivr.net/gh/yremp/yremp-js@1.5/sakura.js"></script>');
+            document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>"></script>');
         }
         </script>
     
 
     <!-- 鼠标点击文字特效 洪卫 shw2018 add 2019.09.10-->
-    
-        <script src="/js/wenzi.js" type="text/javascript"></script>
     
 
 

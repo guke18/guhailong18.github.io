@@ -631,9 +631,7 @@ ps：其它参数见gensim库，执行代码为：gensim.models.Word2Vec(sentenc
 <li>分词词典使用了130w+词典。分词代码：jieba.lcut(sentence)，默认使用了HMM识别新词；</li>
 <li>剔除了所有非中文字符；</li>
 <li>最终得到的词典大小为6115353；</li>
-<li>模型格式有两种bin和model，使用方式：<br>
-a. bin模式：model = gensim.models.KeyedVectors.load_word2vec_format(model_path, binary=True)<br>
-b. model模式：model = gensim.models.Word2Vec.load(model_path)</li>
+<li>模型格式有两种bin和model，使用方式：<br> a. bin模式：model = gensim.models.KeyedVectors.load_word2vec_format(model_path, binary=True)<br> b. model模式：model = gensim.models.Word2Vec.load(model_path)</li>
 </ol>
 <p><a href="https://www.jianshu.com/p/ae5b45e96dbf" target="_blank" rel="noopener">原文链接</a></p>
 <script>
@@ -1403,7 +1401,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">20.6k</span>&nbsp;字
+                class="white-color">20.7k</span>&nbsp;字
             
             
             
@@ -1632,14 +1630,12 @@ $(function () {
         //只在桌面版网页启用特效
         var windowWidth = $(window).width();
         if (windowWidth > 768) {
-            document.write('<script src="https://cdn.jsdelivr.net/gh/yremp/yremp-js@1.5/sakura.js"></script>');
+            document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>"></script>');
         }
         </script>
     
 
     <!-- 鼠标点击文字特效 洪卫 shw2018 add 2019.09.10-->
-    
-        <script src="/js/wenzi.js" type="text/javascript"></script>
     
 
 

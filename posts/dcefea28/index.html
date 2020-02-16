@@ -6,9 +6,7 @@
     <meta charset="utf-8">
     <meta name="keywords" content="ONEdriver应用程序注册流程, 动漫，编程，数学，读书">
     <meta name="description" content="二、如何获取应用机密(client secret)和应用 ID(client_id)？
-
-
-登录：https://portal.azure.com/?l=zh-hans.zh-cn#blade/Microsoft_AAD_Registere">
+登录：https://portal.azure.com/?l=zh-hans.zh-cn#blade/Microsoft_AAD_RegisteredA">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -619,34 +617,28 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="二、如何获取应用机密-client-secret-和应用-ID-client-id-？">二、如何获取应用机密(client secret)和应用 ID(client_id)？</h4>
-<ol>
-<li>
-<p>登录：<a href="https://portal.azure.com/?l=zh-hans.zh-cn#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade" target="_blank" rel="noopener">https://portal.azure.com/?l=zh-hans.zh-cn#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade</a></p>
+                <h4 id="二、如何获取应用机密-client-secret-和应用-ID-client-id-？"><a href="#二、如何获取应用机密-client-secret-和应用-ID-client-id-？" class="headerlink" title="二、如何获取应用机密(client secret)和应用 ID(client_id)？"></a>二、如何获取应用机密(client secret)和应用 ID(client_id)？</h4><ol>
+<li><p>登录：<a href="https://portal.azure.com/?l=zh-hans.zh-cn#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade" target="_blank" rel="noopener">https://portal.azure.com/?l=zh-hans.zh-cn#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade</a></p>
 </li>
-<li>
-<p>点击新注册</p>
+<li><p>点击新注册</p>
 </li>
 </ol>
 <pre><code>- 名称：随便填
 - 受支持的帐户类型：选择“任何组织目录中的帐户和个人 Microsoft 帐户”
-- 重定向 URI (可选)：Web - https://pyoneauth.github.io/
-</code></pre>
-<p>点击创建，进入下一步</p>
-<p>*<strong>创建之后，看到应用程序(客户端) ID，复制到上方应用 ID(client_id)</strong></p>
+- 重定向 URI (可选)：Web - https://pyoneauth.github.io/</code></pre><p>  点击创建，进入下一步</p>
+<p>  <strong>*创建之后，看到应用程序(客户端) ID，复制到上方应用 ID(client_id)</strong></p>
 <p><strong>3. 开启权限：第2步创建应用程序之后，进入该应用的概述页面。</strong></p>
-<p>1）点击：API权限</p>
-<p>2）选择：添加权限：</p>
-<pre><code>Microsoft Graph – 委派的权限 – Files - Files.ReadWrite 和 Files.ReadWrite.All 
-</code></pre>
-<ol start="4">
-<li>创建秘钥：第2步创建应用程序之后，进入该应用的概述页面。</li>
-</ol>
+<p>  1）点击：API权限</p>
+<p>  2）选择：添加权限：</p>
+<pre><code>Microsoft Graph – 委派的权限 – Files - Files.ReadWrite 和 Files.ReadWrite.All </code></pre><ol start="4">
+<li><p>创建秘钥：第2步创建应用程序之后，进入该应用的概述页面。</p>
 <p>1）点击：证书和密码</p>
 <p>2）选择：新客户端密码，添加秘钥：</p>
+</li>
+</ol>
 <p>​    说明：随便填写</p>
 <p>​    截止期限：1年内</p>
-<p>*<strong>3）点击保存，得到秘钥值，复制到上方应用机密(client secret)</strong></p>
+<p>  <strong>*3）点击保存，得到秘钥值，复制到上方应用机密(client secret)</strong></p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -1181,10 +1173,8 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1.查看linux服务器的系统信息(内核)
-在linux命令行下输入shell指令：uname -a
-2.查看操作系统的版本(以redhat为例，其他的同理)
-cat /etc/redhat-release  或  cat /etc/iss
+                            1.查看linux服务器的系统信息(内核)在linux命令行下输入shell指令：uname -a
+2.查看操作系统的版本(以redhat为例，其他的同理)cat /etc/redhat-release  或  cat /etc/issue
                         
                     </div>
                     <div class="publish-info">
@@ -1233,16 +1223,11 @@ cat /etc/redhat-release  或  cat /etc/iss
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            SSH终端输入：
-1.查看面板入口：
-/etc/init.d/bt default
-
-2.关闭安全入口：
-rm -f /www/server/panel/data/admin_path.pl
-
-停止
-/etc/init.d/bt stop
-
+                            SSH终端输入：1.查看面板入口：
+/etc/init.d/bt default2.关闭安全入口：
+rm -f /www/server/panel/data/admin_path.pl停止
+/etc/init.d/bt stop启动
+/et
                         
                     </div>
                     <div class="publish-info">
@@ -1449,7 +1434,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">20.6k</span>&nbsp;字
+                class="white-color">20.7k</span>&nbsp;字
             
             
             
@@ -1678,14 +1663,12 @@ $(function () {
         //只在桌面版网页启用特效
         var windowWidth = $(window).width();
         if (windowWidth > 768) {
-            document.write('<script src="https://cdn.jsdelivr.net/gh/yremp/yremp-js@1.5/sakura.js"></script>');
+            document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>"></script>');
         }
         </script>
     
 
     <!-- 鼠标点击文字特效 洪卫 shw2018 add 2019.09.10-->
-    
-        <script src="/js/wenzi.js" type="text/javascript"></script>
     
 
 

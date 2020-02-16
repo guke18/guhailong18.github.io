@@ -622,11 +622,7 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                hexo new “name”       # 新建文章
-hexo new page “name” # 新建页面
-hexo g               # 生成页面
-hexo d               # 部署
-hexo g -d
+                                hexo new “name”       # 新建文章hexo new page “name” # 新建页面hexo g               # 生成页面hexo d               # 部署hexo g -d    
                             
                         </div>
                         <div class="publish-info">
@@ -680,7 +676,7 @@ hexo g -d
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">20.6k</span>&nbsp;字
+                class="white-color">20.7k</span>&nbsp;字
             
             
             
@@ -909,14 +905,12 @@ $(function () {
         //只在桌面版网页启用特效
         var windowWidth = $(window).width();
         if (windowWidth > 768) {
-            document.write('<script src="https://cdn.jsdelivr.net/gh/yremp/yremp-js@1.5/sakura.js"></script>');
+            document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>"></script>');
         }
         </script>
     
 
     <!-- 鼠标点击文字特效 洪卫 shw2018 add 2019.09.10-->
-    
-        <script src="/js/wenzi.js" type="text/javascript"></script>
     
 
 
