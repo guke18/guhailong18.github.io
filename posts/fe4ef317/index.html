@@ -5,8 +5,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="linux常用命令, 动漫，编程，数学，读书">
-    <meta name="description" content="1.查看linux服务器的系统信息(内核)在linux命令行下输入shell指令：uname -a
-2.查看操作系统的版本(以redhat为例，其他的同理)cat /etc/redhat-release  或  cat /etc/issue">
+    <meta name="description" content="1.查看linux服务器的系统信息(内核)
+在linux命令行下输入shell指令：uname -a
+2.查看操作系统的版本(以redhat为例，其他的同理)
+cat /etc/redhat-release  或  cat /etc/iss">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -594,7 +596,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.1k
+                    1.2k
                 </div>
                 
 
@@ -617,9 +619,13 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h6 id="1-查看linux服务器的系统信息-内核"><a href="#1-查看linux服务器的系统信息-内核" class="headerlink" title="1.查看linux服务器的系统信息(内核)"></a>1.查看<strong><em>linux</em></strong>服务器的系统信息(<strong><em>内核</em></strong>)</h6><p>在linux命令行下输入shell指令：uname -a</p>
-<h6 id="2-查看操作系统的版本-以redhat为例，其他的同理"><a href="#2-查看操作系统的版本-以redhat为例，其他的同理" class="headerlink" title="2.查看操作系统的版本(以redhat为例，其他的同理)"></a><strong><em>2.查看操作系统的版本</em></strong>(以redhat为例，其他的同理)</h6><p>cat /etc/redhat-release  或  cat /etc/issue</p>
-<h2 id="netstat、lsof查看端口"><a href="#netstat、lsof查看端口" class="headerlink" title="netstat、lsof查看端口"></a>netstat、lsof查看端口</h2><h3 id="netstat"><a href="#netstat" class="headerlink" title="netstat"></a>netstat</h3><p>netstat用来查看系统当前系统网络状态信息，包括端口，连接情况等，常用方式如下：</p>
+                <h6 id="1-查看linux服务器的系统信息-内核">1.查看<em><strong>linux</strong></em>服务器的系统信息(<em><strong>内核</strong></em>)</h6>
+<p>在linux命令行下输入shell指令：uname -a</p>
+<h6 id="2-查看操作系统的版本-以redhat为例，其他的同理"><em><strong>2.查看操作系统的版本</strong></em>(以redhat为例，其他的同理)</h6>
+<p>cat /etc/redhat-release  或  cat /etc/issue</p>
+<h2 id="netstat、lsof查看端口">netstat、lsof查看端口</h2>
+<h3 id="netstat">netstat</h3>
+<p>netstat用来查看系统当前系统网络状态信息，包括端口，连接情况等，常用方式如下：</p>
 <ul>
 <li>-t : 指明显示TCP端口</li>
 <li>-u : 指明显示UDP端口</li>
@@ -628,8 +634,11 @@
 <li>-n : 不进行DNS解析</li>
 <li>-a 显示所有连接的端口</li>
 </ul>
-<p>直接查看端口命令。netstat -an | grep 22<br> note：22就是改为要查询的端口</p>
-<h3 id="lsof"><a href="#lsof" class="headerlink" title="lsof"></a>lsof</h3><p><a href="http://www.cnblogs.com/peida/archive/2013/02/26/2932972.html" target="_blank" rel="noopener">参考链接</a><br> lsof的作用是列出当前系统打开文件(list open files)，不过通过-i参数也能查看端口的连接情况，-i后跟冒号端口可以查看指定端口信息，直接-i是系统当前所有打开的端口</p>
+<p>直接查看端口命令。netstat -an | grep 22<br>
+note：22就是改为要查询的端口</p>
+<h3 id="lsof">lsof</h3>
+<p><a href="http://www.cnblogs.com/peida/archive/2013/02/26/2932972.html" target="_blank" rel="noopener">参考链接</a><br>
+lsof的作用是列出当前系统打开文件(list open files)，不过通过-i参数也能查看端口的连接情况，-i后跟冒号端口可以查看指定端口信息，直接-i是系统当前所有打开的端口</p>
 <ul>
 <li>-a 列出打开文件存在的进程</li>
 <li>-c&lt;进程名&gt; 列出指定进程所打开的文件</li>
@@ -645,43 +654,62 @@
 <li>-v 显示版本信息</li>
 </ul>
 <p>lsof -i:22 #查看22端口连接情况，默认为sshd端口</p>
-<h3 id=""><a href="#" class="headerlink" title=""></a></h3><ol>
+<h3 id=""></h3>
+<ol>
 <li>使用lsof命令查看那条线程占用了25555端口</li>
 <li>执行kill命令杀掉那条线程 如： kill 15889</li>
 </ol>
 <p>（注：如果是centos系统的话，数字填的是PID下面的，其他系统类似）</p>
-<h3 id="添加环境变量"><a href="#添加环境变量" class="headerlink" title="添加环境变量"></a>添加环境变量</h3><h6 id="直接修改-PATH值："><a href="#直接修改-PATH值：" class="headerlink" title="直接修改$PATH值："></a>直接修改$PATH值：</h6><pre><code>export PATH=$PATH:/要添加的路径</code></pre><p>或者 </p>
-<pre><code>export PATH=/要添加的路径$PATH</code></pre><p>注意PATH后没有空格</p>
+<h3 id="添加环境变量">添加环境变量</h3>
+<h6 id="直接修改-PATH值：">直接修改$PATH值：</h6>
+<pre><code>export PATH=$PATH:/要添加的路径
+</code></pre>
+<p>或者</p>
+<pre><code>export PATH=/要添加的路径$PATH
+</code></pre>
+<p>注意PATH后没有空格</p>
 <p>例：</p>
-<pre><code>export PATH="/home/ubuntu/anaconda3/bin:$PATH"</code></pre><p>生效方法：立即生效</p>
+<pre><code>export PATH="/home/ubuntu/anaconda3/bin:$PATH"
+</code></pre>
+<p>生效方法：立即生效</p>
 <p>有效期限：临时改变，只能在当前的终端窗口中有效，当前窗口关闭后就会恢复原有的path配置</p>
 <p>用户局限：仅对当前用户</p>
-<h6 id="通过修改-bashrc文件：-bashrc文件在根目录下"><a href="#通过修改-bashrc文件：-bashrc文件在根目录下" class="headerlink" title="通过修改.bashrc文件：(.bashrc文件在根目录下)"></a>通过修改.bashrc文件：(.bashrc文件在根目录下)</h6><p>vi .bashrc //编辑.bashrc文件</p>
+<h6 id="通过修改-bashrc文件：-bashrc文件在根目录下">通过修改.bashrc文件：(.bashrc文件在根目录下)</h6>
+<p>vi .bashrc <a href="//xn--5p0an15a.xn--bashrc-n18ip45m" target="_blank" rel="noopener">//编辑.bashrc文件</a></p>
 <p>//在最后一行添上：</p>
 <p>export PATH=$PATH:/xxx/xxx ///xxx/xxx位需要加入的环境变量地址 等号两边没空格</p>
 <p>生效方法：（有以下两种）</p>
-<p>..关闭当前终端窗口，重新打开一个新终端窗口就能生效</p>
-<p>..输入“source .bashrc”命令，立即生效</p>
+<p>…关闭当前终端窗口，重新打开一个新终端窗口就能生效</p>
+<p>…输入“source .bashrc”命令，立即生效</p>
 <p>有效期限：永久有效</p>
 <p>用户局限：仅对当前用户</p>
-<h6 id="通过修改profile文件：（profile文件在-etc目录下）"><a href="#通过修改profile文件：（profile文件在-etc目录下）" class="headerlink" title="通过修改profile文件：（profile文件在/etc目录下）"></a>通过修改profile文件：（profile文件在/etc目录下）</h6><p>vi /etc/profile //编辑profile文件</p>
+<h6 id="通过修改profile文件：（profile文件在-etc目录下）">通过修改profile文件：（profile文件在/etc目录下）</h6>
+<p>vi /etc/profile //编辑profile文件</p>
 <p>//在最后一行添上：</p>
 <p>export PATH=$PATH:/xxx/xxx</p>
 <p>生效方法：系统重启</p>
 <p>有效期限：永久有效</p>
 <p>用户局限：对所有用户</p>
-<h6 id="通过修改environment文件：（environment文件在-etc目录下）（推荐）"><a href="#通过修改environment文件：（environment文件在-etc目录下）（推荐）" class="headerlink" title="通过修改environment文件：（environment文件在/etc目录下）（推荐）"></a>通过修改environment文件：（environment文件在/etc目录下）（推荐）</h6><p>vi /etc/environment //编辑profile文件</p>
+<h6 id="通过修改environment文件：（environment文件在-etc目录下）（推荐）">通过修改environment文件：（environment文件在/etc目录下）（推荐）</h6>
+<p>vi /etc/environment //编辑profile文件</p>
 <p>在PATH=/·········中加入“:/xxx/xxx”</p>
 <p>生效方法：系统重启</p>
 <p>有效期限：永久有效</p>
 <p>用户局限：对所有用户</p>
-<h4 id="查找文件"><a href="#查找文件" class="headerlink" title="查找文件"></a>查找文件</h4><p>1.按照文件名查找</p>
-<p>　　　　(1)find / -name httpd.conf　　#在根目录下查找文件httpd.conf，表示在整个硬盘查找<br>　　　　(2)find /etc -name httpd.conf　　#在/etc目录下文件httpd.conf<br>　　　　(3)find /etc -name ‘<em>srm</em>‘　　#使用通配符<em>(0或者任意多个)。表示在/etc目录下查找文件名中含有字符串‘srm’的文件<br>　　　　(4)find . -name ‘srm</em>‘ 　　#表示当前目录下查找文件名开头是字符串‘srm’的文件</p>
-<p>　2.按照文件特征查找 　　　</p>
-<p>　　　　(1)find / -amin -10 　　# 查找在系统中最后10分钟访问的文件(access time)<br>　　　　(2)find / -atime -2　　 # 查找在系统中最后48小时访问的文件<br>　　　　(3)find / -empty 　　# 查找在系统中为空的文件或者文件夹<br>　　　　(4)find / -group cat 　　# 查找在系统中属于 group为cat的文件</p>
+<h4 id="查找文件">查找文件</h4>
+<p>1.按照文件名查找</p>
+<p>(1)find / -name httpd.conf　　#在根目录下查找文件httpd.conf，表示在整个硬盘查找<br>
+　　　　(2)find /etc -name httpd.conf　　#在/etc目录下文件httpd.conf<br>
+　　　　(3)find /etc -name ‘<em>srm</em>’　　#使用通配符*(0或者任意多个)。表示在/etc目录下查找文件名中含有字符串‘srm’的文件<br>
+　　　　(4)find . -name ‘srm*’ 　　#表示当前目录下查找文件名开头是字符串‘srm’的文件</p>
+<p>2.按照文件特征查找</p>
+<p>(1)find / -amin -10 　　# 查找在系统中最后10分钟访问的文件(access time)<br>
+　　　　(2)find / -atime -2　　 # 查找在系统中最后48小时访问的文件<br>
+　　　　(3)find / -empty 　　# 查找在系统中为空的文件或者文件夹<br>
+　　　　(4)find / -group cat 　　# 查找在系统中属于 group为cat的文件</p>
 <p>3.使用混合查找方式查找文件</p>
-<p>　　　　参数有： ！，-and(-a)，-or(-o)。</p>
-<p>　　　　(1)find /tmp -size +10000c -and -mtime +2 　　#在/tmp目录下查找大于10000字节并在最后2分钟内修改的文件</p>
+<p>参数有： ！，-and(-a)，-or(-o)。</p>
+<p>(1)find /tmp -size +10000c -and -mtime +2 　　#在/tmp目录下查找大于10000字节并在最后2分钟内修改的文件</p>
 <p><a href="https://www.cnblogs.com/jpfss/p/10863135.html" target="_blank" rel="noopener">原文链接</a></p>
 <script>
         document.querySelectorAll('.github-emoji')
@@ -1274,7 +1302,9 @@
                     <div class="summary block-with-text">
                         
                             二、如何获取应用机密(client secret)和应用 ID(client_id)？
-登录：https://portal.azure.com/?l=zh-hans.zh-cn#blade/Microsoft_AAD_RegisteredA
+
+
+登录：https://portal.azure.com/?l=zh-hans.zh-cn#blade/Microsoft_AAD_Registere
                         
                     </div>
                     <div class="publish-info">
@@ -1714,7 +1744,7 @@ $(function () {
         //只在桌面版网页启用特效
         var windowWidth = $(window).width();
         if (windowWidth > 768) {
-            document.write('<script type="text/javascript" src="/js/sakura1.js"><\/script>"></script>');
+            document.write('<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/yremp/yremp-js@1.5/sakura.js"><\/script>"></script>');
         }
         </script>
     
