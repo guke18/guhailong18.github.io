@@ -1598,6 +1598,38 @@ $(function () {
     
     <script async src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/libs/others/busuanzi.pure.mini.js"></script>
     
+    <!-- 洪卫 shw2018 add 2019.08.28 -->
+    <script type="text/javascript">
+        var OriginTitile = document.title,
+        st;
+        document.addEventListener("visibilitychange", function () {
+            document.hidden ? (document.title = "主人，你竟然抛弃了我(；′⌒`)", clearTimeout(st)) : (document.title =
+                "主人回来啦٩(๑>◡<๑)۶ ", st = setTimeout(function () {
+                    document.title = OriginTitile
+                }, 3e3))
+        })
+    </script>
+
+    <!-- 鼠标点击烟花爆炸效果  洪卫 shw2018 add 2019.09.09 -->
+    
+
+    <!-- 背景樱花飘落特效洪卫 shw2018 add 2019.09.10 -->
+    
+        <script type="text/javascript">
+        //只在桌面版网页启用特效
+        var windowWidth = $(window).width();
+        if (windowWidth > 768) {
+            document.write('<script src="https://cdn.jsdelivr.net/gh/yremp/yremp-js@1.5/sakura.js"></script>');
+        }
+        </script>
+    
+
+    <!-- 鼠标点击文字特效 洪卫 shw2018 add 2019.09.10-->
+    
+        <script src="/js/wenzi.js" type="text/javascript"></script>
+    
+
+
 
     
 

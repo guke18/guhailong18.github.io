@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://guhailong18.github.io/"/>
-  <updated>2020-02-14T08:59:27.264Z</updated>
+  <updated>2020-02-15T03:12:12.946Z</updated>
   <id>https://guhailong18.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://guhailong18.github.io/posts/98ea8151/"/>
     <id>https://guhailong18.github.io/posts/98ea8151/</id>
     <published>2020-02-14T08:59:27.000Z</published>
-    <updated>2020-02-14T08:59:27.264Z</updated>
+    <updated>2020-02-15T03:12:12.946Z</updated>
     
     <summary type="html">
     
@@ -44,7 +44,7 @@
     <link href="https://guhailong18.github.io/posts/3ed280dd/"/>
     <id>https://guhailong18.github.io/posts/3ed280dd/</id>
     <published>2020-02-14T05:06:32.000Z</published>
-    <updated>2020-02-14T08:53:55.110Z</updated>
+    <updated>2020-02-15T03:12:12.938Z</updated>
     
     <summary type="html">
     
@@ -512,9 +512,9 @@
       <category term="github" scheme="https://guhailong18.github.io/categories/github/"/>
     
     
-      <category term="聊天机器人" scheme="https://guhailong18.github.io/tags/%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
-    
       <category term="github" scheme="https://guhailong18.github.io/tags/github/"/>
+    
+      <category term="聊天机器人" scheme="https://guhailong18.github.io/tags/%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
     
   </entry>
   
