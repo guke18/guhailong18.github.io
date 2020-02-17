@@ -5,12 +5,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="MongoDB常用命令, 动漫，编程，数学，读书">
-    <meta name="description" content="关闭服务
-（1） 使用 Crtl+C 关闭
+    <meta name="description" content="关闭服务（1） 使用 Crtl+C 关闭
 （2） 使用 db.shutdownServer()命令 关闭
 备注：命令 db.shutdownServer()关闭命令只能在admin在使用。不然会出错
 （3） 使用 kill命令 关闭
-首先">
+首先使">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -628,7 +627,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    306
+                    304
                 </div>
                 
 
@@ -651,8 +650,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="关闭服务">关闭服务</h3>
-<p>（1） 使用 Crtl+C 关闭</p>
+                <h3 id="关闭服务"><a href="#关闭服务" class="headerlink" title="关闭服务"></a>关闭服务</h3><p>（1） 使用 Crtl+C 关闭</p>
 <p>（2） 使用 db.shutdownServer()命令 关闭</p>
 <p>备注：命令 db.shutdownServer()关闭命令只能在admin在使用。不然会出错</p>
 <p>（3） 使用 kill命令 关闭</p>
@@ -660,9 +658,8 @@
 <p>然后使用 kill mongo命令</p>
 <p>备注：可以使用操作系统的 kill 命令，给 mongod 进程发送 SIGINT 或 SIGTERM 信号，即 “kill -2 PID,” 或者 “kill -15 PID“。</p>
 <p>建议不要使用 ”kill -9 pid“，因为如果 MongoDB 运行在没开启日志（–journal）的情况下，可能会造成数据损失。</p>
-<h3 id="数据库使用">数据库使用</h3>
-<p>查看所有数据库：show dbs  （没有数据的不显示）</p>
-<p>插入数据：db.runoob.insert({“name”:“菜鸟教程”})</p>
+<h3 id="数据库使用"><a href="#数据库使用" class="headerlink" title="数据库使用"></a>数据库使用</h3><p>查看所有数据库：show dbs  （没有数据的不显示）    </p>
+<p>插入数据：db.runoob.insert({“name”:”菜鸟教程”})</p>
 <p>创建了数据库： use DATABASE_NAME（名字）</p>
 <p>删除数据库：db.dropDatabase()       删除集合：db.collection.drop()</p>
 <p>例：</p>
@@ -673,11 +670,7 @@ switched to db runoob
 runoob
 &gt; db.runoob.drop()
 true
-&gt; show tables
-</code></pre>
-<h3 id="连接pymongo">连接pymongo</h3>
-<h3 id="连接chatterbot">连接chatterbot</h3>
-<script>
+&gt; show tables</code></pre><h3 id="连接pymongo"><a href="#连接pymongo" class="headerlink" title="连接pymongo"></a>连接pymongo</h3><h3 id="连接chatterbot"><a href="#连接chatterbot" class="headerlink" title="连接chatterbot"></a>连接chatterbot</h3><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -1201,13 +1194,9 @@ true
                     <div class="summary block-with-text">
                         
                             docker images : 列出本地镜像。
-获取镜像
-例，载入 ubuntu 镜像
-docker pull ubuntu
-
-启动容器
-ubuntu 镜像启动一个容器，参数为以命令行模式进入该容器：
-docker run -it ubun
+获取镜像例，载入 ubuntu 镜像
+docker pull ubuntu启动容器ubuntu 镜像启动一个容器，参数为以命令行模式进入该容器：
+docker run -it ubuntu /
                         
                     </div>
                     <div class="publish-info">
@@ -1771,17 +1760,6 @@ $(function () {
 		role="uploadcare-uploader"
 		data-tabs="file camera url facebook instagram dropbox gdrive gphotos onedrive evernote" />
 	</span>
-	<script type="text/javascript">
-		  var vglnk = {key: '9747a1d7e8f15e44585fa128f21e3645'};
-		  (function(d, t) {
-				var s = d.createElement(t);
-					s.type = 'text/javascript';
-					s.async = true;
-					s.src = '//cdn.viglink.com/api/vglnk.js';
-				var r = d.getElementsByTagName(t)[0];
-					  r.parentNode.insertBefore(s, r);
-		}(document, 'script'));
-	</script>
 	<script>
 	   (function(src, cb) {
 		var s = document.createElement('script'); s.setAttribute('src', src);
@@ -1793,21 +1771,6 @@ $(function () {
 	    });
 	  })
 	</script>
-	<div id="wpac-rating"></div>
-	<script type="text/javascript">
-	wpac_init = window.wpac_init || [];
-	wpac_init.push({widget: 'Rating', id: 23443});
-	(function() {
-		if ('WIDGETPACK_LOADED' in window) return;
-		WIDGETPACK_LOADED = true;
-		var mc = document.createElement('script');
-		mc.type = 'text/javascript';
-		mc.async = true;
-		mc.src = 'https://embed.widgetpack.com/widget.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
-	})();
-	</script>
-	<a href="https://widgetpack.com" target="_blank" rel="noopener external nofollow noreferrer" class="wpac-cr">Star Rating WIDGET PACK</a>
 
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/z16.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 
