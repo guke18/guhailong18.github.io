@@ -6,12 +6,13 @@
     <meta charset="utf-8">
     <meta name="keywords" content="微信机器人搭建笔记, 动漫，编程，数学，读书">
     <meta name="description" content="
+
 创建一个 Chat Bot
+
 
 from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
-chatbot = ChatBot(&#34;my chat&#34;)
-">
+chatbot = ChatBot(&#34;my chat&#34;">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,13 +21,11 @@ chatbot = ChatBot(&#34;my chat&#34;)
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google-site-verification" content="cDtZWn0qG4XcSUw3eMMZ02d4avBhPZU6ZTl-kD3u2Gw" />
-    <meta name="baidu-site-verification" content="ZqnBdgf6NK" />
     <meta name="baidu-site-verification" content="0j9UtFCX8F" />
     <meta name="msvalidate.01" content="C3E86648EAA78534AFF48DAB4EDFF0B9" />
-    <meta name="sogou_site_verification" content="UJOkCUvoVx"/>
     <meta name="sogou_site_verification" content="rfqi3P4ZwB"/>
-    <meta name="chinaz-site-verification" content="583EA5C18810DE84">
-    <meta name="360-site-verification" content="d09fbbfc212660f173e6b895986c3550" />
+    <meta name="google-site-verification" content="SPWIegoU8ZCCcikPxQ5M4jDV-RkRauq1jOy4kjexR6w" />
+    <meta name="chinaz-site-verification" content="3AD36AD7E9302CDD">
     <meta name="360-site-verification" content="ab430889a61ca7f546ee741f39f25f53" />
     <!-- BEGIN SHAREAHOLIC CODE -->
     <link rel="preload" href="https://cdn.shareaholic.net/assets/pub/shareaholic.js" as="script" />
@@ -661,25 +660,33 @@ chatbot = ChatBot(&#34;my chat&#34;)
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <ol>
-<li><h3 id="创建一个-Chat-Bot"><a href="#创建一个-Chat-Bot" class="headerlink" title="创建一个 Chat Bot"></a>创建一个 Chat Bot</h3></li>
+<li>
+<h3 id="创建一个-Chat-Bot">创建一个 Chat Bot</h3>
+</li>
 </ol>
-<pre class=" language-python"><code class="language-python"><span class="token keyword">from</span> chatterbot <span class="token keyword">import</span> ChatBot
-<span class="token keyword">from</span> chatterbot<span class="token punctuation">.</span>trainers <span class="token keyword">import</span> ListTrainer
-chatbot <span class="token operator">=</span> ChatBot<span class="token punctuation">(</span><span class="token string">"my chat"</span><span class="token punctuation">)</span>
-trainer <span class="token operator">=</span> ListTrainer<span class="token punctuation">(</span>chatbot<span class="token punctuation">)</span></code></pre>
+<pre class=" language-language-python"><code class="language-language-python">from chatterbot import ChatBot
+from chatterbot.trainers import ListTrainer
+chatbot = ChatBot("my chat")
+trainer = ListTrainer(chatbot)
+</code></pre>
 <p><a href="https://github.com/codemayq/chinese_chatbot_corpus" target="_blank" rel="noopener external nofollow noreferrer">中文聊天语料</a></p>
 <p>注：需要将仓库克隆下来，main.py在那里，且目录与他描述的位置不同，看下报错或源码即可。</p>
 <p>载入语料</p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">with</span> <span class="token function">open</span><span class="token punctuation">(</span><span class="token string">'xiaohuangji.tsv'</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
-  data <span class="token operator">=</span> f<span class="token punctuation">.</span><span class="token function">read</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token string">'\t'</span><span class="token punctuation">,</span> <span class="token string">'\n'</span><span class="token punctuation">)</span>
-<span class="token function">print</span><span class="token punctuation">(</span>data<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token number">100</span><span class="token punctuation">]</span><span class="token punctuation">)</span></code></pre>
+<pre class=" language-language-javascript"><code class="language-language-javascript">with open('xiaohuangji.tsv', encoding='utf-8') as f:
+  data = f.read().replace('\t', '\n')
+print(data[:100])
+</code></pre>
 <p>训练</p>
-<pre class=" language-javascript"><code class="language-javascript">trainer<span class="token punctuation">.</span><span class="token function">train</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span></code></pre>
+<pre class=" language-language-javascript"><code class="language-language-javascript">trainer.train(data)
+</code></pre>
 <p>最后，等待训练完成之后，我们再把生成的 db.sqlite3 文件下载到本地。</p>
 <p>注：文件目录需放置正确，同一级即可</p>
 <p><a href="https://github.com/guhailong18/chatter" target="_blank" rel="noopener external nofollow noreferrer">微信公众号号聊天机器人</a>，欢迎星标，欢迎提交pr，其中的一些原理其实我也不是很懂，所以会用就拿去用吧！不会的话，那就另寻高明！</p>
-<h3 id="后文：踩坑记录"><a href="#后文：踩坑记录" class="headerlink" title="后文：踩坑记录"></a>后文：踩坑记录</h3><p>chatterbot，chatterbot-corpus使用pip安装时会出现依赖包Pyyaml所需版本不兼容的情况，这时候我真的想吐槽一下，明明是两个相互配合使用的，竟然连兼容性都有些不匹配。在<a href="https://github.com/gunthercox/chatterbot-corpus/issues/127" target="_blank" rel="noopener external nofollow noreferrer">issue</a>发现了问题的解决办法，但是不一定适用于所有人。</p>
-<pre><code>pipenv install git+https://github.com/gunthercox/chatterbot-corpus.git#egg=chatterbot-corpus</code></pre><p>从源码进行安装</p>
+<h3 id="后文：踩坑记录">后文：踩坑记录</h3>
+<p>chatterbot，chatterbot-corpus使用pip安装时会出现依赖包Pyyaml所需版本不兼容的情况，这时候我真的想吐槽一下，明明是两个相互配合使用的，竟然连兼容性都有些不匹配。在<a href="https://github.com/gunthercox/chatterbot-corpus/issues/127" target="_blank" rel="noopener external nofollow noreferrer">issue</a>发现了问题的解决办法，但是不一定适用于所有人。</p>
+<pre><code>pipenv install git+https://github.com/gunthercox/chatterbot-corpus.git#egg=chatterbot-corpus
+</code></pre>
+<p>从源码进行安装</p>
 <p>顺便记一下pipenv的简单使用方法:</p>
 <ul>
 <li><code>shell</code> 将在激活virtualenv的情况下生成一个shell。</li>
@@ -798,9 +805,6 @@ trainer <span class="token operator">=</span> ListTrainer<span class="token punc
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/libs/share/js/social-share.min.js"></script>
     
 
-    
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e435e85f4748eeb"></script>
-    <div class="addthis_inline_share_toolbox"></div>
     
 
 </div>
@@ -1230,11 +1234,15 @@ trainer <span class="token operator">=</span> ListTrainer<span class="token punc
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            NLTKtext*都是一个一个的书籍节点，直接输入text1会输出书籍标题
-搜索文本text1.concordance(“former”)
+                            NLTK
+text*都是一个一个的书籍节点，直接输入text1会输出书籍标题
+搜索文本
+text1.concordance(“former”)
 搜索相关词
-text1.similar("ship")这个倒是挺特别的
-查看某个词在文章里出现的位置
+text1.similar("ship")
+
+这个倒是挺特别的
+查看某个词在文章里出
                         
                     </div>
                     <div class="publish-info">
@@ -1502,7 +1510,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">22.5k</span>&nbsp;字
+                class="white-color">22.7k</span>&nbsp;字
             
             
             

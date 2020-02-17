@@ -5,7 +5,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="hexo简明的教程, 动漫，编程，数学，读书">
-    <meta name="description" content="hexo new “name”       # 新建文章hexo new page “name” # 新建页面hexo g               # 生成页面hexo d               # 部署hexo g -d    ">
+    <meta name="description" content="hexo new “name”       # 新建文章
+hexo new page “name” # 新建页面
+hexo g               # 生成页面
+hexo d               # 部署
+hexo g -d">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,13 +18,11 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google-site-verification" content="cDtZWn0qG4XcSUw3eMMZ02d4avBhPZU6ZTl-kD3u2Gw" />
-    <meta name="baidu-site-verification" content="ZqnBdgf6NK" />
     <meta name="baidu-site-verification" content="0j9UtFCX8F" />
     <meta name="msvalidate.01" content="C3E86648EAA78534AFF48DAB4EDFF0B9" />
-    <meta name="sogou_site_verification" content="UJOkCUvoVx"/>
     <meta name="sogou_site_verification" content="rfqi3P4ZwB"/>
-    <meta name="chinaz-site-verification" content="583EA5C18810DE84">
-    <meta name="360-site-verification" content="d09fbbfc212660f173e6b895986c3550" />
+    <meta name="google-site-verification" content="SPWIegoU8ZCCcikPxQ5M4jDV-RkRauq1jOy4kjexR6w" />
+    <meta name="chinaz-site-verification" content="3AD36AD7E9302CDD">
     <meta name="360-site-verification" content="ab430889a61ca7f546ee741f39f25f53" />
     <!-- BEGIN SHAREAHOLIC CODE -->
     <link rel="preload" href="https://cdn.shareaholic.net/assets/pub/shareaholic.js" as="script" />
@@ -560,7 +562,14 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>hexo new “name”       # 新建文章<br>hexo new page “name” # 新建页面<br>hexo g               # 生成页面<br>hexo d               # 部署<br>hexo g -d             # 生成页面并部署<br>hexo s               # 本地预览<br>hexo clean           # 清除缓存和已生成的静态文件<br>hexo help             # 帮助</p>
+                <p>hexo new “name”       # 新建文章<br>
+hexo new page “name” # 新建页面<br>
+hexo g               # 生成页面<br>
+hexo d               # 部署<br>
+hexo g -d             # 生成页面并部署<br>
+hexo s               # 本地预览<br>
+hexo clean           # 清除缓存和已生成的静态文件<br>
+hexo help             # 帮助</p>
 <table>
 <thead>
 <tr>
@@ -568,7 +577,8 @@
 <th>文件生成后立即部署网站</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>-w</code>, <code>--watch</code></td>
 <td>监视文件变动</td>
 </tr>
@@ -580,94 +590,153 @@
 <td><code>-f</code>, <code>--force</code></td>
 <td>强制重新生成文件 Hexo 引入了差分机制，如果 <code>public</code> 目录存在，那么 <code>hexo g</code> 只会重新生成改动的文件。 使用该参数的效果接近 <code>hexo clean &amp;&amp; hexo generate</code></td>
 </tr>
-</tbody></table>
-<h3 id="安全模式"><a href="#安全模式" class="headerlink" title="安全模式"></a>安全模式</h3><pre><code>$ hexo --safe</code></pre><p>在安全模式下，不会载入插件和脚本。</p>
-<h3 id="简洁模式"><a href="#简洁模式" class="headerlink" title="简洁模式"></a>简洁模式</h3><pre><code>$ hexo --silent</code></pre><p>隐藏终端信息。</p>
-<h3 id="调试模式"><a href="#调试模式" class="headerlink" title="调试模式"></a>调试模式</h3><pre><code>$ hexo --debug</code></pre><p>在终端中显示调试信息并记录到 <code>debug.log</code></p>
+</tbody>
+</table>
+<h3 id="安全模式">安全模式</h3>
+<pre><code>$ hexo --safe
+</code></pre>
+<p>在安全模式下，不会载入插件和脚本。</p>
+<h3 id="简洁模式">简洁模式</h3>
+<pre><code>$ hexo --silent
+</code></pre>
+<p>隐藏终端信息。</p>
+<h3 id="调试模式">调试模式</h3>
+<pre><code>$ hexo --debug
+</code></pre>
+<p>在终端中显示调试信息并记录到 <code>debug.log</code></p>
 <p>Front-matter 是文件最上方以 <code>---</code> 分隔的区域，用于指定个别文件的变量，举例来说：</p>
 <pre><code>---
 title: Hello World
 date: 2013/7/13 20:46:25
----</code></pre><p>以下是预先定义的参数，您可在模板中使用这些参数值并加以利用。</p>
+---
+</code></pre>
+<p>以下是预先定义的参数，您可在模板中使用这些参数值并加以利用。</p>
 <table>
 <thead>
 <tr>
-<th align="left">参数</th>
-<th align="left">描述</th>
-<th align="left">默认值</th>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+<th style="text-align:left">默认值</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="left"><code>layout</code></td>
-<td align="left">布局</td>
-<td align="left"></td>
+<tbody>
+<tr>
+<td style="text-align:left"><code>layout</code></td>
+<td style="text-align:left">布局</td>
+<td style="text-align:left"></td>
 </tr>
 <tr>
-<td align="left"><code>title</code></td>
-<td align="left">标题</td>
-<td align="left">文章的文件名</td>
+<td style="text-align:left"><code>title</code></td>
+<td style="text-align:left">标题</td>
+<td style="text-align:left">文章的文件名</td>
 </tr>
 <tr>
-<td align="left"><code>date</code></td>
-<td align="left">建立日期</td>
-<td align="left">文件建立日期</td>
+<td style="text-align:left"><code>date</code></td>
+<td style="text-align:left">建立日期</td>
+<td style="text-align:left">文件建立日期</td>
 </tr>
 <tr>
-<td align="left"><code>updated</code></td>
-<td align="left">更新日期</td>
-<td align="left">文件更新日期</td>
+<td style="text-align:left"><code>updated</code></td>
+<td style="text-align:left">更新日期</td>
+<td style="text-align:left">文件更新日期</td>
 </tr>
 <tr>
-<td align="left"><code>comments</code></td>
-<td align="left">开启文章的评论功能</td>
-<td align="left">true</td>
+<td style="text-align:left"><code>comments</code></td>
+<td style="text-align:left">开启文章的评论功能</td>
+<td style="text-align:left">true</td>
 </tr>
 <tr>
-<td align="left"><code>tags</code></td>
-<td align="left">标签（不适用于分页）</td>
-<td align="left"></td>
+<td style="text-align:left"><code>tags</code></td>
+<td style="text-align:left">标签（不适用于分页）</td>
+<td style="text-align:left"></td>
 </tr>
 <tr>
-<td align="left"><code>categories</code></td>
-<td align="left">分类（不适用于分页）</td>
-<td align="left"></td>
+<td style="text-align:left"><code>categories</code></td>
+<td style="text-align:left">分类（不适用于分页）</td>
+<td style="text-align:left"></td>
 </tr>
 <tr>
-<td align="left"><code>permalink</code></td>
-<td align="left">覆盖文章网址</td>
-<td align="left"></td>
+<td style="text-align:left"><code>permalink</code></td>
+<td style="text-align:left">覆盖文章网址</td>
+<td style="text-align:left"></td>
 </tr>
 <tr>
-<td align="left"><code>keywords</code></td>
-<td align="left">仅用于 meta 标签和 Open Graph 的关键词（不推荐使用）</td>
-<td align="left"></td>
+<td style="text-align:left"><code>keywords</code></td>
+<td style="text-align:left">仅用于 meta 标签和 Open Graph 的关键词（不推荐使用）</td>
+<td style="text-align:left"></td>
 </tr>
-</tbody></table>
-<h2 id="分类和标签"><a href="#分类和标签" class="headerlink" title="分类和标签"></a>分类和标签</h2><p>只有文章支持分类和标签，您可以在 Front-matter 中设置。在其他系统中，分类和标签听起来很接近，但是在 Hexo 中两者有着明显的差别：分类具有顺序性和层次性，也就是说 <code>Foo, Bar</code> 不等于 <code>Bar, Foo</code>；而标签没有顺序和层次。</p>
+</tbody>
+</table>
+<h2 id="分类和标签">分类和标签</h2>
+<p>只有文章支持分类和标签，您可以在 Front-matter 中设置。在其他系统中，分类和标签听起来很接近，但是在 Hexo 中两者有着明显的差别：分类具有顺序性和层次性，也就是说 <code>Foo, Bar</code> 不等于 <code>Bar, Foo</code>；而标签没有顺序和层次。</p>
 <pre><code>categories:
 - Diary
 tags:
 - PS3
-- Games</code></pre><p>Commands:<br>  clean     删除生成的文件和缓存。<br>  config    获取或设置配置。<br>  deploy    部署你的网站。<br>  generate  生成静态文件。<br>  help      得到命令的帮助。<br>  init      创建一个新的Hexo文件夹。<br>  list      列出网站的信息<br>  migrate   将您的站点从其他系统迁移到Hexo。<br>  new       创建一个新帖子。<br>  publish   将草稿从_drafts移到_posts文件夹。<br>  render    Render files with renderer plugins.<br>  server    启动服务器。<br>  version   显示版本信息。</p>
-<p>public     #网站文件<br>themes     #主题文件夹，用来存放主题，后面在美化博客的时候经常要用<br>source     #存放用户文件，主要存放用户写的文章，图片等等。<br>_config.yml     #网站的配置信息，要跟主题里的配置信息分开，主题文件夹里也有一个同名的文件，后面配置的时候经常用它们俩。</p>
+- Games
+</code></pre>
+<p>Commands:<br>
+clean     删除生成的文件和缓存。<br>
+config    获取或设置配置。<br>
+deploy    部署你的网站。<br>
+generate  生成静态文件。<br>
+help      得到命令的帮助。<br>
+init      创建一个新的Hexo文件夹。<br>
+list      列出网站的信息<br>
+migrate   将您的站点从其他系统迁移到Hexo。<br>
+new       创建一个新帖子。<br>
+publish   将草稿从_drafts移到_posts文件夹。<br>
+render    Render files with renderer plugins.<br>
+server    启动服务器。<br>
+version   显示版本信息。</p>
+<p>public     #网站文件<br>
+themes     #主题文件夹，用来存放主题，后面在美化博客的时候经常要用<br>
+source     #存放用户文件，主要存放用户写的文章，图片等等。<br>
+_config.yml     #网站的配置信息，要跟主题里的配置信息分开，主题文件夹里也有一个同名的文件，后面配置的时候经常用它们俩。</p>
 <p>以下命令来查看所有全局安装的模块：</p>
-<pre><code>$ npm list -g</code></pre><p>以下命令来卸载 Node.js 模块。</p>
-<pre><code>$ npm uninstall express</code></pre><h2 id="更新模块"><a href="#更新模块" class="headerlink" title="更新模块"></a>更新模块</h2><p>我们可以使用以下命令更新模块：</p>
-<pre><code>$ npm update express</code></pre><hr>
-<h2 id="搜索模块"><a href="#搜索模块" class="headerlink" title="搜索模块"></a>搜索模块</h2><p>使用以下来搜索模块：</p>
-<pre><code>$ npm search express</code></pre><hr>
-<h2 id="创建模块"><a href="#创建模块" class="headerlink" title="创建模块"></a>创建模块</h2><p>创建模块，package.json 文件是必不可少的。我们可以使用 NPM 生成 package.json 文件，生成的文件包含了基本的结果。</p>
-<pre><code>$ npm init</code></pre><ul>
+<pre><code>$ npm list -g
+</code></pre>
+<p>以下命令来卸载 Node.js 模块。</p>
+<pre><code>$ npm uninstall express
+</code></pre>
+<h2 id="更新模块">更新模块</h2>
+<p>我们可以使用以下命令更新模块：</p>
+<pre><code>$ npm update express
+</code></pre>
+<hr>
+<h2 id="搜索模块">搜索模块</h2>
+<p>使用以下来搜索模块：</p>
+<pre><code>$ npm search express
+</code></pre>
+<hr>
+<h2 id="创建模块">创建模块</h2>
+<p>创建模块，package.json 文件是必不可少的。我们可以使用 NPM 生成 package.json 文件，生成的文件包含了基本的结果。</p>
+<pre><code>$ npm init
+</code></pre>
+<ul>
 <li>NPM提供了很多命令，例如<code>install</code>和<code>publish</code>，使用<code>npm help</code>可查看所有命令。</li>
-<li>使用<code>npm help</code>可查看某条命令的详细帮助，例如<code>npm help install</code>。</li>
+<li>使用<code>npm help </code>可查看某条命令的详细帮助，例如<code>npm help install</code>。</li>
 <li>在<code>package.json</code>所在目录下使用<code>npm install . -g</code>可先在本地安装当前命令行程序，可用于发布前的本地测试。</li>
-<li>使用<code>npm update</code>可以把当前目录下<code>node_modules</code>子目录里边的对应模块更新至最新版本。</li>
+<li>使用<code>npm update </code>可以把当前目录下<code>node_modules</code>子目录里边的对应模块更新至最新版本。</li>
 <li>使用<code>npm update  -g</code>可以把全局安装的对应命令行程序更新至最新版。</li>
 <li>使用<code>npm cache clear</code>可以清空NPM本地缓存，用于对付使用相同版本号发布新版本代码的人。</li>
 <li>使用<code>npm unpublish @</code>可以撤销发布自己发布过的某个版本代码。</li>
 </ul>
-<p>npm install<br>npm install hexo-deployer-git –save//部署到git<br>（下面选择安装）<br>npm install hexo-generator-feed –save //建立RSS订阅<br>npm install hexo-generator-sitemap –save //建立站点地图<br>npm install hexo-generator-searchdb //本地搜索<br>npm install hexo-blog-encrypt –save //博文加密<br>npm install hexo-sage-posts –save //隐藏博文<br>npm install hexo-tag-aplayer //音频播放器<br>npm install hexo-tag-dplayer //视频播放器<br>npm install hexo-filter-mermaid-diagrams //mermaid<br>npm install hexo-pdf –save //pdf在线阅读<br>npm install hexo-baidu-url-submit –save //百度推送</p>
-<h3 id="压缩："><a href="#压缩：" class="headerlink" title="压缩："></a>压缩：</h3><p>生成博文是执行 <code>hexo g &amp;&amp; gulp</code> 就会根据 <code>gulpfile.js</code> 中的配置，对 public 目录中的静态资源文件进行压缩。</p>
+<p>npm install<br>
+npm install hexo-deployer-git --save//部署到git<br>
+（下面选择安装）<br>
+npm install hexo-generator-feed --save //建立RSS订阅<br>
+npm install hexo-generator-sitemap --save //建立站点地图<br>
+npm install hexo-generator-searchdb //本地搜索<br>
+npm install hexo-blog-encrypt --save //博文加密<br>
+npm install hexo-sage-posts --save //隐藏博文<br>
+npm install hexo-tag-aplayer //音频播放器<br>
+npm install hexo-tag-dplayer //视频播放器<br>
+npm install hexo-filter-mermaid-diagrams //mermaid<br>
+npm install hexo-pdf --save //pdf在线阅读<br>
+npm install hexo-baidu-url-submit --save //百度推送</p>
+<h3 id="压缩：">压缩：</h3>
+<p>生成博文是执行 <code>hexo g &amp;&amp; gulp</code> 就会根据 <code>gulpfile.js</code> 中的配置，对 public 目录中的静态资源文件进行压缩。</p>
 <p>当你想要压缩的话执行上面命令就行，压缩后再上传部署</p>
 <script>
         document.querySelectorAll('.github-emoji')
@@ -771,9 +840,6 @@ tags:
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/libs/share/js/social-share.min.js"></script>
     
 
-    
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e435e85f4748eeb"></script>
-    <div class="addthis_inline_share_toolbox"></div>
     
 
 </div>
@@ -1208,17 +1274,18 @@ People
 
 
 
+
 ico
 emoji
 ico
 emoji
+
 
 
 
 🤣
 :rofl:
-😄
-
+�
                         
                     </div>
                     <div class="publish-info">
@@ -1255,7 +1322,8 @@ emoji
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1.介绍XPath是一个路径选择语言，全称 XML Path Language，支持XML和HTML的选择，类似于正则表达式，但比正则表达式简单并且方便许多！
+                            1.介绍
+XPath是一个路径选择语言，全称 XML Path Language，支持XML和HTML的选择，类似于正则表达式，但比正则表达式简单并且方便许多！
 下表为XPath的符号解释：
 
 
@@ -1265,7 +1333,8 @@ emoji
 
 
 
-nodename
+
+nodena
                         
                     </div>
                     <div class="publish-info">
@@ -1386,7 +1455,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">22.5k</span>&nbsp;字
+                class="white-color">22.7k</span>&nbsp;字
             
             
             
