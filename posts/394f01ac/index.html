@@ -303,7 +303,7 @@ fro">
         
         <li class="m-nav-item">
 	  
-		<a href="javascript:;">
+		<a href="javascript:;" rel="external nofollow noreferrer">
 			
 				<i class="fa-fw fas fa-list"></i>
 			
@@ -369,7 +369,7 @@ fro">
         
         <li><div class="divider"></div></li>
         <li>
-            <a href="https://github.com/guhailong18/guhailong18.github.io" class="waves-effect waves-light" target="_blank">
+            <a href="https://github.com/guhailong18/guhailong18.github.io" rel="external nofollow noreferrer" class="waves-effect waves-light" target="_blank">
                 <i class="fab fa-github-square fa-fw"></i>Fork Me
             </a>
         </li>
@@ -614,7 +614,7 @@ fro">
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    257
+                    293
                 </div>
                 
 
@@ -643,12 +643,16 @@ import pandas as pd
 from pyecharts.charts import *
 from pyecharts import options as opts
 from pyecharts.globals import *
-from pyecharts.faker import *</code></pre><pre><code># 读取数据
+from pyecharts.faker import *
+</code></pre>
+<pre><code># 读取数据
 data=pd.read_csv('D:/机器学习/air_quality.csv',sep=',')
 fun1=lambda x:x.split('-')[0]
 fun2=lambda x:x.split('-')[1]
 data['year']=data['record_date'].apply(fun1)
-data['month']=data['record_date'].apply(fun2)</code></pre><p><img src="https://img-blog.csdnimg.cn/20191228141537669.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM0MjE2Mjk=,size_16,color_FFFFFF,t_70" alt="https://img-blog.csdnimg.cn/20191228141537669.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM0MjE2Mjk=,size_16,color_FFFFFF,t_70"></p>
+data['month']=data['record_date'].apply(fun2)
+</code></pre>
+<p><img src="https://img-blog.csdnimg.cn/20191228141537669.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM0MjE2Mjk=,size_16,color_FFFFFF,t_70" alt="https://img-blog.csdnimg.cn/20191228141537669.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM0MjE2Mjk=,size_16,color_FFFFFF,t_70"><span class="image-caption">https://img-blog.csdnimg.cn/20191228141537669.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM0MjE2Mjk=,size_16,color_FFFFFF,t_70</span></p>
 <pre><code># 成都空气质量的玫瑰花饼图
 df1=data.groupby(['city_name','quality_level'], as_index=False).count()
 df1=df1[df1['city_name']=='成都']
@@ -663,9 +667,11 @@ pie.set_global_opts(title_opts=opts.TitleOpts(title="成都空气质量玫瑰花
                     legend_opts=opts.LegendOpts(orient="vertical", pos_top="15%", pos_left="5%"))
 pie.render_notebook()
 # pie.render(data_path+'成都空气质量饼图.html')
-</code></pre><p><img src="https://img-blog.csdnimg.cn/20191228141712934.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM0MjE2Mjk=,size_16,color_FFFFFF,t_70" alt="https://img-blog.csdnimg.cn/20191228141712934.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM0MjE2Mjk=,size_16,color_FFFFFF,t_70"></p>
-<p><a href="https://pyecharts.org/#/zh-cn/rectangular_charts" target="_blank" rel="noopener">pyecharts官方文档</a></p>
-<p>挺好看的吧！Fight!!(ｏ^-^)尸~’’☆ミ☆ミ</p>
+
+</code></pre>
+<p><img src="https://img-blog.csdnimg.cn/20191228141712934.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM0MjE2Mjk=,size_16,color_FFFFFF,t_70" alt="https://img-blog.csdnimg.cn/20191228141712934.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM0MjE2Mjk=,size_16,color_FFFFFF,t_70"><span class="image-caption">https://img-blog.csdnimg.cn/20191228141712934.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM0MjE2Mjk=,size_16,color_FFFFFF,t_70</span></p>
+<p><a href="https://pyecharts.org/#/zh-cn/rectangular_charts" target="_blank" rel="noopener external nofollow noreferrer">pyecharts官方文档</a></p>
+<p>挺好看的吧！Fight!!(ｏ<sup>-</sup>)尸~’'☆ミ☆ミ</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -1206,9 +1212,10 @@ pie.render_notebook()
                         
                             文章目的：通过学生成长计划领取资格考试 - 云计算及云服务器入门的考试，获得12个月的云服务器。
 云服务器（ECS）
-1.搭建个人网站已经做了很多了，就不多讲了！用宝塔+wordress
+1.搭建个人网站
+已经做了很多了，就不多讲了！用宝塔+wordress
 
-        document.querySel
+        document.querySe
                         
                     </div>
                     <div class="publish-info">
@@ -1262,7 +1269,8 @@ pie.render_notebook()
                     <div class="summary block-with-text">
                         
                             简要记录一下我感兴趣且也比较流行的三大深度学习框架，分别是：Pytroch，tensorflow，paddle（百度飞桨）。
-Pytorch官方：PyTorch是是torch的python版本，是由Facebook开源的神经网络框架，专门针
+Pytorch
+官方：PyTorch是是torch的python版本，是由Facebook开源的神经网络框架，专门
                         
                     </div>
                     <div class="publish-info">
@@ -1476,12 +1484,12 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             Copyright&nbsp;&copy;
             <span id="year">2020</span>
             <a href="https://guhailong18.github.io" target="_blank">远方客</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/guhailong18/guhailong18.github.io" target="_blank">github地址</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" rel="external nofollow noreferrer" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/guhailong18/guhailong18.github.io" rel="external nofollow noreferrer" target="_blank">github地址</a>
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">20.9k</span>&nbsp;字
+                class="white-color">21.1k</span>&nbsp;字
             
             
             
@@ -1549,13 +1557,13 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/guhailong18/guhailong18.github.io" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+    <a href="https://github.com/guhailong18/guhailong18.github.io" rel="external nofollow noreferrer" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
         <i class="fab fa-github"></i>
     </a>
 
 
 
-    <a href="mailto:1097629344@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+    <a href="mailto:1097629344@qq.com" rel="external nofollow noreferrer" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
         <i class="fas fa-envelope-open"></i>
     </a>
 
@@ -1565,7 +1573,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
 
 
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1097629344" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1097629344" data-position="top" data-delay="50">
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1097629344" rel="external nofollow noreferrer" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1097629344" data-position="top" data-delay="50">
         <i class="fab fa-qq"></i>
     </a>
 
