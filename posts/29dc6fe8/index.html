@@ -6,13 +6,9 @@
     <meta charset="utf-8">
     <meta name="keywords" content="Docker常用命令, 动漫，编程，数学，读书">
     <meta name="description" content="docker images : 列出本地镜像。
-获取镜像
-例，载入 ubuntu 镜像
-docker pull ubuntu
-
-启动容器
-ubuntu 镜像启动一个容器，参数为以命令行模式进入该容器：
-docker run -it ubun">
+获取镜像例，载入 ubuntu 镜像
+docker pull ubuntu启动容器ubuntu 镜像启动一个容器，参数为以命令行模式进入该容器：
+docker run -it ubuntu /">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -29,6 +25,33 @@ docker run -it ubun">
     <meta name="chinaz-site-verification" content="583EA5C18810DE84">
     <meta name="360-site-verification" content="d09fbbfc212660f173e6b895986c3550" />
     <meta name="360-site-verification" content="ab430889a61ca7f546ee741f39f25f53" />
+    <!-- BEGIN SHAREAHOLIC CODE -->
+    <link rel="preload" href="https://cdn.shareaholic.net/assets/pub/shareaholic.js" as="script" />
+    <meta name="shareaholic:site_id" content="19b237100ecb8735740051eb425428d6" />
+    <script data-cfasync="false" async src="https://cdn.shareaholic.net/assets/pub/shareaholic.js"></script>
+    <!-- END SHAREAHOLIC CODE -->
+    <script>
+	  UPLOADCARE_PUBLIC_KEY = 'f7e9261581dfb5585c04';
+	</script>
+
+	<script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
+    <style>
+      .uploader-button .uploadcare--widget__button_type_open {
+        background-color: #e5745b;
+      }
+    </style>
+
+    <script>
+      UPLOADCARE_LOCALE_TRANSLATIONS = {
+        buttons: {
+          choose: {
+            files: {
+              one: 'Upload image'
+            }
+          }
+        }
+      }
+    </script>
     <title>Docker常用命令 | 古客</title>
     <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/favicon.png">
 
@@ -611,7 +634,7 @@ docker run -it ubun">
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    721
+                    719
                 </div>
                 
 
@@ -635,15 +658,9 @@ docker run -it ubun">
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p><strong>docker images :</strong> 列出本地镜像。</p>
-<h3 id="获取镜像">获取镜像</h3>
-<p>例，载入 ubuntu 镜像</p>
-<pre><code>docker pull ubuntu
-</code></pre>
-<h3 id="启动容器">启动容器</h3>
-<p>ubuntu 镜像启动一个容器，参数为以命令行模式进入该容器：</p>
-<pre><code>docker run -it ubuntu /bin/bash
-</code></pre>
-<p>参数说明：</p>
+<h3 id="获取镜像"><a href="#获取镜像" class="headerlink" title="获取镜像"></a>获取镜像</h3><p>例，载入 ubuntu 镜像</p>
+<pre><code>docker pull ubuntu</code></pre><h3 id="启动容器"><a href="#启动容器" class="headerlink" title="启动容器"></a>启动容器</h3><p>ubuntu 镜像启动一个容器，参数为以命令行模式进入该容器：</p>
+<pre><code>docker run -it ubuntu /bin/bash</code></pre><p>参数说明：</p>
 <ul>
 <li><strong>-i</strong>: 交互式操作。</li>
 <li><strong>-t</strong>: 终端。</li>
@@ -653,52 +670,28 @@ docker run -it ubun">
 <p>要退出终端，直接输入 <strong>exit</strong>:</p>
 <p>查看所有的容器：docker ps -a</p>
 <p>docker start 启动一个已停止的容器：docker start b750bbbcfd88 （此参数为ID）</p>
-<h3 id="后台运行">后台运行</h3>
-<p><strong>-d</strong> 指定容器的运行模式</p>
-<pre><code> docker run -itd --name ubuntu-test ubuntu /bin/bash
-</code></pre>
-<p>**注：**加了 <strong>-d</strong> 参数默认不会进入容器，想要进入容器需要使用指令 <strong>docker exec</strong></p>
-<h3 id="停止一个容器">停止一个容器</h3>
-<pre><code>docker stop &lt;容器 ID&gt;
-</code></pre>
-<h3 id="进入容器">进入容器</h3>
-<p><strong>docker exec</strong>：推荐大家使用 docker exec 命令，因为此退出容器终端，不会导致容器的停止。</p>
-<pre><code>docker exec -it 243c32535da7 /bin/bash
-</code></pre>
-<h3 id="导出和导入容器">导出和导入容器</h3>
-<p>使用 <strong>docker export</strong> 命令。</p>
-<pre><code>docker export 1e560fca3906 &gt; ubuntu.tar
-</code></pre>
-<h3 id="删除容器">删除容器</h3>
-<p><strong>docker rm</strong> 命令：</p>
-<pre><code>docker rm -f 1e560fca3906
-</code></pre>
-<p>下面的命令可以清理掉所有处于终止状态的容器。</p>
+<h3 id="后台运行"><a href="#后台运行" class="headerlink" title="后台运行"></a>后台运行</h3><p><strong>-d</strong> 指定容器的运行模式</p>
+<pre><code> docker run -itd --name ubuntu-test ubuntu /bin/bash</code></pre><p><strong>注：</strong>加了 <strong>-d</strong> 参数默认不会进入容器，想要进入容器需要使用指令 <strong>docker exec</strong></p>
+<h3 id="停止一个容器"><a href="#停止一个容器" class="headerlink" title="停止一个容器"></a>停止一个容器</h3><pre><code>docker stop &lt;容器 ID&gt;</code></pre><h3 id="进入容器"><a href="#进入容器" class="headerlink" title="进入容器"></a>进入容器</h3><p><strong>docker exec</strong>：推荐大家使用 docker exec 命令，因为此退出容器终端，不会导致容器的停止。</p>
+<pre><code>docker exec -it 243c32535da7 /bin/bash</code></pre><h3 id="导出和导入容器"><a href="#导出和导入容器" class="headerlink" title="导出和导入容器"></a>导出和导入容器</h3><p>使用 <strong>docker export</strong> 命令。</p>
+<pre><code>docker export 1e560fca3906 &gt; ubuntu.tar</code></pre><h3 id="删除容器"><a href="#删除容器" class="headerlink" title="删除容器"></a>删除容器</h3><p><strong>docker rm</strong> 命令：</p>
+<pre><code>docker rm -f 1e560fca3906</code></pre><p>下面的命令可以清理掉所有处于终止状态的容器。</p>
 <p>$ docker container prune</p>
-<h2 id="运行一个-web-应用">运行一个 web 应用</h2>
-<pre><code>runoob@runoob:~# docker pull training/webapp  # 载入镜像
-runoob@runoob:~# docker run -d -P training/webapp python app.py
-</code></pre>
-<p>参数说明:</p>
+<h2 id="运行一个-web-应用"><a href="#运行一个-web-应用" class="headerlink" title="运行一个 web 应用"></a>运行一个 web 应用</h2><pre><code>runoob@runoob:~# docker pull training/webapp  # 载入镜像
+runoob@runoob:~# docker run -d -P training/webapp python app.py</code></pre><p>参数说明:</p>
 <ul>
-<li>**-d:**让容器在后台运行。</li>
-<li>**-P:**将容器内部使用的网络端口映射到我们使用的主机上。</li>
+<li><strong>-d:</strong>让容器在后台运行。</li>
+<li><strong>-P:</strong>将容器内部使用的网络端口映射到我们使用的主机上。</li>
 </ul>
-<h2 id="查看-WEB-应用容器">查看 WEB 应用容器</h2>
-<p>docker ps</p>
+<h2 id="查看-WEB-应用容器"><a href="#查看-WEB-应用容器" class="headerlink" title="查看 WEB 应用容器"></a>查看 WEB 应用容器</h2><p>docker ps</p>
 <p>Docker 开放了 5000 端口（默认 Python Flask 端口）映射到主机端口 32769 上。</p>
 <p>这时我们可以通过浏览器访问WEB应用</p>
 <p>可以通过 -p 参数来设置不一样的端口：</p>
-<pre><code>runoob@runoob:~$ docker run -d -p 5000:5000 training/webapp python app.py
-</code></pre>
-<h2 id="查看-WEB-应用程序日志">查看 WEB 应用程序日志</h2>
-<p>docker logs [ID或者名字] 可以查看容器内部的标准输出。</p>
+<pre><code>runoob@runoob:~$ docker run -d -p 5000:5000 training/webapp python app.py</code></pre><h2 id="查看-WEB-应用程序日志"><a href="#查看-WEB-应用程序日志" class="headerlink" title="查看 WEB 应用程序日志"></a>查看 WEB 应用程序日志</h2><p>docker logs [ID或者名字] 可以查看容器内部的标准输出。</p>
 <p><strong>-f:</strong> 让 <strong>docker logs</strong> 像使用 <strong>tail -f</strong> 一样来输出容器内部的标准输出。</p>
 <p>从上面，我们可以看到应用程序使用的是 5000 端口并且能够查看到应用程序的访问日志。</p>
-<h2 id="检查-WEB-应用程序">检查 WEB 应用程序</h2>
-<p>使用 <strong>docker inspect</strong> 来查看 Docker 的底层信息。它会返回一个 JSON 文件记录着 Docker 容器的配置和状态信息。</p>
-<h3 id="推送镜像">推送镜像</h3>
-<p>用户登录后，可以通过 docker push 命令将自己的镜像推送到 Docker Hub。</p>
+<h2 id="检查-WEB-应用程序"><a href="#检查-WEB-应用程序" class="headerlink" title="检查 WEB 应用程序"></a>检查 WEB 应用程序</h2><p>使用 <strong>docker inspect</strong> 来查看 Docker 的底层信息。它会返回一个 JSON 文件记录着 Docker 容器的配置和状态信息。</p>
+<h3 id="推送镜像"><a href="#推送镜像" class="headerlink" title="推送镜像"></a>推送镜像</h3><p>用户登录后，可以通过 docker push 命令将自己的镜像推送到 Docker Hub。</p>
 <p>以下命令中的 username 请替换为你的 Docker 账号用户名</p>
 <pre><code>$ docker tag ubuntu:18.04 username/ubuntu:18.04
 $ docker image ls
@@ -710,9 +703,7 @@ $ docker push username/ubuntu:18.04
 $ docker search username/ubuntu
 
 NAME             DESCRIPTION       STARS         OFFICIAL    AUTOMATED
-username/ubuntu
-</code></pre>
-<script>
+username/ubuntu</code></pre><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -940,10 +931,10 @@ username/ubuntu
                         <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
                     </ul>
                     <div id="alipay">
-                        <img src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.iohttps://i.loli.net/2020/02/16/nqGVy28sCJNA9lj.jpg" class="reward-img" alt="支付宝打赏二维码">
+                        <img src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io\source\medias\reward\alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
                     </div>
                     <div id="wechat">
-                        <img src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.iohttps://i.loli.net/2020/02/16/ayHWLtiSvjP9qCE.jpg" class="reward-img" alt="微信打赏二维码">
+                        <img src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io\source\medias\reward\wechat.jpg" class="reward-img" alt="微信打赏二维码">
                     </div>
                 </div>
             </div>
@@ -1254,15 +1245,10 @@ username/ubuntu
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            若Python2 和 Python3 同时有 pip，则使用方法如下：
-Python2：
-python2 -m pip install XXX
-
-Python3:
+                            若Python2 和 Python3 同时有 pip，则使用方法如下：Python2：
+python2 -m pip install XXXPython3:
 python3 -m pip install XXX
-
-
-        d
+        docume
                         
                     </div>
                     <div class="publish-info">
@@ -1311,12 +1297,11 @@ python3 -m pip install XXX
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            关闭服务
-（1） 使用 Crtl+C 关闭
+                            关闭服务（1） 使用 Crtl+C 关闭
 （2） 使用 db.shutdownServer()命令 关闭
 备注：命令 db.shutdownServer()关闭命令只能在admin在使用。不然会出错
 （3） 使用 kill命令 关闭
-首先
+首先使
                         
                     </div>
                     <div class="publish-info">
@@ -1515,7 +1500,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">21.1k</span>&nbsp;字
+                class="white-color">22.5k</span>&nbsp;字
             
             
             
@@ -1800,6 +1785,23 @@ $(function () {
     
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/libs/instantpage/instantpage.js" type="module"></script>
     
+    <span class="uploader-button">
+	  <input
+		type="hidden"
+		role="uploadcare-uploader"
+		data-tabs="file camera url facebook instagram dropbox gdrive gphotos onedrive evernote" />
+	</span>
+	<script>
+	   (function(src, cb) {
+		var s = document.createElement('script'); s.setAttribute('src', src);
+		s.onload = cb; (document.head || document.body).appendChild(s);
+		})('https://ucarecdn.com/libs/blinkloader/3.x/blinkloader.min.js', function() {
+		window.Blinkloader.optimize({
+		  pubkey:'f7e9261581dfb5585c04',
+		  fadeIn:true
+	    });
+	  })
+	</script>
 
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/z16.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 

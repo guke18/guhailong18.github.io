@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://guhailong18.github.io/"/>
-  <updated>2020-02-17T05:05:32.246Z</updated>
+  <updated>2020-02-17T08:54:46.069Z</updated>
   <id>https://guhailong18.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://guhailong18.github.io/posts/f6c315f4/"/>
     <id>https://guhailong18.github.io/posts/f6c315f4/</id>
     <published>2020-02-16T14:43:40.000Z</published>
-    <updated>2020-02-17T05:05:32.246Z</updated>
+    <updated>2020-02-17T08:54:46.069Z</updated>
     
     <summary type="html">
     
@@ -226,9 +226,9 @@
       <category term="python" scheme="https://guhailong18.github.io/categories/python/"/>
     
     
-      <category term="python" scheme="https://guhailong18.github.io/tags/python/"/>
-    
       <category term="笔记" scheme="https://guhailong18.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="python" scheme="https://guhailong18.github.io/tags/python/"/>
     
       <category term="GIF" scheme="https://guhailong18.github.io/tags/GIF/"/>
     
@@ -346,9 +346,9 @@
     
       <category term="爬虫" scheme="https://guhailong18.github.io/tags/%E7%88%AC%E8%99%AB/"/>
     
-      <category term="python" scheme="https://guhailong18.github.io/tags/python/"/>
-    
       <category term="笔记" scheme="https://guhailong18.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="python" scheme="https://guhailong18.github.io/tags/python/"/>
     
   </entry>
   
@@ -543,9 +543,9 @@
       <category term="github" scheme="https://guhailong18.github.io/categories/github/"/>
     
     
-      <category term="github" scheme="https://guhailong18.github.io/tags/github/"/>
-    
       <category term="聊天机器人" scheme="https://guhailong18.github.io/tags/%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
+    
+      <category term="github" scheme="https://guhailong18.github.io/tags/github/"/>
     
   </entry>
   

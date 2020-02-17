@@ -27,6 +27,33 @@ fro">
     <meta name="chinaz-site-verification" content="583EA5C18810DE84">
     <meta name="360-site-verification" content="d09fbbfc212660f173e6b895986c3550" />
     <meta name="360-site-verification" content="ab430889a61ca7f546ee741f39f25f53" />
+    <!-- BEGIN SHAREAHOLIC CODE -->
+    <link rel="preload" href="https://cdn.shareaholic.net/assets/pub/shareaholic.js" as="script" />
+    <meta name="shareaholic:site_id" content="19b237100ecb8735740051eb425428d6" />
+    <script data-cfasync="false" async src="https://cdn.shareaholic.net/assets/pub/shareaholic.js"></script>
+    <!-- END SHAREAHOLIC CODE -->
+    <script>
+	  UPLOADCARE_PUBLIC_KEY = 'f7e9261581dfb5585c04';
+	</script>
+
+	<script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
+    <style>
+      .uploader-button .uploadcare--widget__button_type_open {
+        background-color: #e5745b;
+      }
+    </style>
+
+    <script>
+      UPLOADCARE_LOCALE_TRANSLATIONS = {
+        buttons: {
+          choose: {
+            files: {
+              one: 'Upload image'
+            }
+          }
+        }
+      }
+    </script>
     <title>Python画图神器之--pyecharts | 古客</title>
     <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/favicon.png">
 
@@ -643,16 +670,12 @@ import pandas as pd
 from pyecharts.charts import *
 from pyecharts import options as opts
 from pyecharts.globals import *
-from pyecharts.faker import *
-</code></pre>
-<pre><code># 读取数据
+from pyecharts.faker import *</code></pre><pre><code># 读取数据
 data=pd.read_csv('D:/机器学习/air_quality.csv',sep=',')
 fun1=lambda x:x.split('-')[0]
 fun2=lambda x:x.split('-')[1]
 data['year']=data['record_date'].apply(fun1)
-data['month']=data['record_date'].apply(fun2)
-</code></pre>
-<p><img src="https://img-blog.csdnimg.cn/20191228141537669.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM0MjE2Mjk=,size_16,color_FFFFFF,t_70" alt="https://img-blog.csdnimg.cn/20191228141537669.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM0MjE2Mjk=,size_16,color_FFFFFF,t_70"><span class="image-caption">https://img-blog.csdnimg.cn/20191228141537669.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM0MjE2Mjk=,size_16,color_FFFFFF,t_70</span></p>
+data['month']=data['record_date'].apply(fun2)</code></pre><p><img src="https://img-blog.csdnimg.cn/20191228141537669.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM0MjE2Mjk=,size_16,color_FFFFFF,t_70" alt="https://img-blog.csdnimg.cn/20191228141537669.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM0MjE2Mjk=,size_16,color_FFFFFF,t_70"><span class="image-caption">https://img-blog.csdnimg.cn/20191228141537669.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM0MjE2Mjk=,size_16,color_FFFFFF,t_70</span></p>
 <pre><code># 成都空气质量的玫瑰花饼图
 df1=data.groupby(['city_name','quality_level'], as_index=False).count()
 df1=df1[df1['city_name']=='成都']
@@ -667,11 +690,9 @@ pie.set_global_opts(title_opts=opts.TitleOpts(title="成都空气质量玫瑰花
                     legend_opts=opts.LegendOpts(orient="vertical", pos_top="15%", pos_left="5%"))
 pie.render_notebook()
 # pie.render(data_path+'成都空气质量饼图.html')
-
-</code></pre>
-<p><img src="https://img-blog.csdnimg.cn/20191228141712934.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM0MjE2Mjk=,size_16,color_FFFFFF,t_70" alt="https://img-blog.csdnimg.cn/20191228141712934.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM0MjE2Mjk=,size_16,color_FFFFFF,t_70"><span class="image-caption">https://img-blog.csdnimg.cn/20191228141712934.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM0MjE2Mjk=,size_16,color_FFFFFF,t_70</span></p>
+</code></pre><p><img src="https://img-blog.csdnimg.cn/20191228141712934.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM0MjE2Mjk=,size_16,color_FFFFFF,t_70" alt="https://img-blog.csdnimg.cn/20191228141712934.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM0MjE2Mjk=,size_16,color_FFFFFF,t_70"><span class="image-caption">https://img-blog.csdnimg.cn/20191228141712934.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM0MjE2Mjk=,size_16,color_FFFFFF,t_70</span></p>
 <p><a href="https://pyecharts.org/#/zh-cn/rectangular_charts" target="_blank" rel="noopener external nofollow noreferrer">pyecharts官方文档</a></p>
-<p>挺好看的吧！Fight!!(ｏ<sup>-</sup>)尸~’'☆ミ☆ミ</p>
+<p>挺好看的吧！Fight!!(ｏ^-^)尸~’’☆ミ☆ミ</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -896,10 +917,10 @@ pie.render_notebook()
                         <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
                     </ul>
                     <div id="alipay">
-                        <img src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.iohttps://i.loli.net/2020/02/16/nqGVy28sCJNA9lj.jpg" class="reward-img" alt="支付宝打赏二维码">
+                        <img src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io\source\medias\reward\alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
                     </div>
                     <div id="wechat">
-                        <img src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.iohttps://i.loli.net/2020/02/16/ayHWLtiSvjP9qCE.jpg" class="reward-img" alt="微信打赏二维码">
+                        <img src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io\source\medias\reward\wechat.jpg" class="reward-img" alt="微信打赏二维码">
                     </div>
                 </div>
             </div>
@@ -1212,10 +1233,9 @@ pie.render_notebook()
                         
                             文章目的：通过学生成长计划领取资格考试 - 云计算及云服务器入门的考试，获得12个月的云服务器。
 云服务器（ECS）
-1.搭建个人网站
-已经做了很多了，就不多讲了！用宝塔+wordress
+1.搭建个人网站已经做了很多了，就不多讲了！用宝塔+wordress
 
-        document.querySe
+        document.querySel
                         
                     </div>
                     <div class="publish-info">
@@ -1269,8 +1289,7 @@ pie.render_notebook()
                     <div class="summary block-with-text">
                         
                             简要记录一下我感兴趣且也比较流行的三大深度学习框架，分别是：Pytroch，tensorflow，paddle（百度飞桨）。
-Pytorch
-官方：PyTorch是是torch的python版本，是由Facebook开源的神经网络框架，专门
+Pytorch官方：PyTorch是是torch的python版本，是由Facebook开源的神经网络框架，专门针
                         
                     </div>
                     <div class="publish-info">
@@ -1489,7 +1508,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">21.1k</span>&nbsp;字
+                class="white-color">22.5k</span>&nbsp;字
             
             
             
@@ -1774,6 +1793,23 @@ $(function () {
     
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/libs/instantpage/instantpage.js" type="module"></script>
     
+    <span class="uploader-button">
+	  <input
+		type="hidden"
+		role="uploadcare-uploader"
+		data-tabs="file camera url facebook instagram dropbox gdrive gphotos onedrive evernote" />
+	</span>
+	<script>
+	   (function(src, cb) {
+		var s = document.createElement('script'); s.setAttribute('src', src);
+		s.onload = cb; (document.head || document.body).appendChild(s);
+		})('https://ucarecdn.com/libs/blinkloader/3.x/blinkloader.min.js', function() {
+		window.Blinkloader.optimize({
+		  pubkey:'f7e9261581dfb5585c04',
+		  fadeIn:true
+	    });
+	  })
+	</script>
 
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/z16.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 
