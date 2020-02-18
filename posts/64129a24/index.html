@@ -5,9 +5,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="Mysql常用命令, 动漫，编程，数学，读书">
-    <meta name="description" content="查看mysql 默认端口号和修改端口号先登录mysql
-mysql -u root -p再使用命令查看端口号
-show global variables like &#39;port&#39;;若要修改端口，编辑/etc/my.cnf文件（window可直">
+    <meta name="description" content="查看mysql 默认端口号和修改端口号
+先登录mysql
+mysql -u root -p
+
+再使用命令查看端口号
+show global variables like &#39;port&#39;;
+
+若要修改端口，编辑/etc/my.cnf文件（win">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -72,8 +77,8 @@ show global variables like &#39;port&#39;;若要修改端口，编辑/etc/my.cnf
     <script data-ad-client="ca-pub-7903599946607415" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 4.2.0"><link rel="stylesheet" href="//guke-1301101972.file.myqcloud.com/css/prism-tomorrow.css" type="text/css"><link rel="alternate" href="//guke-1301101972.file.myqcloud.com/atom.xml" title="古客" type="application/atom+xml">
-<link rel="stylesheet" href="//guke-1301101972.file.myqcloud.com/css/prism-tomorrow.css" type="text/css"></head>
+<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="//guke-1301101972.cos.ap-chengdu.myqcloud.com/atom.xml" title="古客" type="application/atom+xml">
+<link rel="stylesheet" href="//guke-1301101972.cos.ap-chengdu.myqcloud.com/css/prism-tomorrow.css" type="text/css"><link rel="stylesheet" href="//guke-1301101972.cos.ap-chengdu.myqcloud.com/css/prism-tomorrow.css" type="text/css"></head>
 
 
 <body>
@@ -646,7 +651,7 @@ show global variables like &#39;port&#39;;若要修改端口，编辑/etc/my.cnf
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    268
+                    270
                 </div>
                 
 
@@ -669,17 +674,43 @@ show global variables like &#39;port&#39;;若要修改端口，编辑/etc/my.cnf
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <link rel="stylesheet" class="aplayer-secondary-style-marker" href="//guke-1301101972.file.myqcloud.com\assets\css\APlayer.min.css"><script src="//guke-1301101972.file.myqcloud.com\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="//guke-1301101972.file.myqcloud.com\assets\js\Meting.min.js"></script><h2 id="查看mysql-默认端口号和修改端口号"><a href="#查看mysql-默认端口号和修改端口号" class="headerlink" title="查看mysql 默认端口号和修改端口号"></a>查看mysql 默认端口号和修改端口号</h2><p>先登录mysql</p>
-<pre><code>mysql -u root -p</code></pre><p>再使用命令查看端口号</p>
-<pre><code>show global variables like 'port';</code></pre><p>若要修改端口，编辑/etc/my.cnf文件（window可直接编辑）</p>
-<pre><code>vi my.cnf</code></pre><p>重新启动mysql</p>
+                <link rel="stylesheet" class="aplayer-secondary-style-marker" href="//guke-1301101972.cos.ap-chengdu.myqcloud.com\assets\css\APlayer.min.css"><script src="//guke-1301101972.cos.ap-chengdu.myqcloud.com\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="//guke-1301101972.cos.ap-chengdu.myqcloud.com\assets\js\Meting.min.js"></script><h2 id="查看mysql-默认端口号和修改端口号">查看mysql 默认端口号和修改端口号</h2>
+<p>先登录mysql</p>
+<pre><code>mysql -u root -p
+</code></pre>
+<p>再使用命令查看端口号</p>
+<pre><code>show global variables like 'port';
+</code></pre>
+<p>若要修改端口，编辑/etc/my.cnf文件（window可直接编辑）</p>
+<pre><code>vi my.cnf
+</code></pre>
+<p>重新启动mysql</p>
 <pre><code>/etc/init.d/mysqld restart  
-或 service mysql restart</code></pre><h2 id="显示所有的数据库"><a href="#显示所有的数据库" class="headerlink" title="显示所有的数据库"></a><strong>显示所有的数据库</strong></h2><p>登录MySQL，输入：</p>
-<pre><code>show databases;</code></pre><h4 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a><strong>创建数据库</strong></h4><p>创建数据库的命令为：</p>
-<pre><code>create database &lt;数据库名&gt;</code></pre><h4 id="删除数据库"><a href="#删除数据库" class="headerlink" title="删除数据库"></a><strong>删除数据库</strong></h4><pre><code>drop database &lt;数据库名&gt;；</code></pre><p>例：</p>
-<pre><code>drop database mydatabase;</code></pre><h4 id="打开数据库"><a href="#打开数据库" class="headerlink" title="打开数据库"></a><strong>打开数据库</strong></h4><pre><code>use mydatabase;</code></pre><p>mydatabase为你的数据库名</p>
-<h4 id="创建数据库表"><a href="#创建数据库表" class="headerlink" title="创建数据库表"></a><strong>创建数据库表</strong></h4><p>打开数据库后，可以使用创建数据表命令，在已打开的数据库中创建一个新表。创建一个新表的命令为：</p>
-<pre><code>create table &lt;表名&gt; ( &lt;字段名1&gt; &lt;类型1&gt; [,..&lt;字段名n&gt; &lt;类型n&gt;]);</code></pre><script>
+或 service mysql restart
+</code></pre>
+<h2 id="显示所有的数据库"><strong>显示所有的数据库</strong></h2>
+<p>登录MySQL，输入：</p>
+<pre><code>show databases;
+</code></pre>
+<h4 id="创建数据库"><strong>创建数据库</strong></h4>
+<p>创建数据库的命令为：</p>
+<pre><code>create database &lt;数据库名&gt;
+</code></pre>
+<h4 id="删除数据库"><strong>删除数据库</strong></h4>
+<pre><code>drop database &lt;数据库名&gt;；
+</code></pre>
+<p>例：</p>
+<pre><code>drop database mydatabase;
+</code></pre>
+<h4 id="打开数据库"><strong>打开数据库</strong></h4>
+<pre><code>use mydatabase;
+</code></pre>
+<p>mydatabase为你的数据库名</p>
+<h4 id="创建数据库表"><strong>创建数据库表</strong></h4>
+<p>打开数据库后，可以使用创建数据表命令，在已打开的数据库中创建一个新表。创建一个新表的命令为：</p>
+<pre><code>create table &lt;表名&gt; ( &lt;字段名1&gt; &lt;类型1&gt; [,..&lt;字段名n&gt; &lt;类型n&gt;]);
+</code></pre>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -1472,7 +1503,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">22.8k</span>&nbsp;字
+                class="white-color">22.9k</span>&nbsp;字
             
             
             
@@ -1613,7 +1644,7 @@ $(function () {
     <script>
 	(function(){
 	var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
-	document.write('<script src="//guke-1301101972.file.myqcloud.com' + src + '" id="sozz"><\/script>');
+	document.write('<script src="//guke-1301101972.cos.ap-chengdu.myqcloud.com' + src + '" id="sozz"><\/script>');
 	})();
 	</script>
 	<script>
@@ -1776,6 +1807,6 @@ $(function () {
 	  })
 	</script>
 
-<script src="//guke-1301101972.file.myqcloud.com/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/z16.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+<script src="//guke-1301101972.cos.ap-chengdu.myqcloud.com/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/z16.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 
 </html>

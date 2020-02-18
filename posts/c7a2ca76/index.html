@@ -5,7 +5,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="python之XPath详解, 动漫，编程，数学，读书">
-    <meta name="description" content="1.介绍XPath是一个路径选择语言，全称 XML Path Language，支持XML和HTML的选择，类似于正则表达式，但比正则表达式简单并且方便许多！
+    <meta name="description" content="1.介绍
+XPath是一个路径选择语言，全称 XML Path Language，支持XML和HTML的选择，类似于正则表达式，但比正则表达式简单并且方便许多！
 下表为XPath的符号解释：
 
 
@@ -15,7 +16,8 @@
 
 
 
-nodename">
+
+nodena">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -80,8 +82,8 @@ nodename">
     <script data-ad-client="ca-pub-7903599946607415" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 4.2.0"><link rel="stylesheet" href="//guke-1301101972.file.myqcloud.com/css/prism-tomorrow.css" type="text/css"><link rel="alternate" href="//guke-1301101972.file.myqcloud.com/atom.xml" title="古客" type="application/atom+xml">
-<link rel="stylesheet" href="//guke-1301101972.file.myqcloud.com/css/prism-tomorrow.css" type="text/css"></head>
+<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="//guke-1301101972.cos.ap-chengdu.myqcloud.com/atom.xml" title="古客" type="application/atom+xml">
+<link rel="stylesheet" href="//guke-1301101972.cos.ap-chengdu.myqcloud.com/css/prism-tomorrow.css" type="text/css"><link rel="stylesheet" href="//guke-1301101972.cos.ap-chengdu.myqcloud.com/css/prism-tomorrow.css" type="text/css"></head>
 
 
 <body>
@@ -555,14 +557,14 @@ nodename">
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    452
+                    374
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    1 分
                 </div>
                 
 
@@ -578,7 +580,8 @@ nodename">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <link rel="stylesheet" class="aplayer-secondary-style-marker" href="//guke-1301101972.file.myqcloud.com\assets\css\APlayer.min.css"><script src="//guke-1301101972.file.myqcloud.com\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="//guke-1301101972.file.myqcloud.com\assets\js\Meting.min.js"></script><h2 id="1-介绍"><a href="#1-介绍" class="headerlink" title="1.介绍"></a>1.介绍</h2><p>XPath是一个路径选择语言，全称 XML Path Language，支持XML和HTML的选择，类似于正则表达式，但比正则表达式简单并且方便许多！</p>
+                <link rel="stylesheet" class="aplayer-secondary-style-marker" href="//guke-1301101972.cos.ap-chengdu.myqcloud.com\assets\css\APlayer.min.css"><script src="//guke-1301101972.cos.ap-chengdu.myqcloud.com\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="//guke-1301101972.cos.ap-chengdu.myqcloud.com\assets\js\Meting.min.js"></script><h2 id="1-介绍">1.介绍</h2>
+<p>XPath是一个路径选择语言，全称 XML Path Language，支持XML和HTML的选择，类似于正则表达式，但比正则表达式简单并且方便许多！</p>
 <p>下表为XPath的符号解释：</p>
 <table>
 <thead>
@@ -587,7 +590,8 @@ nodename">
 <th>描　　述</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>nodename</td>
 <td>选取此节点的所有子节点</td>
 </tr>
@@ -604,35 +608,37 @@ nodename">
 <td>选取当前节点</td>
 </tr>
 <tr>
-<td>..</td>
+<td>…</td>
 <td>选取当前节点的父节点</td>
 </tr>
 <tr>
 <td>@</td>
 <td>选取属性</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>常用匹配规则：</p>
 <p>//name[@Attr]</p>
 <p>解释：name为节点名</p>
 <p>Attr：在此节点名下的属性名</p>
-<p>//title[@lang=’eng’]</p>
+<p>//title[@lang=‘eng’]</p>
 <p>这就是一个 XPath 规则，它代表选择所有名称为 title，同时属性 lang 的值为 eng 的节点。如果不是很懂没有关系，看完下面的例子你就懂了！</p>
-<pre class=" language-python"><code class="language-python"><span class="token keyword">from</span> lxml <span class="token keyword">import</span> etree
-text <span class="token operator">=</span> <span class="token triple-quoted-string string">'''
-&lt;div>
-&lt;ul>
-&lt;li class="book-0">&lt;a href="link.html">first item &lt;/a>&lt;/li>
-&lt;li class="book-1">&lt;a href="link.html">second item &lt;/a>&lt;/li>
-&lt;li class="book-000">&lt;a href="link.html">third item &lt;/a>&lt;/li>
-&lt;li class="book-1">&lt;a href="link.html">fourth item &lt;/a>&lt;/li>
-&lt;li class="book-0">&lt;a href="link.html">fifth item &lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/div>
-'''</span>
-html <span class="token operator">=</span> etree<span class="token punctuation">.</span>HTML<span class="token punctuation">(</span>text<span class="token punctuation">)</span>
-result <span class="token operator">=</span> etree<span class="token punctuation">.</span>tostring<span class="token punctuation">(</span>html<span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">.</span>decode<span class="token punctuation">(</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">#指定编码格式</span></code></pre>
+<pre class=" language-language-python"><code class="language-language-python">from lxml import etree
+text = '''
+<div>
+<ul>
+<li class="book-0"><a href="link.html">first item </a></li>
+<li class="book-1"><a href="link.html">second item </a></li>
+<li class="book-000"><a href="link.html">third item </a></li>
+<li class="book-1"><a href="link.html">fourth item </a></li>
+<li class="book-0"><a href="link.html">fifth item </a></li>
+</ul>
+</div>
+'''
+html = etree.HTML(text)
+result = etree.tostring(html)
+print(result.decode('utf-8')) #指定编码格式
+</code></pre>
 <p>代码解释：这里首先导入 lxml 库的 etree 模块，然后声明了一段 HTML 文本，调用 HTML 类进行初始化，这样就成功构造了一个 XPath 解析对象。这里需要注意的是，HTML 文本中的最后一个 li 节点是没有闭合的，但是 etree 模块可以自动修正 HTML 文本。</p>
 <p><img src="https://i.loli.net/2020/02/13/5TnHg4jO7R9EpAJ.gif" alt=""></p>
 <script>
@@ -1166,7 +1172,11 @@ result <span class="token operator">=</span> etree<span class="token punctuation
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            hexo new “name”       # 新建文章hexo new page “name” # 新建页面hexo g               # 生成页面hexo d               # 部署hexo g -d    
+                            hexo new “name”       # 新建文章
+hexo new page “name” # 新建页面
+hexo g               # 生成页面
+hexo d               # 部署
+hexo g -d
                         
                     </div>
                     <div class="publish-info">
@@ -1220,9 +1230,12 @@ result <span class="token operator">=</span> etree<span class="token punctuation
                     <div class="summary block-with-text">
                         
                             由于老是记不住python的list，字典，元组等表示的方法及区别，经常会搞混，所以特地写了这篇文章来加强记忆和复习。
-list(列表)符号[]，用‘’包起来，用逗号分开
+list(列表)
+符号[]，用‘’包起来，用逗号分开
 例子：
-fish = [‘大鱼’,'鱼','小鱼']tuple(元组
+fish = [‘大鱼’,'鱼','小鱼']
+
+tuple
                         
                     </div>
                     <div class="publish-info">
@@ -1327,7 +1340,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">22.8k</span>&nbsp;字
+                class="white-color">22.9k</span>&nbsp;字
             
             
             
@@ -1468,7 +1481,7 @@ $(function () {
     <script>
 	(function(){
 	var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
-	document.write('<script src="//guke-1301101972.file.myqcloud.com' + src + '" id="sozz"><\/script>');
+	document.write('<script src="//guke-1301101972.cos.ap-chengdu.myqcloud.com' + src + '" id="sozz"><\/script>');
 	})();
 	</script>
 	<script>
@@ -1631,6 +1644,6 @@ $(function () {
 	  })
 	</script>
 
-<script src="//guke-1301101972.file.myqcloud.com/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/z16.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+<script src="//guke-1301101972.cos.ap-chengdu.myqcloud.com/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/z16.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 
 </html>
