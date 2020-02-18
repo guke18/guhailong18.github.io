@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://guhailong18.github.io/"/>
-  <updated>2020-02-18T12:51:26.209Z</updated>
+  <updated>2020-02-18T13:40:03.099Z</updated>
   <id>https://guhailong18.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>利用腾讯云COS加速hexo静态网站</title>
+    <link href="https://guhailong18.github.io/posts/a839d4e9/"/>
+    <id>https://guhailong18.github.io/posts/a839d4e9/</id>
+    <published>2020-02-18T13:37:22.000Z</published>
+    <updated>2020-02-18T13:40:03.099Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>利用宝塔将hexo部署到阿里云</title>
@@ -542,35 +565,6 @@
     </summary>
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>微信聊天机器人使用介绍</title>
-    <link href="https://guhailong18.github.io/posts/ebc8e568/"/>
-    <id>https://guhailong18.github.io/posts/ebc8e568/</id>
-    <published>2020-02-03T09:56:00.000Z</published>
-    <updated>2020-02-04T08:56:32.874Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="github" scheme="https://guhailong18.github.io/categories/github/"/>
-    
-    
-      <category term="github" scheme="https://guhailong18.github.io/tags/github/"/>
-    
-      <category term="聊天机器人" scheme="https://guhailong18.github.io/tags/%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
     
   </entry>
   
