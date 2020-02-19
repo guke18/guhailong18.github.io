@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://guke.cf/%E5%8A%A8%E6%BC%AB/index.html</loc>
+    
+    <lastmod>2020-02-19T13:49:32.519Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://guke.cf/music/index.html</loc>
     
     <lastmod>2020-02-19T09:56:01.450Z</lastmod>
@@ -537,13 +544,6 @@
     <loc>https://guke.cf/tags/index.html</loc>
     
     <lastmod>2020-01-18T05:33:51.260Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://guke.cf/%E5%8A%A8%E6%BC%AB/index.html</loc>
-    
-    <lastmod>2020-01-15T14:15:48.552Z</lastmod>
     
   </url>
   
