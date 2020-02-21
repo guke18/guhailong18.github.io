@@ -6,10 +6,12 @@
     <meta charset="utf-8">
     <meta name="keywords" content="古客,git,learn,学习笔记,学习,learn,notes,github">
     <meta name="description" content="
+
 概述
 
+
 学习目标: 学会推送指定文件夹到github的指定仓库！
-目的：全站白嫖jsdelivr的CDN加速（原因：其实hexo-theme-matery已经非常友好的为我们配置了CDN加速，因但是由于jsdelivr不对超过50M的进行">
+目的：全站白嫖jsdelivr的CDN加速（原因：其实hexo-theme-matery已经非常友好的为我们配置了CDN加速，因但是由于jsdelivr不对超过50M的">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -554,7 +556,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    937
+                    940
                 </div>
                 
 
@@ -578,27 +580,45 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <link rel="stylesheet" class="aplayer-secondary-style-marker" href="//guke-1301101972.cos.ap-chengdu.myqcloud.com\assets\css\APlayer.min.css"><script src="//guke-1301101972.cos.ap-chengdu.myqcloud.com\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="//guke-1301101972.cos.ap-chengdu.myqcloud.com\assets\js\Meting.min.js"></script><ul>
-<li><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2></li>
+<li>
+<h2 id="概述">概述</h2>
+</li>
 </ul>
 <p><strong>学习目标</strong>: 学会推送指定文件夹到github的指定仓库！</p>
-<p>目的：全站白嫖jsdelivr的CDN加速（原因：其实<a href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md" target="_blank" rel="noopener external nofollow noreferrer">hexo-theme-matery</a>已经非常友好的为我们配置了CDN加速，因但是由于jsdelivr不对超过50M的进行加速，导致我的部分图片的CSS,JS无法正常加载，所以我就想进行多仓库来部署，是图片，JS和CSS放在不同的仓库，但是在网上没有找到别人造好的轮子( Ĭ ^ Ĭ )，只好自己动手了，顺便学习一下Git的相关使用方法，一举两得φ(&gt;ω&lt;*) </p>
-<h2 id="1-创建仓库"><a href="#1-创建仓库" class="headerlink" title="1.创建仓库"></a>1.创建仓库</h2><pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 当前目录作为Git仓库</span>
+<p>目的：全站白嫖jsdelivr的CDN加速（原因：其实<a href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md" target="_blank" rel="noopener external nofollow noreferrer">hexo-theme-matery</a>已经非常友好的为我们配置了CDN加速，因但是由于jsdelivr不对超过50M的进行加速，导致我的部分图片的CSS,JS无法正常加载，所以我就想进行多仓库来部署，是图片，JS和CSS放在不同的仓库，但是在网上没有找到别人造好的轮子( Ĭ ^ Ĭ )，只好自己动手了，顺便学习一下Git的相关使用方法，一举两得φ(&gt;ω&lt;*)</p>
+<h2 id="1-创建仓库">1.创建仓库</h2>
+<pre class=" language-language-python"><code class="language-language-python"># 当前目录作为Git仓库
 git init
-<span class="token comment" spellcheck="true">#当前目录的newrepo文件夹作为Git仓库</span>
-git init newrepo</code></pre>
+#当前目录的newrepo文件夹作为Git仓库
+git init newrepo
+</code></pre>
 <p>如果当前目录下有几个文件想要纳入版本控制，需要先用 git add 命令告诉 Git 开始对这些文件进行跟踪，然后提交：</p>
 <pre><code>$ git add *.c
 $ git add README
-$ git commit -m '初始化项目版本'</code></pre><h3 id="克隆仓库"><a href="#克隆仓库" class="headerlink" title="克隆仓库"></a>克隆仓库</h3><pre><code>git clone &lt;repo&gt; &lt;directory&gt;</code></pre><p><strong>参数说明：</strong></p>
+$ git commit -m '初始化项目版本'
+</code></pre>
+<h3 id="克隆仓库">克隆仓库</h3>
+<pre><code>git clone &lt;repo&gt; &lt;directory&gt;
+</code></pre>
+<p><strong>参数说明：</strong></p>
 <ul>
-<li><strong>repo:</strong>Git 仓库。</li>
-<li><strong>directory:</strong>本地目录。</li>
+<li>**repo:**Git 仓库。</li>
+<li>**directory:**本地目录。</li>
 </ul>
 <p>下面这些写法等价</p>
 <pre><code>git clone http://github.com/CosmosHua/locate new
 git clone http://github.com/CosmosHua/locate.git new
 git clone git://github.com/CosmosHua/locate new
-git clone git://github.com/CosmosHua/locate.git new</code></pre><h2 id="2-Git-基本操作"><a href="#2-Git-基本操作" class="headerlink" title="2.Git 基本操作"></a>2.Git 基本操作</h2><h2 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h2><h2 id="4"><a href="#4" class="headerlink" title="4."></a>4.</h2><h2 id="5-Git-远程仓库-Github及服务器"><a href="#5-Git-远程仓库-Github及服务器" class="headerlink" title="5.Git 远程仓库(Github及服务器)"></a>5.Git 远程仓库(Github及服务器)</h2><h4 id="添加远程库"><a href="#添加远程库" class="headerlink" title="添加远程库"></a>添加远程库</h4><pre><code>git remote add [shortname] [url]</code></pre><pre><code>$ mkdir runoob-git-test                     # 创建测试目录
+git clone git://github.com/CosmosHua/locate.git new
+</code></pre>
+<h2 id="2-Git-基本操作">2.Git 基本操作</h2>
+<h2 id="3">3.</h2>
+<h2 id="4">4.</h2>
+<h2 id="5-Git-远程仓库-Github及服务器">5.Git 远程仓库(Github及服务器)</h2>
+<h4 id="添加远程库">添加远程库</h4>
+<pre><code>git remote add [shortname] [url]
+</code></pre>
+<pre><code>$ mkdir runoob-git-test                     # 创建测试目录
 $ cd runoob-git-test/                       # 进入测试目录
 $ echo "# 菜鸟教程 Git 测试" &gt;&gt; README.md     # 创建 README.md 文件并写入内容
 $ ls                                        # 查看目录下的文件
@@ -612,32 +632,48 @@ $ git commit -m "添加 README.md 文件"        # 提交并备注信息
 
 # 提交到 Github
 $ git remote add origin git@github.com:tianqixin/runoob-git-test.git
-$ git push -u origin master</code></pre><p>github官方的：</p>
-<h5 id="创建储存库"><a href="#创建储存库" class="headerlink" title="创建储存库"></a>创建储存库</h5><pre><code>echo "# pic11" &gt;&gt; README.md
+$ git push -u origin master
+</code></pre>
+<p>github官方的：</p>
+<h5 id="创建储存库">创建储存库</h5>
+<pre><code>echo "# pic11" &gt;&gt; README.md
 git init
 git add README.md
 git commit -m "first commit"
 git remote add origin git@github.com:guhailong18/pic11.git  #改成自己的仓库
-git push -u origin master</code></pre><h5 id="从命令行推送现有存储库"><a href="#从命令行推送现有存储库" class="headerlink" title="从命令行推送现有存储库"></a>从命令行推送现有存储库</h5><pre><code>git remote add origin git@github.com:guhailong18/pic11.git
-git push -u origin master</code></pre><h3 id="看当前配置有哪些远程仓库"><a href="#看当前配置有哪些远程仓库" class="headerlink" title="看当前配置有哪些远程仓库"></a>看当前配置有哪些远程仓库</h3><pre><code>$ git remote
+git push -u origin master
+</code></pre>
+<h5 id="从命令行推送现有存储库">从命令行推送现有存储库</h5>
+<pre><code>git remote add origin git@github.com:guhailong18/pic11.git
+git push -u origin master
+</code></pre>
+<h3 id="看当前配置有哪些远程仓库">看当前配置有哪些远程仓库</h3>
+<pre><code>$ git remote
 origin
 $ git remote -v
 origin    git@github.com:tianqixin/runoob-git-test.git (fetch)
-origin    git@github.com:tianqixin/runoob-git-test.git (push)</code></pre><p>执行时加上 -v 参数，你还可以看到每个别名的实际链接地址。</p>
-<h2 id="报错解决："><a href="#报错解决：" class="headerlink" title="报错解决："></a>报错解决：</h2><p>不知道有没有人像我一样随便弄些东西都能搞出一大堆报错，真的是惨！也可能是我喜欢乱搞东西，希望大家不要像我一样瞎弄，到头来只有一堆报错！</p>
+origin    git@github.com:tianqixin/runoob-git-test.git (push)
+</code></pre>
+<p>执行时加上 -v 参数，你还可以看到每个别名的实际链接地址。</p>
+<h2 id="报错解决：">报错解决：</h2>
+<p>不知道有没有人像我一样随便弄些东西都能搞出一大堆报错，真的是惨！也可能是我喜欢乱搞东西，希望大家不要像我一样瞎弄，到头来只有一堆报错！</p>
 <p><strong>fatal: unable to auto-detect email address</strong></p>
 <p>原因分析：这个是因为没有设置全局邮箱引起的，因为我有多个SSH，所以没有设置</p>
 <p>解决办法：</p>
 <p>找到工程目录的.git文件夹，打开之后找到config文件，在最后边加上一句话</p>
 <pre><code>[user]
 email=your email
-name=your name</code></pre><h3 id="“Connection-closed-by-remote-host”"><a href="#“Connection-closed-by-remote-host”" class="headerlink" title="“Connection closed by remote host”"></a>“Connection closed by remote host”</h3><p>解决办法：</p>
-<p>如果原来是可以用ssh连接的, 突然连接不上通常是连接数过多导致的. </p>
+name=your name
+</code></pre>
+<h3 id="“Connection-closed-by-remote-host”">“Connection closed by remote host”</h3>
+<p>解决办法：</p>
+<p>如果原来是可以用ssh连接的, 突然连接不上通常是连接数过多导致的.</p>
 <p>修改服务器上的这个文件：/etc/ssh/sshd_config 找到这行：</p>
 <ol>
-<li># MaxSessions 10 </li>
+<li># MaxSessions 10</li>
 </ol>
-<h3 id="error-src-refspec-master-does-not-match-any"><a href="#error-src-refspec-master-does-not-match-any" class="headerlink" title="error: src refspec master does not match any"></a>error: src refspec master does not match any</h3><blockquote>
+<h3 id="error-src-refspec-master-does-not-match-any">error: src refspec master does not match any</h3>
+<blockquote>
 <p>引起该错误的原因是，目录中没有文件，空目录是不能提交上去的</p>
 </blockquote>
 <blockquote>
@@ -648,10 +684,12 @@ name=your name</code></pre><h3 id="“Connection-closed-by-remote-host”"><a hr
 git add README 
 git commit -m 'first commit'
 git push origin master
-</code></pre></blockquote>
-<h6 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a><strong>参考链接：</strong></h6><p><a href="https://www.runoob.com/git/git-remote-repo.html" target="_blank" rel="noopener external nofollow noreferrer">https://www.runoob.com/git/git-remote-repo.html</a> （大部分都是从这里<del>抄</del>学来的）</p>
-<script type="text/javascript" src="//guke-1301101972.cos.ap-chengdu.myqcloud.com/source/js/gtag.js"></script>
 
+</code></pre>
+</blockquote>
+<h6 id="参考链接："><strong>参考链接：</strong></h6>
+<p><a href="https://www.runoob.com/git/git-remote-repo.html" target="_blank" rel="noopener external nofollow noreferrer">https://www.runoob.com/git/git-remote-repo.html</a> （大部分都是从这里<s>抄</s>学来的）</p>
+<script type="text/javascript" src="//guke-1301101972.cos.ap-chengdu.myqcloud.com/source/js/gtag.js"></script>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -1189,12 +1227,20 @@ git push origin master
                     <div class="summary block-with-text">
                         
                             
+
 概述
 
-1.2.3.4.5.参考链接：
+
+1.
+2.
+3.
+4.
+5.
+参考链接：
+
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
-            if (!el.d
+            i
                         
                     </div>
                     <div class="publish-info">
@@ -1252,9 +1298,11 @@ git push origin master
                     <div class="summary block-with-text">
                         
                             
+
 概述
 
-目前使用腾讯云COS加速的办法我知道的有两种，一种是直接将静态网站部署在cos，速度非常快，但是需要备案，如果你直接使用那个分配给你的域名也行，就是长的有些过分，像这样，https://cf-1301101972.cos-webs
+
+目前使用腾讯云COS加速的办法我知道的有两种，一种是直接将静态网站部署在cos，速度非常快，但是需要备案，如果你直接使用那个分配给你的域名也行，就是长的有些过分，像这样，https://cf-1301101972.cos-we
                         
                     </div>
                     <div class="publish-info">
