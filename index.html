@@ -186,7 +186,7 @@
           
           <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
           
-          <span>新闻</span>
+          <span>音乐</span>
         </a>
       </li>
       
@@ -218,11 +218,20 @@
       </li>
       
       <li>
-        <a href="/anime">
+        <a href="/bangumis">
           
           <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
           
           <span>动漫</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/news">
+          
+          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>新闻</span>
         </a>
       </li>
       
@@ -349,7 +358,7 @@
 				  
 				   <i class="fa fas fa-music" style="position: absolute;left:28px" ></i>
 			      
-		          <span>新闻</span>
+		          <span>音乐</span>
                   </a>
                 </li>
               
@@ -385,11 +394,21 @@
               
                 <li>   
 				
-                  <a href="/anime " style="margin-left:50px";>
+                  <a href="/bangumis " style="margin-left:50px";>
 				  
 				   <i class="fa fas fa-film" style="position: absolute;left:28px" ></i>
 			      
 		          <span>动漫</span>
+                  </a>
+                </li>
+              
+                <li>   
+				
+                  <a href="/news " style="margin-left:50px";>
+				  
+				   <i class="fa fas fa-film" style="position: absolute;left:28px" ></i>
+			      
+		          <span>新闻</span>
                   </a>
                 </li>
                
@@ -654,14 +673,13 @@ def create_gif(image_list,gif_name,duration=0.5):
                             <div class="title center-align">window好用但不出名的快捷键</div>
                             <div class="description center-align">
                                 
-                                    相信大家在日常使用的操作系统都是windows吧，今天我们就来介绍以下windows十个十分实用的快捷键吧，记得做好笔记哦!(๑╹◡╹)ﾉ"""
-1、快捷锁屏
-win+L
+                                    相信大家在日常使用的操作系统都是windows吧，今天我们就来介绍以下windows十个十分实用的快捷键吧，记得做好笔记哦!(๑╹◡╹)ﾉ”””
+1、快捷锁屏win+L
 2、快捷显示桌面
 win+D
 3、屏幕放大
 win++
-4、新建文件
+4、新建文件夹
                                 
                             </div>
                             <div class="cover-btns">
@@ -814,41 +832,6 @@ def create_gif(image_list,gif_nam</p>
     
 
     
-        
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/libs/aplayer/APlayer.min.css">
-<div class="">
-    
-    <div class="title center-align">
-        <i class="fas fa-music"></i>&nbsp;&nbsp;listen music
-    </div>
-    
-    <div class="row">
-        <div class="col l8 offset-l2 m10 offset-m1 s12">
-            <div id="aplayer" class="music"></div>
-        </div>
-    </div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/libs/aplayer/APlayer.min.js"></script>
-<script>
-$(function () {
-    new APlayer({
-        container: document.getElementById('aplayer'),
-        fixed: 'true' === 'true',
-        autoplay: 'false' === 'true',
-        theme: '#42b983',
-        loop: 'all',
-        order: 'random',
-        preload: 'auto',
-        volume: Number('0.7'),
-        listFolded: 'false' === 'true',
-        listMaxHeight: '',
-        audio: eval([{"name":"纯音乐","artist":"AnimeVibe","url":"https://jxjjxy-my.sharepoint.com/personal/3x67zz_t_odmail_cn/Documents/BGM/%E7%83%AD%E8%A1%80/joseph%20trapanese%20-%20wolf%20warrior%202%20opening%20credits.mp3","cover":"https://p1.pstatp.com/large/pgc-image/1538415307362abbd33b2ed?/1.jpg"},{"name":"嗨起来","artist":"DAISHI DANCE,Cecile Corbel","url":"https://jxjjxy-my.sharepoint.com/personal/3x67zz_t_odmail_cn/Documents/BGM/57486.mp3","cover":"https://www.yremp.live/images/2019/08/18/182655-15467704159d8c95195.jpg"},{"name":"Beautiful girl","artist":"J.Fla","url":"https://jxjjxy-my.sharepoint.com/personal/3x67zz_t_odmail_cn/Documents/BGM/beautiful%20girl.mp3","cover":"https://www.yremp.live/images/2019/08/18/182938-1524911378cd79dc26e.jpg"},{"name":"战歌","artist":"DAISHI DANCE,Cecile Corbel","url":"https://jxjjxy-my.sharepoint.com/personal/3x67zz_t_odmail_cn/Documents/BGM/%E7%83%AD%E8%A1%80/She%20is%20my%20sin.mp3","cover":"https://www.yremp.live/images/2019/08/18/182655-15467704159d8c95195.jpg"},{"name":"亡灵曲","artist":"J.Fla","url":"https://jxjjxy-my.sharepoint.com/personal/3x67zz_t_odmail_cn/Documents/BGM/%E7%83%AD%E8%A1%80/The%20dawn(%E4%BA%A1%E7%81%B5%E5%BA%8F%E6%9B%B2).mp3","cover":"https://www.yremp.live/images/2019/08/18/182938-1524911378cd79dc26e.jpg"}])
-    });
-});
-</script>
-    
 
     
 
@@ -872,20 +855,12 @@ $(function () {
                         <div class="summary block-with-text">
                             
                                 
-
 概述
 
-
-1.
-2.
-3.
-4.
-5.
-参考链接：
-
+1.2.3.4.5.参考链接：
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
-            i
+            if (!el.d
                             
                         </div>
                         <div class="publish-info">
@@ -941,12 +916,10 @@ $(function () {
                         <div class="summary block-with-text">
                             
                                 
-
 概述
 
-
 学习目标: 学会推送指定文件夹到github的指定仓库！
-目的：全站白嫖jsdelivr的CDN加速（原因：其实hexo-theme-matery已经非常友好的为我们配置了CDN加速，因但是由于jsdelivr不对超过50M的
+目的：全站白嫖jsdelivr的CDN加速（原因：其实hexo-theme-matery已经非常友好的为我们配置了CDN加速，因但是由于jsdelivr不对超过50M的进行
                             
                         </div>
                         <div class="publish-info">
@@ -1002,11 +975,9 @@ $(function () {
                         <div class="summary block-with-text">
                             
                                 
-
 概述
 
-
-目前使用腾讯云COS加速的办法我知道的有两种，一种是直接将静态网站部署在cos，速度非常快，但是需要备案，如果你直接使用那个分配给你的域名也行，就是长的有些过分，像这样，https://cf-1301101972.cos-we
+目前使用腾讯云COS加速的办法我知道的有两种，一种是直接将静态网站部署在cos，速度非常快，但是需要备案，如果你直接使用那个分配给你的域名也行，就是长的有些过分，像这样，https://cf-1301101972.cos-webs
                             
                         </div>
                         <div class="publish-info">
@@ -1042,11 +1013,9 @@ $(function () {
                         <div class="summary block-with-text">
                             
                                 
-
 概述
 
-
-在网上看到的教程大部分都是直接用nignx直接操作及部署的，对于我这种编程小白来说极其的不友好，而且有些细节没有说清楚（也有可能是我太蠢了，看不懂大佬的教程(╥╯^╰╥)，导致部署失败或浪费了较多的时间去寻找解决办法，所以在研
+在网上看到的教程大部分都是直接用nignx直接操作及部署的，对于我这种编程小白来说极其的不友好，而且有些细节没有说清楚（也有可能是我太蠢了，看不懂大佬的教程(╥╯^╰╥)，导致部署失败或浪费了较多的时间去寻找解决办法，所以在研究了
                             
                         </div>
                         <div class="publish-info">
@@ -1085,8 +1054,7 @@ $(function () {
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                概述：
-当我们摆弄好了自己的网站后，往往会发现网站的加载速度往往不尽如人意，毕竟是部署在github的国外的网站嘛，特别是图片多的时候，加载速度可能会有好几秒在加载完图片，而整一个网站加载完需要十几秒（其实大部分hexo的主题没有这么久，除
+                                概述：当我们摆弄好了自己的网站后，往往会发现网站的加载速度往往不尽如人意，毕竟是部署在github的国外的网站嘛，特别是图片多的时候，加载速度可能会有好几秒在加载完图片，而整一个网站加载完需要十几秒（其实大部分hexo的主题没有这么久，除非
                             
                         </div>
                         <div class="publish-info">
@@ -1179,14 +1147,13 @@ $(function () {
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                相信大家在日常使用的操作系统都是windows吧，今天我们就来介绍以下windows十个十分实用的快捷键吧，记得做好笔记哦!(๑╹◡╹)ﾉ"""
-1、快捷锁屏
-win+L
+                                相信大家在日常使用的操作系统都是windows吧，今天我们就来介绍以下windows十个十分实用的快捷键吧，记得做好笔记哦!(๑╹◡╹)ﾉ”””
+1、快捷锁屏win+L
 2、快捷显示桌面
 win+D
 3、屏幕放大
 win++
-4、新建文件
+4、新建文件夹
                             
                         </div>
                         <div class="publish-info">
@@ -1242,18 +1209,17 @@ People
 
 
 
-
 ico
 emoji
 ico
 emoji
-
 
 
 
 🤣
 :rofl:
-�
+😄
+
                             
                         </div>
                         <div class="publish-info">
@@ -1288,11 +1254,7 @@ emoji
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                hexo new “name”       # 新建文章
-hexo new page “name” # 新建页面
-hexo g               # 生成页面
-hexo d               # 部署
-hexo g -d
+                                hexo new “name”       # 新建文章hexo new page “name” # 新建页面hexo g               # 生成页面hexo d               # 部署hexo g -d    
                             
                         </div>
                         <div class="publish-info">
@@ -1343,8 +1305,7 @@ hexo g -d
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                1.介绍
-XPath是一个路径选择语言，全称 XML Path Language，支持XML和HTML的选择，类似于正则表达式，但比正则表达式简单并且方便许多！
+                                1.介绍XPath是一个路径选择语言，全称 XML Path Language，支持XML和HTML的选择，类似于正则表达式，但比正则表达式简单并且方便许多！
 下表为XPath的符号解释：
 
 
@@ -1354,8 +1315,7 @@ XPath是一个路径选择语言，全称 XML Path Language，支持XML和HTML�
 
 
 
-
-nodena
+nodename
                             
                         </div>
                         <div class="publish-info">
@@ -1407,12 +1367,9 @@ nodena
                         <div class="summary block-with-text">
                             
                                 由于老是记不住python的list，字典，元组等表示的方法及区别，经常会搞混，所以特地写了这篇文章来加强记忆和复习。
-list(列表)
-符号[]，用‘’包起来，用逗号分开
+list(列表)符号[]，用‘’包起来，用逗号分开
 例子：
-fish = [‘大鱼’,'鱼','小鱼']
-
-tuple
+fish = [‘大鱼’,'鱼','小鱼']tuple(元组
                             
                         </div>
                         <div class="publish-info">
@@ -1536,7 +1493,7 @@ def create_gif(image_list,gif_name,duration=0.5):
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">24.1k</span>&nbsp;字
+                class="white-color">24.2k</span>&nbsp;字
             
             
             

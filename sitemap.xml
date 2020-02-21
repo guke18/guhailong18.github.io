@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://guke.cf/music/index.html</loc>
+    
+    <lastmod>2020-02-21T12:25:58.878Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://guke.cf/anime/index.html</loc>
+    
+    <lastmod>2020-02-21T11:27:23.807Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://guke.cf/bangumis/index.html</loc>
     
     <lastmod>2020-02-21T08:40:03.537Z</lastmod>
@@ -79,7 +93,7 @@
   </url>
   
   <url>
-    <loc>https://guke.cf/music/index.html</loc>
+    <loc>https://guke.cf/news/index.html</loc>
     
     <lastmod>2020-02-19T09:56:01.450Z</lastmod>
     
@@ -404,13 +418,6 @@
     <loc>https://guke.cf/posts/6007b04d/</loc>
     
     <lastmod>2020-01-29T13:11:05.920Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://guke.cf/anime/index.html</loc>
-    
-    <lastmod>2020-01-29T09:30:18.230Z</lastmod>
     
   </url>
   

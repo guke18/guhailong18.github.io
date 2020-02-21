@@ -192,7 +192,7 @@ def create_gif(image_list,gif_name,duration=0.5):
           
           <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
           
-          <span>新闻</span>
+          <span>音乐</span>
         </a>
       </li>
       
@@ -224,11 +224,20 @@ def create_gif(image_list,gif_name,duration=0.5):
       </li>
       
       <li>
-        <a href="/anime">
+        <a href="/bangumis">
           
           <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
           
           <span>动漫</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/news">
+          
+          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>新闻</span>
         </a>
       </li>
       
@@ -355,7 +364,7 @@ def create_gif(image_list,gif_name,duration=0.5):
 				  
 				   <i class="fa fas fa-music" style="position: absolute;left:28px" ></i>
 			      
-		          <span>新闻</span>
+		          <span>音乐</span>
                   </a>
                 </li>
               
@@ -391,11 +400,21 @@ def create_gif(image_list,gif_name,duration=0.5):
               
                 <li>   
 				
-                  <a href="/anime " style="margin-left:50px";>
+                  <a href="/bangumis " style="margin-left:50px";>
 				  
 				   <i class="fa fas fa-film" style="position: absolute;left:28px" ></i>
 			      
 		          <span>动漫</span>
+                  </a>
+                </li>
+              
+                <li>   
+				
+                  <a href="/news " style="margin-left:50px";>
+				  
+				   <i class="fa fas fa-film" style="position: absolute;left:28px" ></i>
+			      
+		          <span>新闻</span>
                   </a>
                 </li>
                
@@ -686,7 +705,7 @@ def create_gif(image_list,gif_name,duration=0.5):
     path：路径
     :return:
     """
-    
+
     frames = []
     for image_name in image_list:
         frames.append(imageio.imread(image_name))
@@ -703,12 +722,9 @@ def main():
 
 #当前程序被当作主程序运行时， __ name__被自动赋值为固定的字符串__main__;当它被当作模块被其他文件调用时，自动被赋值为模块所在的文件名
 if __name__ == '__main__':
-    main()
-</code></pre>
-<p>在这里就顺便记一下if <strong>name</strong> == '<strong>main</strong>’的具体用法及说明（其实我之前真的不是很理解这行代码）</p>
+    main()</code></pre><p>在这里就顺便记一下if <strong>name</strong> == ‘<strong>main</strong>‘的具体用法及说明（其实我之前真的不是很理解这行代码）</p>
 <p><code>__name__本身其实就是一个变量，当前程序被当作主程序运行时， __ name__被自动赋值为固定的字符串__main__;当它被当作模块被其他文件调用时，自动被赋值为模块所在的文件名</code></p>
-<h3 id="报错解决：">报错解决：</h3>
-<p>忽然发现是少打了一个字母，上面的代码是修改过的，请放心使用！(￣▽￣)~*</p>
+<h3 id="报错解决："><a href="#报错解决：" class="headerlink" title="报错解决："></a>报错解决：</h3><p>忽然发现是少打了一个字母，上面的代码是修改过的，请放心使用！(￣▽￣)~*</p>
 <pre><code>import imageio
 import matplotlib.pyplot as plt
 from pygifsicle import optimize
@@ -729,12 +745,9 @@ with imageio.get_writer(gif_path, mode='I') as writer:
     for i in range(n):
         writer.append_data(imageio.imread(frames_path.format(i=i)))
 
-optimize(gif_path)
-</code></pre>
-<p>这是官方的GIF优化的方法！</p>
+optimize(gif_path)</code></pre><p>这是官方的GIF优化的方法！</p>
 <p><strong>其他有趣的操作！</strong></p>
-<h2 id="图片操作">图片操作</h2>
-<p><strong>将指定颜色变透明 只能保存 png jpg</strong></p>
+<h2 id="图片操作"><a href="#图片操作" class="headerlink" title="图片操作"></a>图片操作</h2><p><strong>将指定颜色变透明 只能保存 png jpg</strong></p>
 <pre><code>  /**
      * 将指定颜色变透明 只能保存 png jpg
      *
@@ -770,9 +783,7 @@ optimize(gif_path)
                 rasterDes.setPixel(x, j, des);
             }
         return imageDes;
-    }
-</code></pre>
-<p><strong>按倍率缩小图片</strong></p>
+    }</code></pre><p><strong>按倍率缩小图片</strong></p>
 <pre><code>  /**
      * 按倍率缩小图片
      *
@@ -801,9 +812,7 @@ optimize(gif_path)
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
-</code></pre>
-<p><strong>指定图形的长和宽</strong></p>
+    }</code></pre><p><strong>指定图形的长和宽</strong></p>
 <pre><code> /**
   * 指定图形的长和宽
   *
@@ -830,9 +839,7 @@ optimize(gif_path)
      } catch (Exception e) {
          e.printStackTrace();
      }
- }
-</code></pre>
-<p>更多操作请看：<a href="https://blog.csdn.net/baidu_28665563/article/details/82887485" target="_blank" rel="noopener external nofollow noreferrer">https://blog.csdn.net/baidu_28665563/article/details/82887485</a></p>
+ }</code></pre><p>更多操作请看：<a href="https://blog.csdn.net/baidu_28665563/article/details/82887485" target="_blank" rel="noopener external nofollow noreferrer">https://blog.csdn.net/baidu_28665563/article/details/82887485</a></p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -1370,12 +1377,9 @@ optimize(gif_path)
                     <div class="summary block-with-text">
                         
                             由于老是记不住python的list，字典，元组等表示的方法及区别，经常会搞混，所以特地写了这篇文章来加强记忆和复习。
-list(列表)
-符号[]，用‘’包起来，用逗号分开
+list(列表)符号[]，用‘’包起来，用逗号分开
 例子：
-fish = [‘大鱼’,'鱼','小鱼']
-
-tuple
+fish = [‘大鱼’,'鱼','小鱼']tuple(元组
                         
                     </div>
                     <div class="publish-info">
@@ -1412,21 +1416,15 @@ tuple
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            常用符号
-几乎所有数学公式有需要用$$将其包围。
+                            常用符号几乎所有数学公式有需要用$$将其包围。
 占位符
-
-
 两个quad空格，符号：\qquad，如：$x \qquad y$
-
 
 quad空格，符号：\quad，如：$x \quad y$
 
-
 大空格，符号\，如：$x \  y$
 
-
-
+中空格，符号
                         
                     </div>
                     <div class="publish-info">
@@ -1641,7 +1639,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">24.1k</span>&nbsp;字
+                class="white-color">24.2k</span>&nbsp;字
             
             
             
