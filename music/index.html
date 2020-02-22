@@ -641,14 +641,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    932
+                    1.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    5 分
                 </div>
                 
 
@@ -666,12 +666,12 @@
             <div id="articleContent">
                 <link rel="stylesheet" class="aplayer-secondary-style-marker" href="//guke-1301101972.cos.ap-chengdu.myqcloud.com\assets\css\APlayer.min.css"><script src="//guke-1301101972.cos.ap-chengdu.myqcloud.com\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="//guke-1301101972.cos.ap-chengdu.myqcloud.com\assets\js\Meting.min.js"></script><p>一起来听音乐吧！</p>
 
-        <div id="aplayer-DtIRvnOK" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-uJDbQFSG" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-DtIRvnOK"),
+            element: document.getElementById("aplayer-uJDbQFSG"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -707,9 +707,53 @@
 
 
 
+<hr>
 
+    <div id="cplayer-76542103"></div>
+    <script>
+      (function(){
+        function loadcplayer() {
+          if (typeof window.cplayerList === 'undefined') window.cplayerList = {};
+          if (typeof window.cplayerList["cplayer-76542103"] !== 'undefined') return;
+          if (!cplayer.prototype.add163) cplayer.prototype.add163 = function add163(id) {
+            if (!id) throw new Error("Unable Property.");
+            return fetch("https://music.huaji8.top/?id=" + id).then(function(res){return res.json()}).then(function(data){
+              let obj = {
+                name: data.info.songs[0].name,
+                artist: data.info.songs[0].ar.map(function(ar){ return ar.name }).join(','),
+                poster: data.pic.url,
+                lyric: data.lyric.lyric,
+                sublyric: data.lyric.tlyric,
+                src: data.url.url
+              }
+              this.add(obj);
+              return obj;
+            }.bind(this))
+          }
 
+          window.cplayerList["cplayer-76542103"] = new cplayer({
+            element: document.getElementById("cplayer-76542103"),
+            playlist: [{"name":"チルドレンレコード","artist":"96猫,伊東歌詞太郎","poster":"https://cplayer.js.org/801422833716a4f0f96ff6dff1f77dfe.jpg","src":"https://cplayer.js.org/8af423669c27d265bb129d04a927044f.mp3"}],
+            generateBeforeElement: true,
+            deleteElementAfterGenerate: true,
+            autoplay: true
+          });
 
+          window.cplayerList["cplayer-76542103"].add163(27955597)
+        }
+        
+        if (typeof window.cplayer === 'undefined' && !document.getElementById("cplayer-script")) {
+          var js = document.createElement("script");
+          js.src = 'https://cdn.jsdelivr.net/gh/MoePlayer/cPlayer/dist/cplayer.js';
+          js.id = "cplayer-script";
+          js.addEventListener("load", loadcplayer);
+          document.body.appendChild(js);
+        } else {
+          window.addEventListener("load", loadcplayer);
+        }
+      })()
+    </script>
+	
 
 
 
@@ -756,7 +800,7 @@
 
 &lt;!-- 进阶示例 --&gt;
 {% meting "60198" "netease" "playlist" "autoplay" "mutex:false" "listmaxheight:340px" "preload:none" "theme:#ad7a86"%}</code></pre><p><code>
-    </code></p><div id="aplayer-ukAvHmhg" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="undefined" data-server="undefined" data-type="undefined" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"></div> 的选项列表如下:<p></p>
+    </code></p><div id="aplayer-XAJUQaIB" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="undefined" data-server="undefined" data-type="undefined" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"></div> 的选项列表如下:<p></p>
 <table>
 <thead>
 <tr>
@@ -856,7 +900,38 @@
   meting_api: http://xxx/api.php                # 自定义 Meting API 地址
   meting_cdn: http://xxx/Meing.min.js           # 引用 Meting.js 外部 CDN 地址 (默认不开启)
   asset_inject: true                            # 自动插入 Aplayer.js 与 Meting.js 资源脚本, 默认开启
-  externalLink: http://xxx/aplayer.min.js       # 老版本参数，功能与参数 cdn 相同</code></pre><script>
+  externalLink: http://xxx/aplayer.min.js       # 老版本参数，功能与参数 cdn 相同</code></pre><h2 id="另一个插件的使用："><a href="#另一个插件的使用：" class="headerlink" title="另一个插件的使用："></a><a href="https://github.com/EYHN/hexo-tag-cplayer/blob/master/readme-zh-CN.md" target="_blank" rel="noopener external nofollow noreferrer">另一个插件的使用：</a></h2><pre><code>{% cplayer [autoplay] [yaml|cson|json] %}
+# type your config here
+{% endcplayer %}</code></pre><h3 id="示例："><a href="#示例：" class="headerlink" title="示例："></a>示例：</h3><p><a href="https://github.com/yaml/yaml" target="_blank" rel="noopener external nofollow noreferrer">YAML</a>:</p>
+<pre><code>{% cplayer autoplay %}
+- name: チルドレンレコード # 名字
+  artist: 96猫,伊東歌詞太郎 # 艺术家
+  poster: https://cplayer.js.org/801422833716a4f0f96ff6dff1f77dfe.jpg # 音乐海报
+  src: https://cplayer.js.org/8af423669c27d265bb129d04a927044f.mp3 # 音乐资源链接
+- 27955597 # 网易云音乐 ID
+{% endcplayer %}</code></pre><p><a href="https://github.com/bevry/cson" target="_blank" rel="noopener external nofollow noreferrer">CSON</a>:</p>
+<pre><code>{% cplayer autoplay cson %}
+[
+  {
+    name: "チルドレンレコード"
+    artist: "96猫,伊東歌詞太郎"
+    poster:"https://cplayer.js.org/801422833716a4f0f96ff6dff1f77dfe.jpg"
+    src:"https://cplayer.js.org/8af423669c27d265bb129d04a927044f.mp3"
+  }
+  27955597
+]
+{% endcplayer %}</code></pre><p><a href="http://www.json.org/" target="_blank" rel="noopener external nofollow noreferrer">JSON</a>:</p>
+<pre><code>{% cplayer autoplay json %}
+[
+  {
+    "name": "チルドレンレコード",
+    "artist": "96猫,伊東歌詞太郎",
+    "poster":"https://cplayer.js.org/801422833716a4f0f96ff6dff1f77dfe.jpg",
+    "src":"https://cplayer.js.org/8af423669c27d265bb129d04a927044f.mp3"
+  },
+  27955597
+]
+{% endcplayer %}</code></pre><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
