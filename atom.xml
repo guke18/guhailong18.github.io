@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://guke.cf/"/>
-  <updated>2020-02-22T05:22:06.519Z</updated>
+  <updated>2020-02-20T11:34:46.652Z</updated>
   <id>https://guke.cf/</id>
   
   <author>
@@ -15,31 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>upupoo壁纸分享</title>
-    <link href="https://guke.cf/posts/XYJH99/"/>
-    <id>https://guke.cf/posts/XYJH99/</id>
-    <published>2020-02-22T03:38:46.348Z</published>
-    <updated>2020-02-22T05:22:06.519Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="分享" scheme="https://guke.cf/tags/%E5%88%86%E4%BA%AB/"/>
-    
-  </entry>
   
   <entry>
     <title>python之验证码的识别</title>
@@ -291,7 +266,7 @@
     <link href="https://guke.cf/posts/c7a2ca76/"/>
     <id>https://guke.cf/posts/c7a2ca76/</id>
     <published>2020-02-13T08:20:59.000Z</published>
-    <updated>2020-02-21T02:04:09.250Z</updated>
+    <updated>2020-02-22T14:16:18.966Z</updated>
     
     <summary type="html">
     
@@ -309,9 +284,19 @@
       <category term="python" scheme="https://guke.cf/categories/python/"/>
     
     
+      <category term="爬虫" scheme="https://guke.cf/tags/%E7%88%AC%E8%99%AB/"/>
+    
+      <category term="笔记" scheme="https://guke.cf/tags/%E7%AC%94%E8%AE%B0/"/>
+    
       <category term="python" scheme="https://guke.cf/tags/python/"/>
     
       <category term="XPATH" scheme="https://guke.cf/tags/XPATH/"/>
+    
+      <category term="古客" scheme="https://guke.cf/tags/%E5%8F%A4%E5%AE%A2/"/>
+    
+      <category term="book" scheme="https://guke.cf/tags/book/"/>
+    
+      <category term="spider" scheme="https://guke.cf/tags/spider/"/>
     
   </entry>
   
@@ -575,6 +560,37 @@
       <category term="pyecharts" scheme="https://guke.cf/tags/pyecharts/"/>
     
       <category term="画图" scheme="https://guke.cf/tags/%E7%94%BB%E5%9B%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>三大深度学习框架的简单了解</title>
+    <link href="https://guke.cf/posts/509d8bd2/"/>
+    <id>https://guke.cf/posts/509d8bd2/</id>
+    <published>2020-02-06T12:34:08.000Z</published>
+    <updated>2020-02-09T11:44:45.871Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="深度学习" scheme="https://guke.cf/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="深度学习" scheme="https://guke.cf/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="笔记" scheme="https://guke.cf/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="框架" scheme="https://guke.cf/tags/%E6%A1%86%E6%9E%B6/"/>
     
   </entry>
   
