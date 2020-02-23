@@ -45,6 +45,8 @@
     
       <category term="验证码" scheme="https://guke.cf/tags/%E9%AA%8C%E8%AF%81%E7%A0%81/"/>
     
+      <category term="古客" scheme="https://guke.cf/tags/%E5%8F%A4%E5%AE%A2/"/>
+    
   </entry>
   
   <entry>
@@ -72,9 +74,15 @@
     
       <category term="笔记" scheme="https://guke.cf/tags/%E7%AC%94%E8%AE%B0/"/>
     
+      <category term="python" scheme="https://guke.cf/tags/python/"/>
+    
       <category term="git" scheme="https://guke.cf/tags/git/"/>
     
       <category term="learn" scheme="https://guke.cf/tags/learn/"/>
+    
+      <category term="学习" scheme="https://guke.cf/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="古客" scheme="https://guke.cf/tags/%E5%8F%A4%E5%AE%A2/"/>
     
   </entry>
   
@@ -98,6 +106,8 @@
     </summary>
     
     
+    
+      <category term="古客" scheme="https://guke.cf/tags/%E5%8F%A4%E5%AE%A2/"/>
     
   </entry>
   
@@ -124,6 +134,10 @@
       <category term="宝塔" scheme="https://guke.cf/categories/%E5%AE%9D%E5%A1%94/"/>
     
     
+      <category term="古客" scheme="https://guke.cf/tags/%E5%8F%A4%E5%AE%A2/"/>
+    
+      <category term="编程" scheme="https://guke.cf/tags/%E7%BC%96%E7%A8%8B/"/>
+    
   </entry>
   
   <entry>
@@ -149,11 +163,19 @@
       <category term="分享美好" scheme="https://guke.cf/categories/%E5%88%86%E4%BA%AB%E7%BE%8E%E5%A5%BD/"/>
     
     
+      <category term="爬虫" scheme="https://guke.cf/tags/%E7%88%AC%E8%99%AB/"/>
+    
       <category term="CDN" scheme="https://guke.cf/tags/CDN/"/>
     
       <category term="免备案" scheme="https://guke.cf/tags/%E5%85%8D%E5%A4%87%E6%A1%88/"/>
     
       <category term="免费" scheme="https://guke.cf/tags/%E5%85%8D%E8%B4%B9/"/>
+    
+      <category term="古客" scheme="https://guke.cf/tags/%E5%8F%A4%E5%AE%A2/"/>
+    
+      <category term="分享" scheme="https://guke.cf/tags/%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="Java" scheme="https://guke.cf/tags/Java/"/>
     
   </entry>
   
@@ -177,6 +199,8 @@
     </summary>
     
     
+    
+      <category term="古客" scheme="https://guke.cf/tags/%E5%8F%A4%E5%AE%A2/"/>
     
   </entry>
   
@@ -203,9 +227,13 @@
       <category term="windows" scheme="https://guke.cf/categories/windows/"/>
     
     
+      <category term="笔记" scheme="https://guke.cf/tags/%E7%AC%94%E8%AE%B0/"/>
+    
       <category term="windows" scheme="https://guke.cf/tags/windows/"/>
     
       <category term="快捷键" scheme="https://guke.cf/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    
+      <category term="古客" scheme="https://guke.cf/tags/%E5%8F%A4%E5%AE%A2/"/>
     
   </entry>
   
@@ -229,6 +257,8 @@
     </summary>
     
     
+    
+      <category term="古客" scheme="https://guke.cf/tags/%E5%8F%A4%E5%AE%A2/"/>
     
   </entry>
   
@@ -258,6 +288,8 @@
       <category term="hexo" scheme="https://guke.cf/tags/hexo/"/>
     
       <category term="教程" scheme="https://guke.cf/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="古客" scheme="https://guke.cf/tags/%E5%8F%A4%E5%AE%A2/"/>
     
   </entry>
   
@@ -321,6 +353,10 @@
     
     
     
+      <category term="python" scheme="https://guke.cf/tags/python/"/>
+    
+      <category term="古客" scheme="https://guke.cf/tags/%E5%8F%A4%E5%AE%A2/"/>
+    
   </entry>
   
   <entry>
@@ -352,6 +388,8 @@
     
       <category term="GIF" scheme="https://guke.cf/tags/GIF/"/>
     
+      <category term="古客" scheme="https://guke.cf/tags/%E5%8F%A4%E5%AE%A2/"/>
+    
   </entry>
   
   <entry>
@@ -381,6 +419,8 @@
     
       <category term="数学公式" scheme="https://guke.cf/tags/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/"/>
     
+      <category term="数学" scheme="https://guke.cf/tags/%E6%95%B0%E5%AD%A6/"/>
+    
   </entry>
   
   <entry>
@@ -409,6 +449,12 @@
       <category term="2020" scheme="https://guke.cf/tags/2020/"/>
     
       <category term="深度学习" scheme="https://guke.cf/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="学习" scheme="https://guke.cf/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="数学" scheme="https://guke.cf/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="编程" scheme="https://guke.cf/tags/%E7%BC%96%E7%A8%8B/"/>
     
   </entry>
   
@@ -561,6 +607,10 @@
     
       <category term="画图" scheme="https://guke.cf/tags/%E7%94%BB%E5%9B%BE/"/>
     
+      <category term="学习" scheme="https://guke.cf/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="book" scheme="https://guke.cf/tags/book/"/>
+    
   </entry>
   
   <entry>
@@ -590,7 +640,19 @@
     
       <category term="笔记" scheme="https://guke.cf/tags/%E7%AC%94%E8%AE%B0/"/>
     
+      <category term="python" scheme="https://guke.cf/tags/python/"/>
+    
       <category term="框架" scheme="https://guke.cf/tags/%E6%A1%86%E6%9E%B6/"/>
+    
+      <category term="学习" scheme="https://guke.cf/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="数学" scheme="https://guke.cf/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="编程" scheme="https://guke.cf/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="book" scheme="https://guke.cf/tags/book/"/>
+    
+      <category term="Java" scheme="https://guke.cf/tags/Java/"/>
     
   </entry>
   

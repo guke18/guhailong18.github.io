@@ -70,8 +70,8 @@ def getData(baseurl):
     <script data-ad-client="ca-pub-7903599946607415" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/speedup2/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="//guke-1301101972.cos.ap-chengdu.myqcloud.com/atom.xml" title="古客" type="application/atom+xml">
-<link rel="stylesheet" href="//guke-1301101972.cos.ap-chengdu.myqcloud.com/css/prism-tomorrow.css" type="text/css"><link rel="stylesheet" href="//guke-1301101972.cos.ap-chengdu.myqcloud.com/css/prism-tomorrow.css" type="text/css"></head>
+<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="古客" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 <body>
@@ -614,9 +614,21 @@ def getData(baseurl):
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E7%88%AC%E8%99%AB/">
+                                <span class="chip bg-color">爬虫</span>
+                            </a>
+                        
+                            <a href="/tags/%E7%BC%96%E7%A8%8B/">
+                                <span class="chip bg-color">编程</span>
+                            </a>
+                        
+                            <a href="/tags/book/">
+                                <span class="chip bg-color">book</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -642,7 +654,7 @@ def getData(baseurl):
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    616
+                    617
                 </div>
                 
 
@@ -665,7 +677,7 @@ def getData(baseurl):
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <link rel="stylesheet" class="aplayer-secondary-style-marker" href="//guke-1301101972.cos.ap-chengdu.myqcloud.com\assets\css\APlayer.min.css"><script src="//guke-1301101972.cos.ap-chengdu.myqcloud.com\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="//guke-1301101972.cos.ap-chengdu.myqcloud.com\assets\js\Meting.min.js"></script><p>所需包：bs4，openpyxl</p>
+                <p>所需包：bs4，openpyxl</p>
 <p>上代码：</p>
 <pre><code>def getData(baseurl):
     findLink=re.compile(r'&lt;a href="(.*?)"&gt;')#找到影片详情链接
@@ -681,7 +693,9 @@ def getData(baseurl):
     findBd=re.compile(r'&lt;p class=""&gt;(.*?)&lt;/p&gt;',re.S)
     #去掉无关内容
     remove=re.compile(r'                            |\n|&lt;/br&gt;|\.*')
-    datalist=[]</code></pre><pre><code>for i in range(0,10):
+    datalist=[]
+</code></pre>
+<pre><code>for i in range(0,10):
     url=baseurl+str(i*25)
     html=askURL(url)
     soup = BeautifulSoup(html, "html.parser")
@@ -709,7 +723,7 @@ def getData(baseurl):
         judgeNum=re.findall(findJudge,item)[0]
         data.append(judgeNum)#添加评论人数
         inq=re.findall(findInq,item)
-
+        
         #可能没有概况
         if len(inq)!=0:
             inq=inq[0].replace("。","")#去掉句号
@@ -722,12 +736,26 @@ def getData(baseurl):
         bd=re.sub('/', " ",bd)#替换/
         data.append(bd.strip())
         datalist.append(data)
-
+        
 time.sleep(5)
-return datalist</code></pre><p>def saveData(datalist,savepath):<br>    book=openpyxl.Workbook()<br>    sheet = book.create_sheet(“豆瓣电影Top250”)<br>    #sheet=book.add_sheet(‘豆瓣电影Top250’,cell_overwrite_ok=True)<br>    col=(‘电影详情链接’,’图片链接’,’影片中文名’,’影片外国名’, ‘评分’,’评价数’,’概况’,’相关信息’)</p>
-<pre><code>sheet.append(col)  #添加列头</code></pre><p>​<br>    for i in range(0,250):<br>        data=datalist[i]<br>        for j in range(0,8):<br>            sheet.cell(row = (i+2),column = (j+1),value = data[j]) </p>
-<p>#openpyxl中的单元格计数从1开始, 加上第一行是列头, 要多跳一个<br>#openpyxl中的计数和Excel内的计数方式一致, 但和常规编程从0开始的方式相左</p>
-<pre><code>book.save(savepath) #保存</code></pre><script>
+return datalist
+</code></pre>
+<p>def saveData(datalist,savepath):<br>
+book=openpyxl.Workbook()<br>
+sheet = book.create_sheet(“豆瓣电影Top250”)<br>
+#sheet=book.add_sheet(‘豆瓣电影Top250’,cell_overwrite_ok=True)<br>
+col=(‘电影详情链接’,‘图片链接’,‘影片中文名’,‘影片外国名’, ‘评分’,‘评价数’,‘概况’,‘相关信息’)</p>
+<pre><code>sheet.append(col)  #添加列头
+</code></pre>
+<p>​<br>
+for i in range(0,250):<br>
+data=datalist[i]<br>
+for j in range(0,8):<br>
+sheet.cell(row = (i+2),column = (j+1),value = data[j])</p>
+<p>#openpyxl中的单元格计数从1开始, 加上第一行是列头, 要多跳一个<br>
+#openpyxl中的计数和Excel内的计数方式一致, 但和常规编程从0开始的方式相左</p>
+<pre><code>book.save(savepath) #保存</code></pre>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -807,7 +835,19 @@ return datalist</code></pre><p>def saveData(datalist,savepath):<br>    book=open
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E7%88%AC%E8%99%AB/">
+                                    <span class="chip bg-color">爬虫</span>
+                                </a>
+                            
+                                <a href="/tags/%E7%BC%96%E7%A8%8B/">
+                                    <span class="chip bg-color">编程</span>
+                                </a>
+                            
+                                <a href="/tags/book/">
+                                    <span class="chip bg-color">book</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -1251,8 +1291,11 @@ return datalist</code></pre><p>def saveData(datalist,savepath):<br>    book=open
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            部分概念及专有名词成本函数:个衡量模型准确率的指标，衡量依据为此模型估计X与Y间关系的能力。（来衡量AI输出与实际输出(历史数据)之间的差异，0为最好的）降低方法：1.梯度下降
-一种求函数最小值的方法。通过每次数据集迭代之后优化模型的权重来
+                            部分概念及专有名词
+成本函数:个衡量模型准确率的指标，衡量依据为此模型估计X与Y间关系的能力。（来衡量AI输出与实际输出(历史数据)之间的差异，0为最好的）
+降低方法：
+1.梯度下降
+一种求函数最小值的方法。通过每次数据集迭代之后优化模型的
                         
                     </div>
                     <div class="publish-info">
@@ -1266,6 +1309,14 @@ return datalist</code></pre><p>def saveData(datalist,savepath):<br>    book=open
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%AD%A6%E4%B9%A0/">
+                        <span class="chip bg-color">学习</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1295,7 +1346,8 @@ return datalist</code></pre><p>def saveData(datalist,savepath):<br>    book=open
 pip3 install chatterbot
 pip3 install chatterbot-corpus
 
-  
+
+ 
                         
                     </div>
                     <div class="publish-info">
@@ -1317,12 +1369,12 @@ pip3 install chatterbot-corpus
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/github/">
-                        <span class="chip bg-color">github</span>
-                    </a>
-                    
                     <a href="/tags/%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA/">
                         <span class="chip bg-color">聊天机器人</span>
+                    </a>
+                    
+                    <a href="/tags/github/">
+                        <span class="chip bg-color">github</span>
                     </a>
                     
                 </div>
@@ -1511,7 +1563,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">25.3k</span>&nbsp;字
+                class="white-color">25.6k</span>&nbsp;字
             
             
             
@@ -1652,7 +1704,7 @@ $(function () {
     <script>
 	(function(){
 	var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
-	document.write('<script src="//guke-1301101972.cos.ap-chengdu.myqcloud.com' + src + '" id="sozz"><\/script>');
+	document.write('<script src="' + src + '" id="sozz"><\/script>');
 	})();
 	</script>
 	<script>
@@ -1742,7 +1794,7 @@ ga('send', 'pageview');
 <script>
 (function(){
 var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
-document.write('<script src="//guke-1301101972.cos.ap-chengdu.myqcloud.com' + src + '" id="sozz"><\/script>');
+document.write('<script src="' + src + '" id="sozz"><\/script>');
 })();
 </script>
 
@@ -1830,6 +1882,6 @@ document.write('<script src="//guke-1301101972.cos.ap-chengdu.myqcloud.com' + sr
 	  })
 	</script>
 
-<script src="//guke-1301101972.cos.ap-chengdu.myqcloud.com/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/z16.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/z16.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 
 </html>

@@ -5,8 +5,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="matery主题美化, 动漫,编程,数学,读书,古客,IT,python,book,music,spider,爬虫,笔记,share,分享,学习">
-    <meta name="description" content="修改页面配色查找方法基本就是打开chrome浏览器的检查,选择想要查看的页面元素,然后看他的Style文件,找到关键词之后去hexo-theme-matery主题的css文件中查找后修改即可
-打开 matery/source/css/mat">
+    <meta name="description" content="修改页面配色
+查找方法基本就是打开chrome浏览器的检查,选择想要查看的页面元素,然后看他的Style文件,找到关键词之后去hexo-theme-matery主题的css文件中查找后修改即可
+打开 matery/source/css/ma">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -67,8 +68,8 @@
     <script data-ad-client="ca-pub-7903599946607415" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/speedup2/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="//guke-1301101972.cos.ap-chengdu.myqcloud.com/atom.xml" title="古客" type="application/atom+xml">
-<link rel="stylesheet" href="//guke-1301101972.cos.ap-chengdu.myqcloud.com/css/prism-tomorrow.css" type="text/css"><link rel="stylesheet" href="//guke-1301101972.cos.ap-chengdu.myqcloud.com/css/prism-tomorrow.css" type="text/css"></head>
+<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="古客" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 <body>
@@ -647,7 +648,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    479
+                    480
                 </div>
                 
 
@@ -670,9 +671,12 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <link rel="stylesheet" class="aplayer-secondary-style-marker" href="//guke-1301101972.cos.ap-chengdu.myqcloud.com\assets\css\APlayer.min.css"><script src="//guke-1301101972.cos.ap-chengdu.myqcloud.com\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="//guke-1301101972.cos.ap-chengdu.myqcloud.com\assets\js\Meting.min.js"></script><h2 id="修改页面配色"><a href="#修改页面配色" class="headerlink" title="修改页面配色"></a>修改页面配色</h2><p>查找方法基本就是打开chrome浏览器的检查,选择想要查看的页面元素,然后看他的Style文件,找到关键词之后去hexo-theme-matery主题的css文件中查找后修改即可</p>
-<p>打开 <code>matery/source/css/matery.css</code> 文件 搜索 <code>.bg-color</code> 大概在198行<br>修改<code>background-image</code>属性中<code>linear-gradient</code>内的值即可改成你自己想要的颜色。</p>
-<h2 id="添加文章显示作者名字"><a href="#添加文章显示作者名字" class="headerlink" title="添加文章显示作者名字"></a>添加文章显示作者名字</h2><pre><code>---------------------- layout/_partial/post-detail.ejs -----------------------
+                <h2 id="修改页面配色">修改页面配色</h2>
+<p>查找方法基本就是打开chrome浏览器的检查,选择想要查看的页面元素,然后看他的Style文件,找到关键词之后去hexo-theme-matery主题的css文件中查找后修改即可</p>
+<p>打开 <code>matery/source/css/matery.css</code> 文件 搜索 <code>.bg-color</code> 大概在198行<br>
+修改<code>background-image</code>属性中<code>linear-gradient</code>内的值即可改成你自己想要的颜色。</p>
+<h2 id="添加文章显示作者名字">添加文章显示作者名字</h2>
+<pre><code>---------------------- layout/_partial/post-detail.ejs -----------------------
 
 &lt;div class="info-break-policy"&gt;
     &lt;% if (page.author &amp;&amp; page.author.length &gt; 0) { %&gt;
@@ -680,33 +684,38 @@
      &lt;% } else { %&gt;
     &lt;i class="fa fa-pencil"&gt;&lt;/i&gt; 作者: &lt;%- config.author %&gt;
     &lt;% } %&gt;
-&lt;/div&gt;</code></pre><h2 id="添加一言"><a href="#添加一言" class="headerlink" title="添加一言"></a>添加一言</h2><p>如果需要出处的话可以使用以下代码，不过应该有更简便的写法，不过id的参数我调了好几次都没成功。</p>
+&lt;/div&gt;
+</code></pre>
+<h2 id="添加一言">添加一言</h2>
+<p>如果需要出处的话可以使用以下代码，不过应该有更简便的写法，不过id的参数我调了好几次都没成功。</p>
 <pre><code>--------------------------- layout/_widget/dream.ejs ---------------------------
 
 &lt;div class="row"&gt;
    &lt;div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text"&gt;
-    &lt;div id="hitokoto"&gt;:D 获取中...&lt;/div&gt;
-    &lt;i id="hitofrom"&gt;:D 获取中...&lt;/i&gt;
-    &lt;script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"&gt;&lt;/script&gt;
-    &lt;script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"&gt;&lt;/script&gt;
-    &lt;script&gt;
-    fetch('https://v1.hitokoto.cn')
-        .then(function (res){
-        return res.json();
-        })
-        .then(function (data) {
-        var hitokoto = document.getElementById('hitokoto');
-        hitokoto.innerText = '\xa0\xa0\xa0\xa0\xa0\xa0\xa0' + data.hitokoto;
-        var hitofrom = document.getElementById('hitofrom');
-        hitofrom.innerText = "——" + "《" + data.from + "》" + '\xa0'; 
-        })
-        .catch(function (err) {
-        console.error(err);
-        })
-    &lt;/script&gt;
+	&lt;div id="hitokoto"&gt;:D 获取中...&lt;/div&gt;
+	&lt;i id="hitofrom"&gt;:D 获取中...&lt;/i&gt;
+	&lt;script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"&gt;&lt;/script&gt;
+	&lt;script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"&gt;&lt;/script&gt;
+	&lt;script&gt;
+	fetch('https://v1.hitokoto.cn')
+		.then(function (res){
+		return res.json();
+		})
+		.then(function (data) {
+		var hitokoto = document.getElementById('hitokoto');
+		hitokoto.innerText = '\xa0\xa0\xa0\xa0\xa0\xa0\xa0' + data.hitokoto;
+		var hitofrom = document.getElementById('hitofrom');
+		hitofrom.innerText = "——" + "《" + data.from + "》" + '\xa0'; 
+		})
+		.catch(function (err) {
+		console.error(err);
+		})
+	&lt;/script&gt;
    &lt;/div&gt;
  &lt;/div&gt;
-</code></pre><p>算了，大家直接从以下两个链接参考就行：</p>
+
+</code></pre>
+<p>算了，大家直接从以下两个链接参考就行：</p>
 <p><a href="https://chen-shang.github.io/2019/08/15/ji-zhu-zong-jie/hexo/hexo-theme-matery-zhu-ti-you-hua/#toc-heading-8" target="_blank" rel="noopener external nofollow noreferrer">推荐，全都可以使用</a></p>
 <p><a href="https://www.jianshu.com/p/2e6ae2123d57" target="_blank" rel="noopener external nofollow noreferrer">部分过时，仅供参考</a></p>
 <p>颜色选择可以从下面找：</p>
@@ -1318,6 +1327,22 @@ e=&gt;end: End:&gt
                         <span class="chip bg-color">Hexo</span>
                     </a>
                     
+                    <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">笔记</span>
+                    </a>
+                    
+                    <a href="/tags/book/">
+                        <span class="chip bg-color">book</span>
+                    </a>
+                    
+                    <a href="/tags/music/">
+                        <span class="chip bg-color">music</span>
+                    </a>
+                    
+                    <a href="/tags/share/">
+                        <span class="chip bg-color">share</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1504,7 +1529,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">25.3k</span>&nbsp;字
+                class="white-color">25.6k</span>&nbsp;字
             
             
             
@@ -1645,7 +1670,7 @@ $(function () {
     <script>
 	(function(){
 	var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
-	document.write('<script src="//guke-1301101972.cos.ap-chengdu.myqcloud.com' + src + '" id="sozz"><\/script>');
+	document.write('<script src="' + src + '" id="sozz"><\/script>');
 	})();
 	</script>
 	<script>
@@ -1735,7 +1760,7 @@ ga('send', 'pageview');
 <script>
 (function(){
 var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
-document.write('<script src="//guke-1301101972.cos.ap-chengdu.myqcloud.com' + src + '" id="sozz"><\/script>');
+document.write('<script src="' + src + '" id="sozz"><\/script>');
 })();
 </script>
 
@@ -1823,6 +1848,6 @@ document.write('<script src="//guke-1301101972.cos.ap-chengdu.myqcloud.com' + sr
 	  })
 	</script>
 
-<script src="//guke-1301101972.cos.ap-chengdu.myqcloud.com/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/z16.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/z16.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 
 </html>

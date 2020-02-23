@@ -5,11 +5,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="宝塔面板常用指令, 动漫,编程,数学,读书,古客,IT,python,book,music,spider,爬虫,笔记,share,分享,学习">
-    <meta name="description" content="SSH终端输入：1.查看面板入口：
-/etc/init.d/bt default2.关闭安全入口：
-rm -f /www/server/panel/data/admin_path.pl停止
-/etc/init.d/bt stop启动
-/et">
+    <meta name="description" content="SSH终端输入：
+1.查看面板入口：
+/etc/init.d/bt default
+
+2.关闭安全入口：
+rm -f /www/server/panel/data/admin_path.pl
+
+停止
+/etc/init.d/bt stop
+">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -70,8 +75,8 @@ rm -f /www/server/panel/data/admin_path.pl停止
     <script data-ad-client="ca-pub-7903599946607415" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/speedup2/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="//guke-1301101972.cos.ap-chengdu.myqcloud.com/atom.xml" title="古客" type="application/atom+xml">
-<link rel="stylesheet" href="//guke-1301101972.cos.ap-chengdu.myqcloud.com/css/prism-tomorrow.css" type="text/css"><link rel="stylesheet" href="//guke-1301101972.cos.ap-chengdu.myqcloud.com/css/prism-tomorrow.css" type="text/css"></head>
+<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="古客" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 <body>
@@ -616,6 +621,10 @@ rm -f /www/server/panel/data/admin_path.pl停止
                     
                     <div class="article-tag">
                         
+                            <a href="/tags/python/">
+                                <span class="chip bg-color">python</span>
+                            </a>
+                        
                             <a href="/tags/%E5%91%BD%E4%BB%A4%EF%BC%8C%E5%AE%9D%E5%A1%94/">
                                 <span class="chip bg-color">命令，宝塔</span>
                             </a>
@@ -646,7 +655,7 @@ rm -f /www/server/panel/data/admin_path.pl停止
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    496
+                    500
                 </div>
                 
 
@@ -669,40 +678,97 @@ rm -f /www/server/panel/data/admin_path.pl停止
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <link rel="stylesheet" class="aplayer-secondary-style-marker" href="//guke-1301101972.cos.ap-chengdu.myqcloud.com\assets\css\APlayer.min.css"><script src="//guke-1301101972.cos.ap-chengdu.myqcloud.com\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="//guke-1301101972.cos.ap-chengdu.myqcloud.com\assets\js\Meting.min.js"></script><h3 id="SSH终端输入："><a href="#SSH终端输入：" class="headerlink" title="SSH终端输入："></a>SSH终端输入：</h3><p>1.查看面板入口：</p>
-<pre><code>/etc/init.d/bt default</code></pre><p>2.关闭安全入口：</p>
-<pre><code>rm -f /www/server/panel/data/admin_path.pl</code></pre><p>停止</p>
-<pre><code>/etc/init.d/bt stop</code></pre><p>启动</p>
-<pre><code>/etc/init.d/bt start</code></pre><p>重启</p>
-<pre><code>/etc/init.d/bt restart</code></pre><p>卸载</p>
-<pre><code>/etc/init.d/bt stop &amp;&amp; chkconfig --del bt &amp;&amp; rm -f /etc/init.d/bt &amp;&amp; rm -rf /www/server/panel</code></pre><p>查看当前面板端口</p>
-<pre><code>cat /www/server/panel/data/port.pl</code></pre><p>修改面板端口，如要改成8881（centos 6 系统）</p>
+                <h3 id="SSH终端输入：">SSH终端输入：</h3>
+<p>1.查看面板入口：</p>
+<pre><code>/etc/init.d/bt default
+</code></pre>
+<p>2.关闭安全入口：</p>
+<pre><code>rm -f /www/server/panel/data/admin_path.pl
+</code></pre>
+<p>停止</p>
+<pre><code>/etc/init.d/bt stop
+</code></pre>
+<p>启动</p>
+<pre><code>/etc/init.d/bt start
+</code></pre>
+<p>重启</p>
+<pre><code>/etc/init.d/bt restart
+</code></pre>
+<p>卸载</p>
+<pre><code>/etc/init.d/bt stop &amp;&amp; chkconfig --del bt &amp;&amp; rm -f /etc/init.d/bt &amp;&amp; rm -rf /www/server/panel
+</code></pre>
+<p>查看当前面板端口</p>
+<pre><code>cat /www/server/panel/data/port.pl
+</code></pre>
+<p>修改面板端口，如要改成8881（centos 6 系统）</p>
 <pre><code>echo '8881' &gt; /www/server/panel/data/port.pl &amp;&amp; /etc/init.d/bt restart
 iptables -I INPUT -p tcp -m state --state NEW -m tcp --dport 8881 -j ACCEPT
 service iptables save
-service iptables restart</code></pre><p>修改面板端口，如要改成8881（centos 7 系统）</p>
+service iptables restart
+</code></pre>
+<p>修改面板端口，如要改成8881（centos 7 系统）</p>
 <pre><code>echo '8881' &gt; /www/server/panel/data/port.pl &amp;&amp; /etc/init.d/bt restart
 firewall-cmd --permanent --zone=public --add-port=8881/tcp
-firewall-cmd --reload</code></pre><p>强制修改MySQL管理(root)密码，如要改成123456</p>
-<pre><code>cd /www/server/panel &amp;&amp; python tools.py root 123456</code></pre><p>修改面板密码，如要改成123456</p>
-<pre><code>cd /www/server/panel &amp;&amp; python tools.py panel 123456</code></pre><p>查看宝塔日志</p>
-<pre><code>cat /tmp/panelBoot.pl</code></pre><p>查看软件安装日志</p>
-<pre><code>cat /tmp/panelExec.log</code></pre><p>站点配置文件位置</p>
-<pre><code>/www/server/panel/vhost</code></pre><p>删除域名绑定面板</p>
-<pre><code>rm -f /www/server/panel/data/domain.conf</code></pre><p>清理登陆限制</p>
-<pre><code>rm -f /www/server/panel/data/*.login</code></pre><p>查看面板授权IP</p>
-<pre><code>cat /www/server/panel/data/limitip.conf</code></pre><p>关闭访问限制</p>
-<pre><code>rm -f /www/server/panel/data/limitip.conf</code></pre><p>查看许可域名</p>
-<pre><code>cat /www/server/panel/data/domain.conf</code></pre><p>关闭面板SSL</p>
-<pre><code>rm -f /www/server/panel/data/ssl.pl &amp;&amp; /etc/init.d/bt restart</code></pre><p>查看面板错误日志</p>
-<pre><code>cat /tmp/panelBoot</code></pre><p>查看数据库错误日志</p>
-<pre><code>cat /www/server/data/*.err</code></pre><p>站点配置文件目录(nginx)</p>
-<pre><code>/www/server/panel/vhost/nginx</code></pre><p>站点配置文件目录(apache)</p>
-<pre><code>/www/server/panel/vhost/apache</code></pre><p>站点默认目录</p>
-<pre><code>/www/wwwroot</code></pre><p>数据库备份目录</p>
-<pre><code>/www/backup/database</code></pre><p>站点备份目录</p>
-<pre><code>/www/backup/site</code></pre><p>站点日志</p>
-<pre><code>/www/wwwlogs</code></pre><script>
+firewall-cmd --reload
+</code></pre>
+<p>强制修改MySQL管理(root)密码，如要改成123456</p>
+<pre><code>cd /www/server/panel &amp;&amp; python tools.py root 123456
+</code></pre>
+<p>修改面板密码，如要改成123456</p>
+<pre><code>cd /www/server/panel &amp;&amp; python tools.py panel 123456
+</code></pre>
+<p>查看宝塔日志</p>
+<pre><code>cat /tmp/panelBoot.pl
+</code></pre>
+<p>查看软件安装日志</p>
+<pre><code>cat /tmp/panelExec.log
+</code></pre>
+<p>站点配置文件位置</p>
+<pre><code>/www/server/panel/vhost
+</code></pre>
+<p>删除域名绑定面板</p>
+<pre><code>rm -f /www/server/panel/data/domain.conf
+</code></pre>
+<p>清理登陆限制</p>
+<pre><code>rm -f /www/server/panel/data/*.login
+</code></pre>
+<p>查看面板授权IP</p>
+<pre><code>cat /www/server/panel/data/limitip.conf
+</code></pre>
+<p>关闭访问限制</p>
+<pre><code>rm -f /www/server/panel/data/limitip.conf
+</code></pre>
+<p>查看许可域名</p>
+<pre><code>cat /www/server/panel/data/domain.conf
+</code></pre>
+<p>关闭面板SSL</p>
+<pre><code>rm -f /www/server/panel/data/ssl.pl &amp;&amp; /etc/init.d/bt restart
+</code></pre>
+<p>查看面板错误日志</p>
+<pre><code>cat /tmp/panelBoot
+</code></pre>
+<p>查看数据库错误日志</p>
+<pre><code>cat /www/server/data/*.err
+</code></pre>
+<p>站点配置文件目录(nginx)</p>
+<pre><code>/www/server/panel/vhost/nginx
+</code></pre>
+<p>站点配置文件目录(apache)</p>
+<pre><code>/www/server/panel/vhost/apache
+</code></pre>
+<p>站点默认目录</p>
+<pre><code>/www/wwwroot
+</code></pre>
+<p>数据库备份目录</p>
+<pre><code>/www/backup/database
+</code></pre>
+<p>站点备份目录</p>
+<pre><code>/www/backup/site
+</code></pre>
+<p>站点日志</p>
+<pre><code>/www/wwwlogs
+</code></pre>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -782,6 +848,10 @@ firewall-cmd --reload</code></pre><p>强制修改MySQL管理(root)密码，如�
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
+                            
+                                <a href="/tags/python/">
+                                    <span class="chip bg-color">python</span>
+                                </a>
                             
                                 <a href="/tags/%E5%91%BD%E4%BB%A4%EF%BC%8C%E5%AE%9D%E5%A1%94/">
                                     <span class="chip bg-color">命令，宝塔</span>
@@ -1231,7 +1301,9 @@ firewall-cmd --reload</code></pre><p>强制修改MySQL管理(root)密码，如�
                     <div class="summary block-with-text">
                         
                             二、如何获取应用机密(client secret)和应用 ID(client_id)？
-登录：https://portal.azure.com/?l=zh-hans.zh-cn#blade/Microsoft_AAD_RegisteredA
+
+
+登录：https://portal.azure.com/?l=zh-hans.zh-cn#blade/Microsoft_AAD_Registere
                         
                     </div>
                     <div class="publish-info">
@@ -1255,6 +1327,10 @@ firewall-cmd --reload</code></pre><p>强制修改MySQL管理(root)密码，如�
                     
                     <a href="/tags/pyone/">
                         <span class="chip bg-color">pyone</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%88%86%E4%BA%AB/">
+                        <span class="chip bg-color">分享</span>
                     </a>
                     
                 </div>
@@ -1302,6 +1378,10 @@ firewall-cmd --reload</code></pre><p>强制修改MySQL管理(root)密码，如�
                 
                 <div class="card-action article-tags">
                     
+                    <a href="/tags/%E7%88%AC%E8%99%AB/">
+                        <span class="chip bg-color">爬虫</span>
+                    </a>
+                    
                     <a href="/tags/%E5%BB%BA%E7%AB%99/">
                         <span class="chip bg-color">建站</span>
                     </a>
@@ -1310,16 +1390,20 @@ firewall-cmd --reload</code></pre><p>强制修改MySQL管理(root)密码，如�
                         <span class="chip bg-color">寒假</span>
                     </a>
                     
-                    <a href="/tags/%E5%88%86%E4%BA%AB/">
-                        <span class="chip bg-color">分享</span>
+                    <a href="/tags/%E8%AE%B0%E5%BD%95/">
+                        <span class="chip bg-color">记录</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%AD%A6%E4%B9%A0/">
+                        <span class="chip bg-color">学习</span>
                     </a>
                     
                     <a href="/tags/%E5%8F%A4%E5%AE%A2/">
                         <span class="chip bg-color">古客</span>
                     </a>
                     
-                    <a href="/tags/%E5%AD%A6%E4%B9%A0/">
-                        <span class="chip bg-color">学习</span>
+                    <a href="/tags/%E5%88%86%E4%BA%AB/">
+                        <span class="chip bg-color">分享</span>
                     </a>
                     
                 </div>
@@ -1508,7 +1592,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">25.3k</span>&nbsp;字
+                class="white-color">25.6k</span>&nbsp;字
             
             
             
@@ -1649,7 +1733,7 @@ $(function () {
     <script>
 	(function(){
 	var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
-	document.write('<script src="//guke-1301101972.cos.ap-chengdu.myqcloud.com' + src + '" id="sozz"><\/script>');
+	document.write('<script src="' + src + '" id="sozz"><\/script>');
 	})();
 	</script>
 	<script>
@@ -1739,7 +1823,7 @@ ga('send', 'pageview');
 <script>
 (function(){
 var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
-document.write('<script src="//guke-1301101972.cos.ap-chengdu.myqcloud.com' + src + '" id="sozz"><\/script>');
+document.write('<script src="' + src + '" id="sozz"><\/script>');
 })();
 </script>
 
@@ -1827,6 +1911,6 @@ document.write('<script src="//guke-1301101972.cos.ap-chengdu.myqcloud.com' + sr
 	  })
 	</script>
 
-<script src="//guke-1301101972.cos.ap-chengdu.myqcloud.com/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/z16.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/z16.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 
 </html>
