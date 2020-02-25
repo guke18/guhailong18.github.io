@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://guke.cf/"/>
-  <updated>2020-02-20T11:34:46.652Z</updated>
+  <updated>2020-02-25T10:28:59.145Z</updated>
   <id>https://guke.cf/</id>
   
   <author>
@@ -17,11 +17,117 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>python练手之百度翻译魔改</title>
+    <link href="https://guke.cf/posts/2RF1FT9/"/>
+    <id>https://guke.cf/posts/2RF1FT9/</id>
+    <published>2020-02-25T10:07:24.000Z</published>
+    <updated>2020-02-25T10:28:59.145Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="python" scheme="https://guke.cf/tags/python/"/>
+    
+      <category term="古客" scheme="https://guke.cf/tags/%E5%8F%A4%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python之Selenium的使用</title>
+    <link href="https://guke.cf/posts/WVQ4ZZ/"/>
+    <id>https://guke.cf/posts/WVQ4ZZ/</id>
+    <published>2020-02-24T09:15:23.000Z</published>
+    <updated>2020-02-24T09:15:23.388Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="python" scheme="https://guke.cf/tags/python/"/>
+    
+      <category term="古客" scheme="https://guke.cf/tags/%E5%8F%A4%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Chrome插件谷歌翻译无需翻墙的使用方法</title>
+    <link href="https://guke.cf/posts/14H2ZYP/"/>
+    <id>https://guke.cf/posts/14H2ZYP/</id>
+    <published>2020-02-24T05:36:01.000Z</published>
+    <updated>2020-02-24T09:06:56.604Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="古客" scheme="https://guke.cf/tags/%E5%8F%A4%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>初识jQuery</title>
+    <link href="https://guke.cf/posts/30Y0BE1/"/>
+    <id>https://guke.cf/posts/30Y0BE1/</id>
+    <published>2020-02-24T05:34:23.000Z</published>
+    <updated>2020-02-24T09:12:13.648Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="古客" scheme="https://guke.cf/tags/%E5%8F%A4%E5%AE%A2/"/>
+    
+      <category term="编程" scheme="https://guke.cf/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>python之验证码的识别</title>
     <link href="https://guke.cf/posts/86d15641/"/>
     <id>https://guke.cf/posts/86d15641/</id>
     <published>2020-02-20T08:47:20.000Z</published>
-    <updated>2020-02-20T11:34:46.652Z</updated>
+    <updated>2020-02-24T09:47:10.771Z</updated>
     
     <summary type="html">
     
@@ -44,6 +150,8 @@
       <category term="python" scheme="https://guke.cf/tags/python/"/>
     
       <category term="验证码" scheme="https://guke.cf/tags/%E9%AA%8C%E8%AF%81%E7%A0%81/"/>
+    
+      <category term="学习" scheme="https://guke.cf/tags/%E5%AD%A6%E4%B9%A0/"/>
     
       <category term="古客" scheme="https://guke.cf/tags/%E5%8F%A4%E5%AE%A2/"/>
     
@@ -337,7 +445,7 @@
     <link href="https://guke.cf/posts/15365e68/"/>
     <id>https://guke.cf/posts/15365e68/</id>
     <published>2020-02-12T03:12:54.000Z</published>
-    <updated>2020-02-16T03:50:25.911Z</updated>
+    <updated>2020-02-25T09:40:34.777Z</updated>
     
     <summary type="html">
     
@@ -515,144 +623,6 @@
       <category term="笔记" scheme="https://guke.cf/tags/%E7%AC%94%E8%AE%B0/"/>
     
       <category term="python" scheme="https://guke.cf/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MATLAB求导方法笔记</title>
-    <link href="https://guke.cf/posts/aefaa648/"/>
-    <id>https://guke.cf/posts/aefaa648/</id>
-    <published>2020-02-09T02:29:17.000Z</published>
-    <updated>2020-02-09T11:44:45.866Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="MATLAB" scheme="https://guke.cf/categories/MATLAB/"/>
-    
-    
-      <category term="MATLAB" scheme="https://guke.cf/tags/MATLAB/"/>
-    
-      <category term="求导" scheme="https://guke.cf/tags/%E6%B1%82%E5%AF%BC/"/>
-    
-      <category term="笔记" scheme="https://guke.cf/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>云服务器初识</title>
-    <link href="https://guke.cf/posts/b38a6c7c/"/>
-    <id>https://guke.cf/posts/b38a6c7c/</id>
-    <published>2020-02-08T03:28:26.000Z</published>
-    <updated>2020-02-09T11:44:45.868Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="云服务器" scheme="https://guke.cf/categories/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
-    
-      <category term="云服务器" scheme="https://guke.cf/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
-      <category term="比较" scheme="https://guke.cf/tags/%E6%AF%94%E8%BE%83/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python画图神器之--pyecharts</title>
-    <link href="https://guke.cf/posts/394f01ac/"/>
-    <id>https://guke.cf/posts/394f01ac/</id>
-    <published>2020-02-06T13:51:10.000Z</published>
-    <updated>2020-02-09T11:44:45.863Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Python" scheme="https://guke.cf/categories/Python/"/>
-    
-    
-      <category term="python" scheme="https://guke.cf/tags/python/"/>
-    
-      <category term="pyecharts" scheme="https://guke.cf/tags/pyecharts/"/>
-    
-      <category term="画图" scheme="https://guke.cf/tags/%E7%94%BB%E5%9B%BE/"/>
-    
-      <category term="学习" scheme="https://guke.cf/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="book" scheme="https://guke.cf/tags/book/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>三大深度学习框架的简单了解</title>
-    <link href="https://guke.cf/posts/509d8bd2/"/>
-    <id>https://guke.cf/posts/509d8bd2/</id>
-    <published>2020-02-06T12:34:08.000Z</published>
-    <updated>2020-02-09T11:44:45.871Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="深度学习" scheme="https://guke.cf/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="深度学习" scheme="https://guke.cf/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="笔记" scheme="https://guke.cf/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="python" scheme="https://guke.cf/tags/python/"/>
-    
-      <category term="框架" scheme="https://guke.cf/tags/%E6%A1%86%E6%9E%B6/"/>
-    
-      <category term="学习" scheme="https://guke.cf/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="数学" scheme="https://guke.cf/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-      <category term="编程" scheme="https://guke.cf/tags/%E7%BC%96%E7%A8%8B/"/>
-    
-      <category term="book" scheme="https://guke.cf/tags/book/"/>
-    
-      <category term="Java" scheme="https://guke.cf/tags/Java/"/>
     
   </entry>
   
