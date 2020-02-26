@@ -4,6 +4,29 @@
   
     
     <entry>
+      <title>python之CSS选择器笔记</title>
+      <link href="/posts/1YW4FZ7/"/>
+      <url>/posts/1YW4FZ7/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ul><li><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2></li></ul><h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>class中的空格是为了给html标签同时赋予多个class类名</p><pre><code>&lt;div class="box1 box2 textbox"&gt;&lt;/div&gt;</code></pre><p>这个div就被同时赋予了box1、box2、textbox这三个class类名，中间使用空格隔开。</p><h6 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a><strong>参考链接：</strong></h6><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 笔记 </tag>
+            
+            <tag> python </tag>
+            
+            <tag> 古客 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>python练手之百度翻译魔改</title>
       <link href="/posts/2RF1FT9/"/>
       <url>/posts/2RF1FT9/</url>
