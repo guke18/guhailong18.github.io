@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://guke.cf/posts/f0e4e3b5/</loc>
+    <loc>https://guke.cf/books/index.html</loc>
     
-    <lastmod>2020-02-26T13:16:46.199Z</lastmod>
+    <lastmod>2020-02-26T15:40:12.301Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://guke.cf/AV/index.html</loc>
+    
+    <lastmod>2020-02-26T14:53:03.320Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://guke.cf/posts/1YW4FZ7/</loc>
     
-    <lastmod>2020-02-26T04:51:35.216Z</lastmod>
+    <lastmod>2020-02-26T14:46:45.597Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://guke.cf/posts/f0e4e3b5/</loc>
+    
+    <lastmod>2020-02-26T13:16:46.199Z</lastmod>
     
   </url>
   
@@ -75,13 +89,6 @@
     <loc>https://guke.cf/music/index.html</loc>
     
     <lastmod>2020-02-22T05:59:36.748Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://guke.cf/AV/index.html</loc>
-    
-    <lastmod>2020-02-22T05:17:16.194Z</lastmod>
     
   </url>
   
@@ -453,13 +460,6 @@
     <loc>https://guke.cf/posts/6007b04d/</loc>
     
     <lastmod>2020-01-29T13:11:05.920Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://guke.cf/books/index.html</loc>
-    
-    <lastmod>2020-01-29T09:21:21.621Z</lastmod>
     
   </url>
   
