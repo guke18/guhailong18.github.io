@@ -6,14 +6,11 @@
     <meta charset="utf-8">
     <meta name="keywords" content="python之CSS选择器笔记, 动漫,编程,数学,读书,古客,IT,python,book,music,spider,爬虫,笔记,share,分享,学习">
     <meta name="description" content="
-
 概述
 
-
 目的：使用CSS是自己的网页变得更加美观！(可能有部分代码不规范，毕竟没有系统学过，有问题请指出)
-正文
-这里主要写一些CSS选择器的及具体用法，语法规则请看后面的手册表格！
-class中的空格是为了给html标签同时赋予多个">
+正文这里主要写一些CSS选择器的及具体用法，语法规则请看后面的手册表格！
+class中的空格是为了给html标签同时赋予多个cla">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -29,6 +26,7 @@ class中的空格是为了给html标签同时赋予多个">
     <meta name="google-site-verification" content="SPWIegoU8ZCCcikPxQ5M4jDV-RkRauq1jOy4kjexR6w" />
     <meta name="chinaz-site-verification" content="3AD36AD7E9302CDD">
     <meta name="360-site-verification" content="4ef9e565561035dc1f3b90a88227554d" />
+    <script src="https://kit.fontawesome.com/9f3b893070.js" crossorigin="anonymous"></script>
 
     <script>
 	  UPLOADCARE_PUBLIC_KEY = 'f7e9261581dfb5585c04';
@@ -547,21 +545,21 @@ class中的空格是为了给html标签同时赋予多个">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-02-26
+                    2020-02-28
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.3k
+                    1.9k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    5 分
+                    8 分
                 </div>
                 
 
@@ -578,17 +576,12 @@ class中的空格是为了给html标签同时赋予多个">
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <ul>
-<li>
-<h2 id="概述">概述</h2>
-</li>
+<li><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2></li>
 </ul>
 <p>目的：使用CSS是自己的网页变得更加美观！(可能有部分代码不规范，毕竟没有系统学过，有问题请指出)</p>
-<h2 id="正文">正文</h2>
-<p>这里主要写一些CSS选择器的及具体用法，语法规则请看后面的手册表格！</p>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>这里主要写一些CSS选择器的及具体用法，语法规则请看后面的手册表格！</p>
 <p>class中的空格是为了给html标签同时赋予多个class类名</p>
-<pre><code>&lt;div class="box1 box2 textbox"&gt;&lt;/div&gt;
-</code></pre>
-<p>这个div就被同时赋予了box1、box2、textbox这三个class类名，中间使用空格隔开。</p>
+<pre><code>&lt;div class="box1 box2 textbox"&gt;&lt;/div&gt;</code></pre><p>这个div就被同时赋予了box1、box2、textbox这三个class类名，中间使用空格隔开。</p>
 <p>接下来演示如何选取多类名</p>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -621,22 +614,106 @@ background-color:yellow;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-<p>效果如图：</p>
+&lt;/html&gt;</code></pre><p>效果如图：</p>
 <img src="https://i.loli.net/2020/02/26/8EjsQWU9uoYVgq3.png" alt="20200226223731" style="zoom:80%;"><span class="image-caption">20200226223731</span>
+
 <p>解释：以下为css，解释符号#（python用习惯了）</p>
 <pre><code>&lt;style&gt;
 .row .brand .title  #选择class='row'的所有节点下的class=‘brand’的所有节点下的class='title'节点
 {
 background-color:yellow;   #背景为黄色
 }
-&lt;/style&gt;
-</code></pre>
-<p><strong>注意</strong>：最好选择第一个类名，第二个可能会没有效果，原理不知</p>
+&lt;/style&gt;</code></pre><p><strong>注意</strong>：最好选择第一个类名，第二个可能会没有效果，原理不知</p>
 <p>如果我们的CSS过长，可以使用外部引入的方式，这样可以是我们的html更加的简洁！</p>
-<h2 id="CSS选择器手册：">CSS选择器手册：</h2>
-<table>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+
+        &lt;meta charset="utf-8" /&gt;
+        &lt;title&gt;HTML引入JS/CSS的三种方式&lt;/title&gt;
+        &lt;!--引入外部的css文件--&gt;
+        &lt;link rel="stylesheet" href="css/index.css" /&gt;
+
+        &lt;!--引入外部的js文件--&gt;
+        &lt;script type="text/javascript" src="js/index.js" &gt;&lt;/script&gt;
+
+
+        &lt;!--在head中添加js控制--&gt;
+        &lt;script type="text/javascript"&gt;
+            function onClickB1() {
+                document.getElementById("b1").innerHTML = "HEAD";
+            }
+        &lt;/script&gt;
+
+
+        &lt;!--在head中添加css修饰--&gt;
+        &lt;style type="text/css"&gt;
+            #j2 {
+                background-color: #808080;
+            }
+        &lt;/style&gt;
+
+    &lt;/head&gt;
+
+    &lt;body bgcolor="#F5F5F5"&gt;
+        &lt;div id="j1" class="divs"&gt;
+            &lt;button id="b1" onclick="onClickB1()"&gt;在head中&lt;/button&gt;
+            &lt;p&gt;方式一：将js代码写在head中，如本例所示，点击按钮改变按钮的内容！&lt;/p&gt;
+            &lt;p&gt;
+                同理，也可以将css样式写在head中，如上面的代码所示，设置j2的背景色，这里需要注意的是，其实我在外部的css文件中也设置了j2的背景色，
+                所以这两处设置是冲突的，但实验证明，网页中显示的是在head中修饰的属性值，这也许就是近水楼台先得月吧！
+            &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div id="j2" class="divs""&gt;
+            &lt;button id="b2" onclick="onClickJ2()"&gt;在body中&lt;/button&gt;
+            &lt;p&gt;方式二：将js代码写在body中，如本例所示，点击按钮改变div的背景色！&lt;/p&gt;
+            &lt;p&gt;同理，在html的body中也可以设置css样式，代码如下面所示，设置b3的文字颜色为红色。&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div id="j3" class="divs"&gt;
+            &lt;button id="b3" onclick="gaiBian()"&gt;在外部js中&lt;/button&gt;
+            &lt;p&gt;方式三：将js代码写在外部js文件中，并在html文件的head中引入该js，在本例中，点击按钮改变按钮的内容，并改变div的颜色！【推荐】&lt;/p&gt;
+            &lt;p&gt;当然，将css通过外部文件的方式引入html是最好的，也是推荐的方式。【推荐】&lt;/p&gt;
+
+            &lt;p style="background: red;"&gt;&lt;strong&gt;这里需要注意的是，和js不同的是，css可以直接写在组件的内部，例如在此，我将文字直接加粗,背景变红！&lt;/strong&gt;&lt;/p&gt;
+        &lt;/div&gt;
+
+
+        &lt;!--在body中添加js控制--&gt;
+        &lt;script type="text/javascript"&gt;
+            function onClickJ2 () {
+                document.getElementById("j2").style.background = "red";
+            }
+        &lt;/script&gt;
+
+        &lt;style type="text/css"&gt;
+            #b3 {
+                color: red;
+            }
+        &lt;/style&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre><p>.css</p>
+<pre><code>.divs {
+    width: 100%;
+    height: 250px;
+    background-color: grey;
+    /*margin的属性顺序是上右下左*/
+    margin: 10px 10px 5px 1px;
+}
+
+#j1 {
+    /*这里把上面divs中设置的背景颜色覆盖了*/
+    background-color: white;
+}
+
+#j2 {
+    /*这里把上面divs中设置的背景颜色覆盖了*/
+    background-color: whitesmoke;
+}
+
+#j3 {
+    /*这里把上面divs中设置的背景颜色覆盖了*/
+    background-color: antiquewhite;
+}</code></pre><h2 id="CSS选择器手册："><a href="#CSS选择器手册：" class="headerlink" title="CSS选择器手册："></a>CSS选择器手册：</h2><table>
 <thead>
 <tr>
 <th>选　择　器</th>
@@ -644,16 +721,15 @@ background-color:yellow;   #背景为黄色
 <th>例子描述</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>.class</td>
 <td>.intro</td>
-<td>选择 class=“intro” 的所有节点</td>
+<td>选择 class=”intro” 的所有节点</td>
 </tr>
 <tr>
 <td>#id</td>
 <td>#firstname</td>
-<td>选择 id=“firstname” 的所有节点</td>
+<td>选择 id=”firstname” 的所有节点</td>
 </tr>
 <tr>
 <td>*</td>
@@ -693,7 +769,7 @@ background-color:yellow;   #背景为黄色
 <tr>
 <td>[attribute=value]</td>
 <td>[target=blank]</td>
-<td>选择 target=“blank” 的所有节点</td>
+<td>选择 target=”blank” 的所有节点</td>
 </tr>
 <tr>
 <td>[attribute~=value]</td>
@@ -762,17 +838,17 @@ background-color:yellow;   #背景为黄色
 </tr>
 <tr>
 <td>[attribute^=value]</td>
-<td>a[src^=“https”]</td>
+<td>a[src^=”https”]</td>
 <td>选择其 src 属性值以 https 开头的所有 a 节点</td>
 </tr>
 <tr>
 <td>[attribute$=value]</td>
-<td>a[src$=".pdf"]</td>
+<td>a[src$=”.pdf”]</td>
 <td>选择其 src 属性以.pdf 结尾的所有 a 节点</td>
 </tr>
 <tr>
 <td>[attribute*=value]</td>
-<td>a[src*=“abc”]</td>
+<td>a[src*=”abc”]</td>
 <td>选择其 src 属性中包含 abc 子串的所有 a 节点</td>
 </tr>
 <tr>
@@ -860,10 +936,8 @@ background-color:yellow;   #背景为黄色
 <td>::selection</td>
 <td>选择被用户选取的节点部分</td>
 </tr>
-</tbody>
-</table>
-<h6 id="参考链接："><strong>参考链接：</strong></h6>
-<script>
+</tbody></table>
+<h6 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a><strong>参考链接：</strong></h6><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -1401,14 +1475,11 @@ background-color:yellow;   #背景为黄色
                     <div class="summary block-with-text">
                         
                             
-
 概述
 
-
 目的：使用CSS是自己的网页变得更加美观！(可能有部分代码不规范，毕竟没有系统学过，有问题请指出)
-正文
-这里主要写一些CSS选择器的及具体用法，语法规则请看后面的手册表格！
-class中的空格是为了给html标签同时赋予多个
+正文这里主要写一些CSS选择器的及具体用法，语法规则请看后面的手册表格！
+class中的空格是为了给html标签同时赋予多个cla
                         
                     </div>
                     <div class="publish-info">
@@ -1591,7 +1662,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">28.3k</span>&nbsp;字
+                class="white-color">29.9k</span>&nbsp;字
             
             
             
