@@ -1,0 +1,164 @@
+<html>
+    <head>
+	    <meta name="description" content="AirChat">
+		<meta name="keywords" content="AirChat">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Force 微尘博客</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/style.css">
+	<script src='lib/live2d.min.js'></script>
+    <script src='framework/Live2DFramework.js'></script>
+    <script src="src/utils/MatrixStack.js"></script>
+    <script src="src/utils/ModelSettingJson.js"></script>
+    <script src="src/PlatformManager.js"></script>
+    <script src="src/LAppDefine.js"></script>
+    <script src="src/LAppModel.js"></script>
+    <script src="src/LAppLive2DManager.js"></script>
+    <script src="src/SampleApp1.js"></script>
+		<script type="text/javascript">
+			function () {
+				
+			}
+		</script>
+	</head>
+	<body>
+		<div id="header">
+			<nav id="topnav">
+            <a href="index.html">主页</a>
+	        <a href="http://www.clocti.com">微尘博客</a>
+	        <a href="http://wpa.qq.com/msgrd?v=3&uin=420000976&site=qq&menu=yes">联系站长</a>
+			</nav>
+			<audio src="music/bgm.mp3"  loop="loop" autoplay="autoplay"/>
+		</div>
+		<body>
+		<style>
+	*{margin:0; padding:0;}
+	body,html{width:100%; height:100%;}
+	.bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	.bg-box-1{
+		background: url('img/1.jpg') no-repeat center/cover;
+	}
+	.bg-box-2{
+		background: url('img/2.jpg') no-repeat center/cover;
+	}
+	.bg-box-3{
+		background: url('img/3.jpg') no-repeat center/cover;
+	}
+	.bg-box-4{
+		background: url('img/4.jpg') no-repeat center/cover;
+	}
+	#wrap{
+		position: absolute;
+		overflow: hidden;
+		top:0; left:0; right:0; bottom:0;
+		margin:auto;
+		width: 1000px;
+		height: 400px;
+	}
+	#wrap > ul{
+		width: 120%;
+		list-style: none;
+	}
+	#wrap > ul > li{
+		float: left;
+		width: 100px;
+		height: 400px;
+		cursor: pointer;
+	}
+	#wrap > ul > li:nth-child(1){
+		background: url('img/1.jpg') no-repeat center/cover;
+	}
+	#wrap > ul > li:nth-child(2){
+		background: url('img/2.jpg') no-repeat center/cover;
+	}
+	#wrap > ul > li:nth-child(3){
+		background: url('img/3.jpg') no-repeat center/cover;
+	}
+	#wrap > ul > li:nth-child(4){
+		background: url('img/4.jpg') no-repeat center/cover;
+		width: 700px;
+	}	
+	#wrap > ul > li > .text{
+		width: 100px;
+		height: 100%;
+		background: #000;
+		opacity: .5;
+	}
+	#wrap > ul > li > .text p{
+		padding: 20px 40px;
+		font-family: 'Microsoft yahei';
+		color: #fff;
+	}
+</style>
+</head>
+<body>
+
+<div class="bg bg-box-1"></div>
+<div class="bg bg-box-2"></div>
+<div class="bg bg-box-3"></div>
+<div class="bg bg-box-4"></div>
+<div id="wrap">
+	<ul>
+		<li>
+			<div class="text">
+				<p>美丽小姐姐</p>
+			</div>
+		</li>
+		<li>
+			<div class="text">
+				<p>帅气小姐姐</p>
+			</div>
+		</li>
+		<li>
+			<div class="text">
+				<p>初音未来</p>
+			</div>
+		</li>
+		<li class="curr">
+			<div class="text">
+				<p>福利一张</p>
+			</div>
+		</li>
+	</ul>
+</div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+(function(){
+	$('#wrap li').mouseover(function(){
+		if(!$(this).hasClass('curr')){
+			$('#wrap li').removeClass('curr');
+			$(this).addClass('curr');
+
+			// 切换背景
+			$('#wrap li').each(function(index){
+				if($(this).hasClass('curr')){
+					$('.bg').fadeOut(300);
+					$('.bg:eq(' + index + ')').fadeIn(500);
+				}
+			});
+
+			$('.curr').stop().animate({
+				width: 700
+			}, 500, 'linear');
+			$('#wrap li').not('.curr').stop().animate({
+				width: 100
+			}, 500, 'linear');
+		}
+	});
+})()
+</script>
+	<canvas id="glCanvas" width="180" height="330" style="position:fixed;right:0px;bottom:-15px;">
+    </canvas>
+    <script>
+      SampleApp1();
+    </script>
+</body>
+	</body>
+</html>
