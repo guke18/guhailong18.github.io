@@ -52,33 +52,6 @@
   </entry>
   
   <entry>
-    <title>2020寒假个人成长记录</title>
-    <link href="https://guke.cf/posts/3ZRJMQY/"/>
-    <id>https://guke.cf/posts/3ZRJMQY/</id>
-    <published>2020-03-01T01:48:19.000Z</published>
-    <updated>2020-03-01T01:50:14.903Z</updated>
-    
-    <summary type="html">
-    
-      有东西被加密了, 请输入密码查看.
-    
-    </summary>
-    
-    
-      <category term="日记" scheme="https://guke.cf/categories/%E6%97%A5%E8%AE%B0/"/>
-    
-    
-      <category term="2020" scheme="https://guke.cf/tags/2020/"/>
-    
-      <category term="古客" scheme="https://guke.cf/tags/%E5%8F%A4%E5%AE%A2/"/>
-    
-      <category term="日记" scheme="https://guke.cf/tags/%E6%97%A5%E8%AE%B0/"/>
-    
-      <category term="成长" scheme="https://guke.cf/tags/%E6%88%90%E9%95%BF/"/>
-    
-  </entry>
-  
-  <entry>
     <title>python之CSS选择器笔记</title>
     <link href="https://guke.cf/posts/1YW4FZ7/"/>
     <id>https://guke.cf/posts/1YW4FZ7/</id>
@@ -619,6 +592,41 @@
       <category term="数学公式" scheme="https://guke.cf/tags/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/"/>
     
       <category term="数学" scheme="https://guke.cf/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020深度学习知识准备指南</title>
+    <link href="https://guke.cf/posts/f4691e0/"/>
+    <id>https://guke.cf/posts/f4691e0/</id>
+    <published>2020-02-09T12:45:40.000Z</published>
+    <updated>2020-02-11T14:44:08.463Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="指南" scheme="https://guke.cf/categories/%E6%8C%87%E5%8D%97/"/>
+    
+    
+      <category term="2020" scheme="https://guke.cf/tags/2020/"/>
+    
+      <category term="深度学习" scheme="https://guke.cf/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="学习" scheme="https://guke.cf/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="数学" scheme="https://guke.cf/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="编程" scheme="https://guke.cf/tags/%E7%BC%96%E7%A8%8B/"/>
     
   </entry>
   
