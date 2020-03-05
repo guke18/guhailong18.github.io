@@ -646,8 +646,16 @@
                                 <span class="chip bg-color">笔记</span>
                             </a>
                         
+                            <a href="/tags/python/">
+                                <span class="chip bg-color">python</span>
+                            </a>
+                        
                             <a href="/tags/%E5%AD%A6%E4%B9%A0/">
                                 <span class="chip bg-color">学习</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%95%B0%E5%AD%A6/">
+                                <span class="chip bg-color">数学</span>
                             </a>
                         
                             <a href="/tags/%E7%BC%96%E7%A8%8B/">
@@ -681,14 +689,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-03-01
+                    2020-03-05
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    304
+                    258
                 </div>
                 
 
@@ -728,8 +736,260 @@ int main()
    cout << "Hello World"; // 输出 Hello World
    return 0;
 }</code></pre>
-<p>//: 注释符号</p>
-<h2 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h2><h2 id="4"><a href="#4" class="headerlink" title="4."></a>4.</h2><h2 id="5"><a href="#5" class="headerlink" title="5."></a>5.</h2><h6 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a><strong>参考链接：</strong></h6><script>
+<ul>
+<li><p>#:告诉编辑器要预处理    include:表引入头文件   <code>&lt;iostream&gt;</code>:一个定义I/O流的文件，即输出流/输入流 (一般都要引入)</p>
+</li>
+<li><p>using namespace std：使用名为<code>std</code>的命名空间，此命名空间包含C++的基本功能 <code>;</code>:终止语句符，表示一个逻辑表达式的结束，相当于中文的句号。</p>
+</li>
+<li><p>//: 注释符号  <code>/*         */</code>:此为多行注释</p>
+</li>
+<li><p>Main函数是入口，程序是从int main()开始执行</p>
+</li>
+<li><p><code>大括号{}</code>：函数的主体，即函数的开始与结束</p>
+</li>
+<li><p><code>cout</code>:访问流对象  &lt;&lt;:输出右边的内容到显示器（不包含引号）  &gt;&gt;:输出左边的</p>
+</li>
+<li><p><code>return 0</code>: 程序中的最后一条指令语句，终止main()函数，并返回0给调用的进程。非零值(通常为1)表示异常终止。(没有return也是可以运行的，但是程序大了会有不良影响，要养成好习惯)</p>
+</li>
+<li><p>其他补充：<code>endl</code>:换行符（也可以用<code>/n</code>) 区别：endl 时会刷新缓冲区，使得栈中的东西刷新一次，但用 “\n” 不会刷新，它只会换行，建议用endl</p>
+</li>
+</ul>
+<p>（备注：C++编译器是忽略空行和空格的，打代码时需注意可读性，方便维护，不要单单能运行就可以了）</p>
+<p><strong>上面的信息都非常重要，请牢牢记住！</strong></p>
+<h4 id="扩展使用："><a href="#扩展使用：" class="headerlink" title="扩展使用："></a>扩展使用：</h4><h5 id="多行输出："><a href="#多行输出：" class="headerlink" title="多行输出："></a>多行输出：</h5><pre><code>{
+  cout &lt;&lt; "Hello world!" &lt;&lt; endl;
+  cout &lt;&lt; "I love 古客!";  //多行输出时，这个是正常都会运用的表达，但有更加方便的表达方法
+  return 0;
+}</code></pre><pre><code>{
+    cout&lt;&lt;"Hello, world!\n"
+    &lt;&lt;"I love 古客!";
+    return 0;
+}</code></pre><p>当然，输出汉字会出现乱码，解决方法挺复杂的，看得懂得就看吧！</p>
+<pre><code>#include&lt;iostream&gt;
+#include&lt;string&gt;
+using namespace std;
+int main()
+{
+string str;
+cin&gt;&gt;str;
+cout&lt;&lt;str&lt;&lt;endl;
+return 0;
+}</code></pre><p>（额，我也不是很懂，下次再补充吧，查了下，感觉要扩展很多知识，只能先放着了，看得懂英文的看一下<a href="https://en.cppreference.com/w/cpp/language/string_literal" target="_blank" rel="noopener external nofollow noreferrer">这个</a>）</p>
+<h5 id="cin-gt-gt-的用法："><a href="#cin-gt-gt-的用法：" class="headerlink" title="cin>>的用法："></a>cin&gt;&gt;的用法：</h5><p>cin可以连续从键盘读取想要的数据，以空格、tab或换行作为分隔符。实例程序如下。</p>
+<pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+    char a;
+    int b;
+    float c;
+    string 
+    cin&gt;&gt;a&gt;&gt;b&gt;&gt;c;
+    cout&lt;&lt;a&lt;&lt;" "&lt;&lt;b&lt;&lt;" "&lt;&lt;c&lt;&lt;" "&lt;&lt;endl;
+
+    system("pause");
+    return 0;
+}</code></pre><p><strong>下面为进阶的表示：</strong></p>
+<pre class=" language-c++"><code class="language-c++">#include <iostream>
+#include <vector>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    vector<string> msg {"Hello", "C++", "World", "from", "VS Code", "and the C++ extension!"};   //
+
+    for (const string& word : msg)
+    {
+        cout << word << " ";
+    }
+    cout << endl;
+}</code></pre>
+<p><code>vector</code>:是向量类型，可以容纳许多类型的数据</p>
+<p><code>string</code>: 定义了一个变量类型、一个宏和各种操作字符数组的函数</p>
+<p>补充知识：</p>
+<p>C++ 中，分别使用.h 和.cpp 来定义一个类。</p>
+<p><strong>.h</strong> 中存放类的声明，函数原型（放在类的声明中）。</p>
+<p><strong>.cpp</strong> 存放函数体。</p>
+<p><strong>&lt;&gt;</strong> 先去系统目录中找头文件，如果没有在到当前目录下找。所以像标准的头文件 stdio.h、stdlib.h 等用这个方法。</p>
+<p><strong>“ “</strong> 首先在当前目录下寻找，如果找不到，再到系统目录中寻找。 这个用于 include 自定义的头文件，让系统优先使用当前目录中定义的。</p>
+<h2 id="3-各种进制的转换"><a href="#3-各种进制的转换" class="headerlink" title="3.各种进制的转换"></a>3.各种进制的转换</h2><p>先讲讲进制转换的原理，我们能够不借助工具也可以转换并可以验证计算机的答案。</p>
+<p>$(1001)_2$ $\Rightarrow$  $2^3+0<em>2^2+0</em>2^1+2^0$ =9</p>
+<p>十六进制：10-15用A-F表示</p>
+<p>(原本还想写清楚一些，但是打数学公式实在是太麻烦了，相信大家一定懂了(*´ﾟ∀ﾟ｀)ﾉ )</p>
+<p>接下看一下如何用程序进行转换。</p>
+<p><strong>Python版</strong>（这个我熟悉一些）</p>
+<pre class=" language-python"><code class="language-python">dec <span class="token operator">=</span> int<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token string">"输入十进制的数字:"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"十进制数为:"</span><span class="token punctuation">,</span>dec<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"转换为二进制为："</span><span class="token punctuation">,</span> bin<span class="token punctuation">(</span>dec<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"转换为八进制为："</span><span class="token punctuation">,</span> oct<span class="token punctuation">(</span>dec<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"转换为十六进制为："</span><span class="token punctuation">,</span> hex<span class="token punctuation">(</span>dec<span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre>
+<p><strong>C语言版</strong></p>
+<h4 id="十进制转换为八进制"><a href="#十进制转换为八进制" class="headerlink" title="十进制转换为八进制"></a>十进制转换为八进制</h4><pre class=" language-c"><code class="language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h></span>   </span><span class="token comment" spellcheck="true">//定义了三个变量类型、一些宏和各种函数来执行输入和输出</span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;math.h></span>   </span><span class="token comment" spellcheck="true">//引入数学计算</span>
+
+<span class="token keyword">int</span> <span class="token function">convertDecimalToOctal</span><span class="token punctuation">(</span><span class="token keyword">int</span> decimalNumber<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> decimalNumber<span class="token punctuation">;</span>
+
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"输入一个十进制数: "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>decimalNumber<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"十进制数 %d 转换为八进制为 %d"</span><span class="token punctuation">,</span> decimalNumber<span class="token punctuation">,</span> <span class="token function">convertDecimalToOctal</span><span class="token punctuation">(</span>decimalNumber<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> <span class="token function">convertDecimalToOctal</span><span class="token punctuation">(</span><span class="token keyword">int</span> decimalNumber<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> octalNumber <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>decimalNumber <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        octalNumber <span class="token operator">+</span><span class="token operator">=</span> <span class="token punctuation">(</span>decimalNumber <span class="token operator">%</span> <span class="token number">8</span><span class="token punctuation">)</span> <span class="token operator">*</span> i<span class="token punctuation">;</span>
+        decimalNumber <span class="token operator">/</span><span class="token operator">=</span> <span class="token number">8</span><span class="token punctuation">;</span>
+        i <span class="token operator">*</span><span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> octalNumber<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h4 id="八进制转换为十进制"><a href="#八进制转换为十进制" class="headerlink" title="八进制转换为十进制"></a>八进制转换为十进制</h4><pre><code>#include &lt;stdio.h&gt;   //定义了三个变量类型、一些宏和各种函数来执行输入和输出
+#include &lt;math.h&gt;   
+
+long long convertOctalToDecimal(int octalNumber);
+int main()
+{
+    int octalNumber;
+
+    printf("输入一个八进制数: ");
+    scanf("%d", &amp;octalNumber);
+
+    printf("八进制数 %d  转换为十进制为 %lld", octalNumber, convertOctalToDecimal(octalNumber));
+
+    return 0;
+}
+
+long long convertOctalToDecimal(int octalNumber)
+{
+    int decimalNumber = 0, i = 0;
+
+    while(octalNumber != 0)
+    {
+        decimalNumber += (octalNumber%10) * pow(8,i);
+        ++i;
+        octalNumber/=10;
+    }
+
+    i = 1;
+
+    return decimalNumber;
+}</code></pre><h2 id="4"><a href="#4" class="headerlink" title="4."></a>4.</h2><h2 id="5"><a href="#5" class="headerlink" title="5."></a>5.</h2><p>(吐槽下：C++的编译速度是真的慢，跟python没法比，而且用起来还好麻烦，需要想很多底层的事)</p>
+<h2 id="附录："><a href="#附录：" class="headerlink" title="附录："></a>附录：</h2><h2 id="C-关键字"><a href="#C-关键字" class="headerlink" title="C++ 关键字"></a>C++ 关键字</h2><p>下表列出了 C++ 中的保留字。这些保留字不能作为常量名、变量名或其他标识符名称。</p>
+<table>
+<thead>
+<tr>
+<th>asm</th>
+<th>else</th>
+<th>new</th>
+<th>this</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>auto</td>
+<td>enum</td>
+<td>operator</td>
+<td>throw</td>
+</tr>
+<tr>
+<td>bool</td>
+<td>explicit</td>
+<td>private</td>
+<td>true</td>
+</tr>
+<tr>
+<td>break</td>
+<td>export</td>
+<td>protected</td>
+<td>try</td>
+</tr>
+<tr>
+<td>case</td>
+<td>extern</td>
+<td>public</td>
+<td>typedef</td>
+</tr>
+<tr>
+<td>catch</td>
+<td>false</td>
+<td>register</td>
+<td>typeid</td>
+</tr>
+<tr>
+<td>char</td>
+<td>float</td>
+<td>reinterpret_cast</td>
+<td>typename</td>
+</tr>
+<tr>
+<td>class</td>
+<td>for</td>
+<td>return</td>
+<td>union</td>
+</tr>
+<tr>
+<td>const</td>
+<td>friend</td>
+<td>short</td>
+<td>unsigned</td>
+</tr>
+<tr>
+<td>const_cast</td>
+<td>goto</td>
+<td>signed</td>
+<td>using</td>
+</tr>
+<tr>
+<td>continue</td>
+<td>if</td>
+<td>sizeof</td>
+<td>virtual</td>
+</tr>
+<tr>
+<td>default</td>
+<td>inline</td>
+<td>static</td>
+<td>void</td>
+</tr>
+<tr>
+<td>delete</td>
+<td>int</td>
+<td>static_cast</td>
+<td>volatile</td>
+</tr>
+<tr>
+<td>do</td>
+<td>long</td>
+<td>struct</td>
+<td>wchar_t</td>
+</tr>
+<tr>
+<td>double</td>
+<td>mutable</td>
+<td>switch</td>
+<td>while</td>
+</tr>
+<tr>
+<td>dynamic_cast</td>
+<td>namespace</td>
+<td>template</td>
+<td></td>
+</tr>
+</tbody></table>
+<h6 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a><strong>参考链接：</strong></h6><p><a href="https://www.runoob.com/cplusplus/cpp-basic-syntax.html" target="_blank" rel="noopener external nofollow noreferrer">https://www.runoob.com/cplusplus/cpp-basic-syntax.html</a></p>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -814,8 +1074,16 @@ int main()
                                     <span class="chip bg-color">笔记</span>
                                 </a>
                             
+                                <a href="/tags/python/">
+                                    <span class="chip bg-color">python</span>
+                                </a>
+                            
                                 <a href="/tags/%E5%AD%A6%E4%B9%A0/">
                                     <span class="chip bg-color">学习</span>
+                                </a>
+                            
+                                <a href="/tags/%E6%95%B0%E5%AD%A6/">
+                                    <span class="chip bg-color">数学</span>
                                 </a>
                             
                                 <a href="/tags/%E7%BC%96%E7%A8%8B/">
@@ -1433,6 +1701,13 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
 </main>
 
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
 
 
 
