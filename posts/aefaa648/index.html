@@ -6,12 +6,11 @@
     <meta charset="utf-8">
     <meta name="keywords" content="MATLAB求导方法笔记, 动漫,编程,数学,读书,古客,IT,python,book,music,spider,爬虫,笔记,share,分享,学习">
     <meta name="description" content="matlab求导命令diff调用格式:
-
 diff(函数) ， 求的一阶导数；
 diff(函数， n) ，求的n阶导数(n是具体整数)；
 diff(函数，变量名)，求对的偏导数；
 diff(函数， 变量名，n)，求对的n阶偏导数；
-matl">
+matla">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -779,14 +778,14 @@ matl">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-02-09
+                    2020-03-03
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    245
+                    303
                 </div>
                 
 
@@ -809,20 +808,25 @@ matl">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>matlab求导命令diff调用格式:</p>
-<ul>
-<li>diff(函数) ， 求的<a href="http://zhidao.baidu.com/search?word=%E4%B8%80%E9%98%B6%E5%AF%BC%E6%95%B0&amp;fr=qb_search_exp&amp;ie=utf8" target="_blank" rel="noopener external nofollow noreferrer">一阶导数</a>；</li>
-<li>diff(函数， n) ，求的n阶<a href="http://zhidao.baidu.com/search?word=%E5%AF%BC%E6%95%B0&amp;fr=qb_search_exp&amp;ie=utf8" target="_blank" rel="noopener external nofollow noreferrer">导数</a>(n是具体整数)；</li>
-<li>diff(函数，变量名)，求对的<a href="http://zhidao.baidu.com/search?word=%E5%81%8F%E5%AF%BC%E6%95%B0&amp;fr=qb_search_exp&amp;ie=utf8" target="_blank" rel="noopener external nofollow noreferrer">偏导数</a>；</li>
-<li>diff(函数， 变量名，n)，求对的n阶<a href="http://zhidao.baidu.com/search?word=%E5%81%8F%E5%AF%BC%E6%95%B0&amp;fr=qb_search_exp&amp;ie=utf8" target="_blank" rel="noopener external nofollow noreferrer">偏导数</a>；</li>
-<li>matlab求<a href="http://zhidao.baidu.com/search?word=%E9%9B%85%E5%8F%AF%E6%AF%94%E7%9F%A9%E9%98%B5&amp;fr=qb_search_exp&amp;ie=utf8" target="_blank" rel="noopener external nofollow noreferrer">雅可比矩阵</a>命令jacobian，调用格式:</li>
+                <h3 id="matlab求导命令diff调用格式"><a href="#matlab求导命令diff调用格式" class="headerlink" title="matlab求导命令diff调用格式:"></a><strong>matlab求导命令diff调用格式:</strong></h3><ul>
+<li>diff(函数) ， 求的<a href="http://zhidao.baidu.com/search?word=一阶导数&amp;fr=qb_search_exp&amp;ie=utf8" target="_blank" rel="noopener external nofollow noreferrer">一阶导数</a>；</li>
+<li>diff(函数， n) ，求的n阶<a href="http://zhidao.baidu.com/search?word=导数&amp;fr=qb_search_exp&amp;ie=utf8" target="_blank" rel="noopener external nofollow noreferrer">导数</a>(n是具体整数)；</li>
+<li>diff(函数，变量名)，求对的<a href="http://zhidao.baidu.com/search?word=偏导数&amp;fr=qb_search_exp&amp;ie=utf8" target="_blank" rel="noopener external nofollow noreferrer">偏导数</a>；</li>
+<li>diff(函数， 变量名，n)，求对的n阶<a href="http://zhidao.baidu.com/search?word=偏导数&amp;fr=qb_search_exp&amp;ie=utf8" target="_blank" rel="noopener external nofollow noreferrer">偏导数</a>；</li>
+<li>matlab求<a href="http://zhidao.baidu.com/search?word=雅可比矩阵&amp;fr=qb_search_exp&amp;ie=utf8" target="_blank" rel="noopener external nofollow noreferrer">雅可比矩阵</a>命令jacobian，调用格式:</li>
 <li>jacobian([函数；函数； 函数]，[])给出矩阵:</li>
 </ul>
-<p>（1）syms x代表着声明符号变量x，只有声明了符号变量才可以进行符号运算，包括求导。</p>
-<p>（2）f（x）=sin（x）+x^2 ，就是我们输入的要求导的函数。</p>
-<p>（3）diff（f（x）），代表着对单变量函数求一阶导数。</p>
-<p>（4）pretty（ans），将当前变量显示为我们常用的书面形式。</p>
-<p>从以上结果我们可以看出，f（x）=2x+cos（x）。</p>
+<h4 id="示例代码："><a href="#示例代码：" class="headerlink" title="示例代码："></a><strong>示例代码：</strong></h4><pre><code>syms x
+f(x)=sin(x)+x^2
+diff(f(x))
+pretty(ans)</code></pre><p>　　（1）syms x代表着声明符号变量x，只有声明了符号变量才可以进行符号运算，包括求导。</p>
+<p>　　（2）f（x）=sin（x）+x^2 ，就是我们输入的要求导的函数。</p>
+<p>　　（3）diff（f（x）），代表着对单变量函数求一阶导数。</p>
+<p>　　（4）pretty（ans），将当前变量显示为我们常用的书面形式。</p>
+<p>　　从以上结果我们可以看出，f（x）=2x+cos（x）。</p>
+<h3 id="求偏导："><a href="#求偏导：" class="headerlink" title="求偏导："></a>求偏导：</h3><p>（偏导：简单地说就是对有多个变量的函数求导，如有不对，请指点）</p>
+<p>原文链接：</p>
+<p><a href="https://blog.csdn.net/zhanshen112/article/details/79728887" target="_blank" rel="noopener external nofollow noreferrer">https://blog.csdn.net/zhanshen112/article/details/79728887</a></p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -1645,7 +1649,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">30.7k</span>&nbsp;字
+                class="white-color">31.5k</span>&nbsp;字
             
             
             
