@@ -4,18 +4,14 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="python之不定积分求解, 动漫,编程,数学,读书,古客,IT,python,book,music,spider,爬虫,笔记,share,分享,学习">
+    <meta name="keywords" content="python,math,数学,公式,符号,积分,learn,sciense,定积分,微分">
     <meta name="description" content="
-
 概述
-
 
 为了解决数学中一些不定积分的求解方便自己做作业，让我们一起学习如何使用python求不定积分吧！
 《matlab版点这里》
-1.安装
-pip3 install sympy
-
-建议使用anaconda，里面有大量的科学包，方便使">
+1.安装pip3 install sympy建议使用anaconda，里面有大量的科学包，方便使用！
+2.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -621,7 +617,7 @@ pip3 install sympy
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/guhailong18/speedup1/medias/featureimages/13.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://i.loli.net/2020/02/21/gi4MJfnV7am6ylh.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -759,10 +755,27 @@ pip3 install sympy
                                 <span class="chip bg-color">古客</span>
                             </a>
                         
+                            <a href="/tags/math/">
+                                <span class="chip bg-color">math</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%AE%9A%E7%A7%AF%E5%88%86/">
+                                <span class="chip bg-color">定积分</span>
+                            </a>
+                        
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/python/" class="post-category">
+                                python
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -785,14 +798,14 @@ pip3 install sympy
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.4k
+                    1.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    5 分
+                    6 分
                 </div>
                 
 
@@ -809,46 +822,45 @@ pip3 install sympy
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <ul>
-<li>
-<h2 id="概述">概述</h2>
-</li>
+<li><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2></li>
 </ul>
-<p>为了解决数学中一些不定积分的求解<s>方便自己做作业</s>，让我们一起学习如何使用python求不定积分吧！</p>
+<p>为了解决数学中一些不定积分的求解<del>方便自己做作业</del>，让我们一起学习如何使用python求不定积分吧！</p>
 <p>《matlab版点这里》</p>
-<h2 id="1-安装">1.安装</h2>
-<pre><code>pip3 install sympy
-</code></pre>
-<p>建议使用anaconda，里面有大量的科学包，方便使用！</p>
-<h2 id="2-使用">2.使用</h2>
-<p>我会根据我的理解和官方教程来进行使用，英语好的可以直接去<a href="https://docs.sympy.org/latest/tutorial/intro.html" target="_blank" rel="noopener external nofollow noreferrer">官网</a>看，防止我可能出现的理解误差。</p>
+<h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1.安装"></a>1.安装</h2><pre><code>pip3 install sympy</code></pre><p>建议使用anaconda，里面有大量的科学包，方便使用！</p>
+<h2 id="2-使用"><a href="#2-使用" class="headerlink" title="2.使用"></a>2.使用</h2><p>我会根据我的理解和官方教程来进行使用，英语好的可以直接去<a href="https://docs.sympy.org/latest/tutorial/intro.html" target="_blank" rel="noopener external nofollow noreferrer">官网</a>看，防止我可能出现的理解误差。</p>
 <p><strong>请认真看注释！</strong></p>
-<pre class=" language-language-python"><code class="language-language-python">from sympy import *  //引入包
-x = symbols('x')      //声明变量'x'
-a = Integral(cos(x)*exp(x),x)    //
-print(Eq(a,a.doit()))      
-</code></pre>
+<pre class=" language-python"><code class="language-python"><span class="token keyword">from</span> sympy <span class="token keyword">import</span> <span class="token operator">*</span>  <span class="token operator">//</span>引入包
+x <span class="token operator">=</span> symbols<span class="token punctuation">(</span><span class="token string">'x'</span><span class="token punctuation">)</span>      <span class="token operator">//</span>声明变量<span class="token string">'x'</span>
+a <span class="token operator">=</span> Integral<span class="token punctuation">(</span>cos<span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token operator">*</span>exp<span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">,</span>x<span class="token punctuation">)</span>    <span class="token operator">//</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>Eq<span class="token punctuation">(</span>a<span class="token punctuation">,</span>a<span class="token punctuation">.</span>doit<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>      </code></pre>
 <p>Symbol()函数定义单个数学符号；symbols()函数定义多个数学符号</p>
-<h2 id="3-数学符号">3.数学符号</h2>
-<p>学了那么久python，忽然发现自己连数学符号都不会打，趁这次机会学习一下好了。</p>
-<p><code>sqrt</code>:根号</p>
+<h2 id="3-数学符号"><a href="#3-数学符号" class="headerlink" title="3.数学符号"></a>3.数学符号</h2><p>学了那么久python，忽然发现自己连数学符号都不会打，趁这次机会学习一下好了。</p>
+<p><code>sqrt</code>:根号 </p>
 <p><code>pi</code>:圆周率</p>
 <p><code>exp(x)</code>:$e^x$</p>
-<table>
+<p>详见《python之math库的使用》</p>
+<p><strong>复数的表示</strong></p>
+<pre><code>aComplex = 1 + 2j       //申明一个复数
+aComplex
+(1+2j)
+aComplex.real           //复数实部
+1.0
+aComplex.imag           //复数虚部
+2.0
+aComplex.conjugate()        //共轭复数
+(1-2j)</code></pre><table>
 <thead>
 <tr>
 <th>//</th>
 <th>取整除 - 向下取接近除数的整数</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td></td>
 <td></td>
 </tr>
-</tbody>
-</table>
-<h3 id="比较运算符">比较运算符</h3>
-<table>
+</tbody></table>
+<h3 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h3><table>
 <thead>
 <tr>
 <th>==</th>
@@ -856,8 +868,7 @@ print(Eq(a,a.doit()))
 <th>(a == b) 返回 False。</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>!=</td>
 <td>不等于 - 比较两个对象是否不相等</td>
 <td>(a != b) 返回 True。</td>
@@ -882,168 +893,156 @@ print(Eq(a,a.doit()))
 <td>小于等于 - 返回x是否小于等于y。</td>
 <td>(a &lt;= b) 返回 True。</td>
 </tr>
-</tbody>
-</table>
-<h3 id="赋值运算符">赋值运算符</h3>
-<p>以下假设变量a为10，变量b为20：</p>
+</tbody></table>
+<h3 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h3><p>以下假设变量a为10，变量b为20：</p>
 <table>
 <thead>
 <tr>
-<th style="text-align:left">运算符</th>
-<th style="text-align:left">描述</th>
-<th style="text-align:left">实例</th>
+<th align="left">运算符</th>
+<th align="left">描述</th>
+<th align="left">实例</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:left">=</td>
-<td style="text-align:left">简单的赋值运算符</td>
-<td style="text-align:left">c = a + b 将 a + b 的运算结果赋值为 c</td>
+<tbody><tr>
+<td align="left">=</td>
+<td align="left">简单的赋值运算符</td>
+<td align="left">c = a + b 将 a + b 的运算结果赋值为 c</td>
 </tr>
 <tr>
-<td style="text-align:left">+=</td>
-<td style="text-align:left">加法赋值运算符</td>
-<td style="text-align:left">c += a 等效于 c = c + a</td>
+<td align="left">+=</td>
+<td align="left">加法赋值运算符</td>
+<td align="left">c += a 等效于 c = c + a</td>
 </tr>
 <tr>
-<td style="text-align:left">-=</td>
-<td style="text-align:left">减法赋值运算符</td>
-<td style="text-align:left">c -= a 等效于 c = c - a</td>
+<td align="left">-=</td>
+<td align="left">减法赋值运算符</td>
+<td align="left">c -= a 等效于 c = c - a</td>
 </tr>
 <tr>
-<td style="text-align:left">*=</td>
-<td style="text-align:left">乘法赋值运算符</td>
-<td style="text-align:left">c *= a 等效于 c = c * a</td>
+<td align="left">*=</td>
+<td align="left">乘法赋值运算符</td>
+<td align="left">c *= a 等效于 c = c * a</td>
 </tr>
 <tr>
-<td style="text-align:left">/=</td>
-<td style="text-align:left">除法赋值运算符</td>
-<td style="text-align:left">c /= a 等效于 c = c / a</td>
+<td align="left">/=</td>
+<td align="left">除法赋值运算符</td>
+<td align="left">c /= a 等效于 c = c / a</td>
 </tr>
 <tr>
-<td style="text-align:left">%=</td>
-<td style="text-align:left">取模赋值运算符</td>
-<td style="text-align:left">c %= a 等效于 c = c % a</td>
+<td align="left">%=</td>
+<td align="left">取模赋值运算符</td>
+<td align="left">c %= a 等效于 c = c % a</td>
 </tr>
 <tr>
-<td style="text-align:left">**=</td>
-<td style="text-align:left">幂赋值运算符</td>
-<td style="text-align:left">c **= a 等效于 c = c ** a</td>
+<td align="left">**=</td>
+<td align="left">幂赋值运算符</td>
+<td align="left">c *<em>= a 等效于 c = c *</em> a</td>
 </tr>
 <tr>
-<td style="text-align:left">//=</td>
-<td style="text-align:left">取整除赋值运算符</td>
-<td style="text-align:left">c //= a 等效于 c = c // a</td>
+<td align="left">//=</td>
+<td align="left">取整除赋值运算符</td>
+<td align="left">c //= a 等效于 c = c // a</td>
 </tr>
 <tr>
-<td style="text-align:left">:=</td>
-<td style="text-align:left">海象运算符，可在表达式内部为变量赋值。<strong>Python3.8 版本新增运算符</strong>。</td>
-<td style="text-align:left">在这个示例中，赋值表达式可以避免调用 len() 两次:<code>if (n := len(a)) &gt; 10:    print(f"List is too long ({n} elements, expected &lt;= 10)")</code></td>
+<td align="left">:=</td>
+<td align="left">海象运算符，可在表达式内部为变量赋值。<strong>Python3.8 版本新增运算符</strong>。</td>
+<td align="left">在这个示例中，赋值表达式可以避免调用 len() 两次:<code>if (n := len(a)) &gt; 10:    print(f"List is too long ({n} elements, expected &lt;= 10)")</code></td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p>示例：</p>
-<h2 id="4-扩展运用">4.扩展运用</h2>
-<h5 id="折叠表达式">折叠表达式</h5>
-<p><code>factor()</code>函数可以折叠表达式（提取公因子），而<code>expand()</code>函数可以展开表达式（类似于一般式）</p>
-<p>举个例子：$x<sup>3+y</sup>2x<sup>2+zx$,折叠后：$x(x</sup>2+y^2x+z)$.</p>
-<pre class=" language-language-python"><code class="language-language-python">import math
-import sympy
-x,y,z = symbols('x y z')
-expr = x**3+(x**2)*(y**2)+z*x
-f_expr = factor(expr)
-e_expr = expand(f_expr)
-print(f_expr)
-print(e_expr)
-</code></pre>
+<h2 id="4-扩展运用"><a href="#4-扩展运用" class="headerlink" title="4.扩展运用"></a>4.扩展运用</h2><h5 id="折叠表达式"><a href="#折叠表达式" class="headerlink" title="折叠表达式"></a>折叠表达式</h5><p><code>factor()</code>函数可以折叠表达式（提取公因子），而<code>expand()</code>函数可以展开表达式（类似于一般式）</p>
+<p>举个例子：$x^3+y^2x^2+zx$,折叠后：$x(x^2+y^2x+z)$.</p>
+<pre class=" language-python"><code class="language-python"><span class="token keyword">import</span> math
+<span class="token keyword">import</span> sympy
+x<span class="token punctuation">,</span>y<span class="token punctuation">,</span>z <span class="token operator">=</span> symbols<span class="token punctuation">(</span><span class="token string">'x y z'</span><span class="token punctuation">)</span>
+expr <span class="token operator">=</span> x<span class="token operator">**</span><span class="token number">3</span><span class="token operator">+</span><span class="token punctuation">(</span>x<span class="token operator">**</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token operator">*</span><span class="token punctuation">(</span>y<span class="token operator">**</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token operator">+</span>z<span class="token operator">*</span>x
+f_expr <span class="token operator">=</span> factor<span class="token punctuation">(</span>expr<span class="token punctuation">)</span>
+e_expr <span class="token operator">=</span> expand<span class="token punctuation">(</span>f_expr<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>f_expr<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>e_expr<span class="token punctuation">)</span></code></pre>
 <p>输出结果：</p>
-<pre class=" language-language-python"><code class="language-language-python">x*(x**2 + x*y**2 + z)
-x**3 + x**2*y**2 + x*z
-</code></pre>
-<h5 id="表达式化简"><strong>表达式化简</strong></h5>
-<p><code>simplify()</code>函数可以对表达式进行化简，相当于合并同类项</p>
+<pre class=" language-python"><code class="language-python">x<span class="token operator">*</span><span class="token punctuation">(</span>x<span class="token operator">**</span><span class="token number">2</span> <span class="token operator">+</span> x<span class="token operator">*</span>y<span class="token operator">**</span><span class="token number">2</span> <span class="token operator">+</span> z<span class="token punctuation">)</span>
+x<span class="token operator">**</span><span class="token number">3</span> <span class="token operator">+</span> x<span class="token operator">**</span><span class="token number">2</span><span class="token operator">*</span>y<span class="token operator">**</span><span class="token number">2</span> <span class="token operator">+</span> x<span class="token operator">*</span>z</code></pre>
+<h5 id="表达式化简"><a href="#表达式化简" class="headerlink" title="表达式化简"></a><strong>表达式化简</strong></h5><p><code>simplify()</code>函数可以对表达式进行化简，相当于合并同类项</p>
 <pre><code>from sympy import *
 x,y = symbols('x y')
 expr=(2*x)**3*(-5*x*y**2)
 s_expr=simplify(expr)
 print(s_expr)
-输出： -40*x**4*y**2
-</code></pre>
-<h4 id="求解方程组">求解方程组</h4>
-<p><strong>一元方程组</strong>，例：$6x+6(x-2000)=150000$,  （需要移项）</p>
-<pre class=" language-language-python"><code class="language-language-python">from sympy import *
-x = Symbol('x')
-print(solve(6*x + 6*(x-2000)-150000,x))   //默认使用一边为0来求解
-</code></pre>
+输出： -40*x**4*y**2</code></pre><h4 id="求解方程组"><a href="#求解方程组" class="headerlink" title="求解方程组"></a>求解方程组</h4><p><strong>一元方程组</strong>，例：$6x+6(x-2000)=150000$,  （需要移项）</p>
+<pre class=" language-python"><code class="language-python"><span class="token keyword">from</span> sympy <span class="token keyword">import</span> <span class="token operator">*</span>
+x <span class="token operator">=</span> Symbol<span class="token punctuation">(</span><span class="token string">'x'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>solve<span class="token punctuation">(</span><span class="token number">6</span><span class="token operator">*</span>x <span class="token operator">+</span> <span class="token number">6</span><span class="token operator">*</span><span class="token punctuation">(</span>x<span class="token number">-2000</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token number">150000</span><span class="token punctuation">,</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span>   <span class="token operator">//</span>默认使用一边为<span class="token number">0</span>来求解</code></pre>
 <p>二元一次方程组，例：</p>
-<pre class=" language-language-python"><code class="language-language-python">from sympy import *
-x,y = symbols('x y')
-print(solve([x + y-10,2*x+y-16],[x,y]))
-输出： {x: 6, y: 4}
-</code></pre>
+<pre class=" language-python"><code class="language-python"><span class="token keyword">from</span> sympy <span class="token keyword">import</span> <span class="token operator">*</span>
+x<span class="token punctuation">,</span>y <span class="token operator">=</span> symbols<span class="token punctuation">(</span><span class="token string">'x y'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>solve<span class="token punctuation">(</span><span class="token punctuation">[</span>x <span class="token operator">+</span> y<span class="token number">-10</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token operator">*</span>x<span class="token operator">+</span>y<span class="token number">-16</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span>x<span class="token punctuation">,</span>y<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+输出： <span class="token punctuation">{</span>x<span class="token punctuation">:</span> <span class="token number">6</span><span class="token punctuation">,</span> y<span class="token punctuation">:</span> <span class="token number">4</span><span class="token punctuation">}</span></code></pre>
 <p>n元同理，不再示例。</p>
-<h5 id="一元二次方程组"><strong>一元二次方程组</strong></h5>
-<pre class=" language-language-python"><code class="language-language-python">from sympy import *
-x,y = symbols('x y')
-a,b,c = symbols('a b c')
-expr = a*x**2 + b*x + c
-s_expr = solve(expr, x)  //告知要解的参数
-print(s_expr)
-输出 ：[(-b + sqrt(-4*a*c + b**2))/(2*a), -(b + sqrt(-4*a*c + b**2))/(2*a)]
-</code></pre>
-<h3 id="微积分Calculus">微积分Calculus</h3>
-<p><strong>一个非常重点的内容，请认真看并记住！</strong></p>
-<h4 id="求极限"><strong>求极限</strong></h4>
-<p>Sympy是使用limit(表达式，变量，极限值)函数来求极限的</p>
-<p>例子：$\displaystyle \lim_{y \to0}\frac{sin(x)}{x}$</p>
+<h5 id="一元二次方程组"><a href="#一元二次方程组" class="headerlink" title="一元二次方程组"></a><strong>一元二次方程组</strong></h5><pre class=" language-python"><code class="language-python"><span class="token keyword">from</span> sympy <span class="token keyword">import</span> <span class="token operator">*</span>
+x<span class="token punctuation">,</span>y <span class="token operator">=</span> symbols<span class="token punctuation">(</span><span class="token string">'x y'</span><span class="token punctuation">)</span>
+a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>c <span class="token operator">=</span> symbols<span class="token punctuation">(</span><span class="token string">'a b c'</span><span class="token punctuation">)</span>
+expr <span class="token operator">=</span> a<span class="token operator">*</span>x<span class="token operator">**</span><span class="token number">2</span> <span class="token operator">+</span> b<span class="token operator">*</span>x <span class="token operator">+</span> c
+s_expr <span class="token operator">=</span> solve<span class="token punctuation">(</span>expr<span class="token punctuation">,</span> x<span class="token punctuation">)</span>  <span class="token operator">//</span>告知要解的参数
+<span class="token keyword">print</span><span class="token punctuation">(</span>s_expr<span class="token punctuation">)</span>
+输出 ：<span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token operator">-</span>b <span class="token operator">+</span> sqrt<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">4</span><span class="token operator">*</span>a<span class="token operator">*</span>c <span class="token operator">+</span> b<span class="token operator">**</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>a<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token punctuation">(</span>b <span class="token operator">+</span> sqrt<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">4</span><span class="token operator">*</span>a<span class="token operator">*</span>c <span class="token operator">+</span> b<span class="token operator">**</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>a<span class="token punctuation">)</span><span class="token punctuation">]</span></code></pre>
+<h3 id="微积分Calculus"><a href="#微积分Calculus" class="headerlink" title="微积分Calculus"></a>微积分Calculus</h3><p><strong>一个非常重点的内容，请认真看并记住！</strong></p>
+<h4 id="求极限"><a href="#求极限" class="headerlink" title="求极限"></a><strong>求极限</strong></h4><p>Sympy是使用limit(表达式，变量，极限值)函数来求极限的</p>
+<p>例子：$\displaystyle \lim_{y \to0}\frac{sin(x)}{x}$  </p>
 <pre><code>from sympy import *
 x,y = symbols('x y')
 expr = sin(x)/x
 l_expr = limit(expr, x, 0)
-print(l_expr)
-</code></pre>
-<p>结果为1</p>
-<h4 id="求导"><strong>求导</strong></h4>
-<p>可以使用diff(表达式,变量,求导的次数)函数对表达式求导(matlab也和这个差不多)</p>
-<p>例子：$sin(x)e^x$</p>
+print(l_expr)</code></pre><p>结果为1</p>
+<h4 id="求导"><a href="#求导" class="headerlink" title="求导"></a><strong>求导</strong></h4><p>可以使用diff(表达式,变量,求导的次数)函数对表达式求导(matlab也和这个差不多)</p>
+<p>例子：$sin(x)e^x$ </p>
 <pre><code>from sympy import *
 x,y = symbols('x y')
 expr = sin(x)*exp(x)
 diff_expr = diff(expr, x)
 diff_expr2 = diff(expr,x,2)
 print(diff_expr)
-print(diff_expr2)
-</code></pre>
-<h4 id="求不定积分"><strong>求不定积分</strong></h4>
-<p>Sympy是使用integrate(表达式,变量)来求不定积分的</p>
-<p>例子：$e<sup>xsin(x)+e</sup>xcos(x)$</p>
-<pre class=" language-language-python"><code class="language-language-python">from sympy import *
-x,y = symbols('x y')
-expr=exp(x)*sin(x) + exp(x)*cos(x)
-i_expr=integrate(expr,x)
-print(i_expr)
-</code></pre>
+print(diff_expr2)</code></pre><h4 id="求不定积分"><a href="#求不定积分" class="headerlink" title="求不定积分"></a><strong>求不定积分</strong></h4><p>Sympy是使用integrate(表达式,变量)来求不定积分的</p>
+<p>例子：$e^xsin(x)+e^xcos(x)$ </p>
+<pre class=" language-python"><code class="language-python"><span class="token keyword">from</span> sympy <span class="token keyword">import</span> <span class="token operator">*</span>
+x<span class="token punctuation">,</span>y <span class="token operator">=</span> symbols<span class="token punctuation">(</span><span class="token string">'x y'</span><span class="token punctuation">)</span>
+expr<span class="token operator">=</span>exp<span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token operator">*</span>sin<span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token operator">+</span> exp<span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token operator">*</span>cos<span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+i_expr<span class="token operator">=</span>integrate<span class="token punctuation">(</span>expr<span class="token punctuation">,</span>x<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>i_expr<span class="token punctuation">)</span></code></pre>
 <p>输出原函数：exp(x)*sin(x)</p>
-<h4 id="求定积分"><strong>求定积分</strong></h4>
-<p>Sympy同样是使用integrate()函数来做定积分的求解，</p>
-<p>例子：$sin(x^2)$</p>
-<pre class=" language-language-python"><code class="language-language-python">from sympy import *
-x,y = symbols('x y')
-expr=sin(x**2)
-i_expr=integrate(expr, (x, -oo, oo))
-print(i_expr)
-</code></pre>
+<h4 id="求定积分"><a href="#求定积分" class="headerlink" title="求定积分"></a><strong>求定积分</strong></h4><p>Sympy同样是使用integrate()函数来做定积分的求解，</p>
+<p>例子：$sin(x^2)$ </p>
+<pre class=" language-python"><code class="language-python"><span class="token keyword">from</span> sympy <span class="token keyword">import</span> <span class="token operator">*</span>
+x<span class="token punctuation">,</span>y <span class="token operator">=</span> symbols<span class="token punctuation">(</span><span class="token string">'x y'</span><span class="token punctuation">)</span>
+expr<span class="token operator">=</span>sin<span class="token punctuation">(</span>x<span class="token operator">**</span><span class="token number">2</span><span class="token punctuation">)</span>
+i_expr<span class="token operator">=</span>integrate<span class="token punctuation">(</span>expr<span class="token punctuation">,</span> <span class="token punctuation">(</span>x<span class="token punctuation">,</span> <span class="token operator">-</span>oo<span class="token punctuation">,</span> oo<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>i_expr<span class="token punctuation">)</span></code></pre>
 <p>输出：sqrt(2)*sqrt(pi)/2  即：$\frac{\sqrt 2 \sqrt \pi}{2}$  (哭了，手算算不出来，无法验证)</p>
-<h2 id="5-其他函数及参数的用法">5.其他函数及参数的用法</h2>
-<p>这个涉及的知识就会比较深了，一般只有较高级的运用才会使用的到，一般仿照上面的代码使用就可以解决绝大多数问题，纯个人想加深理解，<strong>选读</strong> （等我有能力的时候再看下源码吧！）</p>
-<h4 id="微分：">微分：</h4>
-<h4 id="矩阵特征值：">矩阵特征值：</h4>
-<p>部分单词扩展：</p>
-<p><code>integral</code> :积分</p>
+<p>注意：</p>
+<h2 id="5-其他函数及参数的用法"><a href="#5-其他函数及参数的用法" class="headerlink" title="5.其他函数及参数的用法"></a>5.其他函数及参数的用法</h2><p>这个涉及的知识就会比较深了，一般只有较高级的运用才会使用的到，一般仿照上面的代码使用就可以解决绝大多数问题，纯个人想加深理解，<strong>选读</strong> （等我有能力的时候再看下源码吧！）</p>
+<h5 id="传参："><a href="#传参：" class="headerlink" title="传参："></a>传参：</h5><pre><code>from sympy import *
+x = symbols('x')
+fx = 5*x+4
+# 使用evalf函数传值
+y1 = fx.evalf(subs={x:6})
+print(y1)</code></pre><h4 id="微分："><a href="#微分：" class="headerlink" title="微分："></a>微分：</h4><h3 id="矩阵："><a href="#矩阵：" class="headerlink" title="矩阵："></a>矩阵：</h3><h4 id="构建矩阵："><a href="#构建矩阵：" class="headerlink" title="构建矩阵："></a>构建矩阵：</h4><pre><code>from sympy import *
+# 一纬矩阵
+m1 = Matrix([1, 2, 3])
+#二维矩阵
+m2 = Matrix([[1, -1], [3, 4], [0, 2]])
+print(latex(m1)
+print(latex(m2))</code></pre><p>输出：</p>
+<pre><code>\left[\begin{matrix}1\\2\\3\end{matrix}\right]
+\left[\begin{matrix}1 &amp; -1\\3 &amp; 4\\0 &amp; 2\end{matrix}\right]   </code></pre><p>完了，有些看不懂，赶紧去查查！ 详情请看《LaTeX之数学公式及符号的语法及表达》</p>
+<h4 id="扩展知识："><a href="#扩展知识：" class="headerlink" title="扩展知识："></a>扩展知识：</h4><p><code>Eq()</code>:创建方程  （例：Eq(x**7+a^2,0)   等式的左边和右边</p>
+<p><code>solve</code>:求解方程</p>
+<p><strong>部分单词扩展：</strong></p>
+<p><code>integral</code> :积分  </p>
 <p><code>indefinite</code>:不定积分 <code>definite</code>:定积分</p>
 <p><code>differential</code>:微分</p>
 <p><code>eigenvalues</code>:特征值</p>
-<h6 id="参考链接："><strong>参考链接：</strong></h6>
+<h6 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a><strong>参考链接：</strong></h6><p><a href="https://www.jianshu.com/p/e94d02707f4a" target="_blank" rel="noopener external nofollow noreferrer">https://www.jianshu.com/p/e94d02707f4a</a></p>
+<p><a href="https://docs.sympy.org/latest/tutorial/intro.html" target="_blank" rel="noopener external nofollow noreferrer">https://docs.sympy.org/latest/tutorial/intro.html</a></p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -1139,6 +1138,14 @@ print(i_expr)
                             
                                 <a href="/tags/%E5%8F%A4%E5%AE%A2/">
                                     <span class="chip bg-color">古客</span>
+                                </a>
+                            
+                                <a href="/tags/math/">
+                                    <span class="chip bg-color">math</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%AE%9A%E7%A7%AF%E5%88%86/">
+                                    <span class="chip bg-color">定积分</span>
                                 </a>
                             
                         </div>
@@ -1585,20 +1592,21 @@ print(i_expr)
                     <div class="summary block-with-text">
                         
                             
-
 概述
 
 
-1.
-2.
-3.
-4.
-5.
-参考链接：
+1. 
 
+ 
+
+
+
+
+
+参考链接：
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
-            i
+            if (!e
                         
                     </div>
                     <div class="publish-info">
@@ -1872,7 +1880,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">35.9k</span>&nbsp;字
+                class="white-color">36.4k</span>&nbsp;字
             
             
             
