@@ -6,13 +6,10 @@
     <meta charset="utf-8">
     <meta name="keywords" content="C,C++,语言,language,learn,program,编程,学习,笔记">
     <meta name="description" content="
-
 概述
 
-
 终于要开学了，记录一下学到的一些C++的知识，传闻最难的语言之一，我来挑战你了！
-1.准备开发环境
-我使用的是VS Code来进行编程，官方文档，博客参考这两个教程即可完成配置，不知为何百度很多教程都说安装完VS code再安">
+1.准备开发环境我使用的是VS Code来进行编程，官方文档，博客参考这两个教程即可完成配置，不知为何百度很多教程都说安装完VS code再安装个扩">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -64,7 +61,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/guhailong18/speedup2@master/css/my.css" />
     <script data-ad-client="ca-pub-7903599946607415" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/speedup2/libs/jquery/jquery.min.js"></script>
+	<!-- ECharts图表绘制 -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@4.6.0/dist/echarts.min.js"></script>
+	<script type="text/javascript" src="https://www.echartsjs.com/zh/dist/echarts-gl.min.js"></script>
 
+	<!-- 百度地图 -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@4.6.0/dist/extension/bmap.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@4.6.0/map/js/china.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@4.6.0/dist/extension/dataTool.min.js"></script>
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="古客" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
@@ -708,14 +712,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.3k
+                    258
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    9 分
+                    1 分
                 </div>
                 
 
@@ -732,70 +736,51 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <ul>
-<li>
-<h2 id="概述">概述</h2>
-</li>
+<li><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2></li>
 </ul>
 <p>终于要开学了，记录一下学到的一些C++的知识，传闻最难的语言之一，我来挑战你了！</p>
-<h2 id="1-准备开发环境">1.准备开发环境</h2>
-<p>我使用的是VS Code来进行编程，<a href="https://code.visualstudio.com/docs/cpp/config-mingw" target="_blank" rel="noopener external nofollow noreferrer">官方文档</a>，<a href="https://www.cnblogs.com/esllovesn/p/10012653.html" target="_blank" rel="noopener external nofollow noreferrer">博客</a>参考这两个教程即可完成配置，不知为何百度很多教程都说安装完VS code再安装个扩展就配置好了，全都是骗人的，让我懵逼了好长时间，真是！复杂也不是很复杂，一步步来就可以配置。记得要添加环境变量哦(￣▽￣)／</p>
-<h2 id="2-hello-world详解">2.hello world详解</h2>
-<p>打印出‘hello world’是每一个编程语言学习的第一部，可以说是一种信仰了。让我们将hello world的全部句子都做一个解析吧！</p>
-<p>先说明一下，<code>.c</code>是C语言文件的后缀，<code>.cpp</code>是C<ins>的后缀，刚开始我还傻乎乎的吧<code>.c</code>当成C</ins>的后缀。。。</p>
-<pre class=" language-language-c++"><code class="language-language-c++">#include <iostream>
+<h2 id="1-准备开发环境"><a href="#1-准备开发环境" class="headerlink" title="1.准备开发环境"></a>1.准备开发环境</h2><p>我使用的是VS Code来进行编程，<a href="https://code.visualstudio.com/docs/cpp/config-mingw" target="_blank" rel="noopener external nofollow noreferrer">官方文档</a>，<a href="https://www.cnblogs.com/esllovesn/p/10012653.html" target="_blank" rel="noopener external nofollow noreferrer">博客</a>参考这两个教程即可完成配置，不知为何百度很多教程都说安装完VS code再安装个扩展就配置好了，全都是骗人的，让我懵逼了好长时间，真是！复杂也不是很复杂，一步步来就可以配置。记得要添加环境变量哦(￣▽￣)／</p>
+<h2 id="2-hello-world详解"><a href="#2-hello-world详解" class="headerlink" title="2.hello world详解"></a>2.hello world详解</h2><p>打印出‘hello world’是每一个编程语言学习的第一部，可以说是一种信仰了。让我们将hello world的全部句子都做一个解析吧！</p>
+<p>先说明一下，<code>.c</code>是C语言文件的后缀，<code>.cpp</code>是C++的后缀，刚开始我还傻乎乎的吧<code>.c</code>当成C++的后缀。。。</p>
+<pre class=" language-c++"><code class="language-c++">#include <iostream>
 using namespace std;
- 
+
 // main() 是程序开始执行的地方
- 
+
 int main()
 {
-   cout &lt;&lt; "Hello World"; // 输出 Hello World
+   cout << "Hello World"; // 输出 Hello World
    return 0;
-}
-</iostream></code></pre>
+}</code></pre>
 <ul>
-<li>
-<p>#:告诉编辑器要预处理    include:表引入头文件   <code>&lt;iostream&gt;</code>:一个定义I/O流的文件，即输出流/输入流 (一般都要引入)</p>
+<li><p>#:告诉编辑器要预处理    include:表引入头文件   <code>&lt;iostream&gt;</code>:一个定义I/O流的文件，即输出流/输入流 (一般都要引入)</p>
 </li>
-<li>
-<p>using namespace std：使用名为<code>std</code>的命名空间，此命名空间包含C++的基本功能 <code>;</code>:终止语句符，表示一个逻辑表达式的结束，相当于中文的句号。</p>
+<li><p>using namespace std：使用名为<code>std</code>的命名空间，此命名空间包含C++的基本功能 <code>;</code>:终止语句符，表示一个逻辑表达式的结束，相当于中文的句号。</p>
 </li>
-<li>
-<p>//: 注释符号  <code>  /*         */</code>:此为多行注释</p>
+<li><p>//: 注释符号  <code>/*         */</code>:此为多行注释</p>
 </li>
-<li>
-<p>Main函数是入口，程序是从int main()开始执行</p>
+<li><p>Main函数是入口，程序是从int main()开始执行</p>
 </li>
-<li>
-<p><code>大括号{}</code>：函数的主体，即函数的开始与结束</p>
+<li><p><code>大括号{}</code>：函数的主体，即函数的开始与结束</p>
 </li>
-<li>
-<p><code>cout</code>:访问流对象  &lt;&lt;:输出右边的内容到显示器（不包含引号）  &gt;&gt;:输出左边的</p>
+<li><p><code>cout</code>:访问流对象  &lt;&lt;:输出右边的内容到显示器（不包含引号）  &gt;&gt;:输出左边的</p>
 </li>
-<li>
-<p><code>return 0</code>: 程序中的最后一条指令语句，终止main()函数，并返回0给调用的进程。非零值(通常为1)表示异常终止。(没有return也是可以运行的，但是程序大了会有不良影响，要养成好习惯)</p>
+<li><p><code>return 0</code>: 程序中的最后一条指令语句，终止main()函数，并返回0给调用的进程。非零值(通常为1)表示异常终止。(没有return也是可以运行的，但是程序大了会有不良影响，要养成好习惯)</p>
 </li>
-<li>
-<p>其他补充：<code>endl</code>:换行符（也可以用<code>/n</code>) 区别：endl 时会刷新缓冲区，使得栈中的东西刷新一次，但用 “\n” 不会刷新，它只会换行，建议用endl</p>
+<li><p>其他补充：<code>endl</code>:换行符（也可以用<code>/n</code>) 区别：endl 时会刷新缓冲区，使得栈中的东西刷新一次，但用 “\n” 不会刷新，它只会换行，建议用endl</p>
 </li>
 </ul>
 <p>（备注：C++编译器是忽略空行和空格的，打代码时需注意可读性，方便维护，不要单单能运行就可以了）</p>
 <p><strong>上面的信息都非常重要，请牢牢记住！</strong></p>
-<h4 id="扩展使用：">扩展使用：</h4>
-<h5 id="多行输出：">多行输出：</h5>
-<pre><code>{
+<h4 id="扩展使用："><a href="#扩展使用：" class="headerlink" title="扩展使用："></a>扩展使用：</h4><h5 id="多行输出："><a href="#多行输出：" class="headerlink" title="多行输出："></a>多行输出：</h5><pre><code>{
   cout &lt;&lt; "Hello world!" &lt;&lt; endl;
   cout &lt;&lt; "I love 古客!";  //多行输出时，这个是正常都会运用的表达，但有更加方便的表达方法
   return 0;
-}
-</code></pre>
-<pre><code>{
+}</code></pre><pre><code>{
     cout&lt;&lt;"Hello, world!\n"
     &lt;&lt;"I love 古客!";
     return 0;
-}
-</code></pre>
-<p>当然，有可能会输出汉字会出现乱码，解决方法挺复杂的，看得懂得就看吧！（更惨的是有时候会乱码，有时候不会，只能放弃我美好的中文了）</p>
+}</code></pre><p>当然，有可能会输出汉字会出现乱码，解决方法挺复杂的，看得懂得就看吧！（更惨的是有时候会乱码，有时候不会，只能放弃我美好的中文了）</p>
 <pre><code>#include&lt;iostream&gt;
 #include&lt;string&gt;
 using namespace std;
@@ -805,12 +790,9 @@ string str;
 cin&gt;&gt;str;
 cout&lt;&lt;str&lt;&lt;endl;
 return 0;
-}
-</code></pre>
-<p>（额，我也不是很懂，下次再补充吧，查了下，感觉要扩展很多知识，只能先放着了，看得懂英文的看一下<a href="https://en.cppreference.com/w/cpp/language/string_literal" target="_blank" rel="noopener external nofollow noreferrer">这个</a>）</p>
+}</code></pre><p>（额，我也不是很懂，下次再补充吧，查了下，感觉要扩展很多知识，只能先放着了，看得懂英文的看一下<a href="https://en.cppreference.com/w/cpp/language/string_literal" target="_blank" rel="noopener external nofollow noreferrer">这个</a>）</p>
 <p>更新，后文有其他解决办法</p>
-<h5 id="cin-的用法：">cin&gt;&gt;的用法：</h5>
-<p>cin可以连续从键盘读取想要的数据，以空格、tab或换行作为分隔符。实例程序如下。</p>
+<h5 id="cin-gt-gt-的用法："><a href="#cin-gt-gt-的用法：" class="headerlink" title="cin>>的用法："></a>cin&gt;&gt;的用法：</h5><p>cin可以连续从键盘读取想要的数据，以空格、tab或换行作为分隔符。实例程序如下。</p>
 <pre><code>#include &lt;iostream&gt;
 using namespace std;
 
@@ -825,11 +807,9 @@ int main()
 
     system("pause");
     return 0;
-}
-</code></pre>
-<p>（看到这个不知道有没有人跟我一样想到这个可以用来做游戏，像贪吃蛇，打飞机那样的小游戏，有时间可以试试(ノ￣▽￣)）</p>
+}</code></pre><p>（看到这个不知道有没有人跟我一样想到这个可以用来做游戏，像贪吃蛇，打飞机那样的小游戏，有时间可以试试(ノ￣▽￣)）</p>
 <p><strong>下面为进阶的表示：</strong></p>
-<pre class=" language-language-c++"><code class="language-language-c++">#include <iostream>
+<pre class=" language-c++"><code class="language-c++">#include <iostream>
 #include <vector>
 #include <string>
 
@@ -839,13 +819,12 @@ int main()
 {
     vector<string> msg {"Hello", "C++", "World", "from", "VS Code", "and the C++ extension!"};   //
 
-    for (const string&amp; word : msg)
+    for (const string& word : msg)
     {
-        cout &lt;&lt; word &lt;&lt; " ";
+        cout << word << " ";
     }
-    cout &lt;&lt; endl;
-}
-</string></string></vector></iostream></code></pre>
+    cout << endl;
+}</code></pre>
 <p><code>vector</code>:是向量类型，可以容纳许多类型的数据</p>
 <p><code>string</code>: 定义了一个变量类型、一个宏和各种操作字符数组的函数</p>
 <p>补充知识：</p>
@@ -853,134 +832,136 @@ int main()
 <p><strong>.h</strong> 中存放类的声明，函数原型（放在类的声明中）。</p>
 <p><strong>.cpp</strong> 存放函数体。</p>
 <p><strong>&lt;&gt;</strong> 先去系统目录中找头文件，如果没有在到当前目录下找。所以像标准的头文件 stdio.h、stdlib.h 等用这个方法。</p>
-<p><strong>" "</strong> 首先在当前目录下寻找，如果找不到，再到系统目录中寻找。 这个用于 include 自定义的头文件，让系统优先使用当前目录中定义的。</p>
-<h2 id="3-各种进制的转换">3.各种进制的转换</h2>
-<p>先讲讲进制转换的原理，我们能够不借助工具也可以转换并可以验证计算机的答案。</p>
-<p>$(1001)_2$ $\Rightarrow$  $2<sup>3+0*2</sup>2+0*2<sup>1+2</sup>0$ =9</p>
+<p><strong>“ “</strong> 首先在当前目录下寻找，如果找不到，再到系统目录中寻找。 这个用于 include 自定义的头文件，让系统优先使用当前目录中定义的。</p>
+<h2 id="3-各种进制的转换"><a href="#3-各种进制的转换" class="headerlink" title="3.各种进制的转换"></a>3.各种进制的转换</h2><p>先讲讲进制转换的原理，我们能够不借助工具也可以转换并可以验证计算机的答案。</p>
+<p>$(1001)_2$ $\Rightarrow$  $2^3+0<em>2^2+0</em>2^1+2^0$ =9</p>
 <p>十进制转其他就是取余数就可以了</p>
 <p>十六进制：10-15用A-F表示</p>
 <p>(原本还想写清楚一些，但是打数学公式实在是太麻烦了，相信大家一定懂了(*´ﾟ∀ﾟ｀)ﾉ )</p>
 <p>接下看一下如何用程序进行转换。</p>
 <p><strong>Python版</strong>（这个我熟悉一些）</p>
-<pre class=" language-language-python"><code class="language-language-python">dec = int(input("输入十进制的数字:"))
-print("十进制数为:",dec)
-print("转换为二进制为：", bin(dec))
-print("转换为八进制为：", oct(dec))
-print("转换为十六进制为：", hex(dec))
-</code></pre>
+<pre class=" language-python"><code class="language-python">dec <span class="token operator">=</span> int<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token string">"输入十进制的数字:"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"十进制数为:"</span><span class="token punctuation">,</span>dec<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"转换为二进制为："</span><span class="token punctuation">,</span> bin<span class="token punctuation">(</span>dec<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"转换为八进制为："</span><span class="token punctuation">,</span> oct<span class="token punctuation">(</span>dec<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"转换为十六进制为："</span><span class="token punctuation">,</span> hex<span class="token punctuation">(</span>dec<span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre>
 <p><strong>C语言版</strong></p>
-<h4 id="十进制转换为八进制">十进制转换为八进制</h4>
-<pre class=" language-language-c"><code class="language-language-c">#include <stdio.h>   //定义了三个变量类型、一些宏和各种函数来执行输入和输出
-#include <math.h>   //引入数学计算
- 
-int convertDecimalToOctal(int decimalNumber);
-int main()
-{
-    int decimalNumber;
- 
-    printf("输入一个十进制数: ");
-    scanf("%d", &amp;decimalNumber);
- 
-    printf("十进制数 %d 转换为八进制为 %d", decimalNumber, convertDecimalToOctal(decimalNumber));
- 
-    return 0;
-}
- 
-int convertDecimalToOctal(int decimalNumber)
-{
-    int octalNumber = 0, i = 1;
- 
-    while (decimalNumber != 0)
-    {
-        octalNumber += (decimalNumber % 8) * i;
-        decimalNumber /= 8;
-        i *= 10;
-    }
- 
-    return octalNumber;
-}
-</math.h></stdio.h></code></pre>
-<h4 id="八进制转换为十进制">八进制转换为十进制</h4>
-<pre><code>#include &lt;stdio.h&gt;   //定义了三个变量类型、一些宏和各种函数来执行输入和输出
+<h4 id="十进制转换为八进制"><a href="#十进制转换为八进制" class="headerlink" title="十进制转换为八进制"></a>十进制转换为八进制</h4><pre class=" language-c"><code class="language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h></span>   </span><span class="token comment" spellcheck="true">//定义了三个变量类型、一些宏和各种函数来执行输入和输出</span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;math.h></span>   </span><span class="token comment" spellcheck="true">//引入数学计算</span>
+
+<span class="token keyword">int</span> <span class="token function">convertDecimalToOctal</span><span class="token punctuation">(</span><span class="token keyword">int</span> decimalNumber<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> decimalNumber<span class="token punctuation">;</span>
+
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"输入一个十进制数: "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>decimalNumber<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"十进制数 %d 转换为八进制为 %d"</span><span class="token punctuation">,</span> decimalNumber<span class="token punctuation">,</span> <span class="token function">convertDecimalToOctal</span><span class="token punctuation">(</span>decimalNumber<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> <span class="token function">convertDecimalToOctal</span><span class="token punctuation">(</span><span class="token keyword">int</span> decimalNumber<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> octalNumber <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>decimalNumber <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        octalNumber <span class="token operator">+</span><span class="token operator">=</span> <span class="token punctuation">(</span>decimalNumber <span class="token operator">%</span> <span class="token number">8</span><span class="token punctuation">)</span> <span class="token operator">*</span> i<span class="token punctuation">;</span>
+        decimalNumber <span class="token operator">/</span><span class="token operator">=</span> <span class="token number">8</span><span class="token punctuation">;</span>
+        i <span class="token operator">*</span><span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> octalNumber<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h4 id="八进制转换为十进制"><a href="#八进制转换为十进制" class="headerlink" title="八进制转换为十进制"></a>八进制转换为十进制</h4><pre><code>#include &lt;stdio.h&gt;   //定义了三个变量类型、一些宏和各种函数来执行输入和输出
 #include &lt;math.h&gt;   
- 
+
 long long convertOctalToDecimal(int octalNumber);
 int main()
 {
     int octalNumber;
- 
+
     printf("输入一个八进制数: ");
     scanf("%d", &amp;octalNumber);
- 
+
     printf("八进制数 %d  转换为十进制为 %lld", octalNumber, convertOctalToDecimal(octalNumber));
- 
+
     return 0;
 }
- 
+
 long long convertOctalToDecimal(int octalNumber)
 {
     int decimalNumber = 0, i = 0;
- 
+
     while(octalNumber != 0)
     {
         decimalNumber += (octalNumber%10) * pow(8,i);
         ++i;
         octalNumber/=10;
     }
- 
+
     i = 1;
- 
+
     return decimalNumber;
-}
-</code></pre>
-<p>（C语言我不太懂，这是菜鸟课程的）</p>
-<h2 id="4-一些性质和概念">4.一些性质和概念</h2>
-<h2 id="5-实例">5.实例</h2>
-<pre class=" language-language-c++"><code class="language-language-c++">#include <iostream>
+}</code></pre><p>（C语言我不太懂，这是菜鸟课程的）</p>
+<h2 id="4-一些性质和概念"><a href="#4-一些性质和概念" class="headerlink" title="4.一些性质和概念"></a>4.一些性质和概念</h2><h2 id="5-实例"><a href="#5-实例" class="headerlink" title="5.实例"></a>5.实例</h2><pre class=" language-c++"><code class="language-c++">#include <iostream>
 
 using namespace std;
 
 int main()
 {
     int a ,b ,c;
-    cout &lt;&lt; "请输入第一个数a:" &lt;&lt; endl;
-    cin &gt;&gt; a;  //监视键盘输入值并赋值与a
-    cout &lt;&lt; "请输入第二个数b:" &lt;&lt; endl;
-    cin &gt;&gt; b;
-    cout &lt;&lt; endl &lt;&lt;"交换前" &lt;&lt; endl &lt;&lt;"a为:" &lt;&lt; a &lt;&lt; endl &lt;&lt; "b为:" &lt;&lt; b &lt;&lt; endl;
+    cout << "请输入第一个数a:" << endl;
+    cin >> a;  //监视键盘输入值并赋值与a
+    cout << "请输入第二个数b:" << endl;
+    cin >> b;
+    cout << endl <<"交换前" << endl <<"a为:" << a << endl << "b为:" << b << endl;
     c = a;
     a = b;
     b = c;
 
-    cout &lt;&lt; endl &lt;&lt;"交换后"&lt;&lt; endl &lt;&lt;"a为:" &lt;&lt; a &lt;&lt; endl &lt;&lt; "b为:" &lt;&lt; b &lt;&lt; endl;
-}
-</iostream></code></pre>
+    cout << endl <<"交换后"<< endl <<"a为:" << a << endl << "b为:" << b << endl;
+}</code></pre>
 <p>输出结果：</p>
 <img src="https://i.loli.net/2020/03/05/xvBkNDPOtISsX1W.png" alt="20200305230609" style="zoom:80%;"><span class="image-caption">20200305230609</span>
+
+
+
+
+
+
+
 <p>运行此程序时我们可能会遇到如下问题：</p>
 <img src="https://i.loli.net/2020/03/05/3TFVDzoO6Kw7h8J.png" alt="20200305180352" style="zoom:80%;"><span class="image-caption">20200305180352</span>
+
 <p>这个是因为输出是只能用来看的，要输入得切换到终端！</p>
 <p>在设置中搜索run code config ，将run in terminal打勾即可。</p>
 <img src="https://i.loli.net/2020/03/05/vkLI9iM6YEwQRoy.png" alt="20200305180852" style="zoom:80%;"><span class="image-caption">20200305180852</span>
+
 <p>你以为就可以使用了吗？不不不，其实你还会遇到终端显示乱码的问题。</p>
 <p>VSCode终端其实调用的是cmd.exe，所以当这里出现中文乱码的时候要解决的是cmd的编码设置问题。</p>
 <p>打开cmd，通过<code>chcp</code>命令查看cmd的编码设置，GBK2312的代码页编号是<em>936</em>，然后改成utf-8的编码即可，utf-8对应的代码页编号是65001，所以执行<code>chcp 65001</code>就可以把cmd的编码设置成uft-8了，这样就解决了乱码问题。</p>
 <p>当我以为这样就可以大功告成之后，结果。。。</p>
 <img src="https://i.loli.net/2020/03/05/zOc5WMLoD87sRhb.png" alt="20200305220852" style="zoom:80%;"><span class="image-caption">20200305220852</span>
+
+
+
 <img src="https://i.loli.net/2020/03/05/7wWnaXVv5uTpMZP.jpg" alt="20200305221101" style="zoom:80%;"><span class="image-caption">20200305221101</span>
+
+
+
 <p>我去，算你狠，在百度一番，在各路大神的指导下仍然无果之后，只能放弃了。。(；д；)（我果然还是太蠢了吗。）</p>
-<h3 id="终极方案">终极方案</h3>
-<p>既然如此，那就不能怪我使用终极方案了，不管你是什么破电脑和系统，只要能成功运行浏览器，你就再也不用担心配置不好环境的问题了ヽ(･ω･´ﾒ)</p>
+<h3 id="终极方案"><a href="#终极方案" class="headerlink" title="终极方案"></a>终极方案</h3><p>既然如此，那就不能怪我使用终极方案了，不管你是什么破电脑和系统，只要能成功运行浏览器，你就再也不用担心配置不好环境的问题了ヽ(･ω･´ﾒ)</p>
 <p>没有什么是在线工具无法解决的问题，如果有，那就两个！</p>
 <p><a href="https://c.runoob.com/compile/12" target="_blank" rel="noopener external nofollow noreferrer">https://c.runoob.com/compile/12</a> （推荐，对各种代码的应对措施较好）</p>
 <p><a href="https://tool.lu/coderunner/" target="_blank" rel="noopener external nofollow noreferrer">https://tool.lu/coderunner/</a></p>
 <p>但是上面那两个没有交互功能，下面这个有，可惜全是英文</p>
 <p><a href="https://repl.it/" target="_blank" rel="noopener external nofollow noreferrer">https://repl.it/</a></p>
-<p><a href="https://www.bccn.net/run/%EF%BC%88%E8%BF%99%E4%B8%AA%E4%B9%9F%E6%9C%89%EF%BC%8C%E6%98%AF%E4%B8%AD%E6%96%87%EF%BC%89" target="_blank" rel="noopener external nofollow noreferrer">https://www.bccn.net/run/（这个也有，是中文）</a></p>
+<p><a href="https://www.bccn.net/run/（这个也有，是中文）" target="_blank" rel="noopener external nofollow noreferrer">https://www.bccn.net/run/（这个也有，是中文）</a></p>
 <p>(吐槽下：C++的编译速度是真的慢，跟python没法比，而且用起来还好麻烦，需要想很多底层的事)</p>
-<h2 id="附录：">附录：</h2>
-<h2 id="C-关键字">C++ 关键字</h2>
-<p>下表列出了 C++ 中的保留字。这些保留字不能作为常量名、变量名或其他标识符名称。</p>
+<h2 id="附录："><a href="#附录：" class="headerlink" title="附录："></a>附录：</h2><h2 id="C-关键字"><a href="#C-关键字" class="headerlink" title="C++ 关键字"></a>C++ 关键字</h2><p>下表列出了 C++ 中的保留字。这些保留字不能作为常量名、变量名或其他标识符名称。</p>
 <table>
 <thead>
 <tr>
@@ -990,8 +971,7 @@ int main()
 <th>this</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>auto</td>
 <td>enum</td>
 <td>operator</td>
@@ -1081,10 +1061,12 @@ int main()
 <td>template</td>
 <td></td>
 </tr>
-</tbody>
-</table>
-<h6 id="参考链接："><strong>参考链接：</strong></h6>
-<p><a href="https://www.runoob.com/cplusplus/cpp-basic-syntax.html" target="_blank" rel="noopener external nofollow noreferrer">https://www.runoob.com/cplusplus/cpp-basic-syntax.html</a></p>
+</tbody></table>
+<h6 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a><strong>参考链接：</strong></h6><p><a href="https://www.runoob.com/cplusplus/cpp-basic-syntax.html" target="_blank" rel="noopener external nofollow noreferrer">https://www.runoob.com/cplusplus/cpp-basic-syntax.html</a></p>
+<details open=""> <summary tabindex="-1"><a href="javascript:" rel="external nofollow noreferrer" onclick="this.parentNode.click();">这是示例</a></summary> <content>点击无外框，键盘focus有。</content> </details>
+
+
+
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -1794,14 +1776,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
 
 
-<!-- ECharts图表绘制 -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@4.6.0/dist/echarts.min.js"></script>
-<script type="text/javascript" src="/js/echarts-gl.min.js"></script>
 
-<!-- 百度地图 -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@4.6.0/dist/extension/bmap.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@4.6.0/map/js/china.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@4.6.0/dist/extension/dataTool.min.js"></script>
 
     
 
@@ -1828,7 +1803,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">44k</span>&nbsp;字
+                class="white-color">42k</span>&nbsp;字
             
             
             
