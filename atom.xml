@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://guke.cf/"/>
-  <updated>2020-03-11T13:45:19.132Z</updated>
+  <updated>2020-03-11T15:04:13.048Z</updated>
   <id>https://guke.cf/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://guke.cf/posts/2QFMTEV/"/>
     <id>https://guke.cf/posts/2QFMTEV/</id>
     <published>2020-03-11T09:30:57.000Z</published>
-    <updated>2020-03-11T13:45:19.132Z</updated>
+    <updated>2020-03-11T15:04:13.048Z</updated>
     
     <summary type="html">
     
@@ -38,6 +38,8 @@
     
     
       <category term="古客" scheme="https://guke.cf/tags/%E5%8F%A4%E5%AE%A2/"/>
+    
+      <category term="IT" scheme="https://guke.cf/tags/IT/"/>
     
   </entry>
   
