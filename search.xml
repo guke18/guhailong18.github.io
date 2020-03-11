@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>ECharts图表简单入门</title>
+      <link href="/posts/2QFMTEV/"/>
+      <url>/posts/2QFMTEV/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ul><li><h2 id="概述">概述</h2></li></ul><h2 id="1-简单图表">1.简单图表</h2><h3 id="在HTML">在HTML</h3><pre><code>&lt;body&gt;    &lt;!-- 为 ECharts 准备一个具备大小（宽高）的 DOM --&gt;    &lt;div id="main" style="width: 600px;height:400px;"&gt;&lt;/div&gt; &lt;/body&gt;</code></pre><div id="main" style="width: 600px;height:400px;"></div><h3 id="柱状图：">柱状图：</h3><pre><code>&lt;body&gt;    &lt;!-- 为ECharts准备一个具备大小（宽高）的Dom --&gt;    &lt;div id="main" style="width: 600px;height:400px;"&gt;&lt;/div&gt;    &lt;script type="text/javascript"&gt;        // 基于准备好的dom，初始化echarts实例        var myChart = echarts.init(document.getElementById('main'));         // 指定图表的配置项和数据        var option = {            title: {                text: 'ECharts 入门示例'            },            tooltip: {},            legend: {                data:['销量']            },            xAxis: {                data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]            },            yAxis: {},            series: [{                name: '销量',                type: 'bar',                data: [5, 20, 36, 10, 10, 20]            }]        };         // 使用刚指定的配置项和数据显示图表。        myChart.setOption(option);    &lt;/script&gt; &lt;/body&gt;</code></pre><div id="main" style="width: 600px;height:400px;"></div>     <script type="text/javascript">         // 基于准备好的dom，初始化echarts实例         var myChart = echarts.init(document.getElementById('main'));          // 指定图表的配置项和数据         var option = {             title: {                 text: 'ECharts 入门示例'             },             tooltip: {},             legend: {                 data:['销量']             },             xAxis: {                 data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]             },             yAxis: {},             series: [{                 name: '销量',                 type: 'bar',                 data: [5, 20, 36, 10, 10, 20]             }]         };          // 使用刚指定的配置项和数据显示图表。         myChart.setOption(option);     </script><h2 id="2">2.</h2><h2 id="3">3.</h2><h2 id="4">4.</h2><h2 id="5">5.</h2><h6 id="参考链接："><strong>参考链接：</strong></h6><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 古客 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>python之数据处理详解</title>
       <link href="/posts/222MR8T/"/>
       <url>/posts/222MR8T/</url>
