@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://guke.cf/"/>
-  <updated>2020-03-16T15:13:52.743Z</updated>
+  <updated>2020-03-18T07:26:16.364Z</updated>
   <id>https://guke.cf/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Visual-Studio使用小技巧</title>
+    <link href="https://guke.cf/posts/2PMRKD/"/>
+    <id>https://guke.cf/posts/2PMRKD/</id>
+    <published>2020-03-18T00:43:43.000Z</published>
+    <updated>2020-03-18T07:26:16.364Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="古客" scheme="https://guke.cf/tags/%E5%8F%A4%E5%AE%A2/"/>
+    
+  </entry>
   
   <entry>
     <title>matlab之灰度预测</title>
@@ -498,7 +523,7 @@
     <link href="https://guke.cf/posts/1NV19H3/"/>
     <id>https://guke.cf/posts/1NV19H3/</id>
     <published>2020-03-01T12:18:32.000Z</published>
-    <updated>2020-03-15T12:01:33.437Z</updated>
+    <updated>2020-03-18T04:01:07.698Z</updated>
     
     <summary type="html">
     
@@ -616,33 +641,6 @@
     
     
       <category term="笔记" scheme="https://guke.cf/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="python" scheme="https://guke.cf/tags/python/"/>
-    
-      <category term="古客" scheme="https://guke.cf/tags/%E5%8F%A4%E5%AE%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python练手之百度翻译魔改</title>
-    <link href="https://guke.cf/posts/2RF1FT9/"/>
-    <id>https://guke.cf/posts/2RF1FT9/</id>
-    <published>2020-02-25T10:07:24.000Z</published>
-    <updated>2020-02-25T10:28:59.145Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
     
       <category term="python" scheme="https://guke.cf/tags/python/"/>
     
