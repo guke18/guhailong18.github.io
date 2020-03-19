@@ -66,6 +66,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/guhailong18/speedup2/libs/animate/animate.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/guhailong18/speedup2/libs/lightGallery/css/lightgallery.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/guhailong18/speedup2@master/css/matery.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/guhailong18/speedup2@master/css/my.css" />
     <script data-ad-client="ca-pub-7903599946607415" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/speedup2/libs/jquery/jquery.min.js"></script>
@@ -293,9 +294,18 @@
       <li>
         <a href="/position">
           
-          <i class="fas fa-image" style="margin-top: -20px; zoom: 0.6;"></i>
+          <i class="fas fa-book" style="margin-top: -20px; zoom: 0.6;"></i>
           
           <span>IP定位</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/test">
+          
+          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>功能测试</span>
         </a>
       </li>
       
@@ -537,9 +547,19 @@
 				
                   <a href="/position " style="margin-left:50px";>
 				  
-				   <i class="fa fas fa-image" style="position: absolute;left:28px" ></i>
+				   <i class="fa fas fa-book" style="position: absolute;left:28px" ></i>
 			      
 		          <span>IP定位</span>
+                  </a>
+                </li>
+              
+                <li>   
+				
+                  <a href="/test " style="margin-left:50px";>
+				  
+				   <i class="fa fas fa-film" style="position: absolute;left:28px" ></i>
+			      
+		          <span>功能测试</span>
                   </a>
                 </li>
                
@@ -792,7 +812,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-03-18
+                    2020-03-19
                 </div>
                 
 
@@ -909,7 +929,6 @@
 <p>``标签前面出现了一个小三角；</p>
 <h4 id="展开与收起是通过open属性控制的"><a href="#展开与收起是通过open属性控制的" class="headerlink" title="展开与收起是通过open属性控制的"></a>展开与收起是通过<code>open</code>属性控制的</h4><p>通过在``标签上添加布尔类型的<code>open</code>属性，可以让我们的详情信息默认就是展开状态，如下HTML示意：</p>
 <pre><code>&lt;details open&gt; &lt;summary&gt;这是摘要2&lt;/summary&gt; &lt;content&gt;这里&amp;lt;details&amp;gt;标签设置了HTML布尔属性open，因此，默认是展开状态。&lt;/content&gt; &lt;/details&gt;</code></pre><h3 id="百度地图："><a href="#百度地图：" class="headerlink" title="百度地图："></a>百度地图：</h3><script src="http://api.map.baidu.com/api?v=2.0&amp;ak=UgoTKFdlcoRDASGfBgON93thskRGnGWv"></script>
-
 <h3 id="ECharts图表"><a href="#ECharts图表" class="headerlink" title="ECharts图表"></a>ECharts图表</h3><script>
 var bmapChart=echarts.init(document.getElementById("map-wrap"));var data=[{name:"上海",value:299},{name:"厦门",value:245},{name:"丰城",value:120},{name:"南昌",value:160},{name:"张家界",value:128},{name:"长沙",value:75},{name:"杭州",value:90},{name:"福州",value:90},{name:"深圳",value:90},{name:"武汉",value:73}];var geoCoordMap={"厦门":[118.105,24.443],"上海":[121.399,31.321],"丰城":[115.801,28.201],"南昌":[115.856,28.691],"张家界":[110.489,29.118],"福州":[119.3,26.08],"长沙":[113,28.21],"杭州":[120.16,30.28],"深圳":[114.06,22.55],"武汉":[114.31,30.52]};var convertData=function(data){var res=[];for(var i=0;i<data.length;i++){var geoCoord=geoCoordMap[data[i].name];if(geoCoord){res.push({name:data[i].name,value:geoCoord.concat(data[i].value)})}}return res};option={title:{text:"我们的足迹 - Our footprints",subtext:"一步一个脚印，让时光见证",sublink:"#",left:"center"},tooltip:{trigger:"item"},bmap:{center:[106.320439,32.58783],zoom:5,roam:true,mapStyle:{styleJson:[{"featureType":"water","elementType":"all","stylers":{"color":"#d1d1d1"}},{"featureType":"land","elementType":"all","stylers":{"color":"#f3f3f3"}},{"featureType":"railway","elementType":"all","stylers":{"visibility":"off"}},{"featureType":"highway","elementType":"all","stylers":{"color":"#fdfdfd"}},{"featureType":"highway","elementType":"labels","stylers":{"visibility":"off"}},{"featureType":"arterial","elementType":"geometry","stylers":{"color":"#fefefe"}},{"featureType":"arterial","elementType":"geometry.fill","stylers":{"color":"#fefefe"}},{"featureType":"poi","elementType":"all","stylers":{"visibility":"off"}},{"featureType":"green","elementType":"all","stylers":{"visibility":"off"}},{"featureType":"subway","elementType":"all","stylers":{"visibility":"off"}},{"featureType":"manmade","elementType":"all","stylers":{"color":"#d1d1d1"}},{"featureType":"local","elementType":"all","stylers":{"color":"#d1d1d1"}},{"featureType":"arterial","elementType":"labels","stylers":{"visibility":"off"}},{"featureType":"boundary","elementType":"all","stylers":{"color":"#fefefe"}},{"featureType":"building","elementType":"all","stylers":{"color":"#d1d1d1"}},{"featureType":"label","elementType":"labels.text.fill","stylers":{"color":"#999999"}}]}},series:[{name:"footmark",type:"scatter",coordinateSystem:"bmap",data:convertData(data),symbolSize:function(val){return val[2]/10},label:{normal:{formatter:"{b}",position:"right",show:false},emphasis:{show:true}},itemStyle:{normal:{color:"#60C0DD"}}},{name:"I miss you",type:"effectScatter",coordinateSystem:"bmap",data:convertData(data.sort(function(a,b){return b.value-a.value}).slice(0,2)),symbolSize:function(val){return val[2]/10},showEffectOn:"render",rippleEffect:{brushType:"stroke"},hoverAnimation:true,label:{normal:{formatter:"{b}",position:"right",show:true}},itemStyle:{normal:{color:"purple",shadowBlur:10,shadowColor:"#333"}},zlevel:1}]};bmapChart.setOption(option);
 </script>
@@ -929,7 +948,15 @@ var bmapChart=echarts.init(document.getElementById("map-wrap"));var data=[{name:
     server="netease"
     type="playlist"
     id="60198"&gt;
-&lt;/meting-js&gt;</code></pre><script>
+&lt;/meting-js&gt;</code></pre><h2 id="JS库Velocity"><a href="#JS库Velocity" class="headerlink" title="JS库Velocity"></a>JS库Velocity</h2><pre><code>var elements = document.querySelector("div");
+Velocity(elements, {"color": "red"});</code></pre><p>var elements = document.querySelector(“div”);Velocity(elements, {“color”: “red”});</p>
+<pre><code>element.velocity({
+    tween: [456, 123]
+}, {
+    progress: function(elements, percentComplete, remaining, tweenValue, activeCall) {
+        console.log("The current tween value is " + tweenValue)
+    }
+});</code></pre><h2 id="Animate-css"><a href="#Animate-css" class="headerlink" title="Animate.css"></a>Animate.css</h2><pre><code>&lt;h1 class="animated infinite bounce delay-2s"&gt;Example&lt;/h1&gt;</code></pre><h6 class="animated infinite bounce delay-2s">Example</h6><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -1631,6 +1658,15 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@4.6.0/dist/extension/bmap.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@4.6.0/map/js/china.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@4.6.0/dist/extension/dataTool.min.js"></script>
+<!-- 百度地图 -->
+
+
+<!-- JS库Velocity -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/velocity/2.0.3/velocity.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/velocity/2.0.3/velocity.ui.min.js"></script>
+
+
+
 
 
 
