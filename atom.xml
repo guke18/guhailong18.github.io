@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://guke.cf/"/>
-  <updated>2020-03-18T07:26:16.364Z</updated>
+  <updated>2020-03-19T08:09:59.167Z</updated>
   <id>https://guke.cf/</id>
   
   <author>
@@ -15,6 +15,103 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2020年度读书计划</title>
+    <link href="https://guke.cf/posts/1PA6NSE/"/>
+    <id>https://guke.cf/posts/1PA6NSE/</id>
+    <published>2020-03-19T08:09:59.000Z</published>
+    <updated>2020-03-19T08:09:59.167Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="古客" scheme="https://guke.cf/tags/%E5%8F%A4%E5%AE%A2/"/>
+    
+      <category term="读书" scheme="https://guke.cf/tags/%E8%AF%BB%E4%B9%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020年度学习计划·</title>
+    <link href="https://guke.cf/posts/JH6W2C/"/>
+    <id>https://guke.cf/posts/JH6W2C/</id>
+    <published>2020-03-19T08:09:21.000Z</published>
+    <updated>2020-03-19T12:42:01.443Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="学习计划" scheme="https://guke.cf/categories/%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/"/>
+    
+    
+      <category term="爬虫" scheme="https://guke.cf/tags/%E7%88%AC%E8%99%AB/"/>
+    
+      <category term="2020" scheme="https://guke.cf/tags/2020/"/>
+    
+      <category term="python" scheme="https://guke.cf/tags/python/"/>
+    
+      <category term="学习" scheme="https://guke.cf/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="数学" scheme="https://guke.cf/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="编程" scheme="https://guke.cf/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="古客" scheme="https://guke.cf/tags/%E5%8F%A4%E5%AE%A2/"/>
+    
+      <category term="book" scheme="https://guke.cf/tags/book/"/>
+    
+      <category term="Java" scheme="https://guke.cf/tags/Java/"/>
+    
+      <category term="学习计划" scheme="https://guke.cf/tags/%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>给你的hexo加上酷炫的加载页面</title>
+    <link href="https://guke.cf/posts/1PEZK8/"/>
+    <id>https://guke.cf/posts/1PEZK8/</id>
+    <published>2020-03-18T08:25:02.000Z</published>
+    <updated>2020-03-18T08:27:20.280Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="古客" scheme="https://guke.cf/tags/%E5%8F%A4%E5%AE%A2/"/>
+    
+  </entry>
   
   <entry>
     <title>Visual-Studio使用小技巧</title>
@@ -523,7 +620,7 @@
     <link href="https://guke.cf/posts/1NV19H3/"/>
     <id>https://guke.cf/posts/1NV19H3/</id>
     <published>2020-03-01T12:18:32.000Z</published>
-    <updated>2020-03-18T04:01:07.698Z</updated>
+    <updated>2020-03-18T07:50:10.876Z</updated>
     
     <summary type="html">
     
@@ -554,97 +651,6 @@
       <category term="古客" scheme="https://guke.cf/tags/%E5%8F%A4%E5%AE%A2/"/>
     
       <category term="C++" scheme="https://guke.cf/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python之正则表达式</title>
-    <link href="https://guke.cf/posts/2D67W0Q/"/>
-    <id>https://guke.cf/posts/2D67W0Q/</id>
-    <published>2020-03-01T09:55:32.000Z</published>
-    <updated>2020-03-01T09:55:32.458Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="python" scheme="https://guke.cf/tags/python/"/>
-    
-      <category term="古客" scheme="https://guke.cf/tags/%E5%8F%A4%E5%AE%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2020寒假个人成长记录</title>
-    <link href="https://guke.cf/posts/3ZRJMQY/"/>
-    <id>https://guke.cf/posts/3ZRJMQY/</id>
-    <published>2020-03-01T01:48:19.000Z</published>
-    <updated>2020-03-01T09:55:40.465Z</updated>
-    
-    <summary type="html">
-    
-      有东西被加密了, 请输入密码查看.
-    
-    </summary>
-    
-    
-      <category term="日记" scheme="https://guke.cf/categories/%E6%97%A5%E8%AE%B0/"/>
-    
-    
-      <category term="2020" scheme="https://guke.cf/tags/2020/"/>
-    
-      <category term="笔记" scheme="https://guke.cf/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="学习" scheme="https://guke.cf/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="古客" scheme="https://guke.cf/tags/%E5%8F%A4%E5%AE%A2/"/>
-    
-      <category term="分享" scheme="https://guke.cf/tags/%E5%88%86%E4%BA%AB/"/>
-    
-      <category term="music" scheme="https://guke.cf/tags/music/"/>
-    
-      <category term="日记" scheme="https://guke.cf/tags/%E6%97%A5%E8%AE%B0/"/>
-    
-      <category term="成长" scheme="https://guke.cf/tags/%E6%88%90%E9%95%BF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python之CSS选择器笔记</title>
-    <link href="https://guke.cf/posts/1YW4FZ7/"/>
-    <id>https://guke.cf/posts/1YW4FZ7/</id>
-    <published>2020-02-25T15:53:18.000Z</published>
-    <updated>2020-02-28T03:26:41.216Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="笔记" scheme="https://guke.cf/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="python" scheme="https://guke.cf/tags/python/"/>
-    
-      <category term="古客" scheme="https://guke.cf/tags/%E5%8F%A4%E5%AE%A2/"/>
     
   </entry>
   
