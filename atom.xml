@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://guke.cf/"/>
-  <updated>2020-03-19T08:09:59.167Z</updated>
+  <updated>2020-03-25T07:52:26.606Z</updated>
   <id>https://guke.cf/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>二次元小知识</title>
+    <link href="https://guke.cf/posts/1013HCJ/"/>
+    <id>https://guke.cf/posts/1013HCJ/</id>
+    <published>2020-03-25T07:42:19.000Z</published>
+    <updated>2020-03-25T07:52:26.606Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="古客" scheme="https://guke.cf/tags/%E5%8F%A4%E5%AE%A2/"/>
+    
+      <category term="动漫" scheme="https://guke.cf/tags/%E5%8A%A8%E6%BC%AB/"/>
+    
+  </entry>
   
   <entry>
     <title>2020年度读书计划</title>
@@ -209,7 +236,7 @@
     <link href="https://guke.cf/posts/2QFMTEV/"/>
     <id>https://guke.cf/posts/2QFMTEV/</id>
     <published>2020-03-11T09:30:57.000Z</published>
-    <updated>2020-03-11T15:25:00.227Z</updated>
+    <updated>2020-03-19T13:26:19.317Z</updated>
     
     <summary type="html">
     
@@ -393,7 +420,7 @@
     <link href="https://guke.cf/posts/2ZJ87MC/"/>
     <id>https://guke.cf/posts/2ZJ87MC/</id>
     <published>2020-03-07T08:19:22.000Z</published>
-    <updated>2020-03-07T08:30:03.730Z</updated>
+    <updated>2020-03-28T07:28:02.263Z</updated>
     
     <summary type="html">
     
@@ -612,45 +639,6 @@
     
     
       <category term="古客" scheme="https://guke.cf/tags/%E5%8F%A4%E5%AE%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C++初学</title>
-    <link href="https://guke.cf/posts/1NV19H3/"/>
-    <id>https://guke.cf/posts/1NV19H3/</id>
-    <published>2020-03-01T12:18:32.000Z</published>
-    <updated>2020-03-18T07:50:10.876Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="C++" scheme="https://guke.cf/categories/C/"/>
-    
-    
-      <category term="笔记" scheme="https://guke.cf/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="python" scheme="https://guke.cf/tags/python/"/>
-    
-      <category term="学习" scheme="https://guke.cf/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="数学" scheme="https://guke.cf/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-      <category term="编程" scheme="https://guke.cf/tags/%E7%BC%96%E7%A8%8B/"/>
-    
-      <category term="古客" scheme="https://guke.cf/tags/%E5%8F%A4%E5%AE%A2/"/>
-    
-      <category term="C++" scheme="https://guke.cf/tags/C/"/>
     
   </entry>
   

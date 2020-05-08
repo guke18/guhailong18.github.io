@@ -713,21 +713,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-03-07
+                    2020-03-28
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    190
+                    3.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    15 分
                 </div>
                 
 
@@ -747,10 +747,518 @@
 <li><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2></li>
 </ul>
 <p>ε=(´ο｀*)))唉，不知为啥记性老是那么差，难道是用脑少变得越来越蠢了？不行，得想办法解决，这不，把python的一些知识点和易混淆的知识统统放在这里吧，方便以后记忆和查看。<code>这篇文章可能会随时间变得越来越长，请做好心里准备！</code></p>
-<h2 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h2><h2 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h2><h2 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h2><h2 id="4-函数及模块"><a href="#4-函数及模块" class="headerlink" title="4.函数及模块"></a>4.函数及模块</h2><p><strong>两种导入方法的不同：</strong> <a href="https://www.runoob.com/note/26325" target="_blank" rel="noopener external nofollow noreferrer">详情</a></p>
+<h2 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h2><h2 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h2><h2 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h2><h2 id="4-函数及模块"><a href="#4-函数及模块" class="headerlink" title="4.函数及模块"></a>4.函数及模块</h2><h3 id="函数的使用"><a href="#函数的使用" class="headerlink" title="函数的使用"></a>函数的使用</h3><p><strong>两种导入方法的不同：</strong> <a href="https://www.runoob.com/note/26325" target="_blank" rel="noopener external nofollow noreferrer">详情</a></p>
 <pre><code>import   //模块.函数
 
-from…import  // 直接使用函数名使用就可以了</code></pre><h2 id="5"><a href="#5" class="headerlink" title="5."></a>5.</h2><h6 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a><strong>参考链接：</strong></h6><script>
+from…import  // 直接使用函数名使用就可以了</code></pre><h3 id="内置函数"><a href="#内置函数" class="headerlink" title="内置函数"></a>内置函数</h3><h4 id="1-abs"><a href="#1-abs" class="headerlink" title="1 abs()"></a>1 abs()</h4><p>绝对值或复数的模</p>
+<pre><code>print(abs(-10))
+10</code></pre><h4 id="2-all"><a href="#2-all" class="headerlink" title="2 all()　　"></a>2 all()　　</h4><p>接受一个迭代器，如果迭代器的所有元素都为真，那么返回True，否则返回False</p>
+<pre><code>In [2]: all([1,0,3,6])
+Out[2]: False
+
+In [3]: all([1,2,3])
+Out[3]: True</code></pre><h4 id="3-any"><a href="#3-any" class="headerlink" title="3 any()　　"></a>3 any()　　</h4><p>接受一个迭代器，如果迭代器里有一个元素为真，那么返回True，否则返回False</p>
+<pre><code>In [4]: any([0,0,0,[]])
+Out[4]: False
+
+In [5]: any([0,0,1])
+Out[5]: True</code></pre><p>4 ascii()　　</p>
+<p>调用对象的<strong>repr</strong>() 方法，获得该方法的返回值</p>
+<pre><code>In [30]: class Student():
+    ...:     def __init__(self,id,name):
+    ...:         self.id = id
+    ...:         self.name = name
+    ...:     def __repr__(self):
+    ...:         return 'id = '+self.id +', name = '+self.name
+
+In [33]: print(xiaoming)
+id = 001, name = xiaoming
+
+In [34]: ascii(xiaoming)
+Out[34]: 'id = 001, name = xiaoming'</code></pre><p>5  bin()</p>
+<p>将十进制转换为二进制</p>
+<pre><code>In [35]: bin(10)
+Out[35]: '0b1010'</code></pre><p>6 oct()</p>
+<p>将十进制转换为八进制</p>
+<pre><code>In [36]: oct(9)
+Out[36]: '0o11'</code></pre><p>7 hex()</p>
+<p>将十进制转换为十六进制</p>
+<pre><code>In [37]: hex(15)
+Out[37]: '0xf'</code></pre><p>8 bool()　　</p>
+<p>测试一个对象是True, 还是False.</p>
+<pre><code>In [38]: bool([0,0,0])
+Out[38]: True
+
+In [39]: bool([])
+Out[39]: False
+
+In [40]: bool([1,0,1])
+Out[40]: True</code></pre><p>9 bytes()　　</p>
+<p>将一个字符串转换成字节类型</p>
+<pre><code>In [44]: s = "apple"
+
+In [45]: bytes(s,encoding='utf-8')
+Out[45]: b'apple'</code></pre><p>10 str()　　</p>
+<p>将<code>字符类型</code>、<code>数值类型</code>等转换为字符串类型</p>
+<pre><code>In [46]: integ = 100
+
+In [47]: str(integ)
+Out[47]: '100'</code></pre><p>11 callable()　　</p>
+<p>判断对象是否可以被调用，能被调用的对象就是一个callable 对象，比如函数 str, int 等都是可被调用的，但是例子4 中xiaoming这个实例是不可被调用的：</p>
+<pre><code>In [48]: callable(str)
+Out[48]: True
+
+In [49]: callable(int)
+Out[49]: True
+
+In [50]: xiaoming
+Out[50]: id = 001, name = xiaoming
+
+In [51]: callable(xiaoming)
+Out[51]: False</code></pre><p>12 chr()</p>
+<p>查看十进制整数对应的ASCII字符</p>
+<pre><code>In [54]: chr(65)
+Out[54]: 'A'</code></pre><p>13 ord()</p>
+<p>查看某个ascii对应的十进制数</p>
+<pre><code>In [60]: ord('A')
+Out[60]: 65</code></pre><p>14 classmethod()　　</p>
+<p><strong>classmethod</strong> 修饰符对应的函数不需要实例化，不需要 self 参数，但第一个参数需要是表示自身类的 cls 参数，可以来调用类的属性，类的方法，实例化对象等。</p>
+<pre><code>In [66]: class Student():
+    ...:     def __init__(self,id,name):
+    ...:         self.id = id
+    ...:         self.name = name
+    ...:     def __repr__(self):
+    ...:         return 'id = '+self.id +', name = '+self.name
+    ...:     @classmethod
+    ...:     def f(cls):
+    ...:         print(cls)</code></pre><p>15 complie()　　</p>
+<p>将字符串编译成python 能识别或可以执行的代码，也可以将文字读成字符串再编译。</p>
+<pre><code>In [74]: s  = "print('helloworld')"
+
+In [75]: r = compile(s,"&lt;string&gt;", "exec")
+
+In [76]: r
+Out[76]: &lt;code object &lt;module&gt; at 0x0000000005DE75D0, file "&lt;string&gt;", line 1&gt;
+
+In [77]: exec(r)
+helloworld</code></pre><p>16  complex()</p>
+<p>创建一个复数</p>
+<pre><code>In [81]: complex(1,2)
+Out[81]: (1+2j)</code></pre><p>17 delattr()　　</p>
+<p>删除对象的属性</p>
+<pre><code>In [87]: delattr(xiaoming,'id')
+
+In [88]: hasattr(xiaoming,'id')
+Out[88]: False</code></pre><p>18 dict()　　</p>
+<p>创建数据字典</p>
+<pre><code>In [92]: dict()
+Out[92]: {}
+
+In [93]: dict(a='a',b='b')
+Out[93]: {'a': 'a', 'b': 'b'}
+
+In [94]: dict(zip(['a','b'],[1,2]))
+Out[94]: {'a': 1, 'b': 2}
+
+In [95]: dict([('a',1),('b',2)])
+Out[95]: {'a': 1, 'b': 2}</code></pre><p>19 dir()　　</p>
+<p>不带参数时返回当前范围内的变量，方法和定义的类型列表；带参数时返回参数的属性，方法列表。</p>
+<pre><code>In [96]: dir(xiaoming)
+Out[96]:
+['__class__',
+ '__delattr__',
+ '__dict__',
+ '__dir__',
+ '__doc__',
+ '__eq__',
+ '__format__',
+ '__ge__',
+ '__getattribute__',
+ '__gt__',
+ '__hash__',
+ '__init__',
+ '__init_subclass__',
+ '__le__',
+ '__lt__',
+ '__module__',
+ '__ne__',
+ '__new__',
+ '__reduce__',
+ '__reduce_ex__',
+ '__repr__',
+ '__setattr__',
+ '__sizeof__',
+ '__str__',
+ '__subclasshook__',
+ '__weakref__',
+
+ 'name']</code></pre><p>20 divmod()　　</p>
+<p>分别取商和余数</p>
+<pre><code>In [97]: divmod(10,3)
+Out[97]: (3, 1)</code></pre><p>21 enumerate()　　</p>
+<p>返回一个可以枚举的对象，该对象的next()方法将返回一个元组。</p>
+<pre><code>In [98]: s = ["a","b","c"]
+    ...: for i ,v in enumerate(s,1):
+    ...:     print(i,v)
+    ...:
+1 a
+2 b
+3 c</code></pre><p>22 eval()　　</p>
+<p>将字符串str 当成有效的表达式来求值并返回计算结果；取出字符串中内容</p>
+<pre><code>In [99]: s = "1 + 3 +5"
+    ...: eval(s)
+    ...:
+Out[99]: 9</code></pre><p>23 exec()　　</p>
+<p>执行字符串或complie方法编译过的字符串，没有返回值</p>
+<pre><code>In [74]: s  = "print('helloworld')"
+
+In [75]: r = compile(s,"&lt;string&gt;", "exec")
+
+In [76]: r
+Out[76]: &lt;code object &lt;module&gt; at 0x0000000005DE75D0, file "&lt;string&gt;", line 1&gt;
+
+In [77]: exec(r)
+helloworld</code></pre><p>24 filter()　　</p>
+<p>过滤器，构造一个序列，等价于</p>
+<pre><code>[ item for item in iterables if function(item)]</code></pre><p>在函数中设定过滤条件，逐一循环迭代器中的元素，将返回值为True时的元素留下，形成一个filter类型数据。</p>
+<p><strong>py2 是返回list對象，可以說是等價於列表推導式 py3 是返回一個類generator的iterator 就不一樣了 list它第二遍會是個空列表拿不到結果了</strong></p>
+<pre><code>In [101]: fil = filter(lambda x: x&gt;10,[1,11,2,45,7,6,13])
+
+In [102]: list(fil)
+Out[102]: [11, 45, 13]</code></pre><p>25 float()　　</p>
+<p>将一个字符串或整数转换为浮点数</p>
+<pre><code>In [103]: float(3)
+Out[103]: 3.0</code></pre><p>26 format()　　</p>
+<p>格式化输出字符串，format(value, format_spec)实质上是调用了value的<strong>format</strong>(format_spec)方法。</p>
+<pre><code>In [104]: print("i am {0},age{1}".format("tom",18))
+i am tom,age18</code></pre><p>27 frozenset()　　</p>
+<p>创建一个不可修改的集合。</p>
+<pre><code>In [105]: frozenset([1,1,3,2,3])
+Out[105]: frozenset({1, 2, 3})</code></pre><p>28 getattr()　　</p>
+<p>获取对象的属性</p>
+<pre><code>In [106]: getattr(xiaoming,'name')
+Out[106]: 'xiaoming'</code></pre><p>29 globals()　　</p>
+<p>返回一个描述当前全局变量的字典</p>
+<p>30 hasattr()</p>
+<pre><code>In [110]: hasattr(xiaoming,'name')
+Out[110]: True
+
+In [111]: hasattr(xiaoming,'id')
+Out[111]: False</code></pre><p>31 hash()　　</p>
+<p>返回对象的哈希值</p>
+<pre><code>In [112]: hash(xiaoming)
+Out[112]: 6139638</code></pre><p>32 help()　　</p>
+<p>返回对象的帮助文档</p>
+<pre><code>In [113]: help(xiaoming)
+Help on Student in module __main__ object:
+
+class Student(builtins.object)
+ |  Methods defined here:
+ |
+ |  __init__(self, id, name)
+ |
+ |  __repr__(self)
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors defined here:
+ |
+ |  __dict__
+ |      dictionary for instance variables (if defined)
+ |
+ |  __weakref__
+ |      list of weak references to the object (if defined)</code></pre><p>33 id()　　</p>
+<p>返回对象的内存地址</p>
+<pre><code>In [115]: id(xiaoming)
+Out[115]: 98234208</code></pre><p>34 input()　　</p>
+<p>获取用户输入内容</p>
+<pre><code>In [116]: input()
+aa
+Out[116]: 'aa'</code></pre><p>35  int()　　</p>
+<p>int(x, base =10) , x可能为字符串或数值，将x 转换为一个普通整数。如果参数是字符串，那么它可能包含符号和小数点。如果超出了普通整数的表示范围，一个长整数被返回。</p>
+<pre><code>In [120]: int('12',16)
+Out[120]: 18</code></pre><p>36  isinstance(<em>object</em>, <em>classinfo</em>)</p>
+<p>判断<em>object</em>是否为类<em>classinfo</em>的实例，是返回true</p>
+<pre><code>In [20]: class Student():
+    ...:     ...:     def __init__(self,id,name):
+    ...:     ...:         self.id = id
+    ...:     ...:         self.name = name
+    ...:     ...:     def __repr__(self):
+    ...:     ...:         return 'id = '+self.id +', name = '+self.name
+    ...:
+
+In [21]: xiaoming = Student('001','xiaoming')
+
+In [22]: isinstance(xiaoming,Student)
+Out[22]: True</code></pre><p>37 issubclass(<em>class</em>, <em>classinfo</em>)</p>
+<p>如果class是classinfo类的子类，返回True：</p>
+<pre><code>In [27]: class undergraduate(Student):
+    ...:     def studyClass(self):
+    ...:         pass
+    ...:     def attendActivity(self):
+    ...:         pass
+    ...:
+
+In [28]: issubclass(undergraduate,Student)
+Out[28]: True
+
+In [29]: issubclass(object,Student)
+Out[29]: False
+
+In [30]: issubclass(Student,object)
+Out[30]: True</code></pre><p>如果class是classinfo元组中某个元素的子类，也会返回True</p>
+<pre><code>In [26]: issubclass(int,(int,float))
+Out[26]: True</code></pre><p>38 iter(object, sentinel)</p>
+<p>返回一个可迭代对象, sentinel可省略</p>
+<pre><code>In [72]: lst = [1,3,5]
+
+In [73]: for i in iter(lst):
+    ...:     print(i)
+    ...:
+1
+3
+5</code></pre><p>sentinel 理解为迭代对象的哨兵，一旦迭代到此元素，立即终止：</p>
+<pre><code>In [81]: class TestIter(object):
+    ...:         def __init__(self):
+    ...:             self.l=[1,3,2,3,4,5]
+    ...:             self.i=iter(self.l)
+    ...:         def __call__(self):  #定义了__call__方法的类的实例是可调用的
+    ...:             item = next(self.i)
+    ...:             print ("__call__ is called,which would return",item)
+    ...:             return item
+    ...:         def __iter__(self): #支持迭代协议(即定义有__iter__()函数)
+    ...:             print ("__iter__ is called!!")
+    ...:             return iter(self.l)
+    ...:
+
+In [82]:     t = TestIter()
+    ...:     t1 = iter(t, 3)
+    ...:     for i in t1:
+    ...:         print(i)
+    ...:
+__call__ is called,which would return 1
+1
+__call__ is called,which would return 3</code></pre><p>39 len(<em>s</em>)</p>
+<p>返回对象的长度（元素个数）</p>
+<pre><code>In [83]: dic = {'a':1,'b':3}
+
+In [84]: len(dic)
+Out[84]: 2</code></pre><p>40 list([<em>iterable</em>])</p>
+<p>返回可变序列类型</p>
+<pre><code>In [85]: list(map(lambda x: x%2==1, [1,3,2,4,1]))
+Out[85]: [True, True, False, False, True]</code></pre><p>41 map(<em>function</em>, <em>iterable</em>, <em>…</em>)</p>
+<p>返回一个将 <em>function</em> 应用于 <em>iterable</em> 中每一项并输出其结果的迭代器：</p>
+<pre><code>In [85]: list(map(lambda x: x%2==1, [1,3,2,4,1]))
+Out[85]: [True, True, False, False, True]</code></pre><p>可以传入多个<em>iterable</em>对象，输出长度等于最短序列的长度：</p>
+<pre><code>In [88]: list(map(lambda x,y: x%2==1 and y%2==0, [1,3,2,4,1],[3,2,1,2]))
+Out[88]: [False, True, False, False]</code></pre><p>42 max(<em>iterable</em>,<em>[, *key</em>, <em>default</em>])</p>
+<p>返回最大值：</p>
+<pre><code>In [99]: max(3,1,4,2,1)
+Out[99]: 4
+
+In [100]: max((),default=0)
+Out[100]: 0
+
+In [89]: di = {'a':3,'b1':1,'c':4}
+In [90]: max(di)
+Out[90]: 'c'
+
+In [102]: a = [{'name':'xiaoming','age':18,'gender':'male'},{'name':'
+     ...: xiaohong','age':20,'gender':'female'}]
+In [104]: max(a,key=lambda x: x['age'])
+Out[104]: {'name': 'xiaohong', 'age': 20, 'gender': 'female'}</code></pre><p>43 min(<em>iterable</em>,<em>[, *key</em>, <em>default</em>])</p>
+<p>返回最小值</p>
+<p>44 memoryview(<em>obj</em>)</p>
+<p>返回由给定实参创建的“内存视图”对象， Python 代码访问一个对象的内部数据，只要该对象支持 <em>缓冲区协议</em> 而无需进行拷贝</p>
+<p>45 next(<em>iterator</em>,[, <em>default</em>])</p>
+<p>返回可迭代对象的下一个元素</p>
+<pre><code>In [129]: it = iter([5,3,4,1])
+
+In [130]: next(it)
+Out[130]: 5
+
+In [131]: next(it)
+Out[131]: 3
+
+In [132]: next(it)
+Out[132]: 4
+
+In [133]: next(it)
+Out[133]: 1
+
+In [134]: next(it,0) #迭代到头，默认返回值为0
+Out[134]: 0
+
+In [135]: next(it)
+----------------------------------------------------------------------
+StopIteration                        Traceback (most recent call last)
+&lt;ipython-input-135-bc1ab118995a&gt; in &lt;module&gt;
+----&gt; 1 next(it)
+
+StopIteration:</code></pre><p>46 object()</p>
+<p>返回一个没有特征的新对象。object 是所有类的基类。</p>
+<pre><code>In [137]: o = object()
+
+In [138]: type(o)
+Out[138]: object</code></pre><p>47 open(<em>file</em>)</p>
+<p>返回文件对象</p>
+<pre><code>In [146]: fo = open('D:/a.txt',mode='r', encoding='utf-8')
+
+In [147]: fo.read()
+Out[147]: '\ufefflife is not so long,\nI use Python to play.'</code></pre><p>mode取值表：</p>
+<p>字符</p>
+<p>意义</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>'r'</code></td>
+<td>读取（默认）</td>
+</tr>
+<tr>
+<td><code>'w'</code></td>
+<td>写入，并先截断文件</td>
+</tr>
+<tr>
+<td><code>'x'</code></td>
+<td>排它性创建，如果文件已存在则失败</td>
+</tr>
+<tr>
+<td><code>'a'</code></td>
+<td>写入，如果文件存在则在末尾追加</td>
+</tr>
+<tr>
+<td><code>'b'</code></td>
+<td>二进制模式</td>
+</tr>
+<tr>
+<td><code>'t'</code></td>
+<td>文本模式（默认）</td>
+</tr>
+<tr>
+<td><code>'+'</code></td>
+<td>打开用于更新（读取与写入）</td>
+</tr>
+</tbody></table>
+<p>48 pow(<em>base</em>, <em>exp</em>[, <em>mod</em>])</p>
+<p>base为底的exp次幂，如果mod给出，取余</p>
+<pre><code>In [149]: pow(3, 2, 4)
+Out[149]: 1</code></pre><p>49 print(objects)</p>
+<p>打印对象，此函数不解释</p>
+<p>50 <em>class</em> property(<em>fget=None</em>, <em>fset=None</em>, <em>fdel=None</em>, <em>doc=None</em>)</p>
+<p>返回 property 属性，典型的用法：</p>
+<pre><code>class C:
+    def __init__(self):
+        self._x = None
+
+    def getx(self):
+        return self._x
+
+    def setx(self, value):
+        self._x = value
+
+    def delx(self):
+        del self._x
+    # 使用property类创建 property 属性
+    x = property(getx, setx, delx, "I'm the 'x' property.")</code></pre><p>使用python装饰器，实现与上完全一样的效果代码：</p>
+<pre><code>class C:
+    def __init__(self):
+        self._x = None
+
+    @property
+    def x(self):
+        return self._x
+
+    @x.setter
+    def x(self, value):
+        self._x = value
+
+    @x.deleter
+    def x(self):
+        del self._x</code></pre><p>51 range(stop)</p>
+<p>range(start, stop[,step])</p>
+<p>生成一个不可变序列：</p>
+<pre><code>In [153]: range(11)
+Out[153]: range(0, 11)
+
+In [154]: range(0,11,1)
+Out[154]: range(0, 11)</code></pre><p>52 reversed(<em>seq</em>)</p>
+<p>返回一个反向的 iterator:</p>
+<pre><code>In [155]: rev = reversed([1,4,2,3,1])
+
+In [156]: for i in rev:
+     ...:     print(i)
+     ...:
+1
+3
+2
+4
+1</code></pre><p>53 round(<em>number</em>[, <em>ndigits</em>])</p>
+<p>四舍五入，ndigits代表小数点后保留几位：</p>
+<pre><code>In [157]: round(10.0222222, 3)
+Out[157]: 10.022</code></pre><p>54 <em>class</em> set([<em>iterable</em>])</p>
+<p>返回一个set对象，可实现去重：</p>
+<pre><code>In [159]: a = [1,4,2,3,1]
+
+In [160]: set(a)
+Out[160]: {1, 2, 3, 4}</code></pre><p>55 class slice(<em>stop</em>)</p>
+<p><em>class</em> slice(<em>start</em>, <em>stop</em>[, <em>step</em>])</p>
+<p>返回一个表示由 range(start, stop, step) 所指定索引集的 slice对象</p>
+<pre><code>In [170]: a = [1,4,2,3,1]
+
+In [171]: a[slice(0,5,2)] #等价于a[0:5:2]
+Out[171]: [1, 2, 1]</code></pre><p>56 sorted(<em>iterable</em>, <em>, *key=None</em>, <em>reverse=False</em>)</p>
+<p>排序：</p>
+<pre><code>In [174]: a = [1,4,2,3,1]
+
+In [175]: sorted(a,reverse=True)
+Out[175]: [4, 3, 2, 1, 1]
+
+In [178]: a = [{'name':'xiaoming','age':18,'gender':'male'},{'name':'
+     ...: xiaohong','age':20,'gender':'female'}]
+In [180]: sorted(a,key=lambda x: x['age'],reverse=False)
+Out[180]:
+[{'name': 'xiaoming', 'age': 18, 'gender': 'male'},
+ {'name': 'xiaohong', 'age': 20, 'gender': 'female'}]</code></pre><p>57 @<code>staticmethod</code></p>
+<p>将方法转换为静态方法，不做解释</p>
+<p>58 class <code>str</code>(<em>object=’’</em>)</p>
+<p>返回一个 <code>str</code>版本的 <em>object</em>，<code>str</code> 是内置字符串 class</p>
+<p>59 sum(<em>iterable</em>, <em>/</em>, <em>start=0</em>)</p>
+<p>求和：</p>
+<pre><code>In [181]: a = [1,4,2,3,1]
+
+In [182]: sum(a)
+Out[182]: 11
+
+In [185]: sum(a,10) #求和的初始值为10
+Out[185]: 21</code></pre><p>60 super([<em>type</em>[, <em>object-or-type</em>]])</p>
+<p>返回一个代理对象，它会将方法调用委托给 <em>type</em> 的父类或兄弟类</p>
+<p>61 tuple([<em>iterable</em>])</p>
+<p>虽然被称为函数，但 <code>tuple</code> 实际上是一个不可变的序列类型</p>
+<p>62 <em>class</em> <code>type</code>(<em>object</em>)</p>
+<p><em>class</em> <code>type</code>(<em>name</em>, <em>bases</em>, <em>dict</em>)</p>
+<p>传入一个参数时，返回 <em>object</em> 的类型：</p>
+<pre><code>In [186]: type(xiaoming)
+Out[186]: __main__.Student
+
+In [187]: type(tuple())
+Out[187]: tuple</code></pre><h4 id="63-zip-iterables"><a href="#63-zip-iterables" class="headerlink" title="63 zip(*iterables)"></a>63 <code>zip</code>(<em>*iterables</em>)</h4><p>创建一个聚合了来自每个可迭代对象中的元素的迭代器：</p>
+<pre><code>In [188]: x = [3,2,1]
+In [189]: y = [4,5,6]
+In [190]: list(zip(y,x))
+Out[190]: [(4, 3), (5, 2), (6, 1)]
+
+
+In [191]: a = range(5)
+In [192]: b = list('abcde')
+In [193]: b
+Out[193]: ['a', 'b', 'c', 'd', 'e']
+In [194]: [str(y) + str(x) for x,y in zip(a,b)]
+Out[194]: ['a0', 'b1', 'c2', 'd3', 'e4']</code></pre><p>转载自：Python与算法社区</p>
+<h3 id="5"><a href="#5" class="headerlink" title="5."></a>5.</h3><h6 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a><strong>参考链接：</strong></h6><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -1532,7 +2040,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">49.4k</span>&nbsp;字
+                class="white-color">53.6k</span>&nbsp;字
             
             
             
@@ -1825,6 +2333,6 @@ $(function () {
 	  })
 	</script>
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/z16.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/z16.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 
 </html>
