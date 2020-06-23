@@ -8,8 +8,8 @@
     <meta name="description" content="由于老是记不住python的list，字典，元组等表示的方法及区别，经常会搞混，所以特地写了这篇文章来加强记忆和复习。
 list(列表)符号[]，用‘’包起来，用逗号分开
 例子：
-fish = [&#39;大鱼&#39;,&#39;鱼&#39;,&#39;小鱼&#39;]
-print(f">
+fish = [&#39;大鱼&#39;,&#39;鱼&#39;,&#39;小鱼&#39;,&#39;fish&#39;]
+">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -787,21 +787,21 @@ print(f">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-03-28
+                    2020-06-14
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    762
+                    962
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    4 分
                 </div>
                 
 
@@ -820,8 +820,25 @@ print(f">
                 <p>由于老是记不住python的list，字典，元组等表示的方法及区别，经常会搞混，所以特地写了这篇文章来加强记忆和复习。</p>
 <h3 id="list-列表"><a href="#list-列表" class="headerlink" title="list(列表)"></a>list(列表)</h3><p>符号[]，用‘’包起来，用逗号分开</p>
 <p>例子：</p>
-<pre><code>fish = ['大鱼','鱼','小鱼']
-print(fish[0])</code></pre><h4 id="简单操作："><a href="#简单操作：" class="headerlink" title="简单操作："></a>简单操作：</h4><h5 id="添加"><a href="#添加" class="headerlink" title="添加"></a>添加</h5><p>1 append() 追加单个元素到List的尾部，只接受一个参数，参数可以是任何数据类型，被追加的元素在List中保持着原结构类型。<br>此元素如果是一个list，那么这个list将作为一个整体进行追加，注意append()和extend()的区别。</p>
+<pre class=" language-python"><code class="language-python">fish <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'大鱼'</span><span class="token punctuation">,</span><span class="token string">'鱼'</span><span class="token punctuation">,</span><span class="token string">'小鱼'</span><span class="token punctuation">,</span><span class="token string">'fish'</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fish<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fish<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">#大鱼 </span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fist<span class="token operator">*</span><span class="token number">2</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">#['大鱼', '鱼', '小鱼', 'fish', '大鱼', '鱼', '小鱼', 'fish']</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'fish'</span> <span class="token keyword">in</span> fish<span class="token punctuation">)</span>   <span class="token comment" spellcheck="true">#true</span>
+<span class="token keyword">for</span> f <span class="token keyword">in</span> fish<span class="token punctuation">:</span>    <span class="token comment" spellcheck="true">#遍历</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token punctuation">)</span>
+fish<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token string">'fish1'</span><span class="token punctuation">)</span>   <span class="token comment" spellcheck="true">#末尾追加,只能加一个</span>
+fish1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'鲨鱼'</span><span class="token punctuation">,</span><span class="token string">'鲤鱼'</span><span class="token punctuation">,</span><span class="token string">'sardine'</span><span class="token punctuation">]</span>
+fish<span class="token punctuation">.</span>extend<span class="token punctuation">(</span>fish1<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">#相当于fish+fish1</span>
+fish<span class="token punctuation">.</span>insert<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token string">'shark'</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">#指定位置添加元素</span>
+fish<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token string">'pig'</span>   <span class="token comment" spellcheck="true">#修改</span>
+<span class="token keyword">del</span> fish<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>   <span class="token comment" spellcheck="true">#删除</span>
+fish<span class="token punctuation">.</span>remove<span class="token punctuation">(</span><span class="token string">'鱼'</span><span class="token punctuation">)</span>
+fish<span class="token punctuation">.</span>pop<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fish<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">)</span>   <span class="token comment" spellcheck="true">#即1到3的元素</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fish<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">5</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">#即倒三和倒5</span>
+</code></pre>
+<h4 id="简单操作："><a href="#简单操作：" class="headerlink" title="简单操作："></a>简单操作：</h4><h5 id="添加"><a href="#添加" class="headerlink" title="添加"></a>添加</h5><p>1 append() 追加单个元素到List的尾部，只接受一个参数，参数可以是任何数据类型，被追加的元素在List中保持着原结构类型。<br>此元素如果是一个list，那么这个list将作为一个整体进行追加，注意append()和extend()的区别。</p>
 <pre><code>fish.append(‘咸鱼’)  #添加在末尾
 print(fish) </code></pre><p>2 extend() 将一个列表中每个元素分别添加到另一个列表中，只接受一个参数；extend()相当于是将list B 连接到list A上</p>
 <pre><code>house = ['big','small','good']
@@ -838,10 +855,33 @@ fish.append(house)    #输出：['大鱼', '鱼', '小鱼', ['big', 'small', 'go
 fish = ['大鱼','鱼','小鱼']
 fish.pop(1)  
 del(fish[1])
-fish.remove('小鱼') //或fish.remove(fish[2])</code></pre><h3 id="tuple-元组"><a href="#tuple-元组" class="headerlink" title="tuple(元组)"></a>tuple(元组)</h3><p>与list类似，使用()，但是值得注意的是单个元素需要加逗号</p>
-<h5 id="例子："><a href="#例子：" class="headerlink" title="例子："></a>例子：</h5><pre><code>A = ('hello',)</code></pre><h5 id="简单操作：-1"><a href="#简单操作：-1" class="headerlink" title="简单操作："></a>简单操作：</h5><p>添加</p>
-<p>删除</p>
-<h3 id="dictionary-字典"><a href="#dictionary-字典" class="headerlink" title="dictionary(字典)"></a>dictionary(字典)</h3><p>键值对应，符号{}      例：</p>
+fish.remove('小鱼') //或fish.remove(fish[2])</code></pre><pre class=" language-python"><code class="language-python"><span class="token keyword">import</span> random
+random_list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>   <span class="token comment" spellcheck="true">#生成10个随机数</span>
+i <span class="token operator">=</span> <span class="token number">0</span>
+<span class="token keyword">while</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">:</span>
+    ran <span class="token operator">=</span> random<span class="token punctuation">.</span>randint<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">)</span>   <span class="token comment" spellcheck="true">#范围1~20</span>
+    <span class="token keyword">if</span> ran <span class="token operator">not</span> <span class="token keyword">in</span>  random_list<span class="token punctuation">:</span>
+        random_list<span class="token punctuation">.</span>append<span class="token punctuation">(</span>ran<span class="token punctuation">)</span>
+        i<span class="token operator">+=</span><span class="token number">1</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>random_list<span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">#默认升序</span>
+new_list <span class="token operator">=</span> sorted<span class="token punctuation">(</span>random_list<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>new_list<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">#降序</span>
+new_list <span class="token operator">=</span> sorted<span class="token punctuation">(</span>random_list<span class="token punctuation">,</span>reverse <span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>new_list<span class="token punctuation">)</span></code></pre>
+<h3 id="tuple-元组"><a href="#tuple-元组" class="headerlink" title="tuple(元组)"></a>tuple(元组)</h3><p>与list类似，使用()，但是值得注意的是单个元素需要加逗号</p>
+<h5 id="例子："><a href="#例子：" class="headerlink" title="例子："></a>例子：</h5><pre><code>A = ('hello',)
+print(type(A))</code></pre><h5 id="简单操作：-1"><a href="#简单操作：-1" class="headerlink" title="简单操作："></a>简单操作：</h5><pre><code>a=[1,2,3,4]
+B=tuple(a)  #list转换为tuple
+print(B[-1])
+print(B*2)
+C=(2,3)+(4,6)</code></pre><p>函数</p>
+<pre><code>print(max(random_tuple))
+print(min(random_tuple))
+print(sum(random_tuple))
+print(len(random_tuple))</code></pre><h3 id="dictionary-字典"><a href="#dictionary-字典" class="headerlink" title="dictionary(字典)"></a>dictionary(字典)</h3><p>键值对应，符号{}      例：</p>
 <pre><code>dict = {'Alice': '2341', 'Beth': '9102', 'Cecil': '3258'}</code></pre><h5 id="简单操作：-2"><a href="#简单操作：-2" class="headerlink" title="简单操作："></a>简单操作：</h5><p>提取字典的值</p>
 <pre><code>dict = {'A': 'apple','B': 'banana'}
 print("dict['B']:",dict['A'])</code></pre><p>添加</p>
@@ -1715,7 +1755,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">53.6k</span>&nbsp;字
+                class="white-color">54.6k</span>&nbsp;字
             
             
             
@@ -1778,6 +1818,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                 }
                 setInterval(siteTime, 1000);
             </script>
+            <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279004541'%3E%3C/span%3E%3Cscript src='https://s4.cnzz.com/z_stat.php%3Fid%3D1279004541%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script>
             
             <br>
             
