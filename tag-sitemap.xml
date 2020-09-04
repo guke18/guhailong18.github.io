@@ -4,7 +4,28 @@
 
     <url>
         <loc>https://guke.cf/tags/%25E5%258F%25A4%25E5%25AE%25A2/</loc>
-        <lastmod>2020-07-13T09:21:59.958Z</lastmod>
+        <lastmod>2020-07-19T08:56:10.687Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://guke.cf/tags/%25E7%25AC%2594%25E8%25AE%25B0/</loc>
+        <lastmod>2020-07-19T08:56:10.687Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://guke.cf/tags/onedrive/</loc>
+        <lastmod>2020-07-19T08:06:06.766Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://guke.cf/tags/rclone/</loc>
+        <lastmod>2020-07-19T08:06:06.766Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -53,13 +74,6 @@
 
     <url>
         <loc>https://guke.cf/tags/%25E5%2588%2586%25E4%25BA%25AB/</loc>
-        <lastmod>2020-05-10T09:24:27.130Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://guke.cf/tags/%25E7%25AC%2594%25E8%25AE%25B0/</loc>
         <lastmod>2020-05-10T09:24:27.130Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>

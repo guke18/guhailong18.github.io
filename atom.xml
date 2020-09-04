@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://guke.cf/"/>
-  <updated>2020-07-13T09:21:59.958Z</updated>
+  <updated>2020-07-19T08:56:10.687Z</updated>
   <id>https://guke.cf/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Lingo笔记一</title>
+    <link href="https://guke.cf/posts/1AFXJAX/"/>
+    <id>https://guke.cf/posts/1AFXJAX/</id>
+    <published>2020-07-19T08:54:52.000Z</published>
+    <updated>2020-07-19T08:56:10.687Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="笔记" scheme="https://guke.cf/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="古客" scheme="https://guke.cf/tags/%E5%8F%A4%E5%AE%A2/"/>
+    
+  </entry>
   
   <entry>
     <title>day1数据预处理</title>
@@ -79,7 +106,7 @@
     <link href="https://guke.cf/posts/3FFVHFJ/"/>
     <id>https://guke.cf/posts/3FFVHFJ/</id>
     <published>2020-06-18T07:43:14.000Z</published>
-    <updated>2020-06-18T08:08:15.173Z</updated>
+    <updated>2020-07-19T08:06:06.766Z</updated>
     
     <summary type="html">
     
@@ -96,6 +123,10 @@
     
     
       <category term="古客" scheme="https://guke.cf/tags/%E5%8F%A4%E5%AE%A2/"/>
+    
+      <category term="rclone" scheme="https://guke.cf/tags/rclone/"/>
+    
+      <category term="onedrive" scheme="https://guke.cf/tags/onedrive/"/>
     
   </entry>
   
@@ -586,33 +617,6 @@
       <category term="python" scheme="https://guke.cf/tags/python/"/>
     
       <category term="学习" scheme="https://guke.cf/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="数学" scheme="https://guke.cf/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-      <category term="古客" scheme="https://guke.cf/tags/%E5%8F%A4%E5%AE%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LaTeX之数学公式及符号的语法及表达</title>
-    <link href="https://guke.cf/posts/1AB90JC/"/>
-    <id>https://guke.cf/posts/1AB90JC/</id>
-    <published>2020-03-06T13:38:27.000Z</published>
-    <updated>2020-03-07T09:42:33.549Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
     
       <category term="数学" scheme="https://guke.cf/tags/%E6%95%B0%E5%AD%A6/"/>
     

@@ -5,9 +5,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="rclone挂载onedrive, 动漫,编程,数学,读书,古客,IT,python,book,music,spider,爬虫,笔记,share,分享,学习">
-    <meta name="description" content="概述1.Window下挂载2.3.4.挂载
+    <meta name="description" content="概述
+1.Window下挂载
+2.
+3.
+4.
+挂载
 rclone mount onedrive-guke:/ /home/one-guke --copy-links --n
-o-gzip-encoding --no-check-certificat">
+o-gzip-encoding --no-check-certi">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -636,7 +641,7 @@ o-gzip-encoding --no-check-certificat">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/guhailong18/speedup1/medias/featureimages/')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://user-gold-cdn.xitu.io/2020/5/13/1720bd001893c4aa?w=4960&h=3507&f=jpeg&s=8991442')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -667,6 +672,14 @@ o-gzip-encoding --no-check-certificat">
                                 <span class="chip bg-color">古客</span>
                             </a>
                         
+                            <a href="/tags/rclone/">
+                                <span class="chip bg-color">rclone</span>
+                            </a>
+                        
+                            <a href="/tags/onedrive/">
+                                <span class="chip bg-color">onedrive</span>
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -686,14 +699,14 @@ o-gzip-encoding --no-check-certificat">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-06-18
+                    2020-07-19
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    793
+                    794
                 </div>
                 
 
@@ -716,36 +729,51 @@ o-gzip-encoding --no-check-certificat">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><h2 id="1-Window下挂载"><a href="#1-Window下挂载" class="headerlink" title="1.Window下挂载"></a>1.Window下挂载</h2><h2 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h2><h2 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h2><h2 id="4"><a href="#4" class="headerlink" title="4."></a>4.</h2><p>挂载</p>
+                <h2 id="概述">概述</h2>
+<h2 id="1-Window下挂载">1.Window下挂载</h2>
+<h2 id="2">2.</h2>
+<h2 id="3">3.</h2>
+<h2 id="4">4.</h2>
+<p>挂载</p>
 <pre><code>rclone mount onedrive-guke:/ /home/one-guke --copy-links --n
-o-gzip-encoding --no-check-certificate --allow-other --allow-non-empty --umask 000</code></pre><h3 id="开机自动挂载"><a href="#开机自动挂载" class="headerlink" title="开机自动挂载"></a>开机自动挂载</h3><ul>
+o-gzip-encoding --no-check-certificate --allow-other --allow-non-empty --umask 000
+</code></pre>
+<h3 id="开机自动挂载">开机自动挂载</h3>
+<ul>
 <li>下载并编辑自启脚本</li>
 </ul>
-<pre class=" language-shell"><code class="language-shell">wget -N git.io/rcloned && nano rcloned</code></pre>
+<pre class=" language-language-shell"><code class="language-language-shell">wget -N git.io/rcloned && nano rcloned
+</code></pre>
 <ul>
 <li>修改内容：</li>
 </ul>
-<pre class=" language-none"><code class="language-none">NAME="Onedrive" #Rclone配置时填写的name
+<pre class=" language-language-none"><code class="language-language-none">NAME="Onedrive" #Rclone配置时填写的name
 REMOTE=''  #远程文件夹，网盘里的挂载的一个文件夹，留空为整个网盘
-LOCAL='/Onedrive'  #挂载地址，VPS本地挂载目录</code></pre>
+LOCAL='/Onedrive'  #挂载地址，VPS本地挂载目录
+</code></pre>
 <ul>
 <li>设置开机自启</li>
 </ul>
-<pre class=" language-shell"><code class="language-shell">mv rcloned /etc/init.d/rcloned
+<pre class=" language-language-shell"><code class="language-language-shell">mv rcloned /etc/init.d/rcloned
 chmod +x /etc/init.d/rcloned
 update-rc.d -f rcloned defaults # Debian/Ubuntu
 chkconfig rcloned on # CentOS
-bash /etc/init.d/rcloned start</code></pre>
+bash /etc/init.d/rcloned start
+</code></pre>
 <p>看到 <code>[信息] rclone 启动成功 !</code> 即可。</p>
-<h4 id="管理"><a href="#管理" class="headerlink" title="管理"></a>管理</h4><p>开始挂载 <code>bash /etc/init.d/rcloned start</code></p>
+<h4 id="管理">管理</h4>
+<p>开始挂载 <code>bash /etc/init.d/rcloned start</code></p>
 <p>停止挂载 <code>bash /etc/init.d/rcloned stop</code></p>
 <p>重新挂载 <code>bash /etc/init.d/rcloned restart</code></p>
 <p>查看日志 <code>tail -f /$HOME/.rclone/rcloned.log</code></p>
-<h4 id="卸载自启挂载"><a href="#卸载自启挂载" class="headerlink" title="卸载自启挂载"></a>卸载自启挂载</h4><pre class=" language-none"><code class="language-none">bash /etc/init.d/rcloned stop
+<h4 id="卸载自启挂载">卸载自启挂载</h4>
+<pre class=" language-language-none"><code class="language-language-none">bash /etc/init.d/rcloned stop
 update-rc.d -f rcloned remove # Debian/Ubuntu
 chkconfig rcloned off # CentOS
-rm -f /etc/init.d/rcloned</code></pre>
-<h2 id="5-常用Rclone命令"><a href="#5-常用Rclone命令" class="headerlink" title="5.常用Rclone命令"></a>5.常用Rclone命令</h2><pre><code>### 文件上传
+rm -f /etc/init.d/rcloned
+</code></pre>
+<h2 id="5-常用Rclone命令">5.常用Rclone命令</h2>
+<pre><code>### 文件上传
 rclone copy /home/backup gdrive:backup  # 本地路径 配置名字:网盘文件夹路径
 ### 文件下载
 rclone copy gdrive:backup /home/backup  # 配置名字:网盘文件夹路径 本地路径
@@ -785,7 +813,10 @@ rclone cleanup - 清空remote。
 rclone dedupe - 交互式查找重复文件，进行删除/重命名操作。
 重启：systemctl restart rclone
 停止：systemctl stop rclone
-状态：systemctl status rclone</code></pre><h6 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a><strong>参考链接：</strong></h6><p><a href="https://sunpma.com/659.html" target="_blank" rel="noopener external nofollow noreferrer">https://sunpma.com/659.html</a></p>
+状态：systemctl status rclone
+</code></pre>
+<h6 id="参考链接："><strong>参考链接：</strong></h6>
+<p><a href="https://sunpma.com/659.html" target="_blank" rel="noopener external nofollow noreferrer">https://sunpma.com/659.html</a></p>
 <p><a href="https://p3terx.com/archives/linux-vps-uses-rclone-to-mount-network-drives-such-as-onedrive-and-google-drive.html" target="_blank" rel="noopener external nofollow noreferrer">https://p3terx.com/archives/linux-vps-uses-rclone-to-mount-network-drives-such-as-onedrive-and-google-drive.html</a></p>
 <script>
         document.querySelectorAll('.github-emoji')
@@ -870,6 +901,14 @@ rclone dedupe - 交互式查找重复文件，进行删除/重命名操作。
                             
                                 <a href="/tags/%E5%8F%A4%E5%AE%A2/">
                                     <span class="chip bg-color">古客</span>
+                                </a>
+                            
+                                <a href="/tags/rclone/">
+                                    <span class="chip bg-color">rclone</span>
+                                </a>
+                            
+                                <a href="/tags/onedrive/">
+                                    <span class="chip bg-color">onedrive</span>
                                 </a>
                             
                         </div>
@@ -1501,7 +1540,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">55.6k</span>&nbsp;字
+                class="white-color">55.7k</span>&nbsp;字
             
             
             
